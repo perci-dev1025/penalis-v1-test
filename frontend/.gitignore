@@ -7,10 +7,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies & build output
 node_modules
 dist
 dist-ssr
+dev-dist
 *.local
+*.tsbuildinfo
 
 # Environment and secrets
 .env
