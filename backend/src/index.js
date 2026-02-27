@@ -27,12 +27,6 @@ app.use((_req, res) => {
 
 app.use((err, _req, res, _next) => {
   console.error(err);
-  if (err.code === 'P1001') {
-    return res.status(503).json({
-      error:
-        'Database unavailable. If using Neon, open https://console.neon.tech to wake the project, or try the Direct connection string in .env.',
-    });
-  }
   res.status(500).json({ error: 'Internal server error' });
 });
 

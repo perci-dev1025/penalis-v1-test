@@ -1,7 +1,6 @@
 import { Router } from 'express';
-import { prisma } from '../db.js';
-import { hashPassword, comparePassword } from '../models/User.js';
-import { requireAuth, optionalAuth, signToken, COOKIE_NAME } from '../middleware/auth.js';
+import { User, hashPassword, comparePassword } from '../models/User.js';
+import { requireAuth, signToken, COOKIE_NAME } from '../middleware/auth.js';
 
 const router = Router();
 
@@ -15,7 +14,7 @@ const cookieOptions = {
 
 function userToJson(user) {
   return {
-    id: user.id,
+    id: user._id.toString(),
     email: user.email,
     role: user.role,
     plan_id: user.planId ?? null,
@@ -24,7 +23,7 @@ function userToJson(user) {
 }
 
 /** POST /api/auth/register */
-router.post('/register', async (req, res, next) => {
+router.post('/register', async (req, res) => {
   try {
     const { email, password } = req.body || {};
     if (!email || !password || typeof password !== 'string') {
@@ -37,33 +36,29 @@ router.post('/register', async (req, res, next) => {
     if (password.length < 8) {
       return res.status(400).json({ error: 'La contraseña debe tener al menos 8 caracteres' });
     }
-    const existing = await prisma.user.findUnique({ where: { email: trimmed } });
+    const existing = await User.findOne({ email: trimmed });
     if (existing) {
       return res.status(409).json({ error: 'Ya existe una cuenta con este correo' });
     }
     const passwordHash = await hashPassword(password);
-    const user = await prisma.user.create({ data: { email: trimmed, passwordHash } });
-    const token = signToken(user.id);
+    const user = await User.create({ email: trimmed, passwordHash });
+    const token = signToken(user._id);
     res.cookie(COOKIE_NAME, token, cookieOptions);
     return res.status(201).json({ user: userToJson(user) });
   } catch (err) {
     console.error('Register error:', err);
-    next(err);
+    return res.status(500).json({ error: 'Error al crear la cuenta' });
   }
 });
 
 /** POST /api/auth/login */
-router.post('/login', async (req, res, next) => {
+router.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body || {};
     if (!email || !password) {
       return res.status(400).json({ error: 'Email y contraseña requeridos' });
     }
-    const emailNorm = String(email).trim().toLowerCase();
-    const user = await prisma.user.findUnique({
-      where: { email: emailNorm },
-      select: { id: true, email: true, role: true, planId: true, status: true, passwordHash: true },
-    });
+    const user = await User.findOne({ email: String(email).trim().toLowerCase() }).select('+passwordHash');
     if (!user) {
       return res.status(401).json({ error: 'Correo o contraseña incorrectos' });
     }
@@ -74,12 +69,12 @@ router.post('/login', async (req, res, next) => {
     if (user.status !== 'active') {
       return res.status(403).json({ error: 'Cuenta no activa' });
     }
-    const token = signToken(user.id);
+    const token = signToken(user._id);
     res.cookie(COOKIE_NAME, token, cookieOptions);
     return res.json({ user: userToJson(user) });
   } catch (err) {
     console.error('Login error:', err);
-    next(err);
+    return res.status(500).json({ error: 'Error al iniciar sesión' });
   }
 });
 
@@ -89,9 +84,9 @@ router.post('/logout', (_req, res) => {
   return res.json({ ok: true });
 });
 
-/** GET /api/auth/me — 200 with { user } or { user: null } */
-router.get('/me', optionalAuth, (req, res) => {
-  return res.json({ user: req.user ? userToJson(req.user) : null });
+/** GET /api/auth/me — requires auth */
+router.get('/me', requireAuth, (req, res) => {
+  return res.json({ user: userToJson(req.user) });
 });
 
 export default router;

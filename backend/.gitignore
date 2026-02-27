@@ -1,7 +1,5 @@
 # Dependencies
 node_modules
-pnpm-lock.yaml
-*.tsbuildinfo
 
 # Environment and secrets
 .env
@@ -29,11 +27,3 @@ pnpm-debug.log*
 
 # OS
 Thumbs.db
-
-# Prisma
-backend/prisma/dev.db
-backend/prisma/dev.sqlite
-backend/prisma/test.db
-backend/prisma/test.sqlite
-backend/prisma/.env
-backend/prisma/migrations/dev/*
