@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "rag:ingest": "node src/rag/ingestCorpus.js"
   },
   "dependencies": {
     "@prisma/client": "^6.9.0",

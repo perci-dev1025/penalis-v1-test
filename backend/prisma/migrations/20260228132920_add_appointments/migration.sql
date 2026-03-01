@@ -1,0 +1,16 @@
+-- CreateTable
+CREATE TABLE "appointments" (
+    "id" TEXT NOT NULL,
+    "user_id" TEXT NOT NULL,
+    "title" TEXT NOT NULL,
+    "scheduled_at" TIMESTAMP(3) NOT NULL,
+    "type" TEXT,
+    "notes" TEXT,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "appointments_pkey" PRIMARY KEY ("id")
+);
+
+-- AddForeignKey
+ALTER TABLE "appointments" ADD CONSTRAINT "appointments_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "users"("id") ON DELETE CASCADE ON UPDATE CASCADE;

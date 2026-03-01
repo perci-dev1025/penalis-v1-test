@@ -1,0 +1,1504 @@
+1
+REPUBLICA BOLIVARIANA DE VENEZUELA
+UNIVERSIDAD SANTA MARIA
+SEDE EL PARAISO
+DECANATO DE POSTGRADO
+DIRECCIÓN DE POSTGRADO
+ESPECIALIZACIÓN DE DERECHO PENAL
+CATEDRA: TIPOS PENALES I
+ENSAYO FINAL
+PROFESOR: WILMER MUJICA.
+ALUMNOS: 
+DÍAZ V. BÁRBARA C.I.V-27.342.193
+MARTINEZ VANIUSKA C.I.V-22.027.752
+VEGAS CH. JOSE 11.474.075
+GOMEZ M. YAROL A. C.I.V-25.915.795
+MAYO DEL AÑO 2022.
+2
+ÍNDICE
+INTRODUCCIÓN...........................................................................................5
+CAPÍTULO I....................................................................................................7
+ASPECTOS GENERALES SOBRE LA TEORÍA DEL DELITO.............7
+1.1 -Los Aspectos Generales sobre la Teoría General del Delito..............9
+1.2 -Aspecto Formal y Aspecto Sustancial del Concepto Jurídico del 
+Delito............................................................................................................13
+1.3 -Estructura Analítica del Delito: Aspecto Objetivo y Aspecto 
+Subjetivo......................................................................................................14
+CAPÍTULO II................................................................................................17
+CONCEPTO DE LA TIPICIDAD. DESARROLLO HISTÓRICO DE 
+LA TIPICIDAD..............................................................................................17
+2.1 -Desarrollo Histórico de la Tipicidad..................................................18
+2.2 -Concepto de Tipicidad........................................................................21
+CAPITULO III...............................................................................................24
+NATURALEZA JURÍDICA. IMPORTANCIA DE LA TIPICIDAD......24
+3.1 -Naturaleza Jurídica de La tipicidad..................................................24
+3.2 -Importancia de la Tipicidad...............................................................25
+CAPITULO IV...............................................................................................26
+EL TIPO PENAL...........................................................................................26
+4.1 -Estructura............................................................................................26
+4.2- Estudio Analítico del Tipo Penal........................................................28
+4.3 -Elementos de la Estructura Complementaria...................................31
+CAPITULO V.................................................................................................33
+CLASIFICACIÓN DELOS TIPOS PENALES..........................................33
+5.1 -División de los Tipos Penales en Relación con su Estructura y 
+Ubicación Sistemática.................................................................................33
+5.2 -División de los Tipos Penales en Relación con el Sujeto Activo......36
+3
+5.3 -División delos Tipos Penales en Relación con el Bien Jurídicamente 
+Tutelado.......................................................................................................37
+5.4 -División de los Tipos Penales en Relación con su Contenido...........38
+CAPITULO VI...............................................................................................40
+RELACIÓN CON EL OBJETO MATERIAL, EL OBJETO JURÍDICO 
+Y EL SUJETO PASIVO................................................................................40
+6.1 -Objeto Material, Objeto Jurídico y Sujeto Pasivo...........................40
+CAPITULO VII..............................................................................................41
+ESTRUCTURA BÁSICA DEL TIPO PENAL...........................................41
+7.1 -Tipos básicos........................................................................................41
+7.2 -Estructura básica de los tipos penales...............................................41
+CAPITULO VIII............................................................................................43
+EL VERBO RECTOR...................................................................................43
+8.1 -Generalidades......................................................................................43
+8.2 -Tipos penales simples..........................................................................44
+8.3 -Tipo penal complejo............................................................................45
+8.4 -Verbos rectores compuestos...............................................................46
+CAPITULO IX...............................................................................................48
+ESTRUCTURA COMPLEMENTARIA.....................................................48
+9.1 -Estructura Complementaria...............................................................48
+CAPITULO X.................................................................................................50
+LOS TIPOS PENALES ABIERTOS...........................................................50
+10.1 -Tipos penales en blanco.....................................................................50
+10.2 -Las Remisiones...................................................................................51
+10.3 –Paratipos............................................................................................53
+CAPITULO XI...............................................................................................55
+ILICITUD COLATERAL PENAL..............................................................55
+CAPITULO XII..............................................................................................56
+LEYES ESPECIALES...................................................................................56
+4
+ANALISIS DE TIPOS PENALES................................................................59
+CONCLUSION...............................................................................................64
+BIBLIOGRAFIA............................................................................................65
+ANEXOS.........................................................................................................66
+5
+INTRODUCCIÓN 
+ En el presente trabajo de investigación se desarrollará a cabalidad la
+totalidad de los temas que fueron objeto de las diversas clases presenciales
+impartidas en la Universidad Santa María, por parte del catedrático y abogado
+Wilmer Mujica.
+ A través de este ensayo, se pretenderá que se nutra el conocimiento
+implementando teoría y ejemplos prácticos, además del soporte importante
+que supone el concurso de la aplicación de textos jurídicos; en los que
+ciertamente se pueden conseguir información medible para concebir,
+comprobar, corregir o ampliar el conocimiento con respecto a diversos puntos
+de vista aceptables y visiones de los temas objetos de controversia de los
+diversos capítulos.
+ El estudio del tipo penal tiene importantes repercusiones dogmáticas, por
+ello es importante el estudio complementario de los diferentes elementos y
+estructuras que esta compone. 
+ En cuanto a la teoría del delito, sabemos que ha dado con estudiar los
+elementos generales de todos los delitos, es decir los elementos necesarios que
+requieren los delitos para su configuración. Doctrinalmente se ha establecido
+que los elementos esenciales para la configuración del delito son tres:
+tipicidad, antijuricidad y culpabilidad.
+ En efecto, si la conducta realizada por un sujeto es típica, antijurídica y
+culpable, entonces se adhiere al término de ese delito. Estos elementos son
+convergentes, quiere decir que, para que se configure el delito se deben haber
+6
+verificado los tres, uno después del otro, porque si uno no se verifica o no se
+da, entonces no se podrá pasar a analizar el siguiente. 
+ Por ende, la tipicidad analiza si la conducta o el hecho realizado por el
+sujeto están previstos en la ley penal. Este elemento tiene el foco de análisis
+puesto en la conducta realizada por el sujeto. Lo que se analiza es si la
+conducta realizada se adecua a la ley penal. A esta adecuación de la conducta
+a la ley penal se le denomina “juicio de tipicidad”. Si la conducta se subsume
+en la ley penal, entonces hablaremos de una conducta típica; en cambio, si la
+conducta no encaja en la ley penal, diremos que es una conducta atípica. 
+ En este ensayo se analizará el tema de los tipos penales, para así buscar la
+verdad a los paradigmas que se puedan encontrar, y lograr establecer correcta
+información de la materia.
+7
+CAPÍTULO I 
+ASPECTOS GENERALES SOBRE LA TEORÍA DEL DELITO 
+ Se considera como necesario que, para desarrollar completamente este
+punto del respectivo ensayo, es idóneo que primeramente se parta desde lo
+general es decir lo macro para poder llegar a lo micro, que en éste caso sería
+determinar qué es un Delito, para así posteriormente desarrollar cabalmente el
+objeto de este Capítulo I como lo es La Teoría General del Delito.
+ De acuerdo a lo contenido dentro del Diccionario Jurídico denominado
+como ¨Diccionario de Ciencias Jurídicas, Políticas y Sociales¨ de Manuel
+Ossorio y Bernard, se considera que Delito es:
+¨Recogiendo la definición de lo que el Jurista y Político Español
+Jiménez de Asúa considera como Delito; se entiende como un acto
+típicamente antijurídico, culpable, sometido a veces de condiciones
+objetivas de penalidad, imputable a un hombre y sometido a una
+sanción penal. ¨ 1
+ Y esto ciertamente es así, porque es obligatoriamente necesario que se
+configuran todos estos elementos antes mencionados para que pueda
+considerarse que una conducta que fue ejecutada por un hombre, de forma
+voluntaria; es ciertamente antijurídica porque va en contra las disposiciones
+contenidas dentro de la legislación venezolana en este caso de la Penal, y que
+al ser culpable porque fue ejecutada, en la mayoría de los casos, estas son
+ejecutadas con dolo, por ello pueden ser sometidas a las condiciones objetivas
+8
+antes mencionadas y por tanto se le puede imponer la merecida sanción penal
+de acuerdo a su responsabilidad penal.
+1
+ OSSORIO Y BERNARD, Manuel. ¨Diccionario de Ciencias Jurídicas,
+Políticas y Sociales¨. Pág. 212.
+ Lo que se considera como un delito en Venezuela, se encuentra
+intrínsecamente vinculado por una serie de acciones y un conjunto de
+elementos típicos, que necesariamente deben desarrollarse junto con las
+personas, en los diferentes escenarios o situaciones concretas que
+posteriormente eran objeto de controversias, siendo así; que el cumplimiento
+efectivo de estas pautas o reglas de conducta que en principio se encuentran
+preceptuadas como que van en contra de las normas, en subdesarrollo, esa
+acción debe estar necesariamente concertadas.
+ Así mismo, lo que se considera como Delito por nuestro Ordenamiento
+Jurídico Venezolano, se encuentra definido expresamente en el Código Penal
+Venezolano, específicamente en el artículo 1°:
+¨ Artículo 1°.- Nadie podrá ser castigado por un hecho que no estuviere
+expresamente previsto como punible por la ley, ni con penas que ella
+no hubiere establecido previamente. 
+Los hechos punibles se dividen en delitos y faltas. ¨ 2
+ El artículo antes mencionado establece que se considerara como un Delito
+a los fines del Código Penal Venezolano, como Norma Rectora; aquella
+acción u omisión que se considera como típica porque está tipificada dentro de
+la ley, que a su vez es antijurídica porque es contraria al Derecho; y que por
+tanto es culpable y es punible, merece una sanción lo cual sería una
+9
+consecuencia directa de su ejecución, dirigida al Sujeto Activo o ¨El
+Perpetrador¨.
+ En el texto denominado como ¨Derecho Penal Venezolano¨ del doctor
+Alberto Arteaga Sánchez se establece en cuanto a lo que se cataloga como
+Delito que: 
+2
+ CODIGO PENAL VENEZOLANO. (12.12.2011). Artículo 1°.
+“El Delito ha de entenderse como un hecho que en sí mismo o por su
+forma lesiona intereses fundamentales de la sociedad intereses que se
+consideran básicos para la existencia conservación y desarrollo del
+conglomerado social.”3
+1.1 -Los Aspectos Generales sobre la Teoría General del Delito
+En cuanto a lo que se considera como La Teoría General del Delito, para
+comenzar con el objeto de la controversia de este capítulo, dentro de la ciencia
+del Derecho Penal, esta teoría es aquella que se encarga de estudia, analizar y
+comprender exhaustivamente todas aquellas características que son típicas y
+obligatoriamente necesarias, porque las debe tener cualquier conducta que sea
+ejecutada por el hombre, independientemente de que esta sea una acción u
+omisión, para que a su vez pueda ser considerada como un delito; al cumplir
+con los requisitos necesarios que impone esta teoría.
+ Es importante recalcar, que esta teoría ha servido como base para el
+desarrollo del contenido e nuestra le y Adjetiva, por tanto; es el fundamento el
+Código Procesal penal venezolano.
+10
+ Para su mejor aplicación y desarrollo, esto se ha denominado también
+como ¨Sistema de Derecho Punible¨, cuya composición es:
+a.- Sistema de Prevención Política: que es cuando el Estado ejerciendo
+el Poder Punitivo que le fue atribuido; se protege a través de la
+conceptualización de los delitos.
+b.- Sistema Judicial: que es donde se desarrolla todo lo relativo al
+Proceso Penal Venezolano.
+3
+ ARTEAGA SANCHEZ, Alberto. ¨Derecho Penal Venezolano. ¨ Pág.
+187.
+b.1.- Derecho Penal Objetivo; en esta subdivisión se encuentra
+la Ley Adjetiva que es el Código Orgánico Procesal Penal en
+donde se establece todo lo relativo al Proceso Penal, y la Ley
+Sustantiva que es el Código Penal que es donde se tipifican las
+conductas que son contrarias al Derecho.
+b.2.- Derecho Penal Subjetivo; se trata de aquella facultad del
+Estado de crear las leyes y de ejercer así su Poder Punitivo; a
+través del empleo de Principios, entre ellos el de Legalidad
+Jurídica.
+ (Lo antes mencionado fue desarrollado en clases presenciales, relativas a la
+cátedra de Tipos Penales I, y que fue desarrollada por el Profesor Wilmer
+Mujica. Puede apreciarse parte de la presente clase en los Anexos,
+denominados bajo el número uno (1).)
+ La implementación de esta teoría es para ser usada como una herramienta
+efectiva para que los interpretes pueda basar sus decisiones no solo en lo que
+11
+ha llegado a su convencimiento o en su conocimiento empírico, sino que
+también a través de una óptica racional puedan resolver algún caso en
+concreto, a través de la implementación de las normas.
+ A lo largo del desarrollo del Derecho en el transcurso de la historia, se han
+desarrollado diversas teorías y criterios que permiten que se estudie desde
+diversas percepciones lo que es el Delito; la acción, la responsabilidad penal y
+la pena a imponer; lo que sería un idóneo castigo para alguna conducta
+determinada, actualmente aún existen múltiples teorías, las cuales son:
+1. Teoría Clásica del Delito: esta teoría fue desarrollada por penalistas
+que se encontraban intrínsecamente vinculados con lo que era la
+Escuela Clásica; (la cual fue una Escuela Dogmática, profesaba una
+doctrina, un conglomerado de principios y un sistema de un autor o
+conjunto de autores basados en el Derecho Penal Positivo y Vigente.), y
+por lo tanto tenían el deseo de conceptualizar lo que se considera como
+Delito viéndolo desde la óptica filosófica. Intentaron darle el carácter
+delictivo a una conducta implementando tentativas y puro conocimiento
+filosófico.
+2. La Tripartición del Delito: más que una teoría, la tripartición permite
+que se establezca al Delito a través de más de dos elementos
+importantes y necesarios para su configuración efectiva; se trata de dos
+elementos objetivos y de uno subjetivo.
+Esos Elementos Objetivos consisten en; el hecho material, es decir, esa
+conducta en concreto y el comportamiento exterior del hombre que es
+cuando se materializa esa conducta, y por último se considera que el
+Elemento Subjetivo es la voluntad necesaria que debe tener el hombre
+12
+para que se pueda materializar concretamente esa conducta a través de
+una acción, por lo tanto, esa voluntad debe ser necesariamente culpable.
+3. La Bipartición del Delito: más que una teoría esto se considera como
+una concepción, que va directamente en contra de lo que se mencionó
+antes como Tripartición del Delito; ya que sus creadores tenían una
+posición establecida y esta era muy estricta, en la que consideraban que
+solamente había un Elemento Objetivo que es el comportamiento
+exterior del hombre y un solo Elemento Subjetivo que era la voluntad
+del hombre, pero se trata de una voluntad culpable; que permite que se
+cometiera ese Delito. 
+La diferencia más diáfana que hay entre está concepción y lo antes
+mencionado relativo a la Tripartición del Delito; es que aquí no
+consideran importante entre los caracteres esenciales del Delito a la
+Antijuridicidad.
+4. Teoría Finalista del Delito: esta teoría fue realizada por parte del
+jurista y filósofo del Derecho alemán Hans Welzel. 
+Esta teoría se denomina como La Teoría de la Acción Finalista, en la
+que se implementa una sistematización que se aparta vinculantemente
+del Sistema Causalista. Esto quiere decir, que se establece que
+ciertamente el Delito se ejecuta a través de la materialización de una
+acción determinada, por medio de una conducta humana que puede ser
+voluntaria o involuntaria, pero que independientemente a ello, en
+principio esa acción tenía un determinado fin que no necesariamente por
+ser una conducta voluntaria, debe ser ocasionar alguna lesión directa a
+13
+algún bien jurídico protegido por el Ordenamiento Jurídico Venezolano,
+sino que esta Teoría, entiende que al tratarse de una acción ésta en
+principio tenía la finalidad de generar diversas consecuencias con
+múltiples resultados que no son el dañoso que va directo a perjudicar
+negativamente a el sujeto pasivo.
+1.2 -Aspecto Formal y Aspecto Sustancial del Concepto Jurídico del 
+Delito
+ Lo que se considera como el Aspecto Formal del delito se encuentra
+diáfanamente preceptuado dentro del artículo 1° del Código Penal Venezolano
+antes mencionado y citado, y se considera que es formal porque sobre este no
+solamente pesa la pena correspondiente como castigo en caso de que se haya
+desarrollado esa conducta que se tipifica en la ley como prohibida, porque va
+contraria a lo que sería el buen vivir de la sociedad, sino, que al encontrarse
+prohibido expresamente y establecido como un hecho o una acción subjuntiva;
+requiere necesariamente de que se le aplique de forma complementaria alguna
+otra disposición legal qué a través de un manejo sencillo de la gramática;
+permita que lo que se denomina como Delito tenga un mejor entendimiento
+por parte de la colectividad a la que va dirigida dicha ley y dicho precepto
+legal.
+ Cuando se está en medio del Plano Sustancial; lo que se considera como
+un Delito dentro del Ordenamiento Jurídico Venezolano debe ser apreciado de
+la misma forma en la que es apreciada por parte de la sociedad, es decir; que
+debe tomarse necesariamente en consideración todos aquellos elementos que
+14
+se encuentran alrededor del hecho en concreto que suscita la controversia que
+se maneja.
+ Cuando se establece que una determinada conducta es un Delito y esta es
+típica porque va contra la ley; es porque esa ley determina que esa conducta
+lesiona de forma directa Bienes Jurídicos o Intereses Fundamentales, los
+cuales son propios de los ciudadanos de la sociedad, si bien en principio de
+forma genérica o general quién recibe la consecuencia dañosa de la ejecución
+de una conducta típica dentro del Ordenamiento Jurídico Venezolano y la
+Materia Penal es lo que se considera como el Sujeto Pasivo, pero realmente
+esos bienes jurídicos que son consagrados y que se encuentran preceptuados
+dentro de la Constitución de la República Bolivariana de Venezuela; se
+personifican a través del hombre en la sociedad.
+ Entonces el Delito visto desde el plano sustancial es una disposición
+expresa dentro del ordenamiento jurídico, específicamente en el área penal;
+que protege intereses fundamentales o bienes jurídicos de la sociedad.
+1.3 -Estructura Analítica del Delito: Aspecto Objetivo y Aspecto 
+Subjetivo
+ Y así como se mencionó antes este estudio exhaustivo, se ha dividido y por
+tanto comprende diversos elementos, los cuáles son:
+a.- Los Tipos de sujeto: que en este caso estos sujetos pueden ser
+activos o pasivos. A estos, usualmente se les denomina como ¨Sujetos
+del Delito¨ o ¨Agentes del Delito¨; estas son las personas que cometen el
+delito y también a aquellas que resultan perjudicadas directamente con
+la comisión del delito.
+15
+Estos sujetos del delito se dividen en dos el cuál puede ser el sujeto
+activo y el sujeto pasivo. Cuándo se trata el sujeto activo usualmente
+con este nombre es que se le denomina a aquella persona que realiza o
+ejecuta aquella conducta qué es típica qué se encuentra contenida dentro
+de la ley penal como y ilícita. 
+En cambio, el nombre sujeto pasivo es con el que se le denomina a
+quién recibe directamente el resultado dañoso de la ejecución efectiva
+una conducta que se considera como típica y antijurídica: es decir el
+sujeto pasivo es el titular del bien jurídico qué es afectado a través de la
+transgresión a la ley penal.
+Los sujetos no son acogidos por todas las teorías.
+b.- La Acción: que es aquel acto que es ejecutado y que por tanto,
+configura completamente a aquella conducta que se encuentra
+preceptuada dentro del precepto legal y que una vez se ejecute y que se
+cumpla efectivamente con el: se puede considerar que se esta en medio
+de un delito.
+Esta acción es aquel comportamiento voluntario; que cumple con lo que
+establece la Teoría Volitiva y la Cognitiva: que es el sujeto perpetrador
+del delito tiene un conocimiento completo de lo que está realizando.
+c.- La Conducta: que puede tratarse de una acción o de una omisión.
+d.- La Tipicidad: que es aquella necesaria y obligatoria adecuación
+existente y escrita del acto humano voluntario o involuntario, que debe
+ser completamente ejecutado por el sujeto activo del delito. Es que esa
+conducta sea una figura descrita por la ley penal como delito.
+16
+e.- La Antijuridicidad: que es que sea una conducta ilícita, contraria al
+Derecho. Este es un servicio o una oportunidad que otorga la ley, en
+concretad y determinadas oportunidades para que cuando se aplique la
+ley haya o sea por medio de una excepción.
+Esto es considerado como una especie de ¨Permiso Legal¨.
+f.- La Imputabilidad: es aquella capacidad penal del sujeto activo que
+le permite ser responsable penalmente de la consecuencia jurídica de la
+conducta jurídica que ejecuto, o dela omisión que realizo
+Se puede implementar como ejemplo lo contenido dentro del artículo
+62° del Código Penal Venezolano; en el cual se puede apreciar
+diáfanamente la existencia de una causa de imputabilidad como lo es la
+¨enajenación mental¨:
+“No es punible, el que ejecuta la acción hallándose dormido o en
+estado de enfermedad mental suficiente para privarlo de la
+conciencia o de la libertad de sus actos¨.4
+4
+ CODIGO PENAL VENEZOLANO. (12.12.2011). Artículo 62°.
+g.- La Culpabilidad: necesariamente para ello debe haber mínimo: un
+solo autor o implicado sobre el cual pese la responsabilidad penal por
+motivo de la ejecución de una acción u omisión. 
+h.- La Punibilidad: esto es que si es posible esa responsabilidad penal;
+porque no hay alguna razón que hace que se deba eximir la pena
+correspondiente al delito que fue cometido.
+17
+ Esta teoría antes mencionada establece que necesaria y obligatoriamente
+estos elementos deben presentarse conjuntamente cuando se pretenda tipificar
+alguna conducta que se considera contraria a la ley, de lo contrario se estaría
+en presencia de una acción o conducta que NO es Punible.
+ De hecho, en principio; se considera que la parte objetiva de la Teoría que
+es objeto de este capítulo es aquella que puede ser tangible o sensible al
+contacto: refiriéndose directamente a la Acción y la Tipicidad.
+CAPÍTULO II 
+CONCEPTO DE LA TIPICIDAD. DESARROLLO HISTÓRICO DE 
+LA TIPICIDAD
+ El objeto de este capítulo número dos (2), que es La Tipicidad; la cual se
+considera que es un elemento propio del Delito, específicamente un elemento
+objetivo; a través del cual se permite determinar con precisión e
+implementando también una comprobación de que ciertamente se trata de un
+hecho que se considera como punible ya que cuya acción se materializa a
+través de una conducta y esta se encuentra contenida dentro de una ley penal
+prevista como contraria a Derecho y prohibida.
+ Por tanto, a través de la Tipicidad se permite la adecuación idónea de una
+conducta determinada que se ha materializado en un evento histórico; único e
+irrepetible, de interés para el Proceso Penal y qué se puede subsumir
+completamente a un presupuesto que se encuentra escrito dentro de la norma
+penal dándosele un cumplimiento a la tipicidad como elemento objetivo del
+delito y, elemento indispensable de La Teoría General del Delito.
+18
+ La Tipicidad también se considera como un elemento garantizador porque
+una vez que se desarrolló en la vida real una determinada conducta dentro del
+Ordenamiento Jurídico Venezolano y se le denomina como prohibida, permite
+que a través del cumplimiento efectivo del Principio de Legalidad no lesione a
+otros Principios, Derechos y Bienes Jurídicos.
+2.1 -Desarrollo Histórico de la Tipicidad
+La adecuación perfecta de la conducta humana a una norma penal o precepto
+legal o lo que se denomina como Tipicidad, tiene sus orígenes dentro del
+liberalismo penal ya que su dogmática fue conceptualizada en el año 1906 por
+Ernst Von Berling: quien en vida fue un Jurista Alemán.
+Una vez que se le logró conceptualizar se permitió que se apreciara
+completamente la importancia de este elemento, el cual es servir como muro
+de contención para evitar así la mayor arbitrariedad posible que pueda ser
+ejercida por parte del Estado, evitando que este antes mencionado cause
+alguna lesión a algún bien jurídico protegido Constitucionalmente a través de
+algún abuso en el exceso del Poder Punitivo que le fue otorgado.
+- “Tatbestand.”:
+Como fue antes mencionado, la tipicidad fue conceptualizada en el año 1906
+por el Liberalismo Penal, que para la época era liderada en gran parte por los
+alemanes. La Tipicidad en principio fue denominada como “Tatbestand”: el
+cual es un término que se implementa para darle sentido a lo que se denomina
+19
+como “Supuesto de Hecho” o, como actualmente se utiliza: que es para que
+tenga como significado a “Tipo Penal”.
+Esa palabra era considerada como tal y, en base a dos puntos de vista se
+desarrolló;
+1. Dinámico: esto es cuando ocurre un hecho en la vida real; es
+decir una acción o conducta determinada se materializa en un evento
+histórico, único e irrepetible, y a su vez, ese hecho también es un
+supuesto de hecho legal, que se encuentra encuadrado en una normal
+penal y así, cuando se materializa esa conducta: efectivamente se puede
+adecuar a un tipo penal prestablecido y se convierte en un hecho legal. 
+2. Estricto: es el dispositivo de la ley penal, una vez preceptuado,
+que tiene el supuesto de hecho legal penal y que cuando efectivamente
+se puede encuadrar; permite que se produzca el proceso de adecuación.
+ (Lo antes mencionado fue desarrollado en clases presenciales, relativas a la
+cátedra de Tipos Penales I, y que fue parte de la teoría impartida por el
+Profesor Wilmer Mujica. Puede apreciarse parte de la presente clase en los
+Anexos, denominados bajo el número dos (2).)
+ En el texto denominado como ¨Derecho Penal Venezolano¨ del Doctor
+Alberto Arteaga Sánchez Se establece con respecto al concepto de tipo o lo
+que se denomina dentro del desarrollo de este ensayo como “Tatbestand”:
+“El concepto de tipo o tal vez tan correspondiente a la denominación
+Corpus delito o hecho del delito o cuerpo del delito o hecho punible
+objetivo: es una Concepción tradicional que comprende todos los
+elementos requeridos por la imposición de la pena qué pasó hacer una
+20
+descripción objetiva del hecho independientemente de la antijuricidad y
+de la culpabilidad.”5
+ En el texto antes mencionado también se hace mención a la reelaboración
+de dicho concepto, el de la Tipicidad: 
+“La reelaboración del concepto se operó por él jurista Berlín en el año
+1930, utilizando las denominaciones de “Leitildy” y del
+“Deliktstypus”; quiénes sustituyeron a “Tatbestand”.6
+5 ARTEAGA SANCHEZ, Alberto. ¨Derecho Penal Venezolano. ¨ página
+234.
+6 ARTEAGA SANCHEZ, Alberto. ¨Derecho Penal Venezolano. ¨ página
+235.
+- “Fattispecie Legale.”:
+ Este es un término comúnmente implementado para referirse a un caso en
+particular que se encuentra contenido o tipificado dentro de la ley. 
+ Esto es cuando se trata una situación particular, concreta y determinada;
+que ya se encuentra con anterioridad regida por una norma legal, o puede que
+también sea solamente una parte de esa conducta determinada que es la que se
+encuentra descrita dentro de la ley penal.
+ Lo importante de la utilización de este término antes mencionado es que no
+se permite que se creen unos requisitos legales nuevos que no sean aquellos
+vinculantes para los particulares decir, para aquellas personas que pueden
+ejecutar esas conductas que se encuentra tipificado dentro de la ley penal. 
+21
+ Es importante recalcar que existe una teoría relativa a la “Fattispecie”; esta
+teoría se llama: “Teoría de La Fattispecie y La Statuizione”: esta teoría fue
+formulada por el italiano Gaetano Pace, en la cual su autor propone que
+existan dos formas de retroactividad en razón de los elementos de cada una de
+las normas, pero sobre todo aquellas penales, estás serían formas son:
+1. La Retroactivita Ex Fattispecie; qué se trata de cuando la nueva
+ley une los efectos normativos nuevos a una situación ya perteneciente
+al pasado.
+2. La Retroactivita Ex Statuizione: relativa cuando la disposición
+de la nueva ley invade al pasado.
+ Sobre esta teoría antes mencionada, hay un artículo denominado como
+¨Teorías y Criterios de las legislaciones¨, cuyo artículo ha sido desarrollado
+por el Abogado y Profesor Guillermo Da Alva Sánchez, de la Facultad de
+Derecho de la Universidad La Salle en México – Ciudad de México. En el
+anexo denominado bajo el Anexo Número Tres (3); se puede apreciar con
+diafanidad la Lamina realizada a través del programa ¨PowerPoint¨, en donde
+se hace énfasis a dicha Teoría¨.
+2.2 -Concepto de Tipicidad
+ La Tipicidad es básicamente un proceso en el cual se realiza una
+adecuación o encuadramiento a un determinado hecho que puede suscitarse en
+medio de la vida real, a un supuesto de hecho fáctico que es aquella conducta
+o situación que se establece dentro del precepto legal junto con el dispositivo
+legal, y que cuando estos extremos precisos y específicos son totalmente
+cumplidos; se considera que hay una adecuación típica con el contenido de la
+22
+ley en vista de que se cumple con los elementos que permiten que se
+establezca que una conducta ciertamente es típica y culpable.
+ La Tipicidad considera que un determinado comportamiento humano es
+socialmente importante para la materia penal y, por tanto, también debe ser
+sancionado al ser típico y esto es; que este para poderse encuadrar
+correctamente debe necesariamente ajustarse en su totalidad a un tipo legal
+prestablecido.
+ Ese tipo penal prestablecido antes mencionado consiste en una descripción
+detallada de características materiales que deben ser ejecutadas por el hombre,
+de forma voluntaria o involuntaria; configurándose así lo que sería la conducta
+humana, pero en este caso incriminada; porque se está infringiendo una norma
+penal y además se está afectando negativamente.
+-La Tipicidad y La Antijuridicidad:
+ Una vez que ha sido desarrollado completamente todo lo relativo a las
+figuras y el elemento objetivo del Delito denominado como La Tipicidad; en
+el pasado y presente capítulo del ensayo correspondiente, Solo queda
+establecer la diferencia diáfana que hay entre un elemento y el otro en este
+caso el otro sería la Antijuricidad.
+ La Antijuricidad supone un desvalor que va directamente a la conducta que
+fue ejercida para materializar la acción que se basa en el hecho que se reputa
+como punible y que está previsto dentro de una ley penal y, que hace que la
+misma sea culpable, reprochable y sancionable, ese desvalor jurídico de esa
+conducta determinada intrínsecamente vinculada con comportamientos típicos
+23
+que aunque sean contrarios al contenido de una o varias de las disposiciones
+de la ley penal; hacen inadmisible que se les integre aspectos objetivos a dicha
+conducta.
+ La diferencia aparece cuando; en el caso de La Tipicidad se presenta
+cuando existe una adecuación idónea y completa de una conducta determinada
+con alguno de los tipos que se encuentran descritos dentro el Código Penal
+Venezolano
+ Y, La Antijuricidad; se presenta cuando el sujeto activo que es aquella
+persona que perpetró el hecho que se reputa como punible está protegido por
+alguna causa de licitud que se encuentra descrita en el artículo 15° del Código
+Penal Venezolano.
+“Artículo 15°. - El condenado a prisión no estará obligado a otros
+trabajos sino a los de artes y oficios que puedan verificarse dentro del
+establecimiento, con la facultad de elegir lo que más se conformaren
+con sus aptitudes o anteriores ocupaciones”.7
+ Aunque alguna determinada conducta que suponga el ejercicio de una
+acción que está prohibida por el Ordenamiento Jurídico Venezolano, por lo
+tanto, ese comportamiento debe necesariamente ser castigado.
+ En un ensayo que fue realizado por estudiantes de Derecho en el año 2004,
+en La Universidad Nacional Autónoma de México; específicamente por el
+Instituto de Investigaciones Jurídicas, se considera que la antijuricidad es: 
+“La antijuricidad se puede analizar como la relación entre la acción
+humana y la norma a su vez el injusto es la acción declarada
+antijurídica en tal virtud la antijuricidad representa un concepto
+24
+unitario válido para la totalidad del orden jurídico mientras que lo
+injusto es una noción múltiple por esto se puede afirmar que no existe
+una antijuricidad específica penal, pero si un injusto que lo es.”8
+-La Acción: La acción del delito se considera como el primer elemento
+constitutivo y objetivo una vez que a través de ella se transgrede la ley penal,
+y se suele conceptualizar como aquella manifestación de una conducta,
+consiente y voluntaria de un ser humano, que está tipificada penalmente.
+Esa acción necesariamente debe ser ejecutada por parte del sujeto que se
+denomina como el Sujeto Activo, aquel que perpetra el hecho que se reputa
+como un hecho punible.
+7 CODIGO PENAL VENEZOLANO. (12.12.2011). Artículo 15°.
+8 
+¨Archivos De Las Ciencias Jurídicas de la UNAM. ¨ Pág. 133.
+ La Acción del Delito se resume básicamente en una actividad que realiza el
+sujeto activo, y que cuya ejecución además de ser contraria a la ley va
+produciendo consecuencias en el mundo jurídico y la sociedad, es necesario
+que dicha acción deba caracterizarse de varios elementos; entre ellos la
+voluntad y el dolo.
+CAPITULO III 
+NATURALEZA JURÍDICA. IMPORTANCIA DE LA TIPICIDAD 
+25
+3.1 -Naturaleza Jurídica de La tipicidad
+a.- Coercitiva: porque tiene una sanciona a imponer cuando se ha
+transgredido una norma penal.
+b.- Es de Orden Publico: no se puede relajar.
+c.- Excluyente: porque no se puede cambiar a un Delito por otro, por lo
+tanto, es solo aquel que ciertamente se cometió porque sus elementos
+característicos cumplen con un determinado tipo.
+d.- Agotadora: cuando se comienza un Proceso Penal, este
+obligatoriamente debe terminar; porque únicamente excepcionalmente
+es que se pueden aplicar las Alternativas de Prosecución del Proceso
+Penal, afectándose así la Naturaleza de la Tipicidad.
+3.2 -Importancia de la Tipicidad
+ La Tipicidad además de servir como una figura protectora que brinda
+seguridad para que se evite el paso o que haya cabida a arbitrariedades y
+transgresiones por parte del Estado, materializándose estos abusos y
+transgresiones en un abuso y exceso en medo del ejercicio del Poder Punitivo.
+La Tipicidad también sirve como:
+1.- Ente Garantizador: no persigue a una previa persona en caso de
+que no haya una disposición penal cierta, escrita y; ya que va a cumplir
+completamente con garantías y los principios que rigen al proceso penal
+y en los que se basa el Derecho Penal; para solo actuar cuando haya una
+acción típica, antijurídica y culpable.
+26
+2.- Figura Fundamentadora: la tipicidad obliga al Estado a que
+necesariamente debe fundamentar por escrito cada una de las conductas
+humanas, cuando la considere ilegitimas, y que necesariamente
+requieren ser castigadas a través de la imposición de una sentencia
+condenatoria.
+3.- Es Sistematizadora: porque su existencia permite que se organice
+completamiento el Código Penal y el Código Orgánico Procesal Penal,
+y así se encentre segura la parte especial y la parte ordinaria.
+CAPITULO IV 
+EL TIPO PENAL 
+ El tipo penal (supuesto de hecho típico del delito) en general. Que una
+acción es "típica" o "adecuada a un tipo penal" quiere decir que esta acción es
+la acción prohibida por la norma. La teoría del tipo penal es,
+consecuentemente, un instrumento conceptual para la identificación del
+comportamiento prohibido. La acción ejecutada por el autor es la acción
+prohibida por la norma cuando se subsume bajo un tipo penal.
+ En otras palabras, el tipo penal es la descripción hecha por el legislador, de
+una conducta antijurídica, plasmada en una ley. Se ha considerado al tipo
+penal, como un instrumento legal necesario y de naturaleza descriptiva. Es
+importante manifestar que el tipo penal, también se conforma de las
+modalidades de la conducta, como pueden ser el tiempo, lugar, ...
+27
+ En general, "tipo" es una expresión que designa todo conjunto de
+elementos unidos por una significación común. El tipo penal es el conjunto de
+elementos que caracteriza a un comportamiento como contrario a la norma.
+4.1 -Estructura
+ Este punto hace referencia a la construcción normativa que fija el
+legislador en la ley penal. Es así como la imagen conceptual que de él se
+desprende, se forma como expresión lingüística que intenta aproximar, con
+mayor o menor acierto, la descripción objetiva de la conducta prohibida. 
+ La importancia del análisis de la estructura del tipo penal, radica en que de
+ella se desprende los elementos que conforman el tipo que determina la
+prohibición, este ejercicio representa sin duda alguna, una problemática de
+relativa dificultad, pues el diseño del tipo penal dependerá de la posición que
+asuma el legislador, empleando las diversas concepciones teóricas que
+respecto de él se hagan y que, según hemos visto a lo largo de su historia
+evolutiva, han permitido formular los diferentes esquemas constructivos, por
+lo tanto, abordaremos el tema atendiendo a los postulados generales sin entrar
+en detalles específicos de las distintas escuelas o teorías expuestas
+anteriormente, tales como: las conocidas como causalista y finalista, social y
+funcionalista. 
+Siendo así, se comprende que las conductas típicas que se hallan descritas en
+la norma penal, están compuestas de una serie de elementos que pueden
+aparecer de forma expresa en la redacción legal, o bien deducirse tácitamente
+28
+de su contenido sin que por ello se establezca la analogía como regla
+fundamental de su interpretación. 
+De esta forma, para cumplir su función de garantía, el tipo penal tiene que
+estar adaptado al momento histórico y ser comprensible por el nivel cultural
+promedio de la sociedad donde se aplique, debe utilizar terminología clara y
+concisa que permita de la simple lectura de su texto, alcanzar el conocimiento
+pleno de la acción que se prohíbe. Sus definiciones deben ser parcas en la
+utilización de elementos técnicos normativos, que puedan dificultar la
+comprensión fundamental de la norma de prohibición. Debe evitar el empleo
+de construcciones gramaticales subjetivas, por el contrario, la redacción de la
+norma penal debe ser lo suficientemente descriptiva para permitir su fácil
+comprensión. Debe evitar el empleo de conceptos y definiciones ambiguas o
+indeterminadas, como: el de “moral y buenas costumbres”, “intachable
+reputación”, “conducta deseada”, entre otros, que conlleven la necesaria
+interpretación y adecuación social, ya que ello podría representar un riesgo
+para la seguridad jurídica de los ciudadanos, al dejar de manos del fiscal, la
+policía, de la ciudadanía e incluso del juzgador, su aleatoria interpretación. 
+4.2- Estudio Analítico del Tipo Penal
+ El instrumento es el conocimiento de un medio, en el cual por este ámbito
+el medio es el idioma castellano. Igualmente, este estudio analítico nos
+permite comprender los diferentes mecanismos por el idioma.
+Encontramos dos supuestos del estudio analítico del tipo penal:
+ Supuesto de hecho factico: Quiere decir que ocurre en la vida real.
+29
+ Supuesto de hecho legal: Es una premisa, que en caso de que se cumpla,
+lleva una o más consecuencias jurídicas. 
+-Modos: 
+ Infinitivo: verbos en infinitivo son aquellos que se utilizan para definir
+una acción sin que se proporcione información adicional sobre el
+número, la persona o el momento en que se lleva a cabo dicha acción. 
+Ejemplo: terminan en “ar, er” = “cometer”.
+ Indicativo: El modo indicativo es un modo gramatical que tienen
+diversas lenguas que distinguen las modalidades ¨reales¨ frente a
+¨irreales¨, entre ellas muchas lenguas indoeuropeas. El modo indicativo
+es la forma usual para hablar de hechos reales o hechos que se tienen
+por ciertos.
+Ejemplo: termino de pasado = “cometió”.
+ Subjuntivo: El modo subjuntivo es el que se utiliza para expresar
+acciones posibles o hipotéticas, que no están ocurriendo efectivamente.
+Ejemplo: “Hubiere”.
+Una técnica para saber que conducta se castiga, es la de aislar el verbo.
+Ejemplo: Apodere (subjuntivo)  Apoderar (infinitivo)
+-Núcleo Rector:
+Constituye la forma verbal que nutre antológicamente la conducta típica en
+general en los tipos penales que agrupa, de tal manera que ella gira en torno
+del mismo.
+Está compuesto por verbos rectores y es la conducta que se castiga.
+30
+Ejemplo: “Apodere”.
+-Sujeto activo: Es el que comete la acción puesta por el legislador. Son
+sujetos activos las personas físicas, sin que puedan serlo animales, ni cosas
+inanimadas. 
+Pueden ser: 
+ Persona natural 
+ Unisubjetivo o colectivo
+ Determinado o indeterminado 
+Ejemplo: delincuente, transgresor, accionante… 
+-Sujeto pasivo: En la perpetración del delito, es quien sufre directamente la
+acción del sujeto activo. Es el titular del bien jurídico destruido, lesionado o
+puesto en peligro mediante la comisión de un delito. 
+Pueden ser: 
+ Persona natural 
+ Sui-generis: único en su especie
+Ejemplo: el Estado
+ Es titular o propietario 
+ Unisubjetivo o colectivo 
+Ejemplo: la victima dueño de un carro robado. 
+-Objeto Material: Es el elemento sobre el cual recae la acción del sujeto
+activo. Realiza una acción recae sobre una materialidad. 
+Pueden ser: 
+31
+ Una persona 
+ Cosa 
+ Lugar 
+ Fenómeno: Social, Jurídico, Natural. 
+Además, puede ser tangible o intangible como, por ejemplo, marcas.
+-Objeto Jurídico: Es el interés jurídicamente tutelado por el tipo penal, al
+respecto, el derecho penal, en cada conducta considerada como delito,
+establece la tutela de determinados bienes que considera necesario proteger
+para mantener una armonía social, como ejemplo: la vida, la propiedad, la
+salud pública, la seguridad de la nación entre otros.
+Existe el Objeto Jurídico general y especifico. 
+Técnica para ubicar el objeto jurídico:
+ Específico: buscar el título de la ley. 
+ General: buscar el capítulo. 
+Estructura Complementaria:
+ Está constituida sobre un conjunto de situaciones que de forma incidental
+describe el legislador en los tipos penales para establecer condiciones
+especiales de: modo, tiempo, lugar entre otras.
+4.3 -Elementos de la Estructura Complementaria
+32
+-Circunstancias de Modo: brinda información sobre la forma en que se
+desempeña la acción.
+Provienen de: 
+ Adverbios: agregando la terminación “mente”. Por ejemplo:
+“atentamente”. 
+ Gerundios: agregando la terminación “ndo”. Por ejemplo:
+“perpetrando”. 
+ Sustantivada: Expresa amenaza o violencia. 
+-Circunstancia de Tiempo: brinda información sobre el momento en el que
+se desarrolla el tipo penal. 
+Ejemplo: “Nocturno”, “Tarde”, “tiempos de guerra”.
+-Circunstancia de Lugar: brinda información sobre el espacio donde se lleva
+a cabo el tipo penal. 
+Ejemplo: “Asamblea”, “sitios públicos”.
+-Instrumentos
+Es el instrumento que se usa como medio para cometer el delito. 
+Ejemplo: “Un cuchillo”, “un arma”. 
+-Referencias de ocasión: Expresa que tiene que cumplir que estuvo en el
+ejercicio de sus funciones, que están previstas en el Código o la ley. 
+Ejemplo: “el funcionario público que en ejercicio de sus funciones”.
+-Elementos Técnicos:
+33
+ Normativos
+ Descriptivos 
+-Técnico Normativos: Están regulados por las leyes o cuerpo normativo. 
+Ejemplo: Los “bienes” y la “pertenencia”  constituido y explicado en el
+Código Civil.
+-Técnico Descriptivos: Requieren de la asistencia de un experto para explicar
+el término. 
+Ejemplo: La palabra “esclusa”  requiere que un experto que la explique. 
+CAPITULO V 
+CLASIFICACIÓN DELOS TIPOS PENALES 
+ Múltiples son las clasificaciones elaboradas por los doctrinantes en relación
+con las diversas especies en que puede presentarse el tipo penal. Los criterios
+utilizados por ellos han sido más o menos los mismos: su estructura, el sujeto
+activo, el bien jurídico tutelado, su contenido. 
+34
+5.1 -1. División de los Tipos Penales en Relación con su Estructura y 
+Ubicación Sistemática
+ Esta clasificación hace referencia a las relaciones que pueden existir entre
+toda la variedad de tipos consagrados en la parte especial del Código penal, o
+entre las diversas disciplinas que tutelan un idéntico bien jurídico o bienes
+jurídicos referenciados o relacionados. La protección de los intereses jurídicos
+fundamentales se encuentra diseminada en varios tipos penales que consagran
+precisamente tales aspectos. 
+A. Tipos básicos, especiales u subordinados. 
+ Son básicos o fundamentales aquellos tipos que describen conductas
+lesivas de la integridad del bien jurídicamente tutelado y respecto de los cuales
+el proceso de adecuación típica es autónomo, en cuanto se realiza sin sujeción
+ni referencia a otros tipos. 
+ Dentro de una sana técnica legislativa, los tipos básicos o fundamentales
+deben presidir cada uno de los tipos de la parte especial en que ordinariamente
+se dividen los códigos. 
+ Son especiales cuando de la existencia de un tipo general que enmarca y
+determina un mismo género de tipos, surge la existencia de especies o
+subespecies suyas que poseen autonomía interpretativa y describen conductas
+de él desmembradas, aunque introduciendo aspectos diferenciales que
+agregan, suprimen, especifican o cualifican uno o varios elementos de aquel. 
+ Esta particular estructura de tales tipos les da vida propia e independencia
+sin subordinación al tipo fundamental. Su presencia se explica por el deseo del
+legislador de tratar diversamente desde el punto de vista punitivo ciertas
+formas de agresión al interés jurídico genéricamente tutelado en el tipo básico.
+35
+ Son subordinados o complementados aquellos que se refieren a un tipo
+básico o especial, señalándole determinadas circunstancias o aspectos que
+califican la conducta, los sujetos o el objeto descrito en estos. A estos tipos
+penales, me refiero a los subordinados o complementados, E. Von Belling los
+llama “acciones punibles de segundo orden”, ya que refiriéndose
+inmediatamente a uno fundamental o especial, describen solamente
+circunstancias nuevas que apenas cualifican uno de los elementos del tipo al
+cual se refieren. Por esta razón carecen de vida propia y no pueden aplicarse
+con independencia de los otros. 
+ Dicho en otras palabras, en los tipos penales subordinados el supuesto de
+hecho o tipo se conforma con dos o más disposiciones de la ley penal que
+deben armonizarse por parte del intérprete o aplicador de justicia. 
+ Tanto los tipos especiales como los subordinados se pueden dividir en
+privilegiados o atenuados y agravados. 
+ Los tipos privilegiados o atenuados se caracterizan porque la vulneración
+del bien jurídico que la realización de la conducta en ellos descrita produce, es
+de menor importancia que la ocasionada con la conducta señalada en el tipo
+básico, y, en consecuencia, la sanción es más tenue. 
+ Los tipos agravados encierran un comportamiento que lesiona más
+gravemente la bien jurídica materia de la prospección estatal en el tipo básico
+y, por ende, están conminados con sanciones más altas. Se trata de una
+agravación de la pena a imponer. 
+ El elemento calificador introducido en el tipo subordinado agrava la
+punibilidad o las consecuencias penales del hecho; en la metodología
+legislativa estas formas típicas se pueden presentar como tipo autónomo
+36
+agravado, pero con necesaria remisión al básico, o simplemente como tipo
+circunstanciado sin ninguna autonomía bajo el rótulo de circunstancias
+agravantes. 
+B. Tipos penales simples y compuestos. 
+ Son tipos que, de acuerdo con el alcance comprensivo del verbo
+determinador utilizado por el legislador, la descripción puede contener una
+sola conducta o varias modalidades de la misma con pluralidad o singularidad
+de núcleos rectores. 
+ Son tipos simples o elementales aquellos en los cuales la descripción
+presenta un único modelo de comportamiento, sin que interese que se trate de
+una descripción simple o circunstanciada. En resumen, son aquellos en los que
+sólo se utiliza un verbo.
+ El tipo penal es compuesto si introduce varios modelos comportamentales,
+cada uno de los cuales integrará cabal tipicidad de manera autónoma y
+alternativa. En otras palabras, son aquellos en lo que se utiliza dos o más
+verbos. 
+C. Tipos completos e incompletos (dependientes). 
+ Como lo habíamos advertido en nuestro curso al hablar de las normas
+rectoras de la ley penal, los tipos completos son aquellos en los cuales la
+norma preceptual se encuentra incluida de manera integral, dicho en otras
+palabras, la norma comprende tanto la conducta como la consecuencia
+jurídica. La generalidad de los tipos penales descritos en nuestro sistema penal
+pertenece a esta categoría, ya que, en sentido normativo, para que adquiera la
+37
+categoría de tipo penal, debe contener el supuesto de hecho y la pena a
+imponer en caso de comisión. 
+ Por el contrario, se habla de tipos penales incompletos a los que no
+consagran por sí mismos un supuesto de hecho o una consecuencia jurídica,
+aunque son oraciones gramaticales completos, pero incompletas como normas
+jurídicas; en opinión de algunos tratadistas, los tipos penales incompletos “se
+encuentran atrofiados”, bien porque en él falta la conducta o la sanción. 
+5.2 -2. División de los Tipos Penales en Relación con el Sujeto Activo
+A. Si nos atenemos al número de agentes que se requieren para la realización
+de la conducta típica. 
+1. Mono subjetivos: aquellos tipos que describen conductas realizadas
+por una sola persona. 
+2. Plurisubjetivos: son los que exigen la presencia de por lo menos dos
+personas para la realización de la conducta punible.
+B. Si nos atenemos a la calidad del sujeto activo. 
+1. Sujeto activo indeterminado (común). En este tipo penal la
+descripción típica no exige ninguna condición o cualificación especial
+para el sujeto que realiza la conducta. 
+2. Sujeto activo propio, particular, cualificado o exclusivo. La condición
+o determinación que específica de manera inconfundible a las personas
+idóneas para la realización del respectivo tipo penal se concreta en
+estricta confrontación o referencia normativa.
+38
+5.3 -3. División delos Tipos Penales en Relación con el Bien Jurídicamente
+Tutelado
+A. Si la conducta se refiere a uno o varios intereses. 
+1. Simples o de conducta monofensiva. 
+2. Complejos o de conducta pluriofensiva. 
+B. Si el interés está efectivamente alterado o suprimido o simplemente puesto
+en peligro. 
+ Hemos dicho que la función primordial del Estado es la de proteger bienes
+radicados en cabeza de las personas individualmente consideradas, de la
+colectividad o del propio Estado; ahora bien, aunque ordinariamente cada tipo
+penal busca la protección de un solo bien jurídico, en ocasiones la conducta
+legalmente descrita se refiere a varios intereses; además tales intereses pueden
+ser efectivamente alterados o suprimidos o simplemente puestos en peligro. 
+1. Tipos de lesión: el interés jurídicamente tutelado por la norma se altera
+efectivamente. Son aquellos respecto de los cuales la adecuación típica
+envuelve la destrucción o disminución de la bien jurídica materia de la
+protección estatal. Algunos tratadistas, como el caso de Jiménez Huertas, los
+denominan tipos de daño. 
+2. Tipos de peligro: El interés jurídico protegido se altera potencialmente.
+Son de esta naturaleza los tipos penales que describen conductas que tengan
+por finalidad amenazar o poner en peligro el bien jurídicamente tutelado. El
+39
+peligro radica en la potencialidad que la conducta tiene de producir con
+potencialidad la lesión del bien jurídicamente tutelado. 
+5.4 -4. División de los Tipos Penales en Relación con su Contenido
+ Esta clasificación se refiere a los diversos aspectos a que da lugar la técnica
+empleada por el legislador para describir los modelos de comportamiento
+susceptibles de sanción penal. 
+A. Tipos de mera conducta y tipos de resultado. 
+ Los primeros, describen como punible el simple comportamiento del
+agente; respecto de ellos el legislador ha considerado que la conducta por sí
+misma, dada su potencialidad criminosa, debe ser objeto de represión penal,
+independientemente del resultado, o del evento que pueda producir. Estos
+tipos penales describen una conducta sin relación jurídica alguna con ningún
+resultado inocuo, benéfico o lesivo, como se da en el artículo 399 cuando se
+tipifica el peculado: “el servidor público que dé a los bienes del estado o de
+empresas o instituciones en que éste tenga parte, cuya administración, tenencia
+o custodia se le haya confiado por razón o con ocasión de sus funciones,
+aplicación oficial diferente de aquella a que están destinados, o comprometa
+sumas superiores a las fijadas en el presupuesto, o las invierta o utilice en
+formas no previstas en éste, en perjuicio de la inversión social o de los salarios
+o prestaciones sociales de los servidores…”, es claro que en este tipo penal
+para nada interesa si la aplicación oficial diferente beneficia o lesiona la
+actividad del Estado, e incluso, si le es indiferente.
+ En los segundos, este es, en los tipos de resultado, aunque basta la
+realización de la conducta descrita para la configuración del ilícito, el tipo
+40
+hace referencia tácita o expresamente a un evento determinado, sólo que ese
+resultado está ubicado más allá del tipo en cuanto su presencia o ausencia para
+nada afecta la tipicidad de la conducta.
+ En estos tipos penales con una sola conducta no es suficiente para la
+incriminación, sino que se hace necesaria la producción de un evento o
+resultado. 
+B. Tipos penales abiertos y tipos penales cerrados. 
+ Son tipos penales abiertos aquellos tipos en los que se describe
+escuetamente la conducta o se menciona solamente el resultado, sin precisar,
+en el primer caso, las consecuencias en que tal conducta ha de realizarse, ni
+indicar en el segundo la modalidad del comportamiento que ha de producir. 
+ Son tipos penales cerrados los que concretan circunstanciadamente la
+conducta o señalan no solamente un resultado sino la forma como ha de
+producirse, de tal manera que si el comportamiento del agente no se realiza de
+la manera como se describe en el tipo no es posible subsumirlo en él. 
+C. Tipos de conducta instantánea y tipos de conducta permanente. 
+ Tipos de conducta instantánea son aquellos en los que la realización del
+comportamiento descrito o la producción del evento señalado se agotan en un
+solo momento. 
+ Tipos de conducta permanente son aquellos en los cuales la conducta del
+sujeto activo se prolonga en el tiempo, de tal manera que su proceso
+consumativo perdurará mientras no se ponga fin por propia determinación del
+41
+agente, como resultado de maniobras de la víctima o en razón de
+circunstancias ajenas a los protagonistas de la acción.
+CAPITULO VI 
+RELACIÓN CON EL OBJETO MATERIAL, EL OBJETO JURÍDICO 
+Y EL SUJETO PASIVO
+6.1 -Objeto Material, Objeto Jurídico y Sujeto Pasivo
+ En cuanto a estos, en los tipos penales que se analizan se establece que los
+objetos sean Jurídico o Material, y el sujeto pasivo, guardan una estrecha
+correlación no solo en el tipo penal que se analiza, sino que adicional, de uno
+se pueden determinar los demás. Por ejemplo, el Objeto material es a quien
+recae el Objeto Jurídico que se materializa y categoriza en alguna de su amplia
+lista de elementos de Objetos materiales (Personas, cosas, lugar,
+fenómenos…), de ahí podemos partir también de que del objeto Jurídico
+podemos determinar el Sujeto Pasivo(el titular del Objeto Jurídico), ya que el
+legislador en ayuda a que sea de fácil comprensión y análisis el tipo penal en
+la ley, por ejemplo, el artículo 462 del Código Penal que nos establece el
+delito de la estafa, en el cual el Objeto Jurídico es la Propiedad, por ende el
+sujeto pasivo es el titular, es decir el propietario.
+42
+CAPITULO VII 
+ESTRUCTURA BÁSICA DEL TIPO PENAL 
+7.1 -Tipos básicos
+ Son básicos o fundamentales aquellos tipos que describen conductas
+lesivas de la integridad del bien jurídicamente tutelado y respecto de los cuales
+el proceso de adecuación típica es autónomo, en cuanto se realiza sin sujeción
+ni referencia a otros tipos.
+ Dentro de una sana técnica legislativa, los tipos básicos o fundamentales
+deben presidir cada uno de los tipos de la parte especial en que ordinariamente
+se dividen los códigos.
+7.2 -Estructura básica de los tipos penales
+ La estructura básica la conseguimos presentes en todos los tipos penales,
+sin importar si están concebidas dentro de una ley no penal, es la forma del
+Legislador redactar dichos tipos penales. La estructura básica está
+comprendida por los siguientes elementos:
+Sujeto activo: Es la persona física, la persona natural, el individuo de la
+especie humana, el hombre que comete el delito. Sólo las personas físicas
+pueden ser sujetos activos de delito. No pueden serlo las personas jurídicas,
+por cuanto falta en ellas la conciencia y voluntad que constituyen la base de la
+imputabilidad y por lo tanto la base de la responsabilidad penal. Sin embargo,
+en las modernas teorías de responsabilidad de las personas jurídica, se
+43
+establece por delegación la responsabilidad de ellas en los dueños o
+administradores.
+Sujeto pasivo: Es el titular del bien jurídico destruido, lesionado o puesto en
+peligro mediante la comisión de un delito. Por lo regular, es una persona física
+o natural, pero también puede ser una persona jurídica, como, por Ejemplo, el
+hurto cometido contra el patrimonio de una persona jurídica. También
+encontramos que el sujeto ´pasivo puede ser el Estado, lo cual es un caso “siu
+Generis”, quiere decir único en su especie.
+Objeto material: Es la persona, lugar o cosa sobre la cual recae la actividad
+del delincuente. En ciertos casos pueden coincidir en la misma persona física
+las cualidades de sujeto pasivo y objeto material del delito. Por Ejemplo, el
+delito de lesiones personales, en el cual la persona lesionada es al mismo
+tiempo sujeto pasivo y objeto material del delito. También puede ser un
+fenómeno, según lo estudiado en clases, ya que la acción del delincuente
+puede recaer sobre un fenómeno social, jurídico o natural. Además, puede ser
+tangible o intangible.
+Objeto jurídico: Es el bien jurídico destruido, lesionado, perjudicado o tan
+siquiera puesto en peligro mediante la perpetración de un delito, Por Ejemplo:
+en el delito de homicidio el bien jurídico corresponde a la vida humana; en el
+delito de lesiones personales el bien jurídico corresponde a la integridad
+personal o física.
+Núcleo rector: representa el marco general en donde se agrupan las distintas
+modalidades de un mismo tipo penal, se encuentra dentro de la construcción
+típica, se subsume dentro de la acción humana. También conocido como verbo
+rector.
+44
+CAPITULO VIII 
+EL VERBO RECTOR 
+8.1 -Generalidades
+ Si el verbo es la parte más importante de una oración y si la conducta
+descrita en el tipo se plasma en una oración gramatical, entiendes
+perfectamente que el verbo haya sido llamado con toda propiedad “núcleo
+rector de tipo”
+ Por el verbo rector entenderemos, pues, aquella forma verbal que nutre
+ontológicamente la conducta típica de tal manera que ella gira alrededor del
+mismo. Es de tal importancia el estudio del verbo como núcleo del tipo, que
+las interpretaciones de las normas penales hacen los jueces y magistrados en
+su cotidiano menester de administrar justicia entre los hombres, es
+básicamente interpretación del verbo rector en ellas empleado.
+ Cuando se habla de verbo rector se quiere distinguirlo de otros verbos o
+formas verbales que el legislador suele emplear al describir una misma
+conducta y cuya función es accesoria. A menos que se trate de un tipo
+compuesto, solo existe en cada uno de ellos un verbo rector. Así, por ejemplo,
+en el delito de corrupción de menores, la conducta consiste en “corromper a
+un menor”, pues bien, el verbo rector es corromper, porque en eso consiste a
+conducta que se pretende incriminar, el otro verbo –ejecutar- tiene un papel
+secundario, en cuanto cualifica una simple modalidad de la conducta.
+45
+ El verbo rector no es sino una operación mental para comprender y
+delimitar la conducta prohibida, la que en algunos casos puede coincidir con la
+acción humana, pero jamás éste puede sustentar la existencia del principal
+elemento del tipo objetivo (la acción).
+ No puede concebirse a la existencia de la acción con el sólo ejercicio de
+variación de número, persona, tiempo y modo, sino describiendo ese trozo de
+vida o conducta humana prohibida que será cumplimentada con los demás
+elementos del tipo y del delito.
+ Verbo que dirige la acción del tipo penal: se encuentra dentro de la
+construcción típica, se subsume dentro de la acción humana. El legislador
+puede establecer para un tipo penal un único verbo de acción, o bien puede de
+forma alternativa enumerar un conjunto de ellos, por ejemplo: “quien oculte,
+trafique, comercie, distribuya, modifique…”.
+8.2 -Tipos penales simples
+ Son tipos que, de acuerdo con el alcance comprensivo del verbo
+determinador utilizado por el legislador, las descripciones pueden contener
+una sola conducta o varias modalidades de la misma con pluralidad o
+singularidad de núcleos rectores. Son aquellos en los cuales la descripción
+presenta un único modelo de comportamiento, sin que interese que se trate de
+una descripción simple o circunstanciada.
+ El tipo penal simple, es aquel tipo penal que contiene un único tipo penal
+específico independiente y su respectiva consecuencia jurídica; de allí se tiene
+que el tipo penal, de manera formal, es lo mismo que supuesto jurídico simple,
+que contiene sólo una hipótesis jurídica; 
+46
+ Cuando en la realidad social se presenta un comportamiento que se adecua
+a un tipo penal simple, no existe mucha dificultad de adecuación de la
+conducta existente en la realidad social, al tipo penal respectivo; situación
+jurídica que da lugar a una fácil investigación del delito y una adecuada
+tipicidad y enjuiciamiento, respetando todos los derechos del imputado,
+especialmente referido al derecho de defensa, derecho a una resolución
+judicial debidamente motivada y derecho a la legalidad, entre otros.
+8.3 -Tipo penal complejo
+ El tipo penal complejo, es aquel tipo penal que contiene varios tipos
+penales específicos dependientes o independientes, cuya realización conjunta
+o independiente, da lugar a la aplicación de la consecuencia jurídica prevista
+por la norma jurídica respectiva, es decir, habrá tipo penal complejo, si solo si,
+contiene varios tipos penales específicos independientes o dependientes, cuya
+producción da lugar a la vigencia de la consecuencia jurídica.
+ Aquellos tipos que tienen pluralidad de conductas en él, pueden ser
+compuestos complejos (dos o más conductas descritas en el que pueden
+conformar un tipo autónomo cada uno, pero que con unión se crea una
+independencia creando un nuevo tipo, el compuesto) como por ejemplo está el
+homicidio por medio catastrófica o compuestos mixtos (se describen varias
+conductas, y basta con ejecutar una de ellas para encuadrar en el tipo) o con la
+realización de cualquier verbo rector se conforma para encuadrar en el tipo,
+por ejemplo esta la concusión que tiene tres y con una basta
+ Tipo compuesto de varias acciones, denominado también delito o tipo de
+varios actos, y que puede ser meramente compuesto o complejo. El tipo
+47
+meramente compuesto está integrado por varias acciones, cada una de las
+cuales puede ser no delictiva o delictiva, pero si una es delictiva, no queda
+absorbida o consumida por el tipo compuesto, como ocurre. En cambio, el
+delito complejo o tipo complejo está integrado por la unión de varias acciones,
+cada una de ellas delictiva por sí sola, pero que desaparecen dentro del nuevo
+delito que absorbe el desvalor de sus componentes.
+ Tipo delictivo que afecta a más de un bien jurídico, como la acusación y
+denuncia falsas, que lesionan el honor y la administración de justicia; por ello
+se denomina también delito o tipo pluriofensivo.
+ El tipo penal es compuesto si introduce varios modelos comportamentales,
+cada uno de los cuales integrará cabal tipicidad de manera autónoma y
+alternativa. Los diversos modelos protegen idéntico bien jurídico, pero el
+legislador los incluye, en ocasiones, por necesidad de técnica, en afán de
+proporcionar amplitud comprensiva a la incriminación, de tal forma que al
+considerar que no basta con el primer modelo, incluye una segunda hipótesis
+en la cual estima que han quedado tipificadas todas las posibilidades de
+comisión que sea incriminar. 
+8.4 -Verbos rectores compuestos
+ Se dice que el verbo rector es compuesto cuando el mismo está constituido
+por dos o más verbos, dichos verbos pueden ser acumulativos o alternativos,
+también se puede dar el caso que uno se encontrara en participio y el otro
+verbo será su auxiliar, aplicando técnica gramatical y aislar los verbos
+transformándolos en su modo infinitivo, ese modo infinitivo será el núcleo
+rector del tipo penal. Por ejemplo: si un tipo penal indica en su verbo rector
+48
+“haya cambiado” observamos que esta constituidos por dos verbos, los cuales
+al aislarlos y obtener su modo infinitivo resulta “cambiar”, dicho verbo será
+nuestro verbo rector.
+Verbo Rector acumulativo: 
+ En los tipos penales donde se observe que el verbo rector está constituido
+por dos o más verbos, los cuales se encuentren unidos por la letra “y”,
+estaremos en presencia de un verbo rector compuesto acumulativo, dicha
+expresión indica que la conducta típica a castigar incluye múltiples acciones y
+que deben concurrir cada una de estas para encuadrar perfectamente la
+conducta en el tipo penal. Es decir que son verbos incluyentes, deben
+cumplirse todos.
+Verbo rector alternativo 
+ En los tipos penales donde se observe que el verbo rector está constituido
+por dos o más verbos, los cuales se encuentren separados por la letra “o”,
+estaremos en presencia de un verbo rector compuesto alternativo, dicha
+expresión indica que la conducta típica a castigar puede encuadrar en
+cualquiera de las acciones especificadas para encuadrar perfectamente la
+conducta en el tipo penal. Es decir que son verbos excluyentes, puede
+cumplirse cualquiera de ellos.
+49
+CAPITULO IX 
+ESTRUCTURA COMPLEMENTARIA 
+9.1 -Estructura Complementaria
+ Está constituida sobre un conjunto de situaciones que de forma incidental
+expone el legislador en los tipos penales para establecer condiciones
+especiales de: modo, tiempo, lugar entre otras. Por ejemplo: la nocturnidad es
+una condición de tiempo, mediante escalamiento, es una modalidad, también
+es una modalidad el empleo de astucia o medios electrónicos, una condición
+de lugar puede ser: en cementerios, templos, oficinas públicas entre otras.
+ La estructura complementaria son elementos adicionales a la estructura
+básica y esto son: 
+- Las circunstancias de modo tiempo y lugar: son complementos
+circunstanciales que explican como el sujeto activo aplica el verbo
+rector. -De modo: se utilizan adverbios y gerundios, estas explican
+cómo realiza la acción el sujeto activo, por ejemplo: ilícitamente,
+ocultando, cambiando, bajo amenaza, con violencia, etc. 
+-De tiempo: se entiende como el momento en el cual el sujeto activo
+realiza la acción, por ejemplo: si en el tipo penal indica la consecuencia
+jurídica si se realiza en horario nocturno. De Lugar: se entiende como el
+lugar donde el sujeto activo realiza la acción, por ejemplo: en
+sembradíos, en la asamblea, etc.
+50
+-Los medios de comisión: son los medios que utiliza el sujeto activo
+para realizar la acción. Para identificar los medios el legislador utiliza
+los infinitivos.
+-Los instrumentos: siempre serán tangibles, por ejemplo, si una
+persona utiliza un bate para darle muerte a otra el bate será el
+instrumento.
+-Referencias de ocasión: son ocasiones específicas que establece el
+legislador en la cual se tiene que estar cumpliendo la acción para que se
+del tipo penal.
+- Elementos: los elementos pueden ser: Normativos, técnico descriptivo. 
+Estos dos se encuentran dentro de la categoría de los elementos
+objetivos que abarcan el lado externo de
+la conducta.
+a) Normativos: tienen regulación jurídica, ejemplo artículo 451 del
+Código Penal “objeto mueble perteneciente”, los bienes muebles
+están en el Código Civil y la propiedad también.
+b) Técnico Descriptivo: son elementos de los cuales se necesita de un
+experto para determinar su significado.
+-Elementos Subjetivos: son elementos que no están regidos por la
+norma y son intrínsecos de las personas. Por ejemplo. Reputación,
+honor, decoro, etc.
+-Elementos Objetivos: que determinan el hecho material o
+manifestación del comportamiento exterior del hombre.
+51
+CAPITULO X 
+LOS TIPOS PENALES ABIERTOS 
+10.1 -Tipos penales en blanco
+ Son figuras incompletas, que tienen una estructura incompleta y que
+requieren de una disposición complementaria para poder cerrar el tipo penal,
+para así poder cerrar dichas estructuras. 
+ Estos tipos penales en blanco se clasifican en dos grandes grupos, los
+cuales son; los tipos penales en blanco o mal conocido como normas en
+blanco y los paratipos penales.
+Los tipos penales en blanco: Son figuras, estructuras que son incompletas y
+que requieren de una disposición complementaria o de una norma de reenvío,
+para poder cerrar el tipo, es decir que necesitan de una ley, que puede ser una
+Resolución, puede ser una ley administrativa, una ordenanza, un reglamento el
+Código civil, el Código de comercio, pero lo importante, es que esta
+disposición complementaria tiene que ser de carácter no penal, para poder
+cerrar el tipo.1
+ El tipo penal en blanco, siempre presenta su estructura incompleta en
+cuanto al precepto. El precepto siempre lo tiene incompleto, pero ese tipo
+penal siempre tiene establecida la sanción, solo que presenta, es defectos en el
+precepto y necesita de una disposición complementaria o de una norma de
+reenvío para completarlo, así tenemos, por ejemplo, el artículo 496 del Código
+penal, este referido artículo, nos habla de que es una falta, es un tipo penal que
+castiga aquellas personas que tiene espectáculos en lugares abiertos, pero no
+52
+cumplen con los requerimientos, requisitos, establecidos y exigidos por las
+autoridades competentes. Estos requisitos Establecidos, sería el
+incumplimiento de la ordenanza.
+ Esta ordenanza en este caso, sería los establecidos el incumplimiento de
+una ordenanza, en ese tipo penal sería la norma de reenvío, es la disposición
+penal complementaria necesaria para poder cerrar ese tipo.
+ Otro ejemplo importante y palmario, sería el artículo 149 de la Ley
+Orgánica de Drogas vigente, este artículo castiga lo que es delito de Tráfico de
+drogas Ilícitas en todas sus modalidades, este artículo para poder aplicarlo es
+necesario conocer y saber de remisiones.
+Tipos penales cerrados: Son aquellos que no disponen de una disposición
+complementaria para completar el tipo penal. Debido que, mantienen su
+precepto y sanción. 
+10.2 -Las Remisiones
+ Estas remisiones; son estas que sirven para poder ubicarse en esas
+disposiciones complementarias o normas de reenvío, así tenemos entonces de
+las remisiones tácitas y expresas, o remisiones contextuales y remisiones
+extracontextuales y remisiones de primer grado y de segundo grado.
+Las Remisiones Tácitas: son aquellas que no te expresa el legislador, que no
+te indica especialmente el legislador a donde debes remitirte, pero lo
+conocemos como órgano jurisdiccional conocedor del derecho, en este caso
+refiriéndonos al artículo 149, nos remite al artículo 3 de la Ley Orgánica de
+Drogas, que se refiere a un glosario de termino, es decir, es una interpretación
+53
+auténtica que ya ha incorporado el legislador atraves de esa ley y este artículo
+3, nos remite inmediatamente al numeral Nro. 27. Este último numeral, se
+refiere al concepto de lo que es Trafico de drogas, esta conceptualizado este
+artículo 3 en el numeral 27, pero cuando se lee referido artículo, nos remite a
+un instrumento jurídico llamado la, Convención de la Naciones Unidad Contra
+el Tráfico Ilícito de Sustancias Psicotrópicas de Viena, conocida como la
+Convención de Viena de 1988. Nos refiere a un ejemplo interesante de los que
+son las remisiones.
+ Cuando nos encontramos en un ejemplo de una remisión expresa, se puede
+citar el artículo 222 o 221 de la Ley del sector bancario, que este artículo nos
+refiere directamente o expresamente al artículo 185, es decir indica un
+señalamiento expreso de remitir a ese artículo de esa misma Ley. Cuando nos
+encontramos en presencia de un ejemplo de una remisión expresa, pero que es
+inespecífica o especifica.
+ Es Inespecífica: Cuando la Ley nos remite, por ejemplo, cuando dice: “de
+acuerdo a lo establecido por esta Ley o Conforme a lo establecido por esta
+Ley”, cuando la ley se expresa en esos términos, nos indica que te debes
+remitir a ella pero que no te lo dice de manera específica, y te dice de manera
+específica por ejemplo el del caso del artículo 222 que expresamente te señala
+el caso del artículo 185.
+Remisiones contextuales: como su mismo nombre lo indica dentro la Ley,
+por ejemplo, el artículo 149 de la Ley Orgánica de Drogas, que nos remite de
+manera tácita al artículo Nro. 3 de la respectiva ley Orgánica de drogas.
+Remisiones extracontextuales: Se continua con el mismo ejemplo del
+artículo 149 de la Ley Orgánica de Drogas, cuando nos remite al artículo 3 y
+54
+este es un glosario de términos que nos remite al numeral 27, nos remite a la
+Convención de la Naciones Unidad Contra el Tráfico Ilícito de Drogas de
+Viena, conocida como la Convención de Viena de 1988. Es decir, es
+extracontextual, está fuera de la Ley.
+Remisiones de primer grado y de segundo grado: 
+ Las de Primer grado: son aquellas que el legislador expresamente dice,
+“Remítase a tal… Artículo… Esto es una remisión de primer grado. Pero
+cuando esta remisión de primer grado que ha determinado el legislador,
+remítase a ese artículo a su vez te remite a otra disposición o a otro
+instrumento jurídico entonces allí estamos en presencia de una remisión de
+segundo grado. 
+10.3 –Paratipos
+Los Paratipos penales abiertos: Son figuras que tienen su estructura
+incompleta, significa que tienen una falla tanto en la sanción, como pueden
+tener una falla en el precepto. Estos paratipos penales, pueden ser paratipos
+relativos y absolutos. 
+Los paratipos relativos: Son aquellos que presentan una falla, que puede ser
+en el precepto como puede ser en la sanción, también los paratipos penales
+relativos pueden ser relativo en el precepto y relativo en cuanto a la sanción.
+Los paratipos penales presentan un precepto y una sanción, al igual que los
+tipos penales en blanco, estas son figura que también tienen su estructura
+incompleta, pero en el caso de los tipos penales en blanco, ellos presentan
+siempre el precepto incompleto, mientras que siempre tiene la sanción
+establecida. 
+55
+En el caso de los paratipos penales relativos, no necesariamente es así, ellos
+pueden tener establecido la sanción como la pueden tener ausente, igual para
+con el precepto lo pueden tener presente como lo pueden tener ausente.2 
+Pero también los paratipos penales relativos, pueden tener el precepto
+incompleto, en este caso entonces se necesita ir a una disposición para cerrar
+el tipo, para cumplir con el cierre de esta estructura que se presenta
+incompleta. Pero esta disposición tiene que ser de carácter penal. Diferente a
+los tipos en blancos donde esa remisión era de carácter no penal. En el caso de
+los tipos penales relativos, esa remisión tiene que ser necesariamente de
+carácter penal. Así, se puede citar el artículo Nro. 388, del Código penal
+vigente, que requiere del artículo 387, para completar su estructura, presenta
+una falla en el precepto y debe completarla con el contenido del artículo 387;
+también ocurre así con el artículo 328, que presenta una falla en su estructura
+y que debe completarla con el contenido del artículo 326, por presentar
+defectos en el precepto el artículo 328. 
+Estos paratipos penales relativos: también pueden ser relativos en cuanto al
+precepto y relativos en cuanto a la sanción. Son relativos en cuanto al
+precepto, cuando este se encuentra establecido y la sanción se encuentre
+ausente, o cuando el precepto se encuentre incompleto o ausente y la sanción
+se encuentre establecido. En resumen, es relativo ante la falta de precepto o
+sanción. 
+Los paratipos penales absolutos: siguen siendo figuras incompletas, pero en
+este caso los paratipos absolutos no tienen precepto ni tampoco tiene sanción,
+es decir, hay figura jurídica que no tienen precepto y no tienen sanción. Este
+56
+el caso el caso de los paratipos penales absolutos un ejemplo de ellos, puede
+ser el artículo 373, 272 y el 392 del Código Penal vigente.
+CAPITULO XI 
+ILICITUD COLATERAL PENAL 
+Ilicitud: calidad de ilícito, lo que no es permitido ni legal ni moralmente.
+ La ilicitud colateral Penal; se observa que no todos los artículos no son
+tipos penales o así ocurre con la parte especial con la excepción por ejemplo
+de los institutos relacionados con la coparticipación, la cooperación la,
+tentativa, la frustración, que son elementos de amplificadores del tipo
+determinación, el resto de los artículos no son del tipo penal existe una parte
+especial y una parte general. Esta parte especial es la que engloba estas
+conductas que ha determinado como hecho punible el legislador y le atribuye
+el legislador.
+ Se determina que hay una parte especial y una parte general. La parte
+especial es la que engloba estas conductas que ha determinado como hecho
+punible el legislador, y que le atribuye una sanción, de esta manera se observa
+que todos los tipos penales tienen unos sujetos que cometen un hecho, que
+realizan una conducta y que afectan los intereses y bienes jurídicos de unos
+sujetos que serían las víctimas. 
+ Entonces de esta manera tenemos sujetos, tenemos conductas y tenemos
+sujetos también que son víctimas, que se definen con esto que los tipos
+penales de acuerdo a sus características presentan una serie de elementos que
+57
+van hablando de sus estructuras. Entonces esta apreciación que se está
+haciendo de los tipos penales; es importante señalar que los tipos penales
+tienen sujetos; un sujeto puede ser un agente, que sería un sujeto activo el que
+comete el hecho punible, un sujeto pasivo, que es el titular del bien jurídico
+que esta tutelado y tenemos unas conductas que vendrían hacer los núcleos
+rectores de la estructura de los tipos y tendríamos unos objetos de naturaleza
+del bien jurídico, del interés jurídico protegido y el otro que está referido a la
+materialidad de ese objeto jurídico que se está protegiendo. 
+ La primera estructura que nos presenta los tipos penales, es su estructura
+básica, siendo está compuesta o integrada por 5 elementos fundamentales; los
+cuales son; el sujeto activo, el sujeto pasivo, el núcleo rector, el que está
+referido a los verbos rectores, es decir a las conductas a los comportamientos
+que castiga el legislador y sus objetos; el objeto material y el objeto jurídico.
+ Esta estructura básica o primaria, es la que presentan todos estos tipos
+penales que existen en el código penal y que existen en la ilicitud penal
+colateral.
+CAPITULO XII 
+LEYES ESPECIALES 
+ En cuanto a la generalidad relacionada a la ilicitud colateral o el código
+penal y las leyes especiales donde se describen, tipifican y se codifican las
+conductas, actos, acciones al momento que se produce la materialidad, para
+que se produzca el tipo penal correspondiente. Que todos los tipos penales
+58
+tienen una estructura básica, que se compone de un sujeto activo que es el
+autor o el agente es la descripción técnica que se le otorga, que vendría hacer
+el titular o el titular del bien jurídico que se protege, por ejemplo, el caso de la
+vida sería la persona el individuo, en el caso la propiedad en el hurto, sería la
+propiedad el propietario, lo que tiene que ver con la ajenidad, y hay otro
+elemento fundamental que integra esta estructura básica de los tipo penales;
+como lo es el núcleo rector, que está compuesto por los verbo rectores, es
+decir por los comportamientos omisivos o los comportamientos de acción. en
+concordancia con ese principio constitucional que es el principio de
+Legalidad, que está contenido en el artículo 49 numeral 6to de la Constitución
+Nacional de la República Bolivariana de Venezuela y que nos habla de actos u
+omisiones que se refiere el constituyente, para el caso de los tipos penales y
+los hechos punible que deben ser previos cualquier hecho. Como un principio
+fundamental un principio constitucional, que resguarda el principio de
+legalidad y que protege de derechos humanos como la libertad individual. 
+ Existe también en esta Estructura básica dos elementos también muy
+importantes, como los son los objetos, siendo estos el objeto material y el
+objeto jurídico. 
+ El objeto material; vendría hacer esa materialidad, mediante la cual, se
+expresa el interés o el bien jurídico que protege el legislador, que se protegen
+en un tipo penal. Un tipo penal no tendría ningún sentido o ninguna razón de
+ser, sino protege o tutela algún interés jurídico, así, tampoco se podría
+concebir que existan tipos penales que protegiendo o tutelando un interés o un
+bien jurídico, este bien jurídico no se exprese de alguna manera en una
+materialidad que le permita una individualización. Esa materialidad sería es el
+objeto material y tampoco se podría concebir, no tendría ningún sentido, no
+59
+tendría lógica jurídica alguna que existan tipos penales que no tenga un titular
+de ese bien jurídico que se protege, que este caso, este sujeto pasivo. Este
+sujeto pasivo podría ser también una colectividad, puedes ser un sujeto pasivo
+plural o también pudiera ser, un sujeto pasivo muy sugieneris, como en el caso
+del estado, cuando el estado es el sujeto pasivo o una víctima dentro de ese
+tipo penal. 
+ Ahora bien, se destacan o existen 3 elementos fundamentales, que tienen
+una relación, una correlación fundamental, una vinculación estrecha y de
+forma irrestricta, donde existe una relación absolutamente lógica entre estos 3
+elementos y una relación fundamental que no podría concebirse un elemento
+sin el otro, que es el caso del sujeto pasivo, el objeto jurídico y el objeto
+material, estos tres elemento dentro de la estructura básica de los tipos
+penales, conforman una trilogía fundamental de estrecha relación y de intima
+vinculación, en la cual ninguno de estos elementos fundamentales de estos tres
+fenómenos, puedan faltar en los tipo penal, no podríamos concebir dentro la
+estructura básica y el otra relación si una relación del uno con el otro. 
+60
+ANALISIS DE TIPOS PENALES 
+-Artículo 49 de la Ley de precios justos
+S.A: Quien (indeterminado unipersonal)
+S.P: el consumidor (indeterminado)
+O.M: cosa (bienes, productos o servicios)
+O.J: la economía
+N.R: compre, enajene o presten (compuesto alternativo)
+C.M: con fines de lucro C.T: N/A C.L: N/A
+M.C: N/A
+I: N/A 
+R.O: N/A
+E.N: bienes (Código Civil)
+E.T.D: N/A
+E.T.N: N/A
+E.S: N/A
+61
+ Tipo penal en blanco, reenvía a disposición complementaria de carácter no
+penal que son “los establecidos por la Superintendencia Nacional para la
+Defensa de lo de Derechos Socioeconómicos”. La remisión es expresa, extra
+contextual de primer grado.
+-Artículo 55 de la Ley de Precios Justos
+S.A: Quien (indeterminado)
+S.P: El consumidor
+O.M: cosa (producto de la cesta básica)
+O.J: La economía
+N.R: revenda (verbo simple) 
+C.M: con fines de lucro C.T: C.L:
+M.C: N/A
+I: N/A 
+R.O: N/A
+E.N: N/A
+E.T.D: N/A
+E.T.N: Cesta básica
+E.S: N/A
+62
+ Tipo penal en blanco, reenvía a disposición complementaria de carácter no
+penal que son los “lineamientos para establecimiento de precios”. La remisión
+es expresa, extra contextual y de primer grado.
+Articulo 57 Ley Orgánica de Precios Justos
+S.A: Quien (indeterminado)
+S.P: El Estado, Patrimonio Público.
+O.J: General: De los delitos
+Específico: Contrabando de extracción 
+O.M: Cosas (Tangible)
+N.R: Incurre, desvíe, haya, hubieren.
+C.M: directamente(adverbio), contrabando(gerundio)
+C.T: N/A.
+C.L: N/A.
+M.C: Desviar, Extraer.
+I: N/A.
+R.O: N/A. 
+E.N: ¨bienes¨  Código Civil Venezolano
+63
+¨Divisas¨  Ley del Banco Central de Venezuela 
+¨Transporte¨  Ley De Transito Y Transporte Terrestre
+¨Abastecimiento¨  Ley Constitucional del Comité Local de Abastecimiento
+y Producción
+E.T.D: N/A. 
+ Es un tipo penal en blanco, reenvía a una ley de carácter no penal. Este
+articulo presenta una disposición complementaria de primer grado, ya que el
+legislador remite a otra ley. Y extracontextual debido a que remite fuera de la
+ley, como es la Ley de Incentivo a la Exportación para así conocer la
+normativa y documentación correspondiente en esas materias. Además,
+también remite a conocer la normativa y documentación correspondiente de
+movilización y control de bienes, en la Ley Orgánica de Bienes Públicos.
+ Podemos establecer que es un paratipo relativo, ya que el precepto es
+incompleto y la sanción está establecida. 
+Articulo 61 Ley Orgánica de Precios Justos
+S.A: Difunda (indeterminado)
+S.P: Consumidor
+O.J: General: De los delitos
+Específico: Difusión fraudulenta de precios
+O.M: Valor de precio (intangible)
+N.R: emplee (hay conjunción disyuntiva ¨o¨)
+64
+C.M: emplee violencia o amenaza (sustantivada)
+C.T: N/A.
+C.L: N/A.
+M.C: Difundir, engañar, alterar.
+I: N/A.
+R.O: N/A.
+E.N: Precios  Ley Orgánica de precios justos
+Bienes  Código Civil Venezolano 
+E.T.D: N/A. 
+ Este artículo no presenta ninguna disposición complementaria, y tiene
+establecidos el precepto y la sanción completamente. 
+Se establece que es un tipo penal cerrado. 
+65
+CONCLUSION 
+ La importancia del análisis de la estructura del tipo penal, radica en que de
+ella se desprende los elementos que conforman el tipo que determina la
+prohibición, este ejercicio representa sin duda alguna, una problemática de
+relativa dificultad, pues el diseño del tipo penal dependerá de la posición que
+asuma el legislador, empleando las diversas concepciones teóricas que
+respecto de él se hagan y que, según hemos visto a lo largo de su historia
+evolutiva, han permitido formular los diferentes esquemas constructivos.
+ Siendo así, se comprende que las conductas típicas que se hallan descritas
+en la norma penal, están compuestas de una serie de elementos que pueden
+aparecer de forma expresa en la redacción legal.
+ De esta forma, para cumplir su función de garantía, el tipo penal tiene que
+estar adaptado al momento histórico y ser comprensible por el nivel cultural
+promedio de la sociedad donde se aplique, debe utilizar terminología clara y
+concisa que permita de la simple lectura de su texto, alcanzar el conocimiento
+pleno de la acción que se prohíbe. Sus definiciones deben ser parcas en la
+utilización de elementos técnicos normativos, que puedan dificultar la
+comprensión fundamental de la norma de prohibición. Debe evitar el empleo
+66
+de construcciones gramaticales subjetivas, por el contrario, la redacción de la
+norma penal debe ser lo suficientemente descriptiva para permitir su fácil
+comprensión.
+BIBLIOGRAFIA 
+-Diccionario de Ciencias Jurídicas, Políticas y Sociales. Manuel Ossorio y
+Bernard. (1984). Editorial Heliasta S.R.L. Buenos Aires, Argentina.
+Recuperado 09 de mayo 2022
+-Montoya O. (2018) Tipo Penal. Recuperado 15 de mayo 2022.
+http://diccionariojuridico.mx/definicion/tipo-penal/. 
+-Pérez, Mariana. (13 de agosto del 2021). Definición de Verbos en Infinitivo.
+Recuperado de: https://conceptodefinicion.de/verbos-infinitivo/. 
+-Aponte C. (s.f). Tema 7 La Tipicidad. Recuperado 14 de mayo 2022.
+https://derecho-penal.jimdofree.com/penal-i/tema-7/. 
+-Aponte C. (s.f). Tema 5 La teoría del delito. Recuperado 15 de mayo 2022.
+https://derecho-penal.jimdofree.com/penal-i/tema-5/.
+-Mujica W. (2020) Primera parte, Tipos penales abiertos Recuperado 14 de
+mayo 2022. https://www.youtube.com/watch?v=jdUHx3yNevI.
+-Mujica W. (2020) Primera parte, Tipos penales abiertos Recuperado 14 de 
+mayo 2022. https://www.youtube.com/watch?v=DD5ySuGNpds
+67
+- Osorio M. (s.f) Editorial Rose, Diccionario jurídico de ciencias jurídica, 
+políticas uy sociales. Recuperado 12 de mayo 2022 
+Leyes y Normas: 
+-Código Penal Venezolano. (2011) Editorial La Piedra. Recuperado 10 de
+mayo 2022
+-Ley Orgánica De Precios Justos (2015). Recuperado 5 de mayo 2022
+ANEXOS 
+68
+ANEXO N° 1
+69
+ANEXO N° 2
+70
+ANEXO N° 3

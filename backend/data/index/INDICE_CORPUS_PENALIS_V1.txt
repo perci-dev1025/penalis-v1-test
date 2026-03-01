@@ -1,0 +1,28 @@
+INDICE OFICIAL DEL CORPUS JURIDICO PENALIS
+V1
+1. OBJETIVO DEL CORPUS
+El presente corpus constituye la base normativa, jurisprudencial, doctrinal y estructural que
+alimenta el sistema RAG de PENALIS.
+Su finalidad es garantizar precision normativa, jerarquia juridica, trazabilidad de fuentes y control
+tecnico por modo de uso.
+2. ESTRUCTURA GENERAL DEL CORPUS
+01_Normativa_Fundamental: Constitucion, Codigo Penal, COPP, LOMP, LOPNNA.
+02_Leyes_Penales_Especiales: Legislacion penal complementaria sectorial.
+03_Jurisprudencia_TSJ: Sala Penal, Sala Constitucional vinculante y Corte IDH.
+04_Doctrina_y_material_complementario: TGD, doctrina tipos penales, manuales tecnicos.
+05_Tratados_Internacionales: Sistema Interamericano y ONU.
+06_Formatos_Juridicos_Estructurados: Modelos organizados por fase procesal.
+3. INSTRUCCIONES TECNICAS PARA RAG
+Ingesta por articulo o chunk estructural.
+Metadata obligatoria: source_type, jerarquia_normativa, organo, fecha, version.
+Prioridad normativa: Constitucion > COPP > Codigo Penal > Leyes especiales > Tratados >
+Jurisprudencia > Doctrina > Formatos.
+Similarity threshold configurable por modo.
+Registro obligatorio de fuentes recuperadas y score.
+4. MARCO CONCEPTUAL OPERATIVO
+PENALIS es un sistema estrategico de litigacion penal que opera por modos, respeta jerarquia
+normativa, identifica debilidad de contraparte y se abstiene cuando no alcanza umbral de certeza.
+5. DOCUMENTOS FUNDACIONALES ADJUNTOS
+Definicion institucional PENALIS.
+Marco Doctrinal Oficial PENALIS V1.
+Manifiesto PENALIS – Nueva Arquitectura del Litigio Penal Venezolano.

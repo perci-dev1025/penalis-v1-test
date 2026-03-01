@@ -1,6 +1,7 @@
 import { Router } from 'express';
-import { User, hashPassword, comparePassword } from '../models/User.js';
-import { requireAuth, signToken, COOKIE_NAME } from '../middleware/auth.js';
+import { prisma } from '../db.js';
+import { hashPassword, comparePassword } from '../models/User.js';
+import { requireAuth, optionalAuth, signToken, COOKIE_NAME } from '../middleware/auth.js';
 
 const router = Router();
 
@@ -14,7 +15,7 @@ const cookieOptions = {
 
 function userToJson(user) {
   return {
-    id: user._id.toString(),
+    id: user.id,
     email: user.email,
     role: user.role,
     plan_id: user.planId ?? null,
@@ -22,8 +23,24 @@ function userToJson(user) {
   };
 }
 
+async function getOrCreateDefaultIndividualPlan() {
+  let plan = await prisma.plan.findFirst({
+    where: { type: 'individual' },
+  });
+  if (!plan) {
+    plan = await prisma.plan.create({
+      data: {
+        name: 'Individual',
+        type: 'individual',
+        maxActiveSessions: 1,
+      },
+    });
+  }
+  return plan;
+}
+
 /** POST /api/auth/register */
-router.post('/register', async (req, res) => {
+router.post('/register', async (req, res, next) => {
   try {
     const { email, password } = req.body || {};
     if (!email || !password || typeof password !== 'string') {
@@ -36,29 +53,43 @@ router.post('/register', async (req, res) => {
     if (password.length < 8) {
       return res.status(400).json({ error: 'La contraseña debe tener al menos 8 caracteres' });
     }
-    const existing = await User.findOne({ email: trimmed });
+    const existing = await prisma.user.findUnique({ where: { email: trimmed } });
     if (existing) {
       return res.status(409).json({ error: 'Ya existe una cuenta con este correo' });
     }
     const passwordHash = await hashPassword(password);
-    const user = await User.create({ email: trimmed, passwordHash });
-    const token = signToken(user._id);
+    const defaultPlan = await getOrCreateDefaultIndividualPlan();
+    const user = await prisma.user.create({
+      data: { email: trimmed, passwordHash, planId: defaultPlan.id },
+    });
+    const token = signToken(user.id);
     res.cookie(COOKIE_NAME, token, cookieOptions);
     return res.status(201).json({ user: userToJson(user) });
   } catch (err) {
     console.error('Register error:', err);
-    return res.status(500).json({ error: 'Error al crear la cuenta' });
+    next(err);
   }
 });
 
 /** POST /api/auth/login */
-router.post('/login', async (req, res) => {
+router.post('/login', async (req, res, next) => {
   try {
     const { email, password } = req.body || {};
     if (!email || !password) {
       return res.status(400).json({ error: 'Email y contraseña requeridos' });
     }
-    const user = await User.findOne({ email: String(email).trim().toLowerCase() }).select('+passwordHash');
+    const emailNorm = String(email).trim().toLowerCase();
+    const user = await prisma.user.findUnique({
+      where: { email: emailNorm },
+      select: {
+        id: true,
+        email: true,
+        role: true,
+        planId: true,
+        status: true,
+        passwordHash: true,
+      },
+    });
     if (!user) {
       return res.status(401).json({ error: 'Correo o contraseña incorrectos' });
     }
@@ -69,24 +100,65 @@ router.post('/login', async (req, res) => {
     if (user.status !== 'active') {
       return res.status(403).json({ error: 'Cuenta no activa' });
     }
-    const token = signToken(user._id);
+
+    // Resolve user's plan and enforce active session limit
+    let plan = null;
+    if (user.planId) {
+      plan = await prisma.plan.findUnique({ where: { id: user.planId } });
+    }
+    if (!plan) {
+      plan = await getOrCreateDefaultIndividualPlan();
+      // Attach default plan to user if missing
+      await prisma.user.update({
+        where: { id: user.id },
+        data: { planId: plan.id },
+      });
+    }
+
+    if (plan.maxActiveSessions != null) {
+      const activeCount = await prisma.activeSession.count({
+        where: { userId: user.id },
+      });
+      if (activeCount >= plan.maxActiveSessions) {
+        return res.status(403).json({
+          error: 'Has alcanzado el número máximo de sesiones activas para tu plan.',
+        });
+      }
+    }
+
+    await prisma.activeSession.create({
+      data: {
+        userId: user.id,
+        userAgent: req.headers['user-agent'] ?? null,
+        ip: req.ip,
+      },
+    });
+    const token = signToken(user.id);
     res.cookie(COOKIE_NAME, token, cookieOptions);
     return res.json({ user: userToJson(user) });
   } catch (err) {
     console.error('Login error:', err);
-    return res.status(500).json({ error: 'Error al iniciar sesión' });
+    next(err);
   }
 });
 
 /** POST /api/auth/logout */
-router.post('/logout', (_req, res) => {
-  res.clearCookie(COOKIE_NAME, { path: '/', httpOnly: true });
-  return res.json({ ok: true });
+router.post('/logout', requireAuth, async (req, res, next) => {
+  try {
+    await prisma.activeSession.deleteMany({
+      where: { userId: req.user.id },
+    });
+    res.clearCookie(COOKIE_NAME, { path: '/', httpOnly: true });
+    return res.json({ ok: true });
+  } catch (err) {
+    console.error('Logout error:', err);
+    next(err);
+  }
 });
 
-/** GET /api/auth/me — requires auth */
-router.get('/me', requireAuth, (req, res) => {
-  return res.json({ user: userToJson(req.user) });
+/** GET /api/auth/me — 200 with { user } or { user: null } */
+router.get('/me', optionalAuth, (req, res) => {
+  return res.json({ user: req.user ? userToJson(req.user) : null });
 });
 
 export default router;

@@ -21,15 +21,119 @@ enum UserStatus {
   cancelled
 }
 
+enum PlanType {
+  individual
+  pro
+  institutional
+}
+
+enum SourceType {
+  fundamental_norm
+  special_penal_law
+  jurisprudence
+  doctrine
+  treaty
+  format
+}
+
 model User {
-  id           String     @id @default(cuid())
-  email        String     @unique
-  passwordHash String     @map("password_hash")
-  role         UserRole   @default(user)
-  planId       String?    @map("plan_id")
-  status       UserStatus @default(active)
-  createdAt    DateTime   @default(now()) @map("created_at")
-  updatedAt    DateTime   @updatedAt @map("updated_at")
+  id             String          @id @default(cuid())
+  email          String          @unique
+  passwordHash   String          @map("password_hash")
+  role           UserRole        @default(user)
+  planId         String?         @map("plan_id")
+  plan           Plan?           @relation(fields: [planId], references: [id])
+  status         UserStatus      @default(active)
+  createdAt      DateTime        @default(now()) @map("created_at")
+  updatedAt      DateTime        @updatedAt @map("updated_at")
+  activeSessions ActiveSession[]
+  queries        Query[]
+  appointments   Appointment[]
 
   @@map("users")
+}
+
+model Appointment {
+  id          String   @id @default(cuid())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String   @map("user_id")
+  title       String
+  scheduledAt DateTime @map("scheduled_at")
+  type        String?  // e.g. audiencia, consulta, vista, otro
+  notes       String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("appointments")
+}
+
+model Plan {
+  id                String   @id @default(cuid())
+  name              String
+  type              PlanType
+  maxActiveSessions Int
+  maxQueriesPerMonth Int?
+
+  users User[]
+}
+
+model ActiveSession {
+  id        String   @id @default(cuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  createdAt DateTime @default(now())
+  lastSeen  DateTime @updatedAt
+  userAgent String?
+  ip        String?
+}
+
+model LegalDocument {
+  id            String       @id @default(cuid())
+  sourceType    SourceType
+  hierarchyRank Int
+  system        String?
+  organ         String?
+  name          String
+  path          String
+
+  chunks LegalChunk[]
+}
+
+model LegalChunk {
+  id            String        @id @default(cuid())
+  document      LegalDocument @relation(fields: [documentId], references: [id])
+  documentId    String
+  article       String?
+  section       String?
+  text          String
+  // Embedding can be stored inline or in an external vector store; using Bytes for now.
+  embedding     Bytes?
+  sourceType    SourceType
+  hierarchyRank Int
+
+  querySources QuerySource[]
+}
+
+model Query {
+  id                 String        @id @default(cuid())
+  user               User?         @relation(fields: [userId], references: [id])
+  userId             String?
+  planId             String?
+  mode               String?
+  question           String
+  createdAt          DateTime      @default(now())
+  similarityThreshold Float
+  abstained          Boolean
+
+  sources QuerySource[]
+}
+
+model QuerySource {
+  id        String     @id @default(cuid())
+  query     Query      @relation(fields: [queryId], references: [id])
+  queryId   String
+  chunk     LegalChunk @relation(fields: [chunkId], references: [id])
+  chunkId   String
+  similarity Float
+  rank       Int
 }

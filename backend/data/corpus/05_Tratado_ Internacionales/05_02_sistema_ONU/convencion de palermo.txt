@@ -1,0 +1,490 @@
+Análisis de la Convención de las Naciones Unidas contra la 
+Delincuencia Organizada Trasnacional 
+Miriam Elsa Contreras López ∗
+RESUMEN: La delincuencia organizada 
+es un problema que atañe a todos los 
+Estados y que los vincula, ya que su 
+actuación y consecuencias se presentan, no 
+sólo dentro de los límites nacionales de 
+algún país, sino en varios de ellos a la vez o 
+consecutivamente; de ahí el concepto de 
+delincuencia organizada trasnacional. A 
+nivel de ordenamiento jurídico, la 
+Convención de las Naciones Unidas contra 
+la Delincuencia Organizada Trasnacional 
+señala los lineamientos que los Estados 
+Parte deben considerar para hacer 
+coherente su derecho interno con las 
+disposiciones de la Convención, con la 
+finalidad de combatir eficazmente la 
+actividad de los grupos delictivos 
+organizados. Esta Convención contempla 
+varios rubros importantes, como son su 
+objetivo, las definiciones básicas para 
+comprender este ordenamiento, 
+disposiciones procesales, las medidas para 
+promover la cooperación internacional y 
+algunos aspectos que podrían considerarse 
+administrativos. El objetivo de esta 
+colaboración es plantear un primer 
+acercamiento al análisis de esta 
+Convención, ya que representa el 
+ordenamiento internacional específico 
+ABSTRACT: Organized delinquency is a 
+problem that concerns and binds every 
+State, because their performances and 
+consequences are present, not only within 
+the national boundaries of a country, but 
+in several at once or consecutively; from 
+this the concept of transnational 
+organized delinquency. At a legal 
+ordering level, the United Nations 
+Convention against Transnational 
+Organized Delinquency points out the 
+guidelines that States party must consider 
+to make their internal law coherent with 
+the Convention’s dispositions, with the 
+means of efficiently fighting the activity of 
+organized delinquent groups. This 
+Convention contemplates several 
+important sections, such as their 
+objective, the basic definitions to 
+understand this ordering, process 
+disposition, the measures to promote 
+international cooperation and some 
+aspects that can be considered 
+administrative. The objective of this paper 
+is to raise a first approach to the analysis 
+of this Convention, because it represents 
+the specific international ordering relative 
+to transnational organized delinquency, 
+which is fundamental to understand the 
+ 
+∗
+ Doctora en Derecho Público. Académica de tiempo completo de la Facultad de Derecho de la Universidad 
+Veracruzana. Investigadora Nacional en el Sistema Nacional de Investigadores. 
+ 1
+relativo a la delincuencia organizada 
+trasnacional, lo que es fundamental para 
+comprender el alcance de esta problemática 
+y los esfuerzos que a nivel de legislación se 
+están realizando para contrarrestarla.
+Palabras claves: Delincuencia Organizada 
+Trasnacional. Grupo delictivo organizado. 
+reach of this problem and the efforts that, 
+at a legislative level are being made to 
+counter it. 
+Key words: Transnational Delincuency 
+organization. Delectiv party organiced.
+SUMARIO: A manera de introducción. 1. Objetivo de la Convención de las Naciones 
+Unidas contra la Delincuencia Organizada Trasnacional. 2. Conceptos generales y 
+tipificación de conductas. 3. Disposiciones procesales de la Convención. 4. Medidas de 
+cooperación internacional para procurar el cumplimiento de la Convención y el combate a 
+la delincuencia organizada. 5. Disposiciones administrativas de la Convención. Reflexión 
+final. Bibliografía. 
+A manera de introducción 
+Había una vez un mundo en el cual los buenos juzgaban a los malos
+discrecionalmente, es decir, de acuerdo a su criterio y prácticamente sin limitación alguna. 
+Donde los malos eran encerrados en lugares tan seguros que ninguno podía escapar, pero 
+donde el amor, la comprensión y las segundas oportunidades estaban prohibidas. Donde la 
+familia de los malos no podía entrar y si lo hacía, no podía expresar sus sentimientos hacia 
+la persona a quien alguna vez abrazó. Donde los malos perdían la oportunidad de volver a 
+ver un amanecer porque no había ventanas en ese lugar donde se encontraban. Donde los 
+malos se volvían más malos, pero sin riesgo para los demás, o al menos así se pensaba, 
+porque estaban aislados del mundo. Pero los buenos, finalmente se hacían malos porque a 
+toda costa impedían que los otros pudieran asomar la cabeza para ver el cielo… 
+En ese mundo, también existía la otra cara de la moneda, es decir aquella en la cual 
+vivían los buenos, en casas parecidas a cárceles porque estaban rodeadas de cercas 
+eléctricas y barrotes, donde estaba prohibido abrir la puerta y extender la mano al visitante, 
+hasta en tanto no se verificara que era también de los buenos; donde no eran frecuentes los 
+guardias porque los dueños de las casas ya no confiaban en ellos y donde cualquier 
+descuido implicaba el riesgo de morir o de perder lo que se tenía, porque los malos 
+esperaban la oportunidad de atacar; donde los niños no podían jugar en los parques porque 
+los malos podían dañarlos o aún peor, convencerlos para que actuaran mal; donde privaba 
+la ley del más fuerte, la desconfianza era el sentimiento más arraigado en las personas y era 
+una lucha constante el poder sobrevivir… 
+Parece un cuento, pero pudiera ser el panorama que nos espera en la desesperada 
+lucha que la sociedad y el Estado enfrentan contra la delincuencia organizada trasnacional. 
+Cada vez cobra mayor actualidad el principio de la discrecionalidad de las autoridades para 
+lograr mayor eficacia en el juzgamiento a los delincuentes, tal como se advierte en el 
+artículo 3 numeral 6 de la Convención de las Naciones Unidas contra el Tráfico Ilícito de 
+ 2
+Estupefacientes y Sustancias Psicotrópicas; o en el artículo 11, numeral 2 de la Convención 
+de las Naciones Unidas contra la Delincuencia Organizada Trasnacional (que en adelante 
+mencionaré como la Convención), que señala que “cada Estado Parte velará por que (sic.) 
+se ejerzan cualesquiera facultades legales discrecionales de que disponga conforme a su 
+derecho interno en relación con el enjuiciamiento de personas por los delitos comprendidos 
+en la presente Convención…” 
+También se aprecia la tendencia hacia la negación de los beneficios penitenciarios y 
+hacia la prisión de máxima seguridad, lo que indudablemente segrega al individuo del 
+contexto social. Basta leer lo señalado en el artículo 3, numeral 7 de la Convención contra 
+el Tráfico Ilícito de Estupefacientes y Sustancias Psicotrópicas o en el Artículo 11, numeral 
+4 de la Convención de las Naciones Unidas contra la Delincuencia Organizada 
+Trasnacional que dispone que dispone que los Estados Parte deben velar porque las 
+autoridades correspondientes tengan presente la naturaleza grave de los delitos señalados en 
+la Convención, “al considerar la eventualidad de conceder la libertad anticipada o la 
+libertad condicional a personas que hayan sido declaradas culpables de tales delitos”. 
+En este artículo presento un primer análisis de la Convención de las Naciones 
+Unidas contra la Delincuencia Organizada Trasnacional y, en algunos aspectos, la relaciono 
+con disposiciones de la Ley Federal contra la Delincuencia Organizada (LFDO), cuyo 
+acercamiento analítico ya fue motivo de una anterior colaboración.1
+1. Objetivo de la Convención 
+En el ámbito internacional, o global, la lucha contra la delincuencia organizada, o al 
+menos la preocupación por su existencia, ha originado el surgimiento de algunas 
+disposiciones jurídicas importantes, tales como la Convención de las Naciones Unidas 
+contra la Delincuencia Organizada Trasnacional o la LFDO en México, por mencionar las 
+de mayor interés en este momento. 
+La Convención deriva de la resolución de la Asamblea General de las Naciones 
+Unidas número A/55/25, aprobada en sesión plenaria, del 15 de noviembre del año 2000 y 
+abierta a la firma en la Conferencia de Palermo (Italia) celebrada en diciembre del año 
+2000; de ahí que se le conozca como la Convención de Palermo. Contiene 41 artículos con 
+sus respectivos numerales, sin división en títulos o capítulos; señala lineamientos relativos 
+a aspectos sustantivos y adjetivos que, pide a los Estados Parte, consideren y apliquen. 
+La finalidad de la Convención (art. 1), es “promover la cooperación para prevenir y 
+combatir más eficazmente la delincuencia organizada trasnacional”. En la parte 
+considerativa indica que la Asamblea General está convencida de que la Convención 
+“constituirá un instrumento eficaz y el marco jurídico necesario para la cooperación 
+internacional” para combatir actividades delictivas como el blanqueo de dinero, la 
+corrupción, el tráfico de flora y fauna silvestre en peligro de extinción, las que atentan 
+contra el patrimonio cultural o el terrorismo. Como dice González de la Vega, “este nuevo 
+ 
+1
+ Al respecto, ver Miriam Elsa Contreras López, “La Ley Federal contra la Delincuencia Organizada en el 
+contexto global (análisis exploratorio)”, en Letras Jurídicas, Revista de los Investigadores del Instituto de 
+Investigaciones Jurídicas de la Universidad Veracruzana, Año 6, nùmero 11, Enero-Junio 2005, Instituto de 
+Investigaciones Jurídicas, Xalapa, Veracruz, pp. 221-236 
+ 3
+combate de las sociedades modernas contra la delincuencia organizada emergente, debe 
+romper moldes convencionales y asumir nuevas estrategias y tácticas; de otra manera, la 
+derrota de la sociedad es predecible y las organizaciones criminales acabarán por dominar 
+los escenarios políticos, económicos y sociales”.2
+2. Conceptos generales y tipificación de conductas 
+El artículo 2 de la Convención señala diversas definiciones necesarias para la 
+interpretación de sus disposiciones, entre ellas, lo que debe entenderse como grupo 
+delictivo organizado, delito grave, grupo estructurado, bienes, producto del delito, 
+embargo preventivo o incautación, decomiso, delito determinante, entrega vigilada y
+organización regional de integración económica. De estos conceptos, por el momento, 
+centro mi atención en el primero y el tercero de los mencionados, para contrastarlos con el 
+concepto que señala el artículo 2 de la LFDO, al referirse a la delincuencia organizada. 
+El grupo delictivo organizado, es “un grupo estructurado de tres o más personas que 
+exista durante cierto tiempo y que actúe concertadamente con el propósito de cometer uno o 
+más delitos graves o tipificados con arreglo a la presente Convención con miras a obtener, 
+directa o indirectamente, un beneficio económico u otro beneficio de orden material”. De 
+este concepto se derivan algunos elementos para que exista este tipo de grupo, que serían: 
+a) La existencia de un grupo estructurado; b) que dicho grupo cuente con tres o más 
+integrantes; c) la permanencia del grupo durante cierto tiempo; d) el acuerdo para actuar; e) 
+que ese grupo tenga como propósito cometer uno o más delitos graves o tipificados por la 
+Convención; y, f) que su finalidad sea obtener, directa o indirectamente, un beneficio 
+económico u otro de orden material. 
+El grupo estructurado es “un grupo no formado fortuitamente para la comisión 
+inmediata de un delito y en el que no necesariamente se haya asignado a sus miembros 
+funciones formalmente definidas ni haya continuidad en la condición de miembro o exista 
+una estructura desarrollada”. Resulta complejo derivar los elementos de este concepto, ya 
+que básicamente se establecen aspectos que se excluyen de esta definición; sin embargo, en 
+un intento por hacerlo, tenemos: a) La existencia de un grupo, que puede ser de dos o más 
+personas (si entendemos grupo como pluralidad de sujetos); b) que la formación de ese 
+grupo haya sido intencional; y quizá (si se toma en cuenta el propósito general de la 
+Convención) c) que ese grupo tenga como propósito cometer uno o más delitos graves o 
+tipificados por la Convención. Respecto al tercer elemento, la alternativa, es derivar ese 
+propósito de la disposición específica a la que se integre y entonces sólo se presentarían los 
+dos primeros elementos del concepto que se analiza. 
+Por su parte, el artículo 2 de la LFDO establece que cuando tres o más personas 
+acuerden organizarse o se organicen para realizar, permanente o reiteradamente, conductas 
+que por sí mismas o unidas a otras tengan como fin o resultado la comisión de los delitos 
+que ese mismo artículo señala, se sancionarán como miembros de la delincuencia 
+organizada. Esta disposición tiene mayor semejanza con el concepto de grupo delictivo 
+organizado, aunque también existen diferencias. En ambas hipótesis se establece que el 
+grupo debe estar conformado por tres o más personas; que ese grupo no sea transitorio; que 
+ 
+2
+ René González de la Vega, Política Criminológica Mexicana, 2ª. ed., Ed. Porrúa, México, 2000, p.16 
+ 4
+exista acuerdo entre sus miembros y que su propósito sea la comisión de delitos. Sin 
+embargo, en el caso del grupo delictivo organizado se establece como finalidad, además, la 
+obtención de un beneficio económico u otro de orden material. En tal sentido, cabe 
+preguntarse si el caso del terrorismo siempre puede actualizar este supuesto, ya que su 
+finalidad puede ser, sin que necesariamente excluya el beneficio económico o material, 
+también de naturaleza ideológica. Por su parte, el concepto de grupo estructurado es 
+diferente, además de ser poco claro en cuanto a su finalidad. 
+El artículo 3 de la Convención señala que ésta se aplicará a la prevención, la 
+investigación y el enjuiciamiento de los delitos tipificados con arreglo a los artículos: 5, 6, 
+8 y 23 de la misma Convención y los delitos graves que se definen en el artículo 2, cuando 
+sean de carácter trasnacional y en ellos participe un grupo delictivo organizado. 
+En cuanto a la tipificación de los delitos, el artículo 5 dispone que cada Estado Parte 
+adopte las medidas para tipificar como delito, cuando se realice intencionalmente, el 
+acuerdo con una o más personas de cometer un delito grave con el propósito de obtener un 
+beneficio económico u otro de orden material, que conlleve un acto de alguno de los 
+participantes para continuar ese acuerdo, o cuando participe un grupo delictivo organizado; 
+o bien, la participación en las actividades del grupo a sabiendas de su finalidad o de que 
+contribuirá al logro de sus objetivos. Por su parte, el artículo 6 se refiere a la penalización 
+del blanqueo del producto del delito y señala diversas hipótesis que los Estados Parte deben 
+procurar tipificar, entre otras, la conversión o transferencia de bienes, ocultación o 
+disimulación de la naturaleza u origen, la adquisición, posesión o utilización de bienes o la 
+participación en estas actividades, a sabiendas de que esos bienes son producto del delito. 
+En consonancia, el siguiente numeral señala medidas para combatir el blanqueo de dinero. 
+El artículo 8 aborda la penalización de la corrupción y establece que se deben 
+tipificar como delito, cuando se cometan intencionalmente, supuestos tales como la 
+promesa, ofrecimiento o concesión a un funcionario público de un beneficio por actuar u 
+omitir en el cumplimiento de sus funciones, así como la solicitud o aceptación por un 
+funcionario del beneficio relativo; o bien, otras formas de corrupción. Complementa esta 
+disposición, el artículo 9 de la Convención, al referirse a las medidas contra la corrupción. 
+Finalmente, el artículo 23 de la Convención, prevé la penalización de la obstrucción de la 
+justicia, donde igualmente señala que se deben tipificar como delitos ciertas conductas
+cuando se cometan intencionalmente, por ejemplo, la inducción al falso testimonio u 
+obstaculizar la prestación de testimonio o el cumplimiento de las funciones oficiales. 
+En resumen, las conductas a que se refiere la convención y que deberán tipificar los 
+Estados Parte son, en general y siempre que se cometan dolosamente: el acuerdo para 
+cometer un delito grave para obtener beneficio y con la intervención de un grupo delictivo 
+organizado; el blanqueo del producto del delito; la corrupción y la obstrucción de la 
+justicia. 
+En contraste, el artículo 2 de la LFDO tipifica la delincuencia organizada respecto al 
+acuerdo para organizarse o la organización para realizar, en forma permanente o reiterada, 
+conductas autónomas o relacionadas con otras, que tengan como fin o resultado cometer 
+delitos específicos como: terrorismo, contra la salud, falsificación o alteración de moneda, 
+operaciones con recursos de procedencia ilícita, acopio y tráfico de armas, tráfico de 
+indocumentados, tráfico de órganos, asalto, secuestro, tráfico de menores, robo de 
+vehículos, piratería de obras protegidas por la Ley Federal de Derechos de Autor. 
+ 5
+Es decir, la LFDO establece una hipótesis general que consiste en la organización o 
+el acuerdo para organizarse, pero respecto a los delitos que tengan como fin o resultado, es 
+más específica que la Convención. No obstante, al referirse el artículo 5 de la Convención a 
+que el acuerdo debe ser para cometer algún delito grave, amplía enormemente su 
+aplicación, ya que delito grave, de conformidad con la definición que señala el artículo 2, es 
+“la conducta que constituya un delito punible con una privación de libertad máxima de al 
+menos cuatro años o con una pena más grave”. En tal sentido, las disposiciones de la 
+Convención se refieren a la mayor parte de los delitos contemplados, por ejemplo, en el 
+Código Penal Federal de México, inclusive aquellos no considerados graves para el derecho 
+interno. En el artículo 2 de la Convención se establece, además de la referencia al artículo 5 
+ya mencionado, como hipótesis diversa, la aplicación respecto a los delitos graves que sean 
+de carácter trasnacional y donde participe un grupo delictivo. Es decir, cuando se cometan 
+en más de un Estado; o se cometan en uno pero alguna parte de su preparación, 
+planificación, dirección o control se realice en otro; o se cometan en un solo Estado pero 
+intervenga un grupo delictivo organizado que actúe en más de un Estado; o bien, se cometa 
+en un solo Estado pero surta efectos en otro. 
+Cada Estado Parte debe adoptar (art. 10) las medidas necesarias para establecer la 
+responsabilidad de personas jurídicas por la participación en delitos graves en que esté 
+involucrado un grupo delictivo organizado o que sean de los previstos en los artículos 5, 6, 
+8 y 23 ya comentados. Además, dicha responsabilidad puede ser de índole penal, civil o 
+administrativa, e independiente a la responsabilidad penal de las personas naturales que 
+hayan perpetrado los delitos, y se deben aplicar sanciones eficaces a la personas jurídicas. 
+3. Disposiciones procesales de la Convención 
+En la Convención se incluyen diversas reglas procesales y lineamientos para que los 
+Estados Parte procuren dar coherencia a su derecho interno con lo dispuesto en este 
+instrumento internacional, lo cual se observa en los artículos 11 al 22, 24, 25 y 26, de los 
+que sólo resaltaré algunas disposiciones de particular interés. Se refieren, respectivamente, 
+a los siguientes rubros: proceso, fallo y sanciones; decomiso e incautación; cooperación 
+internacional para fines de decomiso; disposición del producto del delito o de los bienes 
+decomisados; jurisdicción; extradición; traslado de personas condenadas a cumplir una 
+pena; asistencia judicial recíproca; investigaciones conjuntas; técnicas especiales de 
+investigación; remisión de actuaciones penales; establecimiento de antecedentes penales; 
+protección de los testigos; asistencia y protección a las victimas; y, medidas para 
+intensificar la cooperación con las autoridades encargadas de hacer cumplir la ley. 
+El artículo 11 indica que se deben penalizar los delitos tipificados de conformidad 
+con la Convención, y los cuales ya hice referencia; asimismo, que se debe velar porque las 
+autoridades ejerzan “cualesquiera facultades legales discrecionales..” para enjuiciar a las 
+personas y lograr eficacia en el cumplimiento de la ley; de aquí la referencia hecha en la 
+parte introductoria de este artículo, ya que los posibles beneficios o perjuicios que este tipo 
+de disposición puede tener, van de la mano con la preparación de las autoridades y con el 
+tema tan ríspido de la corrupción en los diversos países, entre ellos, México. Asimismo, de 
+conformidad con el derecho interno y considerando el derecho de defensa, al decidir la 
+ 6
+posibilidad de conceder la libertad provisional, se garantice que el acusado comparezca 
+ante la autoridad cuando se requiera; igualmente, al “considerar la eventualidad de 
+conceder la libertad anticipada o la libertad condicional…” debe tenerse en cuenta “la 
+naturaleza grave de los delitos comprendidos en la presente Convención”; aquí se advierte, 
+aunque no se diga explícitamente, una tendencia a prolongar la privación de libertad, al 
+señalar como eventualidad conceder esos beneficios y sobre todo, hacer énfasis en la 
+gravedad de los delitos, los cuales para la Convención, son los que tengan una pena 
+máxima de al menos cuatro años de prisión. Así como que se establezca un plazo de 
+prescripción prolongado y mayor, si el presunto delincuente eludió la administración de 
+justicia. 
+Otras reglas se refieren a la autorización del decomiso y sobre qué bienes o 
+productos, aún documentos bancarios, financieros o comerciales, sin que pueda 
+argumentarse el secreto bancario para incumplir esta disposición; inclusive, la posibilidad 
+de exigir al delincuente que demuestre el origen lícito del presunto producto del delito u 
+otros bienes expuestos al decomiso (art.12). Aquí se arroja la carga de la prueba al sujeto 
+activo e indirectamente se libera al Ministerio Público de la obligación de justificar que 
+esos bienes tienen un origen ilícito. El artículo 13 describe cómo deben actuar los Estados 
+cuando reciban una solicitud de otro que tenga jurisdicción para conocer de un delito, con 
+miras al decomiso. 
+Para la disposición del producto del delito o de los bienes decomisados (art. 14), se 
+da prioridad a la devolución de éstos al Estado Parte requirente, para la indemnización a las 
+víctimas del delito o devolverlos a sus propietarios; aportar el valor de la venta a 
+organismos intergubernamentales; o bien repartirlos con otros Estados. 
+En cuanto a la Jurisdicción (art. 15), cada Estado Parte adoptará medidas para 
+establecer su jurisdicción respecto a los delitos que se cometan en su territorio; a bordo de 
+un buque o aeronave nacional; se cometa contra uno de sus nacionales; o se cometa por 
+persona nacional o apátrida pero con residencia habitual en su territorio. Asimismo, cuando 
+el delito este tipificado de conformidad con el párrafo 1 del artículo 5 de la Convención, se 
+cometa fuera de su territorio pero con miras a cometer un delito dentro de éste. Sin 
+embargo, existen casos más rigurosos en cuanto al establecimiento de la jurisdicción, que 
+no se basan, como en las anteriores hipótesis, ni en la nacionalidad de las personas 
+involucradas, ni en el lugar de comisión o efectos del delito, sino en que el presunto 
+delincuente se encuentre en su territorio y el Estado Parte no lo extradite por ser uno de sus 
+nacionales o por cualquiera otra causa. Los Estados Parte deberán consultarse y coordinarse 
+cuando realicen una investigación, proceso o actuación por los mismos hechos. 
+Establece (art. 16), los casos y requisitos para que proceda la extradición de una 
+persona; así como la posibilidad de celebrar acuerdos o tratados para el traslado, de un 
+Estado a otro, de personas condenadas a pena privativa de libertad (art. 17). Promueve la 
+asistencia judicial recíproca (art. 18) respecto de investigaciones, procesos y actuaciones 
+judiciales, así como cuando se sospeche que el delito es de carácter trasnacional; o cuando 
+las víctimas, los testigos, el producto, los instrumentos o las pruebas de un delito se 
+encuentren en el Estado Parte requerido y la investigación o proceso se realice en el Estado 
+Parte requirente; sobre todo, para efectos procesales, como recibir testimonios o 
+declaraciones, desahogar pruebas, entregar documentación, entre otros; respetando el 
+carácter confidencial de las pruebas o elementos que se proporcionen, cuando así se haya 
+ 7
+solicitado; incluso se puede trasladar a una persona, previo su consentimiento, que esté 
+privada de su libertad en un Estado, para que coadyuve o intervenga en un proceso o 
+actuación judicial que deba realizarse en otro; o en su caso, que su participación se efectúe 
+a través de videoconferencia. Esto puede ser denegado, fundando adecuadamente esta 
+negativa. 
+Los rubros de investigaciones conjuntas y técnicas especiales de investigación (arts. 
+19 y 20), indican que debe considerarse la posibilidad de establecer órganos mixtos de 
+investigación cuando éstas, los procesos o actuaciones deban realizarse en más de un 
+Estado; pudiendo utilizar las entregas vigiladas, la vigilancia electrónica o las operaciones 
+encubiertas, entre otras técnicas de cooperación en el plano internacional. 
+Los Estados Parte pueden remitirse actuaciones penales, “con miras a concentrar las 
+actuaciones del proceso (art.21). Esto implica considerar la invasión de competencias que 
+pudiera presentarse, la vulneración de las garantías de los inculpados y las reglas procesales 
+de derecho interno, pues pareciera ser que pueden acumularse procesos que corresponden a 
+distintas jurisdicciones y se ventilan en Estados diferentes. Sánchez Sandoval ubica 
+aspectos similares, dentro de los que denomina nuevos principios del derecho penal 
+trasnacional, y específicamente en el de la competencia jurídico-penal trasnacional.3
+ La 
+Convención (art. 22) presenta la posibilidad de tomar en cuenta los antecedentes penales o 
+alguna previa declaración de culpabilidad hecha por una persona en un Estado diferente. 
+Se pone énfasis en las medidas para proteger a los testigos y sus familiares o 
+allegados del peligro que implica declarar en contra de quienes forman parte de la 
+delincuencia organizada(art. 24), inclusive para reubicar a estas personas, o a las víctimas 
+que actúen como testigos. En este tenor, también se pone énfasis en la asistencia y 
+protección que deben proporcionarse a las víctimas de los delitos a que se refiere la 
+Convención, e igualmente para que obtengan la indemnización o restitución que procedan 
+(art. 25). 
+Se debe alentar (art. 26) a quienes participan o hayan participado en grupos 
+delictivos organizados para brindar información y ayuda a las autoridades para identificar, 
+ubicar, privar de recursos, etc. a las organizaciones delictivas; a cambio de mitigar la pena 
+que les corresponda o concediéndoles inmunidad; similar a lo que dispone la LFDO en el 
+capítulo séptimo sobre la colaboración en la persecución de la delincuencia organizada4
+. 
+Para Cruz Gómez, “la colaboración es uno de los instrumentos de investigación penal clave 
+en el combate a la delincuencia organizada, porque ¿quién más pede tener información 
+privilegiada de las estructuras, modos de operación, ámbitos de actuación e identidad de los 
+delincuentes organizados que alguien que haya pertenecido a la delincuencia organizada?”.5
+ 
+3
+ Este autor expone los que considera nuevos principios del derecho penal posmoderno trasnacional, en 
+Augusto Sánchez Sandoval, “La política criminal trasnacional posmoderna como terrorismo jurídico y de 
+hecho de los Estados”, en Política criminal: La reducción del Estado nacional y las Políticas trasnacionales 
+de Seguridad, UNAM posgrado de Derecho, México, 2003, pp. 1 a 11 4
+ Artículos 35 a 39 de la Ley Federal contra la Delincuencia Organizada. 
+5
+ María Concepción Cruz Gómez, “Instrumentos de Investigación Penal”, en Delincuencia Organizada, 
+Rafael Macedo de la Concha (Coord.), Instituto Nacional de Ciencias Penales, México, 2004, pp. 19-35, p.25 
+ 8
+4. Medidas de cooperación internacional para procurar el cumplimiento 
+de la Convención y el combate a la delincuencia organizada 
+Algunas medidas relativas a la cooperación entre los Estados Parte para cumplir los 
+ordenamientos legales y la propia Convención se indican en los artículos 27 a 32, 34 y 35. 
+Colaborar (art. 27) para aumentar la eficacia de las medidas de cumplimiento de la ley para 
+combatir los delitos que refiere la Convención, facilitando el intercambio de información; 
+apoyando a otros Estados para realizar indagaciones; intercambiar personal, celebrar 
+acuerdos; y hacer frente a los delitos cometidos a través de elementos tecnológicos. 
+La colaboración con científicos y académicos para analizar las tendencias de la 
+delincuencia organizada (art. 28); lo que es relevante ya que en la mayoría de los casos los 
+esfuerzos académicos y de investigación científica no son tomados en cuenta, por lo cual 
+quedan exclusivamente en el ámbito de las ideas pero sin reportar beneficios tangibles. 
+Formular y desarrollar programas de capacitación para el personal y autoridades 
+involucradas en la prevención, detección, vigilancia, acopio de pruebas, protección a 
+víctimas, etc. (art. 29). Promueve (art. 30) la cooperación de los Estados Parte para 
+fortalecer sus capacidades para prevenir y combatir a la delincuencia organizada 
+trasnacional y apoyarse financiera y materialmente. Establecer y promover prácticas y 
+políticas óptimas para la prevención de la delincuencia organizada trasnacional y reducir 
+sus posibilidades de actuación (art. 31); elaborar normas y procedimientos al respecto; 
+prevenir la utilización indebida de personas jurídicas a través, entre otros mecanismos, del 
+establecimiento de registros públicos de personas jurídicas y naturales involucradas en la 
+constitución, gestión y financiación de personas jurídicas, o de registros nacionales de 
+personas inhabilitadas para actuar como directores de personas jurídicas. 
+Dispone (art. 32) que se establezca una Conferencia de las Partes en la Convención 
+para mejorar la capacidad de los Estados Parte para combatir la delincuencia organizada 
+trasnacional, y promover y examinar la aplicación de la Convención; señalando las 
+funciones básicas de la Conferencia. Cada Estado Parte deberá tomar las medidas para 
+garantizar el cumplimiento de las obligaciones emanadas de la Convención (art. 34). 
+En el artículo 35 se establece que las controversias que puedan derivar de la 
+interpretación o aplicación de la Convención, deberá resolverse a través de la negociación, 
+o en su caso, someterse a arbitraje u oportunamente a la Corte Internacional de Justicia. 
+5. Disposiciones administrativas de la Convención 
+Otras disposiciones pueden considerarse administrativas y no son de particular 
+interés, por lo que sólo señalo que se refieren a los servicios de secretaría que prestará el 
+Secretario General de las Naciones Unidas a la Conferencia de Partes (art. 33); fechas y 
+reglas para la firma, ratificación, aceptación, aprobación y adhesión (art. 36); la relación 
+con los protocolos que la puedan complementar (art. 37); el plazo y condiciones para su 
+entrada en vigor (art. 38); los requisitos para proponer enmiendas (art. 39); el 
+procedimiento, plazos y efectos de la denuncia de la Convención (art. 40); y, la designación 
+del Secretario General de las Naciones Unidas como depositario de la Convención, así 
+ 9
+como los idiomas en los cuales se redactaron los textos auténticos de la Convención (art. 
+41). 
+Reflexión final 
+La Convención de las Naciones Unidas contra la Delincuencia Organizada 
+Trasnacional, establece lineamientos importantes para comprender las tendencias que se 
+marcan en el combate al crimen organizado. El reconocimiento formal de que la 
+delincuencia organizada actúa a nivel trasnacional y que las medidas para contrarrestarla 
+deben igualmente asumirse en un marco de colaboración internacional, es relevante. La 
+Convención incluye una explícita aceptación de algunos aspectos de gran relevancia en el 
+tema, como la trascendencia de la corrupción para la fortaleza de los grupos delictivos 
+organizados; la utilización de personas jurídicas para lograr fines ilícitos; las facultades 
+discrecionales de las autoridades; la negación de beneficios de ejecución; el incremento en 
+los plazos para la prescripción; el destino de los bienes o productos del delito; los 
+problemas de jurisdicción; la cooperación que los Estados Parte deben lograr para eficientar 
+la prevención, investigación, proceso, ejecución y demás cuestiones relativas a su actuación 
+contra el crimen organizado; la promoción para que los mismos integrantes de la 
+delincuencia organizada colaboren con las autoridades y como contrapartida se les otorgue 
+protección, disminución de penas e incluso inmunidad; etc. 
+Falta mucho por hacer, incluso para lograr que el derecho interno de cada Estado 
+Parte sea coherente con los lineamientos de la Convención, un ejemplo se advierte en la 
+Ley Federal Contra la Delincuencia Organizada en México, que es un ordenamiento 
+anterior a la propia Convención, y que a partir de su publicación6
+ no ha sido 
+sustancialmente reformada; el problema que representa el crimen organizado se incrementa 
+cada día más y el mundo imaginario que señalé al inicio de este articulo es inminente, si no 
+es ya una realidad para algunos o muchos seres humanos, puede parecer exagerado, pero 
+lamentablemente real, en mayor o menor medida, que “la globalización no globaliza los 
+derechos humanos. Lo que hace es globalizar los derechos inhumanos y las injusticias 
+humanas”.7
+ En México, como en el resto del mundo, los límites territoriales no nos 
+protegen ya de este escenario. 
+ 
+6
+ Diario Oficial de la Federación de 7 de Noviembre de 1996 7
+ Vandana Shiva, “Derecho a la alimentación, libre comercio y fascismo”, en La globalización de los 
+derechos humanos, Matthew J. Gibney (editor), Tr. Helena Recassens Pons, Ed. Crítica, Barcelona, 2004, pp. 
+95-121, p. 97. 
+ 10
+Bibliografía 
+CONTRERAS LÓPEZ, Miriam Elsa, “La Ley Federal contra la Delincuencia Organizada 
+en el contexto global (análisis exploratorio)”, en Letras Jurídicas, Revista de los 
+Investigadores del Instituto de Investigaciones Jurídicas de la Universidad 
+Veracruzana, Año 6, número 11, Enero-Junio 2005, Instituto de Investigaciones 
+Jurídicas, Xalapa, Veracruz. 
+Convención de las Naciones Unidas contra el Tráfico Ilícito de Estupefacientes y 
+Sustancias Psicotrópicas, Viena Austria, 20 de diciembre de 1988, ratificado por 
+México 11 de Abril de 1990. Diario Oficial de la Federación, 5 de septiembre de 
+1990. 
+Convención de las Naciones Unidas contra la Delincuencia Organizada Trasnacional, 
+resolución de la Asamblea General de las Naciones Unidas número A/55/25, 62ª 
+Sesión plenaria, 15 de noviembre del año 2000. 
+CRUZ GÓMEZ, María Concepción, “Instrumentos de Investigación Penal”, en 
+Delincuencia Organizada, Rafael Macedo de la Concha (Coord.), Instituto Nacional 
+de Ciencias Penales, México. 
+GONZÁLEZ DE LA VEGA, René Política Criminológica Mexicana, 2ª. ed., Ed. Porrúa, 
+México, 2000. 
+Ley Federal contra la Delincuencia Organizada 
+SÁNCHEZ SANDOVAL, Augusto, “La política criminal trasnacional posmoderna como 
+terrorismo jurídico y de hecho de los Estados”, en Política criminal: La reducción 
+del Estado nacional y las Políticas trasnacionales de Seguridad, UNAM posgrado 
+de Derecho, México, 2003. 
+SHIVA, Vandana, “Derecho a la alimentación, libre comercio y fascismo”, en La 
+globalización de los derechos humanos, Matthew J. Gibney (editor), Tr. Helena 
+Recassens Pons, Ed. Crítica, Barcelona, 2004. 
+ 11

@@ -58,3 +58,25 @@ export const authApi = {
   logout: () =>
     apiFetch<{ ok: boolean }>('/api/auth/logout', { method: 'POST' }),
 };
+
+export type Appointment = {
+  id: string;
+  userId: string;
+  title: string;
+  scheduledAt: string;
+  type: string | null;
+  notes: string | null;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export const appointmentsApi = {
+  list: () => apiFetch<Appointment[]>('/api/appointments'),
+  create: (body: { title: string; scheduledAt: string; type?: string; notes?: string }) =>
+    apiFetch<Appointment>('/api/appointments', { method: 'POST', body: JSON.stringify(body) }),
+  get: (id: string) => apiFetch<Appointment>(`/api/appointments/${id}`),
+  update: (id: string, body: Partial<{ title: string; scheduledAt: string; type: string; notes: string }>) =>
+    apiFetch<Appointment>(`/api/appointments/${id}`, { method: 'PATCH', body: JSON.stringify(body) }),
+  delete: (id: string) =>
+    apiFetch<void>(`/api/appointments/${id}`, { method: 'DELETE' }),
+};

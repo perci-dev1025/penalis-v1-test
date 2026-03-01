@@ -4,6 +4,8 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import { connectDB } from './db.js';
 import authRoutes from './routes/auth.js';
+import ragRoutes from './routes/rag.js';
+import appointmentsRoutes from './routes/appointments.js';
 
 const app = express();
 const PORT = process.env.PORT || 3003;
@@ -20,6 +22,8 @@ app.get('/api/health', (_req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/rag', ragRoutes);
+app.use('/api/appointments', appointmentsRoutes);
 
 app.use((_req, res) => {
   res.status(404).json({ error: 'Not found' });

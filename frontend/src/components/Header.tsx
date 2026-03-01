@@ -115,6 +115,9 @@ export function Header() {
                 </Link>
               </>
             )}
+            <Link to="/app/citas" style={linkStyle}>
+              Citas
+            </Link>
             <button
               type="button"
               onClick={handleLogout}

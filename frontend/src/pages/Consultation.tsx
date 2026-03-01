@@ -1,45 +1,411 @@
 import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Button } from '../components/Button';
+import { apiFetch } from '../services/api';
+
+type RagResult = {
+  id: string;
+  documentId: string;
+  article: string | null;
+  section: string | null;
+  text: string;
+  similarity: number;
+  rank: number;
+  sourceType: string;
+  hierarchyRank: number;
+  passedThreshold: boolean;
+  document: {
+    id: string;
+    name: string;
+    path: string;
+    sourceType: string;
+    hierarchyRank: number;
+    system: string | null;
+    organ: string | null;
+  };
+};
+
+type RagBrief = {
+  action: string;
+  article: string;
+  proceduralPhrase: string;
+};
+
+type RagResponse = {
+  id: string | null;
+  abstained: boolean;
+  threshold: number;
+  results: RagResult[];
+  message?: string;
+  brief?: RagBrief;
+};
+
+const MODE_LABELS: Record<string, { label: string; placeholder: string; button: string }> = {
+  audiencia: {
+    label: 'Situación o tema para audiencia',
+    placeholder: 'Describa brevemente la situación o el punto a fundamentar...',
+    button: 'Obtener respuesta táctica',
+  },
+  debate: {
+    label: 'Tesis o tema para debate oral',
+    placeholder: 'Describa la tesis o el punto a argumentar (fundamento normativo, solicitud)...',
+    button: 'Obtener argumentación',
+  },
+  consulta: {
+    label: 'Consulta',
+    placeholder: 'Redacte su consulta jurídica...',
+    button: 'Consultar corpus PENALIS',
+  },
+  formatos: {
+    label: 'Escrito o tema para formato penal',
+    placeholder: 'Describa los hechos y el tipo de escrito (solicitud, recurso, etc.)...',
+    button: 'Generar estructura del escrito',
+  },
+};
 
 export function Consultation() {
-  const [query, setQuery] = useState('');
-  const [response, setResponse] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
+  const [searchParams] = useSearchParams();
+  const mode = searchParams.get('mode') || 'consulta';
+  const modeConfig = MODE_LABELS[mode] || MODE_LABELS.consulta;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [query, setQuery] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [rag, setRag] = useState<RagResponse | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!query.trim()) return;
     setLoading(true);
-    setResponse(null);
-    setTimeout(() => {
-      setResponse('Respuesta de ejemplo. En producción aquí se mostrará la respuesta del sistema RAG con citación literal verificable (artículo, numeral, jurisprudencia) según el modo seleccionado.');
-      setLoading(false);
-    }, 1200);
+    setError(null);
+    setRag(null);
+    const { data, error: apiError } = await apiFetch<RagResponse>(
+      '/api/rag/query',
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          question: query,
+          mode,
+          limit: 10,
+        }),
+      },
+    );
+    if (apiError) {
+      setError(apiError);
+    } else if (data) {
+      setRag(data);
+    }
+    setLoading(false);
   };
 
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--bg-deep)', display: 'flex', flexDirection: 'column' }}>
-      <main style={{ flex: 1, padding: 'var(--space-lg)', maxWidth: '800px', margin: '0 auto', width: '100%' }}>
-        <form onSubmit={handleSubmit} style={{ marginBottom: 'var(--space-xl)' }}>
-          <label htmlFor="consulta-input" style={{ display: 'block', marginBottom: 'var(--space-sm)', color: 'var(--text-secondary)', fontSize: '0.875rem' }}>Consulta</label>
+    <div
+      style={{
+        minHeight: '100vh',
+        background: 'var(--bg-deep)',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
+      <main
+        style={{
+          flex: 1,
+          padding: 'var(--space-lg)',
+          maxWidth: '900px',
+          margin: '0 auto',
+          width: '100%',
+        }}
+      >
+        <form
+          onSubmit={handleSubmit}
+          style={{ marginBottom: 'var(--space-xl)' }}
+        >
+          <label
+            htmlFor="consulta-input"
+            style={{
+              display: 'block',
+              marginBottom: 'var(--space-sm)',
+              color: 'var(--text-secondary)',
+              fontSize: '0.875rem',
+            }}
+          >
+            {modeConfig.label}
+          </label>
           <textarea
             id="consulta-input"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Redacte su consulta jurídica..."
+            placeholder={modeConfig.placeholder}
             rows={4}
             disabled={loading}
-            style={{ width: '100%', padding: 'var(--space-md)', background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', color: 'var(--text-primary)', fontFamily: 'inherit', fontSize: '1rem', resize: 'vertical', minHeight: '120px' }}
+            style={{
+              width: '100%',
+              padding: 'var(--space-md)',
+              background: 'var(--bg-surface)',
+              border: '1px solid var(--border)',
+              borderRadius: 'var(--radius-md)',
+              color: 'var(--text-primary)',
+              fontFamily: 'inherit',
+              fontSize: '1rem',
+              resize: 'vertical',
+              minHeight: '120px',
+            }}
           />
-          <div style={{ marginTop: 'var(--space-md)', display: 'flex', gap: 'var(--space-md)', flexWrap: 'wrap' }}>
-            <Button type="submit" variant="primary" disabled={loading}>{loading ? 'Generando…' : 'Generar respuesta'}</Button>
+          <div
+            style={{
+              marginTop: 'var(--space-md)',
+              display: 'flex',
+              gap: 'var(--space-md)',
+              flexWrap: 'wrap',
+            }}
+          >
+            <Button type="submit" variant="primary" disabled={loading}>
+              {loading ? 'Buscando fuentes…' : modeConfig.button}
+            </Button>
           </div>
         </form>
-        {response && (
-          <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', padding: 'var(--space-xl)' }}>
-            <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1rem', color: 'var(--gold-primary)', marginBottom: 'var(--space-md)' }}>Respuesta estructurada</h3>
-            <div className="block-cita block-articulo" style={{ marginBottom: 'var(--space-lg)' }}>{response}</div>
-            <Button variant="secondary" type="button">Escuchar respuesta</Button>
+
+        {error && (
+          <div
+            style={{
+              marginBottom: 'var(--space-lg)',
+              padding: 'var(--space-md)',
+              borderRadius: 'var(--radius-md)',
+              border: '1px solid var(--danger-border, #b91c1c)',
+              color: 'var(--danger-text, #fecaca)',
+              background: 'var(--danger-bg, #450a0a)',
+              fontSize: '0.875rem',
+            }}
+          >
+            {error}
+          </div>
+        )}
+
+        {rag && (
+          <div
+            style={{
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border)',
+              borderRadius: 'var(--radius-lg)',
+              padding: 'var(--space-xl)',
+            }}
+          >
+            {mode === 'audiencia' && rag.brief && (
+              <div
+                style={{
+                  marginBottom: 'var(--space-xl)',
+                  padding: 'var(--space-lg)',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--border-gold, rgba(212, 163, 115, 0.4))',
+                  background: 'rgba(212, 163, 115, 0.06)',
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-display)',
+                    fontSize: '1rem',
+                    color: 'var(--gold-primary)',
+                    marginBottom: 'var(--space-md)',
+                  }}
+                >
+                  Respuesta táctica (Audiencia)
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Acción sugerida</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Artículo</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Frase procesal</span>
+                    <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {mode === 'debate' && rag.brief && (
+              <div
+                style={{
+                  marginBottom: 'var(--space-xl)',
+                  padding: 'var(--space-lg)',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--border-gold, rgba(212, 163, 115, 0.4))',
+                  background: 'rgba(212, 163, 115, 0.06)',
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-display)',
+                    fontSize: '1rem',
+                    color: 'var(--gold-primary)',
+                    marginBottom: 'var(--space-md)',
+                  }}
+                >
+                  Argumentación para debate oral
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Tesis</span>
+                    <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Fundamento</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Solicitud</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {mode === 'formatos' && rag.brief && (
+              <div
+                style={{
+                  marginBottom: 'var(--space-xl)',
+                  padding: 'var(--space-lg)',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--border-gold, rgba(212, 163, 115, 0.4))',
+                  background: 'rgba(212, 163, 115, 0.06)',
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-display)',
+                    fontSize: '1rem',
+                    color: 'var(--gold-primary)',
+                    marginBottom: 'var(--space-md)',
+                  }}
+                >
+                  Estructura del escrito (Formatos Penales)
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Encabezado</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5 }}>Escrito dirigido al tribunal competente, con fundamento en la normativa indicada en la sección Derecho.</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Hechos</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{query.trim() || '—'}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Derecho</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
+                    <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Petitorio</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <h3
+              style={{
+                fontFamily: 'var(--font-display)',
+                fontSize: '1rem',
+                color: 'var(--gold-primary)',
+                marginBottom: 'var(--space-md)',
+              }}
+            >
+              Fuentes recuperadas
+            </h3>
+            <p
+              style={{
+                fontSize: '0.875rem',
+                color: 'var(--text-secondary)',
+                marginBottom: 'var(--space-md)',
+              }}
+            >
+              Umbral de similitud:{' '}
+              <strong>{rag.threshold.toFixed(3)}</strong>.{' '}
+              {rag.abstained
+                ? 'No se encontró una base normativa suficiente por encima del umbral.'
+                : 'Se encontraron fuentes relevantes ordenadas por jerarquía y similitud.'}
+            </p>
+
+            {rag.results.length === 0 && (
+              <div
+                style={{
+                  fontSize: '0.9rem',
+                  color: 'var(--text-secondary)',
+                }}
+              >
+                {rag.message ?? 'No hay resultados para esta consulta.'}
+              </div>
+            )}
+
+            {rag.results.length > 0 && (
+              <ul
+                style={{
+                  listStyle: 'none',
+                  padding: 0,
+                  margin: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 'var(--space-md)',
+                }}
+              >
+                {rag.results.map((r) => (
+                  <li
+                    key={r.id}
+                    style={{
+                      padding: 'var(--space-md)',
+                      borderRadius: 'var(--radius-md)',
+                      border: '1px solid var(--border)',
+                      background: r.passedThreshold
+                        ? 'rgba(212, 163, 115, 0.06)'
+                        : 'transparent',
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        gap: 'var(--space-md)',
+                        marginBottom: 'var(--space-xs)',
+                        fontSize: '0.8rem',
+                        color: 'var(--text-secondary)',
+                      }}
+                    >
+                      <span>
+                        #{r.rank} · {r.document.name}
+                        {r.article ? ` · Art. ${r.article}` : ''}
+                      </span>
+                      <span>
+                        similitud:{' '}
+                        <strong>{r.similarity.toFixed(3)}</strong>
+                        {r.passedThreshold ? ' · ≥ umbral' : ''}
+                      </span>
+                    </div>
+                    <div
+                      style={{
+                        fontSize: '0.78rem',
+                        color: 'var(--text-muted, #9ca3af)',
+                        marginBottom: 'var(--space-xs)',
+                      }}
+                    >
+                      {r.document.sourceType} · jerarquía{' '}
+                      {r.document.hierarchyRank}
+                      {r.document.system ? ` · ${r.document.system}` : ''}
+                      {r.document.organ ? ` · ${r.document.organ}` : ''}
+                    </div>
+                    <div
+                      className="block-cita block-articulo"
+                      style={{ fontSize: '0.9rem', lineHeight: 1.4 }}
+                    >
+                      {r.text}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         )}
       </main>

@@ -1,0 +1,907 @@
+COMPENDIO DE PROTOCOLOS DE ACTUACIÓN PARA
+EL FORTALECIMIENTO DE LA INVESTIGACIÓN PENAL
+EN VENEZUELA
+CONTENIDO
+Introducción
+Bases Legales
+I. Protocolo Anexo al Manual Único de Cadena de Custodia de Evidencias
+Físicas
+II. Protocolo de Actuación para la Redacción de Actas Policiales en el Desarrollo
+de una Investigación Penal
+III. Protocolo de Actuación para la Realización de Entrevista a Víctimas, Testigos
+y demás Sujetos Procesales en el Desarrollo de una Investigación Penal
+IV. Protocolo de Actuación para la Realización de Allanamiento y Registro en
+el Desarrollo de una Investigación Penal
+V. Protocolo de Actuación para la Inspección de Personas y Vehículos
+VI. Protocolo de Actuación para la Aprehensión, Traslado, Resguardo y Custodia
+Preventiva de la Detenida o el Detenido
+VII. Protocolo para la Investigación del Delito de Homicidio
+VIII. Protocolo para la Investigación del Delito de Secuestro
+IX. Protocolo para la Investigación de los Delitos de Robo y Hurto de Vehículos
+X. Protocolo de Actuación para la Supervisión, Registro y Control de las Armas
+de Fuego, Partes, Componentes, Accesorios y Municiones en las Áreas de
+Resguardo y Custodia de Evidencias Físicas
+En los últimos 22 años de Revolución Bolivariana, el Estado venezolano ha
+avanzado continuamente en la incorporación de los derechos humanos como un
+eje transversal en el diseño de sus políticas públicas, enfocando principalmente
+las acciones relacionadas a la inclusión social y el respeto de la dignidad humana.
+A partir de la promulgación de la Constitución de la República Bolivariana de
+Venezuela en 1999, norma suprema y fundamento del ordenamiento jurídico, la
+patria se encuentra constituida como un Estado democrático y social de Derecho y
+de Justicia, que ampara como valores superiores: la vida, la liberad, la justicia, la
+igualdad, la ética, entre otros; todos estos necesarios para cumplir con el fin
+esencial de defensa, desarrollo y respeto a la dignidad de la persona.
+Igualmente, la Carta Magna, ordena que el Estado garantizará, el goce y ejercicio
+irrenunciable, indivisible e interdependiente de los derechos humanos; al igual que
+establece el derecho al debido proceso y a la protección del pueblo a través de los
+órganos de seguridad ciudadana, del Ministerio Público, de la Defensa Pública y
+del Tribunal Supremo de Justicia.
+Inmerso entre estas grandes conquistas, el Poder Ejecutivo ha incluido en los
+planes nacionales de desarrollo social y económico, las acciones conexas al
+fortalecimiento de la seguridad ciudadana, con una visión integral, enfocada
+principalmente en el respeto a los derechos humanos como mecanismo para el
+progreso de la estabilidad política del país.
+Específicamente, entre las metas del segundo Gran Objetivo Histórico del Plan
+Socialista de Desarrollo Social y Económico Nacional 2019-2025 (Plan de la
+Patria), que establece continuar construyendo el Socialismo Bolivariano del Siglo
+XXI, se instruye desplegar en sobremarcha las políticas y programas de seguridad
+ciudadana a fin de transformar los factores estructurales, situacionales e
+institucionales, generadores de la violencia y fortalecer las herramientas de
+atención a las víctimas de los cuerpos de seguridad.
+Por su parte, la Gran Misión Cuadrantes de Paz, tiene como fin profundizar en los
+planes, programas y proyectos necesarios para el disfrute del derecho a la
+seguridad ciudadana y la paz social, a través de una lógica organizativa de trabajo
+desde lo territorial para abarcar así, la expresión más concreta en lo comunitario.
+En el contenido de esta política pública, es necesario resaltar lo contemplado en
+los vértices Nº 1, Nº 2 y Nº 6, que tratan sobre la “Prevención Integral para la Vida
+y la Paz”; la “Lucha Contra la Corrupción, Delincuencia Organizada, Tráfico Ilícito
+de Drogas y Terrorismo”; y el “Fortalecimiento de los Órganos de Seguridad
+Ciudadana y la Investigación Penal-Criminal”, respectivamente; los cuales tienen
+como objetivo apuntalar la transformación de los órganos de seguridad ciudadana
+e instituciones vinculadas a la prevención y la investigación penal, generando los
+cambios necesarios que garanticen la organización y capacidad de atención y
+neutralización de los delitos. Para ello, el Estado venezolano se dota de una
+estructura orgánica de más alto nivel, entre la que se encuentra el Ministerio del
+Poder Popular para Relaciones Interiores, Justicia y Paz (Mpprijp), órgano rector
+de la seguridad ciudadana en Venezuela y coordinador de esta política pública
+integral para el logro del objetivo de proteger los derechos de la población.
+Tomando en cuenta sus funciones, el Mpprijp cumple con este mandato y orienta
+parte de su gestión al diseño y construcción de documentos que estandaricen la
+actuación policial y unifiquen los criterios técnico-científicos necesarios para el
+óptimo desarrollo de las investigaciones penales en el país.
+Junto al Tribunal Supremo de Justicia, el Ministerio Público, la Defensa Pública,
+expertos y expertas de los órganos de seguridad ciudadana y de Estado, así como
+de entes del Gobierno Nacional auxiliares para el esclarecimiento de los hechos
+punibles, fueron desarrollados diez protocolos de actuación en las materias de
+redacción de actas policiales; entrevistas a víctimas, testigos y demás sujetos
+procesales; allanamiento y registro; aprehensión, traslado, custodia y resguardo
+de la detenida o el detenido; inspección de personas y vehículos automotores
+terrestres; investigación del delito de homicidio; investigación del delito de
+secuestro; investigación de los delitos de robo y hurto de vehículos; y supervisión,
+registro y control de las armas de fuego, accesorios, municiones, partes y
+componentes en las áreas de resguardo y custodia de evidencias físicas, los
+cuales permitirán superar los desafíos procedimentales de la investigación penal,
+evitando la discrecionalidad de los funcionarios y las funcionarias actuantes y
+promoviendo las buenas prácticas policiales en lo relativo a estas áreas.
+El objetivo de este Compendio es orientar a las funcionarias y los funcionarios de
+los órganos de policía de investigación; del Ministerio Público y de la Defensa
+Pública; así como Jueces y Juezas del Tribunal Supremo de Justicia, en el
+desarrollo de estos procedimientos, aclarar los aspectos conceptuales y explicar
+las consideraciones necesarias que deben realizarse para avanzar en la garantía y
+respeto de los derechos humanos en el proceso preparatorio de la investigación
+penal.
+BASE LEGAL
+1. Constitución de la República Bolivariana de Venezuela, publicada en la Gaceta
+Oficial de la República Bolivariana de Venezuela N° 36.860 de fecha 30 de
+diciembre de 1999.
+2. Enmienda N° 1 a la Constitución de la República Bolivariana de Venezuela,
+publicada en la Gaceta Oficial de la República Bolivariana de Venezuela Nº 5.908
+Extraordinario de fecha 19 de febrero de 2009.
+3. Declaración Universal de los Derechos Humanos, aprobada en la Asamblea
+General de las Naciones Unidas (Resolución 217 A - III), en fecha 10 de diciembre
+de 194.
+4. Convención contra la Tortura y otros Tratos o Penas Crueles, Inhumanos o
+Degradantes, adoptada y abierta a la firma, ratificación y adhesión por la
+Asamblea General de la Organización de Naciones Unidas en su resolución 39/46,
+de 10 de diciembre de 1984. Entrada en vigor: 26 de junio de 1987.
+5. Convención de Viena sobre Relaciones Diplomáticas, aprobada en fecha 18 de
+abril de 1961, entrada en vigor el 24 de abril de 1964.
+6. Convención Internacional sobre la Eliminación de todas las Formas de
+Discriminación
+Racial, fue adoptada por la Asamblea General de la Organización de Naciones
+Unidas el 21 de diciembre de 1965. Entrada en vigor: 4 de enero de 1969.
+7. Pacto Internacional de Derechos Civiles y Políticos, adoptado y abierto a la
+firma,
+ratificación y adhesión por la Asamblea General de la Organización de Naciones
+Unidas en su resolución 2200 A (XXI), de 16 de diciembre de 1966 y entrada en
+vigor el 23 de marzo de 1976.
+8. Convención sobre la Eliminación de Todas las Formas de Discriminación Contra
+la Mujer, adoptada y abierta a la firma y ratificación, o adhesión, por la Asamblea
+General de la Organización de Naciones Unidas en su resolución 34/180, de 18 de
+diciembre de 1979. Entrada en vigor: 3 de septiembre de 1981.
+9. Reglas Mínimas de las Naciones Unidas para la Administración de la Justicia de
+Menores (Reglas de Beijing), adoptadas por la Asamblea General en su resolución
+40/33, del 28 de noviembre de 1985.
+10. Declaración Sobre los Principios Fundamentales de Justicia para las Víctimas
+de Delitos y del Abuso de Poder, adoptada por la Asamblea General de la
+Organización de Naciones Unidas en su resolución 40/34, de 29 de noviembre de
+1985.
+11. Segundo Protocolo Facultativo del Pacto Internacional de Derechos Civiles y
+Políticos, destinado a abolir la pena de muerte, aprobado y proclamado por la
+Asamblea General de la Organización de Naciones Unidas en su resolución
+44/128 15 de diciembre de 1989.
+12. Código de Conducta para Funcionarios Encargados de Hacer Cumplir la ley,
+adoptada y abierta a la firma y ratificación por la Asamblea General en su
+Resolución 44/25, de 20 de noviembre de 1989. Entrada en vigor: 2 de septiembre
+de 1990.
+13. Convención Sobre los Derechos del Niño, adoptada y abierta a la firma y
+ratificación por la Asamblea General en su Resolución 44/25, de 20 de noviembre
+de 1989. Entrada en vigor: 2 de septiembre de 1990.
+14. Criterios para el Uso de la Fuerza y Armas de Fuego. “Principios Básicos
+sobre el Empleo de la Fuerza y de Armas de Fuego por los Funcionarios
+Encargados de Hacer Cumplir la Ley”. Adoptados por el Octavo Congreso de las
+Naciones Unidas
+sobre Prevención del Delito y Tratamiento del Delincuente, celebrado en La
+Habana (Cuba) del 27 de agosto al 7 de septiembre de 1990
+15. Convención Interamericana contra la Fabricación y el Tráfico Ilícito de Armas
+de
+Fuego, Municiones, Explosivos y otros Materiales Relacionados (Cifta), aprobada
+en la primera sesión plenaria celebrada el 13 de noviembre de 1997.
+16. Convención de las Naciones Unidas contra la Delincuencia Organizada
+(Untoc)
+diciembre del 2000 (Palermo) y mayo del 2001, y sus tres protocolos
+suplementarios: Trata de Personas, Tráfico de Migrantes aprobados en el 2003 y
+Protocolo Contra la Fabricación y el Tráfico Ilícito de Armas de Fuego, sus Piezas,
+Componentes y Municiones, aprobado en mayo del 2001 y entro en vigencia en el
+2005.
+17. Convención sobre los Derechos de las Personas con Discapacidad, Asamblea
+General de las Naciones Unidas el 13 de diciembre de 2006, entraba en vigor en
+fecha 3 mayo de 2008.
+18. Reglas Mínimas de las Naciones Unidas para el Tratamiento de los Reclusos
+(Reglas Nelson Mandela) Resolución aprobada por la Asamblea General de la
+Organización de Naciones Unidas, en fecha 17 de diciembre de 2015.
+19. Código Penal Venezolano, publicado en la Gaceta Oficial de la República
+Bolivariana de Venezuela Nº 5.768 Extraordinario de fecha 13 de abril de 2005.
+20. Ley Orgánica de Reforma del Código Orgánico Procesal Penal, publicada en la
+Gaceta de la República Bolivariana de Venezuela Nº 6.644, extraordinario de
+fecha 17 de septiembre de 2021.
+21. Ley Orgánica de Prevención, Condiciones y Medio Ambiente de Trabajo,
+publicada en Gaceta Oficial de la República Bolivariana de Venezuela N° 38.236,
+de fecha 26 de julio de 2005.
+22. Ley Orgánica de Protección al Niño, Niña y Adolescente, publicada en la
+Gaceta
+Oficial de la República Bolivariana de Venezuela N° 5.859Extraordinario, de fecha
+10 de diciembre de 2007.
+23. Ley Orgánica del Ministerio Público, publicado en la Gaceta Oficial de la
+República Bolivariana de Venezuela, N° 38.647, de fecha 19 de marzo de 2007.
+24. Ley Orgánica sobre el Derecho de las Mujeres a una Vida Libre de Violencia,
+publicada en Gaceta Oficial N.º 38.668 Extraordinario, del 23 de abril de 2007
+25. Ley Orgánica de Registro Civil, publicada en Gaceta Oficial de la República
+Bolivariana de Venezuela N° 39.264, de fecha 15 de septiembre de 2009.
+26. Ley Orgánica del Servicio de Policía y del Cuerpo de Policía Nacional
+Bolivariana, publicada en Gaceta Oficial de la República Bolivariana de Venezuela
+N° 5.940, Extraordinario de fecha 07 de diciembre de 2009.
+27. Ley Orgánica contra la Delincuencia Organizada y Financiamiento al
+Terrorismo,
+publicado en la Gaceta Oficial de la República Bolivariana de Venezuela, Nº
+39.912, de fecha 30 de abril de 2012.
+28. Ley Orgánica del Servicio de Policía de Investigación, el Cuerpo de
+Investigaciones Científicas, Penales y Criminalísticas y el Servicio Nacional de
+Medicina y Ciencias Forenses, publicada en la Gaceta oficial de la República
+Bolivariana de Venezuela Nº 6.079 Extraordinario de fecha 15 de junio de 2012.
+29. Ley Orgánica de Seguridad de la Nación, Decreto N° 1.473 publicado en la
+Gaceta Oficial de la República Bolivariana de Venezuela Extraordinaria, N° 6.156,
+de fecha 19 de noviembre de 2014.
+30. Ley Orgánica de Protección al Niño, Niña y Adolescente. Publicado en la
+Gaceta Oficial de la República Bolivariana de Venezuela, N° 6.185, de fecha 8 de
+junio
+de 2015.
+31. Ley Orgánica de la Fuerza Armada Nacional Bolivariana, publicada en la
+Gaceta
+Oficial de la República Bolivariana de Venezuela, Extraordinario N° 6.508 de fecha
+30 de enero de 2020.
+32. Ley de Reforma a la Ley Orgánica sobre el Derecho de las Mujeres a una Vida
+Libre de Violencia, publicada en Gaceta Oficial No. 6.667 Extraordinario del 16 de
+diciembre 2021.
+33. Ley Especial Contra los Delitos Informáticos, publicada en la Gaceta Oficial de
+la República Bolivariana de Venezuela, N° 37.313, de fecha 30 de octubre de
+2001.
+34. Ley sobre Sustancias, Materiales y Desechos Peligrosos, publicada en la
+Gaceta Oficial de la República Bolivariana de Venezuela Extraordinario Nº 5.554
+de
+fecha 13 de noviembre de 2001.
+35. Ley para Personas con Discapacidad, publicado en la Gaceta Oficial de la
+República Bolivariana de Venezuela, N° 38.598, de fecha 05 de enero de 2006.
+36. Ley del Estatuto de la Función de la Policía de Investigación, publicado en la
+Gaceta Oficial de la República Bolivariana de Venezuela Nº 39.945, de fecha 15
+de junio de 2012.
+37. Ley para el Desarme y Control de Armas y Municiones, publicada en la Gaceta
+Oficial de la República Bolivariana de Venezuela Nº 40.190 Extraordinario de
+fecha 17 de junio de 2013.
+38. Ley para la Regulación y Control de la Prestación del Servicio Funerario y
+Cementerios, publicada en Gaceta Oficial de la República Bolivariana de
+Venezuela N° 40.358, de fecha 18 de febrero de 2014.
+39. Ley de Reforma de la Ley de Protección de Víctimas, Testigos y Demás
+Sujetos
+Procesales, publicada en la Gaceta de la República Bolivariana de Venezuela Nº
+6.645, extraordinario de fecha 17 de septiembre de 2021.
+40. Ley de Reforma del Decreto con Rango, Valor y Fuerza de Ley del Estatuto de
+la Función de la Policía de Investigación, publicado en la Gaceta Oficial de la
+República Bolivariana de Venezuela Nº 6.643, Extraordinaria, de fecha 17 de
+septiembre de 2021.
+41. Ley de Interpretes Públicos, publicado en la Gaceta Oficial de la República
+Bolivariana de Venezuela, N° 6.703 Extraordinaria, de fecha 25 de mayo de 2022.
+42. Ley Contra el Secuestro y la Extorsión, publicada en la Gaceta Oficial de la
+República Bolivariana de Venezuela, N° 39.194, de fecha 5 de junio de 2009.
+43. Ley sobre el Hurto y Robo de Vehículos, publicada en la Gaceta Oficial de la
+República Bolivariana de Venezuela, N° 37.000, de fecha 26 de julio de 2000.
+44. Decreto N° 9194, Inutilización de las Armas de Fuego resguardadas en las
+Salas de Evidencias, publicado en la Gaceta Oficial de la República Bolivariana de
+Venezuela Nº 40.027, Extraordinario, de fecha 11 de octubre de 2012.
+45. Decreto N° 2378, Sobre Organización General de la Administración Pública
+Nacional, publicado en la Gaceta Oficial de la República Bolivariana de Venezuela,
+Extraordinario de fecha 13 de julio de 2016.
+46. Decreto N° 170 de fecha 31 de mayo de 2013, mediante el cual se dicta la
+Normativa que Regula el Procedimiento para Intérpretes Públicos, publicada en la
+Gaceta Oficial de la República Bolivariana de Venezuela N° 40.786, de fecha 20
+de diciembre de 2019.
+47. Decreto N° 4.078 de fecha 20/12/2019, creación la Gran Misión Cuadrantes de
+Paz, concebida como un conjunto concentrado de políticas públicas con alcance
+nacional y expresión focal en micro territorios denominados Cuadrantes de paz
+publicado en la Gaceta Oficial de la República Bolivariana de Venezuela N°
+41.786, de fecha 20 de diciembre de 2019.
+48. Reglamento de Inhumaciones y Exhumaciones, publicado en Gaceta Oficial de
+los Estados Unidos de Venezuela N° 22.760, de fecha 3 de noviembre de 1948.
+49. Reglamento de la Ley para el Desarme y Control de Armas y Municiones,
+publicado en la Gaceta Oficial de la República Bolivariana de Venezuela, N° 6.129,
+Extraordinario, de fecha 08 de abril de 2014.
+50. Reglamento Orgánico del Ministerio del Poder Popular para Relaciones
+Interiores, Justicia y Paz; publicado en la Gaceta Oficial de la República
+Bolivariana de Venezuela nro. 40.627 de fecha 24 de marzo 2015
+51. Reglamento Orgánico del Ministerio para la Defensa, publicado en la Gaceta
+Oficial de la República Bolivariana de Venezuela, N° 6.175, Extraordinario, de
+fecha 20 de febrero de 2015.
+52. Resolución N° 88, Normas y Principios para el Uso Progresivo y Diferenciado
+de la Fuerza Policial, por parte de los funcionarios y funcionarias de los cuerpos de
+policía en sus diversos ámbitos político territorial publicado en la Gaceta Oficial de
+la República Bolivariana de Venezuela, Nº 39.390 de fecha 19 de marzo de 2009.
+53. Resolución Conjunta Mediante la cual se dicta el Manual Único de Cadena de
+Custodia de Evidencias Físicas, publicado en la Gaceta Oficial de la República
+Bolivariana de Venezuela, Nº 41.247 de fecha 29 de septiembre de 2017.
+54. Resolución conjunta entre Ministerio del Poder Popular para Relaciones
+Interiores, Justicia y Paz; y Ministerio del Poder Popular para la Defensa,
+publicada en la Gaceta Oficial de la República Bolivariana de Venezuela Nro.
+41.628 de fecha 8 de mayo de 2019 mediante el cual constituye un Comité
+Técnico Interministerial encargado de definir, articular e implementar acciones y
+políticas públicas dirigidas al control de armas y municiones.
+55. Resolución N° 067, mediante la cual se crean e incorporan dos vértices de
+acción que integrarán la Gran Misión Cuadrantes de Paz, publicada en la Gaceta
+Oficial de la República Bolivariana de Venezuela, Nº 42.109 de fecha 20 de abril
+de 2021.
+56. Resolución Conjunta entre Ministerio del Poder Popular para Relaciones
+Interiores, Justicia y Paz; Ministerio del Poder Popular para la Defensa y el
+Ministerio del Poder Popular para el Servicio Penitenciario, publicada en la Gaceta
+Oficial de la República Bolivariana de Venezuela Nro. 42.363 de fecha 26 de abril
+de 2022; mediante la cual ordena a las dependencias, órganos y demás
+autoridades competentes en materia de seguridad ciudadana y seguridad de
+Estado: 
+a) Suministrar relación de armas de fuego y municiones aseguradas y
+recuperadas. 
+b) Remitir las armas de fuego y municiones aseguradas y recuperadas a la
+Dirección General de Armas y Explosivos (DAEX). 
+c) Realizar la supervisión sobre la custodia, mantenimiento y seguridad de las
+armas
+y municiones que se encuentran en las Salas de resguardo y custodia de
+Evidencias Físicas. 
+d) Diseñar el Plan Nacional de Canje Voluntario de Armas y Municiones.
+57. Código de Instrucción Médico Forense, publicado en la Gaceta Oficial de la
+República de los Estados Unidos de Venezuela N° 1.443, de fecha 1 de agosto de
+1878.
+58. Código de Ética de las Servidoras y Servidores Públicos, publicado en Gaceta
+Oficial de la República Bolivariana de Venezuela N° 40.314, de fecha 12 de
+diciembre de 2013.
+59. Protocolo Único para la Disposición Final de Cadáveres No Reclamados en el
+Servicio Nacional de Medicina y Ciencias Forenses, aprobado mediante Punto de
+Cuenta del Ministro del Poder Popular para Relaciones Interiores, Justicia y Paz,
+Nº 08.16, de fecha 12 de mayo de 2016.
+60. Protocolo de Investigación contra el Delito Secuestro, aprobado por Punto de
+Cuenta del Ministro del Poder Popular para Relaciones Interiores, Justicia y Paz
+Punto de Cuenta Nro. 014-2017, julio 2017.
+61. Protocolo para la Entrega Voluntaria de Armas de Fuego y/o Municiones y
+entrega de Incentivos a Dadores, aprobado mediante Punto de Cuenta del Ministro
+del Poder Popular de Relaciones Interiores, Justicia y Paz, N° 023.18, junio 2018.
+62. Protocolo de Aprehensión, Traslado, Resguardo y Custodia Preventiva del
+Detenido o Detenida, aprobado mediante Punto de Cuenta del Ministro del Poder
+Popular para Relaciones Interiores, Justicia y Paz, Punto de Cuenta Nro. 022.18,
+junio 2018.
+63. Protocolo para la Investigación de los delitos de Robo y Hurto de Vehículos,
+aprobado por Punto de Cuenta del Ministro del Poder Popular para Relaciones
+Interiores, Justicia y Paz Nro. 009.19 de marzo 2019.
+64. Protocolo para la Investigación del Delito de Homicidio, aprobado mediante
+Punto de Cuenta del Ministro del Poder Popular de Relaciones Interiores Justicia y
+Paz, Nº 008.19, mayo de 2019.
+65. Protocolo de Actuación para la Intervención en Situaciones de Crisis de Alta
+Complejidad e Intensidad, aprobado por Punto de Cuenta del Ministro del Poder
+Popular para Relaciones Interiores, Justicia y Paz Nro. 001.21 de fecha 07 de
+enero de 2021.
+66. Protocolo de Actuación para la correcta Instalación, Funcionamiento y
+Permanencia de los Puntos de Control, aprobado por Punto de Cuenta del Ministro
+del Poder Popular para Relaciones Interiores, Justicia y Paz s/n de fecha 06 de
+octubre de 2021.
+67. Protocolo de Actuación para la Redacción de Actas Policiales en el Desarrollo
+de una Investigación Penal, aprobado por Punto de Cuenta del Ministro del Poder
+Popular para Relaciones Interiores, Justicia y Paz Nro. 036.21 de fecha 21 de
+octubre de 2021.
+Objetivos
+Alcance
+Glosario de Términos
+TÍTULO I. PROTOCOLO DE OBTENCIÓN
+TÍTULO II. PROTOCOLO DE LABORATORIO
+TÍTULO III. PROTOCOLO DE RESGUARDO
+TÍTULO IV. PROTOCOLO DE DISPOSICIÓN FINAL
+TÍTULO V. EXCEPCIONES
+Flujograma
+Anexos
+Objetivo General
+Estandarizar la actuación de los (as) jueces (zas), fiscales, defensores(as)
+públicos(as), peritos (as), forenses, expertos (as), criminalistas, investigadores (as)
+penales y especialistas del Ministerio Público, al igual que los (as) adscritos (as) a
+los órganos con competencia en materia de investigación penal en los procesos y
+procedimientos criminalísticos, técnicos, científicos y forenses, con el objeto de
+realizar el adecuado tratamiento de las evidencias físicas, en la fase del proceso
+penal que corresponda.
+Objetivos Específicos
+1. Describir los criterios técnicos, científicos y especializados de actuación para los
+(as) funcionarios (as), con el objeto de garantizar el debido tratamiento de las
+evidencias físicas desde su obtención hasta la disposición final.
+2. Definir las evidencias físicas para la unificación y comprensión del
+procesamiento adecuado y correspondiente de acuerdo a cada caso, con el objeto
+de obtener resultados altamente confiables.
+3. Clasificar las evidencias físicas según su naturaleza y peritaje, con el objeto de
+determinar el método científico que se implementará en los procedimientos físicos,
+químicos o tecnológicos correspondientes, según sea el caso, para su análisis
+respectivo.
+4. Establecer lineamientos generales y específicos relacionados con las
+evidencias físicas no descritas expresamente en el Manual Único de Cadena de
+Custodia de Evidencias Físicas vigente, para su adecuado tratamiento, que
+permitan garantizar su preservación e inalterabilidad desde la obtención hasta su
+disposición final.
+OBJETIVOS
+Todas las personas que participen en el tratamiento de evidencias físicas en
+cualquiera de las fases del sistema de cadena de custodia.
+Entre los operarios(as) están: Jueces, Fiscales del Ministerio Público, Defensores
+(as) Criminalistas, Forenses, Expertos (as), Peritos (as), Investigadores (as)
+Penales, Funcionarios (as) Policiales, Funcionarios (as) Militares en funciones de
+Investigación Penal, Bomberos (as), Rescatistas, operadores (as) del Sistema de
+transporte Metro (subterráneo, superficial, aéreo, ferroviario) que practican
+remoción de cadáveres, así como los médicos (as), personal de enfermería, de
+morgue y otros especialistas de los centros de salud pública o privada, entre otros;
+debidamente autorizados (as) y facultados (as) para la gestión de la Cadena de
+Custodia.
+GLOSARIO
+A
+Adquisición Digital
+Proceso por el cual se obtiene una copia exacta o imagen forense de un sitio de
+suceso digital o directamente de las evidencias contenidas en él, aplicando para
+ello, técnica especializadas de copiado y que permitan verificar su integridad.
+Adquisición en vivo
+Levantamiento de datos o información desde su origen, sin interrumpir la
+continuidad de un servicio en línea. En sistemas o dispositivos que no puedan ser
+interrumpidos.
+Adquisición por selección
+Proceso de adquisición definido de acuerdo a escogencia previa de datos o
+información.
+Análisis Científico, Criminalístico o Forense
+Método científico, criminalístico o forense establecido en la investigación, estudio o
+resolución de un problema. Un análisis consiste en identificar los componentes de
+un todo, separarlos y examinarlos para lograr acceder a sus principios más
+elementales.
+Análisis Trazas de Disparo
+Procedimiento a través del cual se logra la obtención a través del uso de porta
+películas metálicos y de carbono para la extracción de los residuos de fulminantes
+(Plomo, Bario, Antimonio).
+Ánima
+Parte interna del cañón del arma de fuego, sea este liso o estriado, destinada a
+que, por la misma, avance la bala hasta salir al exterior por la boca de ego. Dotada
+de gruesas paredes, es la que soporta mayores presiones originadas al producirse
+el disparo.
+Apéndices Pilosos
+Son estructuras filiformes de la epidermis. conocidas como cabello, vellos y pelos.
+Archivos temporales con el fin de contener información de forma transitoria
+GLOSARIO DE TÉRMINOS
+22
+durante el tiempo que se crea un archivo estándar, y luego al cerrarse dicho
+programa, de manera automática el archivo temporal debería eliminarse.
+Audio
+Es la codificación digital de una señal eléctrica, que representa una onda sonora
+o secuencia de ondas, que ha sido convertida a un formato numérico, para ser
+almacenado en un medio digital.
+Autenticidad
+Acreditado de cierto positivo por los caracteres, requisitos o circunstancias que
+en ello concurre.
+B
+Bajos Explosivos
+Son sustancias que generan a alta cantidad de calor una combustión lenta
+(deflagración) con propósitos diversos. Dichas sustancias en estados de
+confinamiento actúan como sustancias explosivas con gran poder rompedor,
+debido
+a la cantidad de energía derivada de su proceso de combustión originando una
+acumulación de gases a fuerte presión dentro de su estructura de confinamiento.
+Balística
+Ciencia que estudia el movimiento de los proyectiles disparados con armas de
+fuego, sus trayectorias y los efectos que produce.
+Binario
+Es todo aquello que solo tiene dos estados posibles, y desde el punto de vista
+puramente físico, todos los datos de un ordenador digital lo son (estén ya en
+memoria primaria o secundaria), ya que están compuestos de cadenas de bits que
+solo pueden tomar valores de 0 o 1.
+Blindaje
+Es una envoltura metálica que cubre al núcleo del proyectil.
+Búsqueda
+Acción de buscar. Hacer algo para hallar a alguien o algo. Hacer lo necesario para
+conseguir algo.
+23
+C
+Caché
+Capa de almacenamiento de datos de alta velocidad que almacena un
+subconjunto
+de datos, normalmente transitorios, de modo que las solicitudes futuras de dichos
+datos se atienden con mayor rapidez que si se debe acceder a los datos desde la
+ubicación de almacenamiento principal.
+Cápsula Fulminante
+Parte de la concha donde se aloja la materia explosiva (fulminante) destinada a
+iniciar la inflamación de la carga explosiva (propelente) que propulsará el proyectil.
+Chapa Identificativa
+Lámina de metal en la que se encuentra troquelados o estampados los números
+de identificación de los vehículos automotor (VIN o NIV) como también podemos
+encontrar las características de los vehículos tales como el color, tipo y serial del
+motor.
+Comité Técnico Especializado
+Instancia colegiada de participación y consulta creada para contribuir al desarrollo
+del Sistema.
+Comparativo
+Dicho de una cosa que permite ser comparada o sirve para hacer comparación
+entre una o más.
+Concha
+Receptáculo que contiene la pólvora en la munición.
+Copia instantánea (snapshot)
+Copia instantánea de volúmenes.
+D
+Data
+Hechos, conceptos, instrucciones o caracteres representados de una manera
+apropiada para que sean comunicados, transmitidos o procesados por seres
+humanos o por medios automáticos y a los cuales se les asigna o se les puede
+asignar significado.
+24
+Dato o información digital de interés procesal
+Referido a datos o información digital(intangible), almacenada o transmitida en
+binario, en un medio tecnológico no accesible directamente, tales como: texto,
+audio, traza telefónica, vídeo, imagen y datos híbridos, entre otro; cuya forma
+de adquisición de la información, es a través de los entes y órganos del Estado
+e instituciones de carácter privado que ofrecen servicios públicos por medio del
+principio de oficiosidad y aquellos de acceso directo a través de su procesamiento
+técnico especializado en la Web, Internet, plata formas tecnológicas, entre otros;
+realizado por los(as) expertos(as), peritos(as), especialistas o forenses que son
+autorizados o facultados.
+Datos filiatorios
+Es una constancia certificada por la Dirección de Verificación y Registro de
+Identidad, un documento que contiene información básica de un ciudadano como:
+nombres, apellidos, padre, madre, lugar y fecha de nacimiento, así como sitio
+donde le fue otorgada su documento de identidad por primera vez, más detalles
+de la partida de nacimiento.
+Datos volátiles
+Datos que son especialmente propensos a perderse y modificar fácilmente.
+Dispositivo Digital
+Equipo electrónico de naturaleza (tangible), que puede ser utilizado para procesar,
+almacenar y transmitir datos o información digital.
+E
+Embalaje
+Envolver las evidencias de acuerdo a sus características.
+Entorno computacional
+Combinación de hardware y software que permite realizar una serie de actividades
+para un fin común.
+eSIM
+Chip integrado en la placa base del propio teléfono, que hace las mismas
+funciones
+que la SIM tradicional.
+25
+Especialista calificado
+Son especialistas en la provisión de servicios forenses digitales e informáticos,
+que comienzan a abordar el incidente siendo el principal respondedor al análisis
+forense digital, dentro de la estructura afectada; teniendo como objetivo consignar
+la evidencia digital a los peritos informáticos, el rol del Especialista Calificado le
+permitirá un conjunto de principios y técnicas para detectar, mitigar, minimizar,
+controlar, identificar, recopilar, documentar de ser necesario adquirir con
+herramientas especializadas la evidencia digital.
+Éster de Cianocrilatos
+Es un líquido incoloro con propiedades adhesivas. Se emplea habitualmente en
+trabajos de bricolaje. En medicina y odontología ha sido utilizado generalmente
+como sutura de piel.
+Estomatognático, sistema
+Es la unidad funcional y coordinada, constituida por el conjunto de estructuras
+esqueléticas, musculares, angiológicas (vascular) nerviosas, glandulares y
+dentales.
+Etiqueta
+Señal, marca, rotulado que se adhiere a un objeto para su identificación,
+clasificación
+o valoración, en su mayoría es empleado en los vehículos importados.
+Evidencia digital
+Información o datos, almacenados o transmitidos en forma binaria, vinculados a
+un hecho punible y se clasifican en: (me quedo con esta, la definición propuesta
+me parece engorrosa a la interpretación de muchos).
+Exsicatas
+Es una muestra de planta prensada y luego seca, fijada en una cartulina de
+tamaño estándar acompañada de una etiqueta que contiene informaciones sobre
+el vegetal y el lugar de colección, para fines de estudios botánicos. Las exsicatas
+se almacenan normalmente en un herbario.
+Experto
+Persona con conocimientos especiales y experiencia sobre determinada ciencia o
+arte, y con nombramiento jurídico para realizar un peritaje en determinado hecho
+punible.
+Expoliación
+Acto de hacer o permitir cambios a la evidencia digital potencial, que disminuye
+su valor probatorio.
+26
+F
+Fijación
+Acción y efecto de fijar o fijarse. Pieza que sirve para fijar. Hacer fija o estable
+una cosa.
+Fonemas
+Unidad fonológica que no puede descomponerse en unidades sucesivas menores
+y que es capaz de distinguir significados.
+Fragmento
+Parte de un todo que se separa de manera voluntaria o involuntaria.
+Frotis
+es la preparación vaginal en fresco, es una prueba para determinar la causa de
+una vaginitis o inflamación de la vagina y de la zona alrededor de la vagina zona
+alrededor de la vagina (vulva).
+Fulminante
+Es una pequeña carga de un elemento químico sensible a los impactos que se
+puede encontrar en el centro o en el borde de la parte posterior del cartucho.
+Función hash
+Es un algoritmo matemático que transforma cualquier bloque arbitrario de datos
+en una nueva serie de caracteres con una longitud fija. Independientemente de la
+longitud de los datos de entrada, el valor hash de salida tendrá siempre la misma
+longitud.
+G
+Gaseoso
+Adjetivo que caracteriza a todo lo que hace referencia a un estado de la materia
+donde ella se encuentra carente de volumen y forma.
+H
+Hecho punible
+Acción ilícita que merece castigo o ser sancionado por una pena.
+27
+Herramientas forenses
+Programas (software) y equipos (hardware) que permiten adquirir de manera
+segura la información almacenada en cualquier medio físico o digital sujeto a
+evaluación informática forense.
+Heterogéneo
+Es aquello que está compuesto de partes de distinta naturaleza.
+Hibridas
+Resultado de la combinación de audio, video, texto e imagen.
+Hidrocarburos
+Son compuestos orgánicos, en la tierra, formados únicamente por átomos de
+carbono e hidrógeno.
+Homogéneo
+Todo aquello que está formado por elementos con características comunes
+referidas
+a su clase o naturaleza, lo que permite establecer entre ellos una relación de
+semejanza y uniformidad.
+Hora del sistema
+Hora generada por el reloj del sistema y utilizada por el sistema operativo, no la
+hora calculada por el sistema operativo.
+Huella
+Vestigio, señal, rastro o indicio.
+I
+Identificar
+Establecer, demostrar o reconocer la identidad de una cosa o persona. Acción de
+reunir las características o elementos que diferencian a una persona de las
+demás.
+Imagen
+Es la representación exacta en forma digital de un objeto, persona o animal, en
+forma bidimensional y vectorial, por objetos geométricos, dependientes cada uno
+de ellos, definido por atributos matemáticos de forma, de posición, a partir de una
+matriz numérica, frecuentemente en binario.
+Imagen forense
+Proceso de creación de una copia bit a bit de un medio de almacenamiento digital.
+28
+IMEI
+International Mobile Station Equipment Identity.
+Código de 15 dígitos pregrabado por el fabricante para identificar cada equipo
+móvil a nivel mundial. Está compuesto por un código de identificación de marca y
+modelo otorgado a los fabricantes por la GSMA (Global System Mobile
+Association).
+Incidente de seguridad informática
+Es una falla, ataque o intento del mismo, que afecta una infraestructura
+tecnológica
+y atenta contra los principios y políticas de seguridad establecidas.
+Individualización
+Diferenciación que se hace atribuyendo características distintivas. Consiste en
+señalar las características particulares que hace que un individuo o cosa sea
+diferente de los demás de su especie o clase.
+Información
+Significado que el ser humano le asigna a la data utilizando las convenciones
+conocidas y generalmente aceptadas”.
+Informática Forense
+Disciplina auxiliar de las ciencias forenses que permite recopilar y analizar datos
+de sistemas informáticos, redes, comunicaciones inalámbricas y dispositivos
+de almacenamiento, y de cualquier medio físico o digital que almacene datos e
+información, para presentarlos como una prueba admisible frente a autoridades
+judiciales, es decir, los tribunales.)
+Instrumento Escritural
+Estudio que permite establecer o descartar el autor de unas grafías.
+Instrumentos
+Son todos aquellos objetos que se usan como medio para arribar a un fin; es por
+lo tanto un medio o recurso, para lograr lo que se desea conseguir, es un término
+general aplicable a todos los medidores, recipientes y otras herramientas que
+se pueda imaginar para realizar síntesis y análisis en el ámbito de los diversos
+trabajos criminalísticos.
+Intersticio celular
+Espacio intercelular filtrado de plasma con proteínas, donde puede haber o no una
+pequeña cantidad de células. 
+Medios de almacenamientos limpios (sonetizados)
+Aplicación de técnicas de limpieza y borrados seguro en dispositivos de
+almacenamientos para que puedan ser utilizados como repositorios de evidencias
+digitales.
+Memoria RAM
+Memoria de acceso aleatorio, es la memoria principal que permite almacenar
+datos de un sistema a corto plazo, para que un equipo pueda accesar de forma
+más rápida a programas y procesos dentro de ella.
+Metadata
+Son un conjunto de datos que describen el contenido informativo de un recurso,
+de archivos o de información de los mismos. Es decir, es información que describe
+otros datos.
+Métodos
+Modo estructurado y ordenado de obtener un resultado, descubrir la verdad y
+sistematizar los conocimientos.
+Micro SIM
+En 2003 se desarrolló este nuevo tipo de tarjeta, aunque no fue hasta la llegada
+deliPad que Apple hizo que toda la industria empezase a adoptarla. Con un
+tamaño
+de12×15 milímetros, se creó para ampliar la memoria y seguridad de las SIM, pero
+acabó aprovechándose para hacerla más pequeña.
+Mini SIM
+Es la que actualmente conocemos como SIM a secas, pero que no fue el primer
+modelo existente. Fue el estándar desarrollado para que la tarjeta SIM cupiera en
+los teléfonos móviles, y tiene un tamaño de 15×25 milímetros.
+Mordedura
+Acción de incidir por medio de las estructuras dentales en una superficie sólida,
+daño ocasionado que deja un patrón característico de alteraciones o lesiones.
+N
+Nano SIM
+Una evolución sobre las Micro SIM, con la que se consiguió crear una tarjeta
+todavía más pequeña de sólo 12×9 milímetros. Empezó a llegar en 2012, y su
+misión fue la de optimizar el espacio del hardware de un teléfono, manteniendo
+su tamaño externo, pero con mayor volumen para ciertos componentes.
+31
+Naturaleza
+Es todo lo que está creado de manera natural en el planeta, está relacionado con
+las diferentes clases de seres vivos, como los animales, las plantas, las personas.
+También forma parte de la naturaleza el clima, y la geología de la tierra.
+Nitrato (NO3-)
+Es una forma de nitrógeno, o conocido también como una sal que se forma a partir
+del ácido nítrico o del anión procedente de esta sal o este ácido: algunos nitratos
+se usan para abonar las tierras de cultivo.
+Nitrito (NO2-)
+Es un anión angular con una configuración electrónica y una disposición angular
+similar a la del Ozono. Los nitritos pueden formar sales o ésteres a partir del ácido.
+O
+Orden de volatilidad
+Es el orden en el cual la evidencia es más susceptible al cambio, es decir,
+recolectar
+en primer lugar los datos que tienen mayor probabilidad de ser cambiados,
+modificados o perdidos.
+Origen
+Lugar de donde procede una persona o cosa.
+Orina
+Secreción líquida de color amarillo que es secretada por los riñones como
+resultado
+de la depuración y el filtrado de la sangre; se acumula en la vejiga y se expulsa
+por la uretra.
+OT
+Ver Tecnología Operativa.
+P
+Perfil Genético
+Representación gráfica de los alelos correspondientes a cierto número de locus
+genéticos, caracterizados con marcadores genéticos bajo uso de la técnica de
+PCR.
+El perfil genético, también llamado huella genética o mapa genético, es uno de los
+métodos más precisos empleados en la identificación de personas, es único para
+cada individuo (excepto en el caso de gemelos monocigóticos, que comparten la
+misma secuencia de ADN) y no varía a lo largo de la vida.
+32
+Peritaje
+Conjunto de procedimientos que permiten obtener información de interés
+criminalístico, a través del análisis de evidencias físicas o digitales, con la finalidad
+de aportar a la investigación, los datos necesarios para el esclarecimiento del
+hecho delictivo que, de manera activa o pasiva, guardan relación con éste.
+Perito
+Los o las peritos deberán poseer título en la materia relativa al asunto sobre el
+cual
+dictaminarán, siempre que la ciencia, el arte u oficio estén reglamentados. En caso
+contrario, deberán designarse a personas de reconocida experiencia en la materia.
+Los o las peritos serán designados o designadas y juramentados o juramentadas
+por el Juez o Jueza, previa petición del Ministerio Público, salvo que se trate de
+funcionarios adscritos o funcionarias adscritas al órgano de investigación penal,
+caso en el cual, para el cumplimiento de sus funciones bastará la designación que
+al efecto le realice su superior inmediato. Serán causales de excusa y recusación
+para los o las peritos las establecidas en Código Orgánico Procesal Penal. La o el
+perito deberá guardar reserva de cuanto conozca con motivo de su actuación.
+Perito informático de campo (PIC)
+Criminalista, profesional a fin a las áreas de las tecnologías, capacitado en
+informática forense para actuar como el primer respondedor en la escena de un
+incidente para la realización inherente a la adquisición de evidencia digitales.
+Perito informático de laboratorio (PIL)
+Criminalista, profesional a fin a las áreas de las tecnologías, capacitado en
+informática forense quien tiene conocimientos especializados, habilidades y
+capacidades para manejar una amplia gama de análisis de dispositivos digitales,
+tiene la capacidad para actuar en campo como en el laboratorio.
+Probabilidad
+La probabilidad de la ocurrencia de cualquier forma particular de un evento,
+calcula
+la relación entre el número de formas o veces que el evento puede producirse en
+esa forma para el número total de maneras de que podría ocurrir en cualquier
+forma.
+Procedimiento
+Práctica establecida a seguir en la realización de una tarea especificada o bajo
+circunstancias específicas.
+33
+Prueba
+Es la actividad necesaria que implica demostrar la verdad de un hecho, su
+existencia
+o contenido según los medios establecidos por la ley.
+R
+Reconocimiento Legal
+Experticia que consiste en la descripción de las evidencias relacionadas con un
+hecho delictivo, en la cual se deja constancia de sus características, particulares e
+individualizantes.
+Registro
+Acción de registrar. Documento donde se relacionan ciertos acontecimientos o
+cosas; especialmente aquellos que deben constar permanentemente de forma
+oficial.
+Registro Digital
+Mediante los libros de control interno se asigna un número de entrada a cada
+muestra siempre y cuando presenten expedientes distintos.
+Registro Manual
+Mediante los libros de control interno se asigna un número de entrada a cada
+muestra siempre y cuando presenten expedientes distintos.
+Restauración de Seriales
+Proceso mediante el cual es sometida una superficie para un proceso de
+restauración
+de caracteres de seriales, a través de un reactivo específico.
+Rotulación
+Acción y efecto de rotular. Poner un rotulo a algo o en alguna parte. Título de un
+escrito o de una parte suya. Letrero o inscripción con que e indica o da a conocer
+el contenido, objeto o destino de algo, o la dirección a que se envía.
+Rugoscopia
+Las rugas palatinas son estructuras anatómicas en relieve que se presentan en
+la porción anterior del paladar, justo por detrás de los dientes anterosuperiores
+y de la papila incisiva, bilaterales a la línea media; consiste en la identificación
+mediante la clasificación de las rugas palatinas por su número, forma, tamaño
+y ubicación. El hecho que estas persistan toda la vida desde su aparición en el
+tercer mes de gestación, que sean únicas en cada persona incluso entre gemelos
+34
+y que por su ubicación se encuentren relativamente protegidas por los labios,
+dientes, por la bolsa adiposa de Bichat en carrillos y por los huesos maxilares, lo
+que hace que sean menos afectadas por la descomposición e incineración, hace
+que estas sean valiosas y aceptadas en la identificación, equiparándolas con las
+huellas dactilares.
+S
+Sangre
+Coloide formado por tres fracciones (sólido, líquido y gaseoso), de color rojo,
+que circula por los vasos sanguíneos, impulsado por el corazón; cumple diversas
+funciones en el organismo y posee propiedades que la caracterizan y permiten su
+estudio, desde el punto de vista biológico y criminalístico.
+Secuencia de ADN
+El orden relativo de pares de bases, ya sea en un fragmento de ADN, un gen, un
+cromosoma, o un genoma completo.
+SIM
+Las tarjetas SIM originales ya no se utilizan, y eran de un tamaño parecido al de
+una tarjeta de crédito. Medía apenas 33×66 milímetros, y tenía tan poco espacio
+que cabían apenas 20 contactos y 5 o 6 mensajes.
+SimCard
+Módulo de Identificación de Suscriptor; es una tarjeta de plástico que posee un
+chip
+electrónico adherido, el cual se inserta en teléfonos móviles, tabletas o dispositivos
+inteligentes, el cual almacena de manera segura datos de un suscriptor, tales
+como
+número de teléfono, claves de acceso y datos de la operadora de telefonía.
+Sistema ABO
+Clasificación que permite describir grupos sanguíneos en humanos a través de
+los antígenos presentes en la superficie de los glóbulos rojos y en el suero de la
+sangre, siendo éstos del tipo A, B u O.
+Sistema de Posicionamiento Globlal (GPS)
+Sistema que permite conocer la posición de un objeto o de una persona gracias a
+la recepción de señales emitidas por una red de satélites.
+35
+Sitio de Suceso digital
+Espacio intangible que se encuentra contenido en un dispositivo digital o una
+infraestructura tecnológica, relacionado con la perpetración de un presunto hecho
+punible, cuyo acceso debe hacerse mediante técnicas y herramientas
+especializadas
+de informática forense. Los procesos en este sitio sólo pueden ser realizados por
+el Perito Informático de Laboratorio (PIL).
+Somatológicos
+Estudio de los componentes sólidos del cuerpo del ser humano. Se trata de un
+área
+de la antropología física o biológica; el estudio de los componentes sólidos del
+cuerpo del ser humano. Se trata de un área de la antropología física o biológica.
+Somatométricos
+Relacionado a las medidas que se emplean para determinar las variaciones de
+ciertos órganos; Parámetros somatométricos: conjunto de datos obtenidos de la
+medida del peso, del índice de la masa corporal y la talla.
+Sudor
+Líquido transparente que segregan las glándulas sudoríparas de la piel de los
+mamíferos y que se expulsa a través de los poros.
+Superficie
+Es la apariencia exterior de alguna cosa.
+Sustancia
+Esencia, lo que permanece de un ser más allá de sus estados.
+T
+Técnica
+Procedimiento o conjunto de reglas, normas o protocolos, que tienen como
+objetivo
+obtener un resultado determinado.
+Tecnología de Información
+Rama de la tecnología que se dedica al estudio, aplicación y procesamiento de
+data, lo cual involucra la obtención, creación, almacenamiento, administración,
+modificación, manejo, movimiento, control, visualización, distribución, intercambio,
+transmisión o recepción de información en forma automática, así como el
+desarrollo
+y uso del “hardware”, “firmware”, “software”, cualesquiera de sus componentes y
+todos los procedimientos asociados con el procesamiento de data”.
+36
+Tecnología Operativa
+Es el uso de hardware y software para monitorear y controlar los procesos físicos,
+los dispositivos y la infraestructura de un entorno industrial (gas, energía, agua,
+petróleo, entre otros.)
+Tecnologías disruptivas
+Es cualquier innovación tecnológica que cambie drásticamente la forma en que
+interactúan las personas; operan las empresas y las industrias.
+Tecnologías incrementales
+Son cambios graduales y paulatinos que se realiza en un producto o tecnología,
+los cuales se aprecian en periodos de tiempos.
+Texto
+Estos archivos están compuestos de bytes que representan caracteres ordinarios
+como letras, números y signos de puntuación, codificados en un sistema de
+escritura
+que forma una unidad de sentido, mediante caracteres del código estándar de
+Intercambio de información (American Standard Codefor Information Interchange
+(ASCII).
+TICs
+Tecnología de la Información y las Comunicaciones, son el conjunto de recursos,
+herramientas, equipos, programas informáticos, aplicaciones, redes y medios;
+que permiten la compilación, procesamiento, almacenamiento, transmisión de
+información como: Voz, datos, texto, videos e imágenes.
+Traslado
+Acción de trasladar o trasladarse de lugar. Cambiar de lugar a una persona o una
+cosa.
+Tratamiento
+Proceso o procedimiento por el que se aplica un protocolo de protección a la
+muestra, indicio o evidencia; Usar o manejar una cosa de la manera que se
+expresa.
+Trazas
+Huella, vestigio o rastro de una cosa o persona.
+Tricológico
+Estudio de los apéndices pilosos a fin de determinar, especie, región, tipo y color
+(humano).
+37
+V
+Veneno
+Sustancia que tiene naturaleza intrínsecamente peligrosa aun en dosis pequeñas.
+Video
+Es el conjunto imágenes, audio y otros datos digitales, que representan una
+escena
+en movimiento.
+Vincular
+Unir o relacionar una persona o cosa con otra.
+Volatilidad
+La volatilidad es una propiedad que poseen unas cuantas sustancias para cambiar
+del estado líquido a gas y dispersarse en el ambiente.
+W
+Web
+Constituye la información que se encuentra en una dirección de internet. Página
+electrónica, página digital o ciber página es un documento digital complejo, que
+puede integrar y/o contener texto, sonido, vídeo, programas, enlaces, imágenes,
+hipervínculos y otros elementos, adaptado para la World Wide Web, y que puede
+ser accedida y visualizada mediante un navegador web

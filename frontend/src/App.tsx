@@ -7,6 +7,7 @@ import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { ModeSelect } from './pages/ModeSelect';
 import { Consultation } from './pages/Consultation';
+import { Appointments } from './pages/Appointments';
 
 function App() {
   return (
@@ -29,6 +30,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Consultation />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/app/citas"
+            element={
+              <ProtectedRoute>
+                <Appointments />
               </ProtectedRoute>
             }
           />
