@@ -29,6 +29,25 @@ type RagBrief = {
   action: string;
   article: string;
   proceduralPhrase: string;
+  maestro?: {
+    applicableLegalFramework: string;
+    proceduralTechnicalAnalysis: string;
+    oralInterventionStrategy: string;
+    strategicWeakness: string;
+    proceduralRisks: string;
+    immediateTacticalRecommendation: string;
+  };
+  debateMaster?: {
+    identificationOfOpposingThesis: string;
+    applicableLegalFramework: string;
+    evidentiaryAnalysis: string;
+    structuralLegalRefutation: string;
+    detectedVulnerability: string;
+    counterattackStrategy: string;
+    possibleCounterargumentOfOpposingParty: string;
+    recommendedPreventiveResponse: string;
+    proceduralRisks: string;
+  };
 };
 
 type RagResponse = {
@@ -48,7 +67,7 @@ const MODE_LABELS: Record<string, { label: string; placeholder: string; button: 
   },
   debate: {
     label: 'Tesis o tema para debate oral',
-    placeholder: 'Describa la tesis o el punto a argumentar (fundamento normativo, solicitud)...',
+    placeholder: 'Describa la tesis contraria o el argumento a refutar (fiscal o defensa)...',
     button: 'Obtener argumentación',
   },
   consulta: {
@@ -69,6 +88,8 @@ export function Consultation() {
   const modeConfig = MODE_LABELS[mode] || MODE_LABELS.consulta;
 
   const [query, setQuery] = useState('');
+  const [audienciaRole, setAudienciaRole] = useState<'defensa' | 'fiscal'>('defensa');
+  const [debateRole, setDebateRole] = useState<'defensa' | 'fiscal'>('defensa');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [rag, setRag] = useState<RagResponse | null>(null);
@@ -87,6 +108,8 @@ export function Consultation() {
           question: query,
           mode,
           limit: 10,
+          ...(mode === 'audiencia' && { role: audienciaRole }),
+          ...(mode === 'debate' && { role: debateRole }),
         }),
       },
     );
@@ -131,6 +154,56 @@ export function Consultation() {
           >
             {modeConfig.label}
           </label>
+          {mode === 'audiencia' && (
+            <div style={{ marginBottom: 'var(--space-md)' }}>
+              <span style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', marginRight: 'var(--space-md)' }}>Rol procesal:</span>
+              <label style={{ marginRight: 'var(--space-lg)', fontSize: '0.9375rem', cursor: 'pointer' }}>
+                <input
+                  type="radio"
+                  name="audiencia-role"
+                  checked={audienciaRole === 'defensa'}
+                  onChange={() => setAudienciaRole('defensa')}
+                  style={{ marginRight: 'var(--space-xs)' }}
+                />
+                Defensa
+              </label>
+              <label style={{ fontSize: '0.9375rem', cursor: 'pointer' }}>
+                <input
+                  type="radio"
+                  name="audiencia-role"
+                  checked={audienciaRole === 'fiscal'}
+                  onChange={() => setAudienciaRole('fiscal')}
+                  style={{ marginRight: 'var(--space-xs)' }}
+                />
+                Fiscal
+              </label>
+            </div>
+          )}
+          {mode === 'debate' && (
+            <div style={{ marginBottom: 'var(--space-md)' }}>
+              <span style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', marginRight: 'var(--space-md)' }}>Rol procesal:</span>
+              <label style={{ marginRight: 'var(--space-lg)', fontSize: '0.9375rem', cursor: 'pointer' }}>
+                <input
+                  type="radio"
+                  name="debate-role"
+                  checked={debateRole === 'defensa'}
+                  onChange={() => setDebateRole('defensa')}
+                  style={{ marginRight: 'var(--space-xs)' }}
+                />
+                Defensa
+              </label>
+              <label style={{ fontSize: '0.9375rem', cursor: 'pointer' }}>
+                <input
+                  type="radio"
+                  name="debate-role"
+                  checked={debateRole === 'fiscal'}
+                  onChange={() => setDebateRole('fiscal')}
+                  style={{ marginRight: 'var(--space-xs)' }}
+                />
+                Fiscal
+              </label>
+            </div>
+          )}
           <textarea
             id="consulta-input"
             value={query}
@@ -160,7 +233,7 @@ export function Consultation() {
             }}
           >
             <Button type="submit" variant="primary" disabled={loading}>
-              {loading ? 'Buscando fuentes…' : modeConfig.button}
+              {loading ? (mode === 'audiencia' ? 'Buscando fuentes y generando análisis…' : mode === 'debate' ? 'Buscando fuentes y generando refutación…' : 'Buscando fuentes…') : modeConfig.button}
             </Button>
           </div>
         </form>
@@ -208,22 +281,51 @@ export function Consultation() {
                     marginBottom: 'var(--space-md)',
                   }}
                 >
-                  Respuesta táctica (Audiencia)
+                  Respuesta táctica (Audiencia) — PROMPT MAESTRO
                 </h3>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Acción sugerida</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
+                {rag.brief.maestro ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>1) Marco legal aplicable</span>
+                      <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.maestro.applicableLegalFramework || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>2) Análisis técnico procesal</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.maestro.proceduralTechnicalAnalysis || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>3) Estrategia de intervención oral</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.maestro.oralInterventionStrategy || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>4) Debilidad estratégica de la contraparte</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.maestro.strategicWeakness || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>5) Riesgos procesales</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.maestro.proceduralRisks || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>6) Recomendación táctica inmediata</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4, fontWeight: 600 }}>{rag.brief.maestro.immediateTacticalRecommendation || '—'}</p>
+                    </div>
                   </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Artículo</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Acción sugerida</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Artículo</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Frase procesal</span>
+                      <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
+                    </div>
                   </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Frase procesal</span>
-                    <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
-                  </div>
-                </div>
+                )}
               </div>
             )}
 
@@ -245,22 +347,67 @@ export function Consultation() {
                     marginBottom: 'var(--space-md)',
                   }}
                 >
-                  Argumentación para debate oral
+                  Refutación técnica (Debate) — PROMPT MASTER SUPERIOR
                 </h3>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Tesis</span>
-                    <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
+                {rag.brief.debateMaster ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>1) Identificación de la tesis contraria</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.identificationOfOpposingThesis || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>2) Marco legal aplicable</span>
+                      <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.applicableLegalFramework || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>3) Análisis probatorio</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.evidentiaryAnalysis || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>4) Refutación jurídica estructural</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.structuralLegalRefutation || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>5) Vulnerabilidad argumentativa de la contraparte</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.detectedVulnerability || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>6) Estrategia de contraataque</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.counterattackStrategy || '—'}</p>
+                    </div>
+                    {(rag.brief.debateMaster.possibleCounterargumentOfOpposingParty || rag.brief.debateMaster.recommendedPreventiveResponse) && (
+                      <>
+                        <div>
+                          <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>7) Posible contraargumento de la contraparte</span>
+                          <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.possibleCounterargumentOfOpposingParty || '—'}</p>
+                        </div>
+                        <div>
+                          <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>8) Respuesta preventiva recomendada</span>
+                          <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.recommendedPreventiveResponse || '—'}</p>
+                        </div>
+                      </>
+                    )}
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>9) Riesgos procesales</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4, fontWeight: 600 }}>{rag.brief.debateMaster.proceduralRisks || '—'}</p>
+                    </div>
                   </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Fundamento</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Tesis</span>
+                      <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Fundamento</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Solicitud</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
+                    </div>
                   </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Solicitud</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
-                  </div>
-                </div>
+                )}
               </div>
             )}
 

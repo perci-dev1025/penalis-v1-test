@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { prisma } from '../db.js';
 import { requireAuth } from '../middleware/auth.js';
 import { getEmbedding } from '../rag/embeddingProvider.js';
+import { getMaestroResponse, getDebateMasterResponse } from '../rag/llmProvider.js';
 
 const router = Router();
 
@@ -79,8 +80,30 @@ function isSubstantiveOnlyPenal(path, name) {
   );
 }
 
+/** True when the question explicitly refers to COPP / Código Orgánico Procesal Penal. */
+function queryExplicitlyMentionsCOPP(question) {
+  const n = normalizeForMatch(question);
+  return (
+    n.includes('codigo organico procesal penal') ||
+    n.includes('código orgánico procesal penal') ||
+    /\bcopp\b/i.test(question) ||
+    n.includes('codigo organico procesal')
+  );
+}
+
+/** True when the document is specifically the COPP (path or name). */
+function isCOPPDocument(path, name) {
+  const combined = `${path || ''} ${name || ''}`.toLowerCase();
+  return (
+    /codigo-organico-procesal-penal|código orgánico procesal penal/i.test(combined) ||
+    (/\bcopp\b/i.test(combined) && /procesal|penal/i.test(combined))
+  );
+}
+
 const PROCEDURAL_BOOST = 0.15;
 const SUBSTANTIVE_PENAL_PENALTY = 0.12;
+/** Extra boost when the user explicitly asks about COPP so COPP ranks above Código Penal. */
+const COPP_EXPLICIT_BOOST = 0.35;
 
 function tokenize(text) {
   return text
@@ -155,20 +178,61 @@ function getThresholdForMode(mode) {
 
 router.post('/query', requireAuth, async (req, res, next) => {
   try {
-    const { question, mode, limit } = req.body || {};
+    const { question, mode, limit, role } = req.body || {};
     if (!question || typeof question !== 'string') {
       return res
         .status(400)
         .json({ error: 'La pregunta (question) es requerida.' });
     }
 
+    const modeLower = String(mode || '').toLowerCase();
+    if (modeLower === 'audiencia') {
+      const r = role != null ? String(role).toLowerCase() : '';
+      if (r && r !== 'defensa' && r !== 'fiscal') {
+        return res.status(400).json({
+          error: 'En modo audiencia, el rol (role) debe ser "defensa" o "fiscal", o omitirse.',
+        });
+      }
+    }
+    if (modeLower === 'debate') {
+      const r = role != null ? String(role).toLowerCase() : '';
+      if (r && r !== 'defensa' && r !== 'fiscal') {
+        return res.status(400).json({
+          error: 'En modo debate, el rol (role) debe ser "defensa" o "fiscal", o omitirse.',
+        });
+      }
+    }
+
     const maxResults = Number.isFinite(limit) ? Math.min(limit, 50) : 10;
     const threshold = getThresholdForMode(mode);
 
-    const candidates = await prisma.legalChunk.findMany({
+    let candidates = await prisma.legalChunk.findMany({
       take: 500,
       include: { document: true },
     });
+
+    // When the user explicitly asks about COPP, ensure COPP chunks are in the pool (they may not be in the first 500).
+    if (queryExplicitlyMentionsCOPP(question)) {
+      const candidateIds = new Set(candidates.map((c) => c.id));
+      const coppChunks = await prisma.legalChunk.findMany({
+        where: {
+          document: {
+            OR: [
+              { path: { contains: 'codigo-organico-procesal-penal', mode: 'insensitive' } },
+              { name: { contains: 'codigo-organico-procesal-penal', mode: 'insensitive' } },
+            ],
+          },
+        },
+        take: 300,
+        include: { document: true },
+      });
+      for (const chunk of coppChunks) {
+        if (!candidateIds.has(chunk.id)) {
+          candidates.push(chunk);
+          candidateIds.add(chunk.id);
+        }
+      }
+    }
 
     if (candidates.length === 0) {
       return res.status(200).json({
@@ -197,6 +261,22 @@ router.post('/query', requireAuth, async (req, res, next) => {
           return { chunk, score };
         })
         .filter((entry) => entry.score > 0);
+
+      // When the user explicitly asks about COPP, include COPP chunks that have no embedding (so they are not excluded).
+      const queryMentionsCOPP = queryExplicitlyMentionsCOPP(question);
+      if (queryMentionsCOPP) {
+        const scoredChunkIds = new Set(scored.map((e) => e.chunk.id));
+        const queryTokens = tokenize(question);
+        for (const chunk of candidates) {
+          if (scoredChunkIds.has(chunk.id)) continue;
+          const doc = chunk.document;
+          if (!doc || !isCOPPDocument(doc.path, doc.name)) continue;
+          const score = jaccardSimilarity(queryTokens, tokenize(chunk.text));
+          if (score <= 0) continue;
+          scored.push({ chunk, score });
+          scoredChunkIds.add(chunk.id);
+        }
+      }
     } else {
       const queryTokens = tokenize(question);
       scored = candidates
@@ -219,16 +299,22 @@ router.post('/query', requireAuth, async (req, res, next) => {
 
     // Option C (Hybrid): for procedural queries, boost COPP/procedural docs and down-rank substantive-only Código Penal.
     const proceduralQuery = isProceduralQuery(question);
-    if (proceduralQuery) {
+    const queryMentionsCOPP = queryExplicitlyMentionsCOPP(question);
+    if (proceduralQuery || queryMentionsCOPP) {
       for (const entry of scored) {
         const doc = entry.chunk.document;
         const path = doc?.path ?? '';
         const name = doc?.name ?? '';
-        if (isProceduralDocument(path, name)) {
-          entry.score += PROCEDURAL_BOOST;
+        if (proceduralQuery) {
+          if (isProceduralDocument(path, name)) {
+            entry.score += PROCEDURAL_BOOST;
+          }
+          if (isSubstantiveOnlyPenal(path, name)) {
+            entry.score = Math.max(0, entry.score - SUBSTANTIVE_PENAL_PENALTY);
+          }
         }
-        if (isSubstantiveOnlyPenal(path, name)) {
-          entry.score = Math.max(0, entry.score - SUBSTANTIVE_PENAL_PENALTY);
+        if (queryMentionsCOPP && isCOPPDocument(path, name)) {
+          entry.score += COPP_EXPLICIT_BOOST;
         }
       }
       scored.sort((a, b) => {
@@ -276,7 +362,6 @@ router.post('/query', requireAuth, async (req, res, next) => {
 
     const passingIds = new Set(passing.map((p) => p.chunk.id));
 
-    const modeLower = String(mode || '').toLowerCase();
     let brief = null;
     if (modeLower === 'audiencia' || modeLower === 'debate' || modeLower === 'formatos') {
       const topNormative =
@@ -300,6 +385,56 @@ router.post('/query', requireAuth, async (req, res, next) => {
           article: '—',
           proceduralPhrase: '—',
         };
+      }
+    }
+
+    // PROMPT MAESTRO: for audiencia mode with normative support, call LLM for 6-section tactical analysis.
+    if (
+      modeLower === 'audiencia' &&
+      brief &&
+      !abstained &&
+      scored.length > 0
+    ) {
+      const topChunks = scored.slice(0, 10).map((entry, i) => {
+        const d = entry.chunk.document;
+        const name = d?.name || d?.path || 'norma';
+        const art = entry.chunk.article;
+        const ref = art ? `Art. ${art} ${name}` : name;
+        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, 800) ?? ''}`;
+      });
+      const chunksContext = topChunks.join('\n\n---\n\n');
+      const maestroRole =
+        req.body?.role != null
+          ? String(req.body.role).toLowerCase()
+          : 'defensa';
+      const maestro = await getMaestroResponse(maestroRole, question, chunksContext);
+      if (maestro) {
+        brief.maestro = maestro;
+      }
+    }
+
+    // PROMPT MASTER SUPERIOR: for debate mode with normative support, call LLM for 9-section refutation analysis.
+    if (
+      modeLower === 'debate' &&
+      brief &&
+      !abstained &&
+      scored.length > 0
+    ) {
+      const topChunks = scored.slice(0, 10).map((entry, i) => {
+        const d = entry.chunk.document;
+        const name = d?.name || d?.path || 'norma';
+        const art = entry.chunk.article;
+        const ref = art ? `Art. ${art} ${name}` : name;
+        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, 800) ?? ''}`;
+      });
+      const chunksContext = topChunks.join('\n\n---\n\n');
+      const debateRole =
+        req.body?.role != null
+          ? String(req.body.role).toLowerCase()
+          : 'defensa';
+      const debateMaster = await getDebateMasterResponse(debateRole, question, chunksContext);
+      if (debateMaster) {
+        brief.debateMaster = debateMaster;
       }
     }
 

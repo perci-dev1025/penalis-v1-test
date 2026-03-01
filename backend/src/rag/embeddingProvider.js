@@ -1,7 +1,7 @@
 const provider = process.env.RAG_EMBEDDING_PROVIDER || 'none';
 const openaiModel =
   process.env.RAG_EMBEDDING_MODEL || 'text-embedding-3-large';
-const openaiApiKey = "sk-" + process.env.OPENAI_API_KEY;
+const openaiApiKey = process.env.OPENAI_API_KEY;
 
 let warnedNoApiKey = false;
 
