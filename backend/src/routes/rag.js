@@ -45,6 +45,15 @@ const PROCEDURAL_QUERY_KEYWORDS = [
   'sentencia',
   'recurso de apelacion',
   'recurso de apelación',
+  'elementos de conviccion',
+  'elementos de convicción',
+  'abrir a juicio',
+  'apertura a juicio',
+  'fase intermedia',
+  'ministerio publico',
+  'ministerio público',
+  'fiscal',
+  'defensa',
 ];
 
 function normalizeForMatch(text) {
@@ -104,6 +113,8 @@ const PROCEDURAL_BOOST = 0.15;
 const SUBSTANTIVE_PENAL_PENALTY = 0.12;
 /** Extra boost when the user explicitly asks about COPP so COPP ranks above Código Penal. */
 const COPP_EXPLICIT_BOOST = 0.35;
+/** Boost for COPP when in debate mode or procedural query (so COPP appears in top results). */
+const COPP_PROCEDURAL_DEBATE_BOOST = 0.2;
 
 function tokenize(text) {
   return text
@@ -203,6 +214,12 @@ router.post('/query', requireAuth, async (req, res, next) => {
       }
     }
 
+    const proceduralQuery = isProceduralQuery(question);
+    const shouldFetchCOPP =
+      queryExplicitlyMentionsCOPP(question) ||
+      modeLower === 'debate' ||
+      proceduralQuery;
+
     const maxResults = Number.isFinite(limit) ? Math.min(limit, 50) : 10;
     const threshold = getThresholdForMode(mode);
 
@@ -211,8 +228,8 @@ router.post('/query', requireAuth, async (req, res, next) => {
       include: { document: true },
     });
 
-    // When the user explicitly asks about COPP, ensure COPP chunks are in the pool (they may not be in the first 500).
-    if (queryExplicitlyMentionsCOPP(question)) {
+    // When the user asks about COPP, is in debate mode, or asks a procedural question, ensure COPP chunks are in the pool.
+    if (shouldFetchCOPP) {
       const candidateIds = new Set(candidates.map((c) => c.id));
       const coppChunks = await prisma.legalChunk.findMany({
         where: {
@@ -262,9 +279,9 @@ router.post('/query', requireAuth, async (req, res, next) => {
         })
         .filter((entry) => entry.score > 0);
 
-      // When the user explicitly asks about COPP, include COPP chunks that have no embedding (so they are not excluded).
-      const queryMentionsCOPP = queryExplicitlyMentionsCOPP(question);
-      if (queryMentionsCOPP) {
+      // When COPP should be included (explicit mention, debate mode, or procedural query), add COPP chunks that have no embedding.
+      const shouldIncludeCOPPChunks = shouldFetchCOPP;
+      if (shouldIncludeCOPPChunks) {
         const scoredChunkIds = new Set(scored.map((e) => e.chunk.id));
         const queryTokens = tokenize(question);
         for (const chunk of candidates) {
@@ -298,14 +315,13 @@ router.post('/query', requireAuth, async (req, res, next) => {
     });
 
     // Option C (Hybrid): for procedural queries, boost COPP/procedural docs and down-rank substantive-only Código Penal.
-    const proceduralQuery = isProceduralQuery(question);
     const queryMentionsCOPP = queryExplicitlyMentionsCOPP(question);
-    if (proceduralQuery || queryMentionsCOPP) {
+    if (proceduralQuery || queryMentionsCOPP || modeLower === 'debate') {
       for (const entry of scored) {
         const doc = entry.chunk.document;
         const path = doc?.path ?? '';
         const name = doc?.name ?? '';
-        if (proceduralQuery) {
+        if (proceduralQuery || modeLower === 'debate') {
           if (isProceduralDocument(path, name)) {
             entry.score += PROCEDURAL_BOOST;
           }
@@ -315,6 +331,11 @@ router.post('/query', requireAuth, async (req, res, next) => {
         }
         if (queryMentionsCOPP && isCOPPDocument(path, name)) {
           entry.score += COPP_EXPLICIT_BOOST;
+        } else if (
+          (proceduralQuery || modeLower === 'debate') &&
+          isCOPPDocument(path, name)
+        ) {
+          entry.score += COPP_PROCEDURAL_DEBATE_BOOST;
         }
       }
       scored.sort((a, b) => {
@@ -325,6 +346,33 @@ router.post('/query', requireAuth, async (req, res, next) => {
         }
         return b.score - a.score;
       });
+    }
+
+    // In debate mode, ensure COPP is represented in the top results so the LLM and UI get procedural context.
+    const minCOPPInTop = 3;
+    const topN = Math.min(10, maxResults);
+    if (modeLower === 'debate' && shouldFetchCOPP && scored.length > topN) {
+      const coppEntries = scored.filter((e) => {
+        const doc = e.chunk.document;
+        return doc && isCOPPDocument(doc.path, doc.name);
+      });
+      const nonCOPP = scored.filter((e) => {
+        const doc = e.chunk.document;
+        return !doc || !isCOPPDocument(doc.path, doc.name);
+      });
+      if (coppEntries.length > 0 && coppEntries.length < scored.length) {
+        const coppTop = coppEntries.slice(0, minCOPPInTop);
+        const rest = scored.filter((e) => !coppTop.includes(e));
+        const blended = [...coppTop, ...rest.slice(0, topN - coppTop.length)];
+        blended.sort((a, b) => {
+          const aNorm = NORMATIVE_SOURCE_TYPES.has(a.chunk.sourceType);
+          const bNorm = NORMATIVE_SOURCE_TYPES.has(b.chunk.sourceType);
+          if (aNorm !== bNorm) return aNorm ? -1 : 1;
+          return b.score - a.score;
+        });
+        const blendedSet = new Set(blended);
+        scored = [...blended, ...scored.filter((e) => !blendedSet.has(e))];
+      }
     }
 
     scored = scored.slice(0, maxResults);
@@ -432,7 +480,10 @@ router.post('/query', requireAuth, async (req, res, next) => {
         req.body?.role != null
           ? String(req.body.role).toLowerCase()
           : 'defensa';
-      const debateMaster = await getDebateMasterResponse(debateRole, question, chunksContext);
+      let debateMaster = await getDebateMasterResponse(debateRole, question, chunksContext);
+      if (!debateMaster) {
+        debateMaster = await getDebateMasterResponse(debateRole, question, chunksContext);
+      }
       if (debateMaster) {
         brief.debateMaster = debateMaster;
       }

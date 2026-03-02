@@ -12,6 +12,20 @@ const model = process.env.RAG_MAESTRO_MODEL || 'gpt-4o-mini';
 
 let warnedNoApiKey = false;
 
+/** Convert camelCase to snake_case for LLM response key fallback. */
+function camelToSnake(str) {
+  return str.replace(/[A-Z]/g, (c) => `_${c.toLowerCase()}`);
+}
+
+function getString(parsed, camelKey) {
+  const val = parsed[camelKey];
+  if (val != null && typeof val === 'string') return val.trim();
+  const snakeKey = camelToSnake(camelKey);
+  const snakeVal = parsed[snakeKey];
+  if (snakeVal != null && typeof snakeVal === 'string') return snakeVal.trim();
+  return '';
+}
+
 /**
  * Call OpenAI chat completions with PROMPT MAESTRO and return parsed 6-section object.
  * @param {string} role - 'defensa' | 'fiscal' | null
@@ -62,8 +76,10 @@ export async function getMaestroResponse(role, question, chunksContext) {
     return null;
   }
 
+  const jsonMatch = content.match(/\{[\s\S]*\}/);
+  const jsonStr = jsonMatch ? jsonMatch[0] : content;
   try {
-    const parsed = JSON.parse(content);
+    const parsed = JSON.parse(jsonStr);
     const keys = [
       'applicableLegalFramework',
       'proceduralTechnicalAnalysis',
@@ -74,10 +90,7 @@ export async function getMaestroResponse(role, question, chunksContext) {
     ];
     const result = {};
     for (const k of keys) {
-      result[k] =
-        parsed[k] != null && typeof parsed[k] === 'string'
-          ? parsed[k].trim()
-          : '';
+      result[k] = getString(parsed, k);
     }
     return result;
   } catch (e) {
@@ -128,14 +141,18 @@ export async function getDebateMasterResponse(role, question, chunksContext) {
   }
 
   const json = await res.json();
-  const content = json?.choices?.[0]?.message?.content;
+  let content = json?.choices?.[0]?.message?.content;
   if (!content || typeof content !== 'string') {
     console.error('PROMPT MASTER SUPERIOR (Debate): empty or invalid response');
     return null;
   }
 
+  // Strip markdown code fence if present so JSON.parse succeeds
+  const jsonMatch = content.match(/\{[\s\S]*\}/);
+  const jsonStr = jsonMatch ? jsonMatch[0] : content;
+
   try {
-    const parsed = JSON.parse(content);
+    const parsed = JSON.parse(jsonStr);
     const keys = [
       'identificationOfOpposingThesis',
       'applicableLegalFramework',
@@ -149,10 +166,7 @@ export async function getDebateMasterResponse(role, question, chunksContext) {
     ];
     const result = {};
     for (const k of keys) {
-      result[k] =
-        parsed[k] != null && typeof parsed[k] === 'string'
-          ? parsed[k].trim()
-          : '';
+      result[k] = getString(parsed, k);
     }
     return result;
   } catch (e) {

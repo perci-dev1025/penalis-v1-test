@@ -375,18 +375,14 @@ export function Consultation() {
                       <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>6) Estrategia de contraataque</span>
                       <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.counterattackStrategy || '—'}</p>
                     </div>
-                    {(rag.brief.debateMaster.possibleCounterargumentOfOpposingParty || rag.brief.debateMaster.recommendedPreventiveResponse) && (
-                      <>
-                        <div>
-                          <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>7) Posible contraargumento de la contraparte</span>
-                          <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.possibleCounterargumentOfOpposingParty || '—'}</p>
-                        </div>
-                        <div>
-                          <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>8) Respuesta preventiva recomendada</span>
-                          <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.recommendedPreventiveResponse || '—'}</p>
-                        </div>
-                      </>
-                    )}
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>7) Posible contraargumento de la contraparte</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.possibleCounterargumentOfOpposingParty || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>8) Respuesta preventiva recomendada</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.recommendedPreventiveResponse || '—'}</p>
+                    </div>
                     <div>
                       <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>9) Riesgos procesales</span>
                       <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4, fontWeight: 600 }}>{rag.brief.debateMaster.proceduralRisks || '—'}</p>
