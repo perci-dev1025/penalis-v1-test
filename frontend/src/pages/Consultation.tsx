@@ -48,6 +48,14 @@ type RagBrief = {
     recommendedPreventiveResponse: string;
     proceduralRisks: string;
   };
+  consulta?: {
+    constitutionalFramework: string;
+    legalFramework: string;
+    doctrinalAnalysis: string;
+    applicationToCase: string;
+    conclusion: string;
+    strategicWeakness: string;
+  };
 };
 
 type RagResponse = {
@@ -263,6 +271,55 @@ export function Consultation() {
               padding: 'var(--space-xl)',
             }}
           >
+            {mode === 'consulta' && rag.brief?.consulta && (
+              <div
+                style={{
+                  marginBottom: 'var(--space-xl)',
+                  padding: 'var(--space-lg)',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--border-gold, rgba(212, 163, 115, 0.4))',
+                  background: 'rgba(212, 163, 115, 0.06)',
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-display)',
+                    fontSize: '1rem',
+                    color: 'var(--gold-primary)',
+                    marginBottom: 'var(--space-md)',
+                  }}
+                >
+                  Análisis de consulta jurídica — PENALIS
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>1) Marco constitucional aplicable</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.constitutionalFramework || '—'}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>2) Marco legal relevante</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.legalFramework || '—'}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>3) Análisis doctrinal / Teoría General del Delito</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.doctrinalAnalysis || '—'}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>4) Aplicación al caso concreto</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.applicationToCase || '—'}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>5) Conclusión jurídica</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4, fontWeight: 600 }}>{rag.brief.consulta.conclusion || '—'}</p>
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>6) Debilidad estratégica de la contraparte</span>
+                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.strategicWeakness || '—'}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {mode === 'audiencia' && rag.brief && (
               <div
                 style={{

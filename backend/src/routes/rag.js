@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { prisma } from '../db.js';
 import { requireAuth } from '../middleware/auth.js';
 import { getEmbedding } from '../rag/embeddingProvider.js';
-import { getMaestroResponse, getDebateMasterResponse } from '../rag/llmProvider.js';
+import { getMaestroResponse, getDebateMasterResponse, getConsultaResponse } from '../rag/llmProvider.js';
 
 const router = Router();
 
@@ -433,6 +433,34 @@ router.post('/query', requireAuth, async (req, res, next) => {
           article: '—',
           proceduralPhrase: '—',
         };
+      }
+    }
+
+    // PROMPT CONSULTA: for legal consultation mode with normative support, call LLM for 6-section doctrinal analysis.
+    if (
+      modeLower === 'consulta' &&
+      !abstained &&
+      scored.length > 0
+    ) {
+      const topChunks = scored.slice(0, 10).map((entry, i) => {
+        const d = entry.chunk.document;
+        const name = d?.name || d?.path || 'norma';
+        const art = entry.chunk.article;
+        const ref = art ? `Art. ${art} ${name}` : name;
+        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, 800) ?? ''}`;
+      });
+      const chunksContext = topChunks.join('\n\n---\n\n');
+      const consulta = await getConsultaResponse(question, chunksContext);
+      if (consulta) {
+        // Ensure brief exists so we can attach consulta analysis, even if action/article are not used in this mode.
+        if (!brief) {
+          brief = {
+            action: '',
+            article: '',
+            proceduralPhrase: '',
+          };
+        }
+        brief.consulta = consulta;
       }
     }
 
