@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { prisma } from '../db.js';
 import { requireAuth } from '../middleware/auth.js';
 import { getEmbedding } from '../rag/embeddingProvider.js';
-import { getMaestroResponse, getDebateMasterResponse, getConsultaResponse } from '../rag/llmProvider.js';
+import { getMaestroResponse, getDebateMasterResponse, getConsultaResponse, getFormatosDocument } from '../rag/llmProvider.js';
 
 const router = Router();
 
@@ -514,6 +514,27 @@ router.post('/query', requireAuth, async (req, res, next) => {
       }
       if (debateMaster) {
         brief.debateMaster = debateMaster;
+      }
+    }
+
+    // PROMPT FORMATOS: for structured written mode, call LLM to generate full document (heading → date/signature).
+    // Run even when abstained so the user still gets the full document and export; the prompt handles insufficient context.
+    if (
+      modeLower === 'formatos' &&
+      brief &&
+      scored.length > 0
+    ) {
+      const topChunks = scored.slice(0, 10).map((entry, i) => {
+        const d = entry.chunk.document;
+        const name = d?.name || d?.path || 'norma';
+        const art = entry.chunk.article;
+        const ref = art ? `Art. ${art} ${name}` : name;
+        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, 800) ?? ''}`;
+      });
+      const chunksContext = topChunks.join('\n\n---\n\n');
+      const formatosDoc = await getFormatosDocument(question, chunksContext);
+      if (formatosDoc) {
+        brief.formatosDocument = formatosDoc;
       }
     }
 

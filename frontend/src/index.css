@@ -68,3 +68,26 @@ button {
 .block-articulo { border-left-color: var(--gold-primary); }
 .block-numeral { border-left-color: var(--gold-muted); }
 .block-jurisprudencia { border-left-color: var(--gold-bright); }
+
+/* Print: only show Formatos document for PDF export */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .formatos-print-area,
+  .formatos-print-area * {
+    visibility: visible;
+  }
+  .formatos-print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: white;
+    color: #000;
+  }
+}

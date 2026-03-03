@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { apiFetch } from '../services/api';
@@ -56,6 +56,14 @@ type RagBrief = {
     conclusion: string;
     strategicWeakness: string;
   };
+  formatosDocument?: {
+    heading: string;
+    identification: string;
+    facts: string;
+    legalBasis: string;
+    petition: string;
+    dateSignature: string;
+  };
 };
 
 type RagResponse = {
@@ -101,6 +109,37 @@ export function Consultation() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [rag, setRag] = useState<RagResponse | null>(null);
+  const formatosPrintRef = useRef<HTMLDivElement>(null);
+
+  function exportFormatosWord(doc: RagBrief['formatosDocument']) {
+    if (!doc) return;
+    const parts = [
+      doc.heading && `<p><strong>Encabezado</strong></p><p>${escapeHtml(doc.heading)}</p>`,
+      doc.identification && `<p><strong>Identificación</strong></p><p>${escapeHtml(doc.identification)}</p>`,
+      doc.facts && `<p><strong>Hechos</strong></p><p>${escapeHtml(doc.facts)}</p>`,
+      doc.legalBasis && `<p><strong>Fundamento jurídico</strong></p><p>${escapeHtml(doc.legalBasis)}</p>`,
+      doc.petition && `<p><strong>Petitorio</strong></p><p>${escapeHtml(doc.petition)}</p>`,
+      doc.dateSignature && `<p><strong>Lugar y fecha</strong></p><p>${escapeHtml(doc.dateSignature)}</p>`,
+    ].filter(Boolean);
+    const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Documento PENALIS</title></head><body style="font-family: 'Times New Roman', serif; max-width: 21cm; margin: 2cm; line-height: 1.5;">${parts.join('<br/>')}</body></html>`;
+    const blob = new Blob(['\ufeff' + html], { type: 'application/msword' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'documento-penal.doc';
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function exportFormatosPdf() {
+    window.print();
+  }
+
+  function escapeHtml(text: string): string {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML.replace(/\n/g, '<br/>');
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -482,27 +521,76 @@ export function Consultation() {
                     marginBottom: 'var(--space-md)',
                   }}
                 >
-                  Estructura del escrito (Formatos Penales)
+                  Documento generado (Formatos Penales)
                 </h3>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Encabezado</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5 }}>Escrito dirigido al tribunal competente, con fundamento en la normativa indicada en la sección Derecho.</p>
+                {rag.brief.formatosDocument ? (
+                  <>
+                    <div
+                      ref={formatosPrintRef}
+                      className="formatos-print-area"
+                      style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}
+                    >
+                      {rag.brief.formatosDocument.heading && (
+                        <div>
+                          <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Encabezado</span>
+                          <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.heading}</p>
+                        </div>
+                      )}
+                      {rag.brief.formatosDocument.identification && (
+                        <div>
+                          <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Identificación</span>
+                          <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.identification}</p>
+                        </div>
+                      )}
+                      <div>
+                        <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Hechos</span>
+                        <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.facts || '—'}</p>
+                      </div>
+                      <div>
+                        <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Fundamento jurídico</span>
+                        <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.legalBasis || '—'}</p>
+                      </div>
+                      <div>
+                        <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Petitorio</span>
+                        <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.petition || '—'}</p>
+                      </div>
+                      {rag.brief.formatosDocument.dateSignature && (
+                        <div>
+                          <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Lugar y fecha / Firma</span>
+                          <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.dateSignature}</p>
+                        </div>
+                      )}
+                    </div>
+                    <div style={{ display: 'flex', gap: 'var(--space-md)', marginTop: 'var(--space-lg)', flexWrap: 'wrap' }}>
+                      <Button type="button" variant="secondary" onClick={() => exportFormatosWord(rag.brief?.formatosDocument)}>
+                        Exportar a Word
+                      </Button>
+                      <Button type="button" variant="secondary" onClick={exportFormatosPdf}>
+                        Exportar a PDF
+                      </Button>
+                    </div>
+                  </>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Encabezado</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5 }}>Escrito dirigido al tribunal competente, con fundamento en la normativa indicada en la sección Derecho.</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Hechos</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{query.trim() || '—'}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Derecho</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
+                      <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
+                    </div>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Petitorio</span>
+                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
+                    </div>
                   </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Hechos</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{query.trim() || '—'}</p>
-                  </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Derecho</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
-                    <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
-                  </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Petitorio</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
-                  </div>
-                </div>
+                )}
               </div>
             )}
 

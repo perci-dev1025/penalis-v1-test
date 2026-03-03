@@ -10,6 +10,10 @@ import {
   PROMPT_CONSULTA_SYSTEM,
   buildConsultaUserMessage,
 } from './promptConsulta.js';
+import {
+  PROMPT_FORMATOS_SYSTEM,
+  buildFormatosUserMessage,
+} from './promptFormatos.js';
 
 const openaiApiKey = process.env.OPENAI_API_KEY;
 const model = process.env.RAG_MAESTRO_MODEL || 'gpt-4o-mini';
@@ -245,6 +249,76 @@ export async function getConsultaResponse(question, chunksContext) {
     return result;
   } catch (e) {
     console.error('PROMPT CONSULTA: failed to parse JSON', e.message);
+    return null;
+  }
+}
+
+/**
+ * Call OpenAI chat with PROMPT FORMATOS (Structured Written Mode) and return parsed 6-section document.
+ */
+export async function getFormatosDocument(question, chunksContext) {
+  if (!openaiApiKey) {
+    if (!warnedNoApiKey) {
+      console.error(
+        'OPENAI_API_KEY is not set; PROMPT FORMATOS (Formatos Penales) will not run.',
+      );
+      warnedNoApiKey = true;
+    }
+    return null;
+  }
+
+  const userMessage = buildFormatosUserMessage(question, chunksContext);
+
+  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${openaiApiKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      model,
+      messages: [
+        { role: 'system', content: PROMPT_FORMATOS_SYSTEM },
+        { role: 'user', content: userMessage },
+      ],
+      response_format: { type: 'json_object' },
+      temperature: 0.3,
+    }),
+  });
+
+  if (!res.ok) {
+    const text = await res.text();
+    console.error('PROMPT FORMATOS LLM error:', res.status, text);
+    return null;
+  }
+
+  const json = await res.json();
+  let content = json?.choices?.[0]?.message?.content;
+  if (!content || typeof content !== 'string') {
+    console.error('PROMPT FORMATOS: empty or invalid response');
+    return null;
+  }
+
+  const jsonMatch = content.match(/\{[\s\S]*\}/);
+  const jsonStr = jsonMatch ? jsonMatch[0] : content;
+
+  try {
+    const parsed = JSON.parse(jsonStr);
+    const keys = [
+      'heading',
+      'identification',
+      'facts',
+      'legalBasis',
+      'petition',
+      'dateSignature',
+    ];
+    const result = {};
+    for (const k of keys) {
+      result[k] = getString(parsed, k);
+    }
+    return result;
+  } catch (e) {
+    console.error('PROMPT FORMATOS: failed to parse JSON', e.message);
     return null;
   }
 }
