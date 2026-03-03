@@ -118,7 +118,7 @@ export function Consultation() {
     } else if (data) {
       setRag(data);
     }
-    setLoading(false);
+      setLoading(false);
   };
 
   return (
@@ -449,106 +449,6 @@ export function Consultation() {
               </div>
             )}
 
-            <h3
-              style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: '1rem',
-                color: 'var(--gold-primary)',
-                marginBottom: 'var(--space-md)',
-              }}
-            >
-              Fuentes recuperadas
-            </h3>
-            <p
-              style={{
-                fontSize: '0.875rem',
-                color: 'var(--text-secondary)',
-                marginBottom: 'var(--space-md)',
-              }}
-            >
-              Umbral de similitud:{' '}
-              <strong>{rag.threshold.toFixed(3)}</strong>.{' '}
-              {rag.abstained
-                ? 'No se encontró una base normativa suficiente por encima del umbral.'
-                : 'Se encontraron fuentes relevantes ordenadas por jerarquía y similitud.'}
-            </p>
-
-            {rag.results.length === 0 && (
-              <div
-                style={{
-                  fontSize: '0.9rem',
-                  color: 'var(--text-secondary)',
-                }}
-              >
-                {rag.message ?? 'No hay resultados para esta consulta.'}
-              </div>
-            )}
-
-            {rag.results.length > 0 && (
-              <ul
-                style={{
-                  listStyle: 'none',
-                  padding: 0,
-                  margin: 0,
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: 'var(--space-md)',
-                }}
-              >
-                {rag.results.map((r) => (
-                  <li
-                    key={r.id}
-                    style={{
-                      padding: 'var(--space-md)',
-                      borderRadius: 'var(--radius-md)',
-                      border: '1px solid var(--border)',
-                      background: r.passedThreshold
-                        ? 'rgba(212, 163, 115, 0.06)'
-                        : 'transparent',
-                    }}
-                  >
-                    <div
-                      style={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        gap: 'var(--space-md)',
-                        marginBottom: 'var(--space-xs)',
-                        fontSize: '0.8rem',
-                        color: 'var(--text-secondary)',
-                      }}
-                    >
-                      <span>
-                        #{r.rank} · {r.document.name}
-                        {r.article ? ` · Art. ${r.article}` : ''}
-                      </span>
-                      <span>
-                        similitud:{' '}
-                        <strong>{r.similarity.toFixed(3)}</strong>
-                        {r.passedThreshold ? ' · ≥ umbral' : ''}
-                      </span>
-                    </div>
-                    <div
-                      style={{
-                        fontSize: '0.78rem',
-                        color: 'var(--text-muted, #9ca3af)',
-                        marginBottom: 'var(--space-xs)',
-                      }}
-                    >
-                      {r.document.sourceType} · jerarquía{' '}
-                      {r.document.hierarchyRank}
-                      {r.document.system ? ` · ${r.document.system}` : ''}
-                      {r.document.organ ? ` · ${r.document.organ}` : ''}
-                    </div>
-                    <div
-                      className="block-cita block-articulo"
-                      style={{ fontSize: '0.9rem', lineHeight: 1.4 }}
-                    >
-                      {r.text}
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            )}
           </div>
         )}
       </main>
