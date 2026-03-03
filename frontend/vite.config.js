@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
-const backendUrl = process.env.VITE_BACKEND_URL || 'http://localhost:3003';
+// const backendUrl = process.env.VITE_BACKEND_URL || 'http://localhost:3003';
+const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3003';
 
 export default defineConfig({
   plugins: [
