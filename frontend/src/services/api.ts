@@ -1,12 +1,31 @@
 const API_BASE = import.meta.env.VITE_BACKEND_URL ?? '';
 
+const AUTH_TOKEN_KEY = 'penalis_auth_token';
+
+export function getStoredToken(): string | null {
+  return sessionStorage.getItem(AUTH_TOKEN_KEY);
+}
+
+export function setStoredToken(token: string): void {
+  sessionStorage.setItem(AUTH_TOKEN_KEY, token);
+}
+
+export function clearStoredToken(): void {
+  sessionStorage.removeItem(AUTH_TOKEN_KEY);
+}
+
 function getOptions(init?: RequestInit): RequestInit {
+  const token = getStoredToken();
+  const headers: HeadersInit = {
+    'Content-Type': 'application/json',
+    ...init?.headers,
+  };
+  if (token) {
+    (headers as Record<string, string>)['Authorization'] = `Bearer ${token}`;
+  }
   return {
     credentials: 'include',
-    headers: {
-      'Content-Type': 'application/json',
-      ...init?.headers,
-    },
+    headers,
     ...init,
   };
 }
@@ -46,12 +65,12 @@ export async function apiFetch<T = unknown>(
 export const authApi = {
   me: () => apiFetch<{ user: User }>('/api/auth/me'),
   login: (email: string, password: string) =>
-    apiFetch<{ user: User }>('/api/auth/login', {
+    apiFetch<{ user: User; token: string }>('/api/auth/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
     }),
   register: (email: string, password: string) =>
-    apiFetch<{ user: User }>('/api/auth/register', {
+    apiFetch<{ user: User; token: string }>('/api/auth/register', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
     }),

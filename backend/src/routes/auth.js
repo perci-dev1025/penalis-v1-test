@@ -64,7 +64,7 @@ router.post('/register', async (req, res, next) => {
     });
     const token = signToken(user.id);
     res.cookie(COOKIE_NAME, token, cookieOptions);
-    return res.status(201).json({ user: userToJson(user) });
+    return res.status(201).json({ user: userToJson(user), token });
   } catch (err) {
     console.error('Register error:', err);
     next(err);
@@ -135,7 +135,7 @@ router.post('/login', async (req, res, next) => {
     });
     const token = signToken(user.id);
     res.cookie(COOKIE_NAME, token, cookieOptions);
-    return res.json({ user: userToJson(user) });
+    return res.json({ user: userToJson(user), token });
   } catch (err) {
     console.error('Login error:', err);
     next(err);

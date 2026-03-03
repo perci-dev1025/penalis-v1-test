@@ -7,7 +7,7 @@ import {
   useState,
   type ReactNode,
 } from 'react';
-import { authApi, type User } from '../services/api';
+import { authApi, setStoredToken, clearStoredToken, type User } from '../services/api';
 
 type AuthState = {
   user: User | null;
@@ -50,6 +50,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     async (email: string, password: string) => {
       const { data, error } = await authApi.login(email, password);
       if (error) return { error };
+      if (data?.token) setStoredToken(data.token);
       setState({
         user: data!.user,
         loading: false,
@@ -64,6 +65,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     async (email: string, password: string) => {
       const { data, error } = await authApi.register(email, password);
       if (error) return { error };
+      if (data?.token) setStoredToken(data.token);
       setState({
         user: data!.user,
         loading: false,
@@ -76,6 +78,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const logout = useCallback(async () => {
     await authApi.logout();
+    clearStoredToken();
     setState({ user: null, loading: false, checked: true });
   }, []);
 
