@@ -423,19 +423,19 @@ export function Consultation() {
                 {rag.brief.maestro ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
                     <section>
-                      <h4 className="penalis-doc-section-title">Marco legal aplicable</h4>
-                      <p className="block-cita block-articulo penalis-doc-body">{rag.brief.maestro.applicableLegalFramework || '—'}</p>
+                      <h4 className="penalis-doc-section-title">Tesis / Análisis técnico procesal</h4>
+                      <p className="penalis-doc-body">{rag.brief.maestro.proceduralTechnicalAnalysis || '—'}</p>
                     </section>
                     <section>
-                      <h4 className="penalis-doc-section-title">Análisis técnico procesal</h4>
-                      <p className="penalis-doc-body">{rag.brief.maestro.proceduralTechnicalAnalysis || '—'}</p>
+                      <h4 className="penalis-doc-section-title">Fundamento jurídico integrado</h4>
+                      <p className="block-cita block-articulo penalis-doc-body">{rag.brief.maestro.applicableLegalFramework || '—'}</p>
                     </section>
                     <section>
                       <h4 className="penalis-doc-section-title">Estrategia de intervención oral</h4>
                       <p className="penalis-doc-body">{rag.brief.maestro.oralInterventionStrategy || '—'}</p>
                     </section>
                     <section>
-                      <h4 className="penalis-doc-section-title">Debilidad estratégica de la contraparte</h4>
+                      <h4 className="penalis-doc-section-title">Posible contraargumento de la contraparte</h4>
                       <p className="penalis-doc-body">{rag.brief.maestro.strategicWeakness || '—'}</p>
                     </section>
                     <section>
@@ -491,11 +491,11 @@ export function Consultation() {
                 {rag.brief.debateMaster ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
                     <section>
-                      <h4 className="penalis-doc-section-title">Identificación de la tesis contraria</h4>
+                      <h4 className="penalis-doc-section-title">Tesis</h4>
                       <p className="penalis-doc-body">{rag.brief.debateMaster.identificationOfOpposingThesis || '—'}</p>
                     </section>
                     <section>
-                      <h4 className="penalis-doc-section-title">Marco legal aplicable</h4>
+                      <h4 className="penalis-doc-section-title">Integración de normas</h4>
                       <p className="block-cita block-articulo penalis-doc-body">{rag.brief.debateMaster.applicableLegalFramework || '—'}</p>
                     </section>
                     <section>
@@ -503,11 +503,11 @@ export function Consultation() {
                       <p className="penalis-doc-body">{rag.brief.debateMaster.evidentiaryAnalysis || '—'}</p>
                     </section>
                     <section>
-                      <h4 className="penalis-doc-section-title">Refutación jurídica estructural</h4>
+                      <h4 className="penalis-doc-section-title">Refutación técnica</h4>
                       <p className="penalis-doc-body">{rag.brief.debateMaster.structuralLegalRefutation || '—'}</p>
                     </section>
                     <section>
-                      <h4 className="penalis-doc-section-title">Vulnerabilidad argumentativa de la contraparte</h4>
+                      <h4 className="penalis-doc-section-title">Error técnico de la contraparte</h4>
                       <p className="penalis-doc-body">{rag.brief.debateMaster.detectedVulnerability || '—'}</p>
                     </section>
                     <section>
@@ -523,7 +523,7 @@ export function Consultation() {
                       <p className="penalis-doc-body">{rag.brief.debateMaster.recommendedPreventiveResponse || '—'}</p>
                     </section>
                     <section>
-                      <h4 className="penalis-doc-section-title">Riesgos procesales</h4>
+                      <h4 className="penalis-doc-section-title">Riesgos procesales / Conclusión estratégica</h4>
                       <p className="penalis-doc-body penalis-doc-conclusion">{rag.brief.debateMaster.proceduralRisks || '—'}</p>
                     </section>
                   </div>
@@ -639,7 +639,7 @@ export function Consultation() {
               </div>
             )}
 
-            {rag.results && rag.results.length > 0 && (
+            {rag.results && rag.results.length > 0 && mode !== 'audiencia' && mode !== 'debate' && (
               <div style={{ marginTop: 'var(--space-xl)' }}>
                 <button
                   type="button"

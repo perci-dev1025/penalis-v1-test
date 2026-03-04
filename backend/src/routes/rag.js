@@ -110,6 +110,9 @@ function isCOPPDocument(path, name) {
   );
 }
 
+/** Number of top chunks sent to PROMPT MAESTRO and PROMPT MASTER SUPERIOR for stronger integrated legal basis. */
+const MAESTRO_DEBATE_TOP_CHUNKS = Number(process.env.RAG_MAESTRO_TOP_CHUNKS) || 15;
+
 const PROCEDURAL_BOOST = 0.15;
 const SUBSTANTIVE_PENAL_PENALTY = 0.12;
 /** Extra boost when the user explicitly asks about COPP so COPP ranks above Código Penal. */
@@ -472,7 +475,7 @@ router.post('/query', requireAuth, async (req, res, next) => {
       !abstained &&
       scored.length > 0
     ) {
-      const topChunks = scored.slice(0, 10).map((entry, i) => {
+      const topChunks = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS).map((entry, i) => {
         const d = entry.chunk.document;
         const name = d?.name || d?.path || 'norma';
         const art = entry.chunk.article;
@@ -497,7 +500,7 @@ router.post('/query', requireAuth, async (req, res, next) => {
       !abstained &&
       scored.length > 0
     ) {
-      const topChunks = scored.slice(0, 10).map((entry, i) => {
+      const topChunks = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS).map((entry, i) => {
         const d = entry.chunk.document;
         const name = d?.name || d?.path || 'norma';
         const art = entry.chunk.article;
