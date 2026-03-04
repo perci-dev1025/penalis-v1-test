@@ -110,7 +110,64 @@ export function Consultation() {
   const [error, setError] = useState<string | null>(null);
   const [rag, setRag] = useState<RagResponse | null>(null);
   const [showCitations, setShowCitations] = useState(false);
+  const [ttsSpeaking, setTtsSpeaking] = useState(false);
   const formatosPrintRef = useRef<HTMLDivElement>(null);
+
+  /** Build full strategic text for TTS (Consulta, Audiencia, Debate only). */
+  function getStrategicTextForTTS(m: string, brief: RagBrief | undefined): string {
+    if (!brief) return '';
+    const parts: string[] = [];
+    if (m === 'consulta' && brief.consulta) {
+      const c = brief.consulta;
+      parts.push('Marco constitucional aplicable.', c.constitutionalFramework || '');
+      parts.push('Marco legal relevante.', c.legalFramework || '');
+      parts.push('Análisis doctrinal.', c.doctrinalAnalysis || '');
+      parts.push('Aplicación al caso concreto.', c.applicationToCase || '');
+      parts.push('Conclusión jurídica.', c.conclusion || '');
+      parts.push('Debilidad estratégica de la contraparte.', c.strategicWeakness || '');
+    } else if (m === 'audiencia' && brief.maestro) {
+      const x = brief.maestro;
+      parts.push('Tesis y análisis técnico procesal.', x.proceduralTechnicalAnalysis || '');
+      parts.push('Fundamento jurídico integrado.', x.applicableLegalFramework || '');
+      parts.push('Estrategia de intervención oral.', x.oralInterventionStrategy || '');
+      parts.push('Posible contraargumento de la contraparte.', x.strategicWeakness || '');
+      parts.push('Riesgos procesales.', x.proceduralRisks || '');
+      parts.push('Recomendación táctica inmediata.', x.immediateTacticalRecommendation || '');
+    } else if (m === 'debate' && brief.debateMaster) {
+      const d = brief.debateMaster;
+      parts.push('Tesis.', d.identificationOfOpposingThesis || '');
+      parts.push('Integración de normas.', d.applicableLegalFramework || '');
+      parts.push('Análisis probatorio.', d.evidentiaryAnalysis || '');
+      parts.push('Refutación técnica.', d.structuralLegalRefutation || '');
+      parts.push('Error técnico de la contraparte.', d.detectedVulnerability || '');
+      parts.push('Estrategia de contraataque.', d.counterattackStrategy || '');
+      parts.push('Posible contraargumento de la contraparte.', d.possibleCounterargumentOfOpposingParty || '');
+      parts.push('Respuesta preventiva recomendada.', d.recommendedPreventiveResponse || '');
+      parts.push('Riesgos procesales y conclusión estratégica.', d.proceduralRisks || '');
+    }
+    return parts.filter(Boolean).join(' ');
+  }
+
+  function handlePlayTTS() {
+    const text = getStrategicTextForTTS(mode, rag?.brief);
+    if (!text.trim()) return;
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'es-VE';
+    u.rate = 0.95;
+    u.onend = () => setTtsSpeaking(false);
+    u.onerror = () => setTtsSpeaking(false);
+    window.speechSynthesis.speak(u);
+    setTtsSpeaking(true);
+  }
+
+  function handleStopTTS() {
+    if (typeof window !== 'undefined' && window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+      setTtsSpeaking(false);
+    }
+  }
 
   async function exportFormatosWord(doc: RagBrief['formatosDocument']) {
     if (!doc) return;
@@ -165,6 +222,10 @@ export function Consultation() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!query.trim()) return;
+    if (typeof window !== 'undefined' && window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+      setTtsSpeaking(false);
+    }
     setLoading(true);
     setError(null);
     setRag(null);
@@ -357,18 +418,20 @@ export function Consultation() {
                   background: 'rgba(212, 163, 115, 0.06)',
                 }}
               >
-                <h3
-                  style={{
-                    fontFamily: 'var(--font-display)',
-                    fontSize: '1.125rem',
-                    color: 'var(--gold-primary)',
-                    marginBottom: 'var(--space-lg)',
-                    borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))',
-                    paddingBottom: 'var(--space-sm)',
-                  }}
-                >
-                  Análisis de consulta jurídica
-                </h3>
+                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-lg)', borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))', paddingBottom: 'var(--space-sm)' }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.125rem', color: 'var(--gold-primary)', margin: 0 }}>
+                    Análisis de consulta jurídica
+                  </h3>
+                  {ttsSpeaking ? (
+                    <Button type="button" variant="secondary" onClick={handleStopTTS} aria-label="Detener reproducción">
+                      Detener
+                    </Button>
+                  ) : (
+                    <Button type="button" variant="secondary" onClick={handlePlayTTS} aria-label="Escuchar análisis">
+                      Escuchar análisis
+                    </Button>
+                  )}
+                </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
                   <section>
                     <h4 className="penalis-doc-section-title">Marco constitucional aplicable</h4>
@@ -408,18 +471,20 @@ export function Consultation() {
                   background: 'rgba(212, 163, 115, 0.06)',
                 }}
               >
-                <h3
-                  style={{
-                    fontFamily: 'var(--font-display)',
-                    fontSize: '1.125rem',
-                    color: 'var(--gold-primary)',
-                    marginBottom: 'var(--space-lg)',
-                    borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))',
-                    paddingBottom: 'var(--space-sm)',
-                  }}
-                >
-                  Respuesta táctica (Audiencia)
-                </h3>
+                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-lg)', borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))', paddingBottom: 'var(--space-sm)' }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.125rem', color: 'var(--gold-primary)', margin: 0 }}>
+                    Respuesta táctica (Audiencia)
+                  </h3>
+                  {rag.brief.maestro && (ttsSpeaking ? (
+                    <Button type="button" variant="secondary" onClick={handleStopTTS} aria-label="Detener reproducción">
+                      Detener
+                    </Button>
+                  ) : (
+                    <Button type="button" variant="secondary" onClick={handlePlayTTS} aria-label="Escuchar análisis">
+                      Escuchar análisis
+                    </Button>
+                  ))}
+                </div>
                 {rag.brief.maestro ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
                     <section>
@@ -476,18 +541,20 @@ export function Consultation() {
                   background: 'rgba(212, 163, 115, 0.06)',
                 }}
               >
-                <h3
-                  style={{
-                    fontFamily: 'var(--font-display)',
-                    fontSize: '1.125rem',
-                    color: 'var(--gold-primary)',
-                    marginBottom: 'var(--space-lg)',
-                    borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))',
-                    paddingBottom: 'var(--space-sm)',
-                  }}
-                >
-                  Refutación técnica (Debate)
-                </h3>
+                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-lg)', borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))', paddingBottom: 'var(--space-sm)' }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.125rem', color: 'var(--gold-primary)', margin: 0 }}>
+                    Refutación técnica (Debate)
+                  </h3>
+                  {rag.brief.debateMaster && (ttsSpeaking ? (
+                    <Button type="button" variant="secondary" onClick={handleStopTTS} aria-label="Detener reproducción">
+                      Detener
+                    </Button>
+                  ) : (
+                    <Button type="button" variant="secondary" onClick={handlePlayTTS} aria-label="Escuchar análisis">
+                      Escuchar análisis
+                    </Button>
+                  ))}
+                </div>
                 {rag.brief.debateMaster ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
                     <section>
