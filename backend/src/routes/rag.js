@@ -442,12 +442,8 @@ router.post('/query', requireAuth, async (req, res, next) => {
       }
     }
 
-    // PROMPT CONSULTA: for legal consultation mode with normative support, call LLM for 6-section doctrinal analysis.
-    if (
-      modeLower === 'consulta' &&
-      !abstained &&
-      scored.length > 0
-    ) {
+    // PROMPT CONSULTA: run whenever there are scored chunks; prompt handles insufficient normative support (abstention paragraph).
+    if (modeLower === 'consulta' && scored.length > 0) {
       const topChunks = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS).map((entry, i) => {
         const d = entry.chunk.document;
         const name = d?.name || d?.path || 'norma';
