@@ -193,6 +193,21 @@ function getThresholdForMode(mode) {
   return base;
 }
 
+function hasMinimalFormatosStructuredData(question) {
+  if (!question || typeof question !== 'string') return false;
+  const q = question.toLowerCase();
+  const requiredMarkers = [
+    'rol procesal:',
+    'tipo de escrito:',
+    'etapa procesal:',
+    'tribunal competente:',
+    'hechos relevantes:',
+    'finalidad del escrito:',
+    'identificación de las partes:',
+  ];
+  return requiredMarkers.every((marker) => q.includes(marker));
+}
+
 /** Set RAG_DEBUG=1 or RAG_DEBUG=true to log retrieval context per request. Disable in production. */
 const RAG_DEBUG = process.env.RAG_DEBUG === '1' || process.env.RAG_DEBUG === 'true';
 
@@ -234,6 +249,18 @@ router.post('/query', requireAuth, async (req, res, next) => {
           error: 'En modo debate, el rol (role) debe ser "defensa" o "fiscal", o omitirse.',
         });
       }
+    }
+
+    if (modeLower === 'formatos' && !hasMinimalFormatosStructuredData(question)) {
+      const threshold = getThresholdForMode(mode);
+      return res.status(200).json({
+        id: null,
+        abstained: true,
+        threshold,
+        message:
+          'La información proporcionada es insuficiente o incompleta para generar un escrito técnicamente responsable. Complete al menos: rol procesal, tipo de escrito, etapa procesal, tribunal competente, hechos relevantes, finalidad del escrito e identificación de las partes.',
+        results: [],
+      });
     }
 
     const proceduralQuery = isProceduralQuery(question);
@@ -609,6 +636,20 @@ router.post('/export/formatos/docx', requireAuth, async (req, res, next) => {
     if (!doc || typeof doc !== 'object') {
       return res.status(400).json({ error: 'Se requiere formatosDocument en el body.' });
     }
+    const { heading, identification, facts, legalBasis, petition, dateSignature } = doc || {};
+    const coreFields = [heading, identification, facts, legalBasis, petition, dateSignature];
+    const hasEmptyCore = coreFields.some(
+      (v) => !v || typeof v !== 'string' || !v.trim() || v.trim() === '—',
+    );
+    const hasLegalMarkers =
+      typeof legalBasis === 'string' &&
+      /art\.|artículo|crbv|copp|código penal|codigo penal/i.test(legalBasis);
+    if (hasEmptyCore || !hasLegalMarkers) {
+      return res.status(400).json({
+        error:
+          'El escrito generado presenta insuficiencia o inconsistencias en su fundamentación (hechos, base legal o petitorio). Revise y corrija la información antes de exportar.',
+      });
+    }
     const buffer = await buildDocxBuffer(doc);
     res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
     res.setHeader('Content-Disposition', 'attachment; filename="documento-penal.docx"');
@@ -625,6 +666,20 @@ router.post('/export/formatos/pdf', requireAuth, async (req, res, next) => {
     const doc = req.body?.formatosDocument;
     if (!doc || typeof doc !== 'object') {
       return res.status(400).json({ error: 'Se requiere formatosDocument en el body.' });
+    }
+    const { heading, identification, facts, legalBasis, petition, dateSignature } = doc || {};
+    const coreFields = [heading, identification, facts, legalBasis, petition, dateSignature];
+    const hasEmptyCore = coreFields.some(
+      (v) => !v || typeof v !== 'string' || !v.trim() || v.trim() === '—',
+    );
+    const hasLegalMarkers =
+      typeof legalBasis === 'string' &&
+      /art\.|artículo|crbv|copp|código penal|codigo penal/i.test(legalBasis);
+    if (hasEmptyCore || !hasLegalMarkers) {
+      return res.status(400).json({
+        error:
+          'El escrito generado presenta insuficiencia o inconsistencias en su fundamentación (hechos, base legal o petitorio). Revise y corrija la información antes de exportar.',
+      });
     }
     const buffer = await buildPdfBuffer(doc);
     res.setHeader('Content-Type', 'application/pdf');

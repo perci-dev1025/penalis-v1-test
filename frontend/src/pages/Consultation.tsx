@@ -104,6 +104,17 @@ export function Consultation() {
   const modeConfig = MODE_LABELS[mode] || MODE_LABELS.consulta;
 
   const [query, setQuery] = useState('');
+  // Formatos (document generation) structured fields
+  const [formatosRole, setFormatosRole] = useState<'fiscal' | 'defensa' | 'querellante' | 'victima'>('defensa');
+  const [formatosDocumentType, setFormatosDocumentType] = useState('');
+  const [formatosStage, setFormatosStage] = useState('');
+  const [formatosCourt, setFormatosCourt] = useState('');
+  const [formatosCaseNumber, setFormatosCaseNumber] = useState('');
+  const [formatosOffense, setFormatosOffense] = useState('');
+  const [formatosFacts, setFormatosFacts] = useState('');
+  const [formatosPurpose, setFormatosPurpose] = useState('');
+  const [formatosEvidence, setFormatosEvidence] = useState('');
+  const [formatosParties, setFormatosParties] = useState('');
   const [audienciaRole, setAudienciaRole] = useState<'defensa' | 'fiscal'>('defensa');
   const [debateRole, setDebateRole] = useState<'defensa' | 'fiscal'>('defensa');
   const [loading, setLoading] = useState(false);
@@ -220,7 +231,22 @@ export function Consultation() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!query.trim()) return;
+    if (mode === 'formatos') {
+      // Require minimal structured data for Formatos mode before sending the query.
+      if (
+        !formatosDocumentType.trim() ||
+        !formatosStage.trim() ||
+        !formatosCourt.trim() ||
+        !formatosFacts.trim() ||
+        !formatosPurpose.trim() ||
+        !formatosParties.trim()
+      ) {
+        setError('Complete al menos: tipo de escrito, etapa procesal, tribunal competente, hechos relevantes, finalidad del escrito e identificación de las partes.');
+        return;
+      }
+    } else if (!query.trim()) {
+      return;
+    }
     if (typeof window !== 'undefined' && window.speechSynthesis) {
       window.speechSynthesis.cancel();
       setTtsSpeaking(false);
@@ -228,12 +254,37 @@ export function Consultation() {
     setLoading(true);
     setError(null);
     setRag(null);
+    let questionPayload = query;
+    if (mode === 'formatos') {
+      const roleLabel =
+        formatosRole === 'fiscal'
+          ? 'Fiscal'
+          : formatosRole === 'querellante'
+          ? 'Querellante'
+          : formatosRole === 'victima'
+          ? 'Víctima'
+          : 'Defensa';
+      questionPayload = [
+        `Rol procesal: ${roleLabel}`,
+        `Tipo de escrito: ${formatosDocumentType}`,
+        `Etapa procesal: ${formatosStage}`,
+        `Tribunal competente: ${formatosCourt}`,
+        formatosCaseNumber.trim() ? `Identificación del caso: ${formatosCaseNumber}` : '',
+        formatosOffense.trim() ? `Delito imputado: ${formatosOffense}` : '',
+        `Hechos relevantes: ${formatosFacts}`,
+        `Finalidad del escrito: ${formatosPurpose}`,
+        formatosEvidence.trim() ? `Pruebas disponibles: ${formatosEvidence}` : '',
+        `Identificación de las partes: ${formatosParties}`,
+      ]
+        .filter(Boolean)
+        .join('\n');
+    }
     const { data, error: apiError } = await apiFetch<RagResponse>(
       '/api/rag/query',
       {
         method: 'POST',
         body: JSON.stringify({
-          question: query,
+          question: questionPayload,
           mode,
           limit: 10,
           ...(mode === 'audiencia' && { role: audienciaRole }),
@@ -332,26 +383,260 @@ export function Consultation() {
               </label>
             </div>
           )}
-          <textarea
-            id="consulta-input"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder={modeConfig.placeholder}
-            rows={4}
-            disabled={loading}
-            style={{
-              width: '100%',
-              padding: 'var(--space-md)',
-              background: 'var(--bg-surface)',
-              border: '1px solid var(--border)',
-              borderRadius: 'var(--radius-md)',
-              color: 'var(--text-primary)',
-              fontFamily: 'inherit',
-              fontSize: '1rem',
-              resize: 'vertical',
-              minHeight: '120px',
-            }}
-          />
+          {mode === 'formatos' ? (
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+                gap: 'var(--space-md)',
+              }}
+            >
+              <div>
+                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                  Rol procesal
+                </label>
+                <select
+                  value={formatosRole}
+                  onChange={(e) =>
+                    setFormatosRole(e.target.value as 'fiscal' | 'defensa' | 'querellante' | 'victima')
+                  }
+                  disabled={loading}
+                  style={{
+                    width: '100%',
+                    padding: 'var(--space-sm)',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-primary)',
+                    fontSize: '0.9375rem',
+                  }}
+                >
+                  <option value="defensa">Defensa</option>
+                  <option value="fiscal">Fiscal</option>
+                  <option value="querellante">Querellante</option>
+                  <option value="victima">Víctima</option>
+                </select>
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                  Tipo de escrito
+                </label>
+                <input
+                  type="text"
+                  value={formatosDocumentType}
+                  onChange={(e) => setFormatosDocumentType(e.target.value)}
+                  disabled={loading}
+                  placeholder="p.ej. Solicitud de sustitución de medida, Recurso, etc."
+                  style={{
+                    width: '100%',
+                    padding: 'var(--space-sm)',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-primary)',
+                    fontSize: '0.9375rem',
+                  }}
+                />
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                  Etapa procesal
+                </label>
+                <input
+                  type="text"
+                  value={formatosStage}
+                  onChange={(e) => setFormatosStage(e.target.value)}
+                  disabled={loading}
+                  placeholder="Investigación, fase intermedia, juicio oral, ejecución…"
+                  style={{
+                    width: '100%',
+                    padding: 'var(--space-sm)',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-primary)',
+                    fontSize: '0.9375rem',
+                  }}
+                />
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                  Tribunal competente
+                </label>
+                <input
+                  type="text"
+                  value={formatosCourt}
+                  onChange={(e) => setFormatosCourt(e.target.value)}
+                  disabled={loading}
+                  placeholder="Tribunal de Control de…, Corte de Apelaciones de…"
+                  style={{
+                    width: '100%',
+                    padding: 'var(--space-sm)',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-primary)',
+                    fontSize: '0.9375rem',
+                  }}
+                />
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                  Identificación del caso (expediente)
+                </label>
+                <input
+                  type="text"
+                  value={formatosCaseNumber}
+                  onChange={(e) => setFormatosCaseNumber(e.target.value)}
+                  disabled={loading}
+                  placeholder="Número de expediente (opcional)"
+                  style={{
+                    width: '100%',
+                    padding: 'var(--space-sm)',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-primary)',
+                    fontSize: '0.9375rem',
+                  }}
+                />
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                  Delito imputado (si aplica)
+                </label>
+                <input
+                  type="text"
+                  value={formatosOffense}
+                  onChange={(e) => setFormatosOffense(e.target.value)}
+                  disabled={loading}
+                  placeholder="p.ej. Robo agravado, homicidio intencional…"
+                  style={{
+                    width: '100%',
+                    padding: 'var(--space-sm)',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-primary)',
+                    fontSize: '0.9375rem',
+                  }}
+                />
+              </div>
+              <div style={{ gridColumn: '1 / -1' }}>
+                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                  Hechos relevantes
+                </label>
+                <textarea
+                  value={formatosFacts}
+                  onChange={(e) => setFormatosFacts(e.target.value)}
+                  disabled={loading}
+                  rows={4}
+                  placeholder="Describa de forma clara y sintética los hechos relevantes para el escrito."
+                  style={{
+                    width: '100%',
+                    padding: 'var(--space-md)',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-primary)',
+                    fontFamily: 'inherit',
+                    fontSize: '1rem',
+                    resize: 'vertical',
+                  }}
+                />
+              </div>
+              <div style={{ gridColumn: '1 / -1' }}>
+                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                  Finalidad del escrito
+                </label>
+                <textarea
+                  value={formatosPurpose}
+                  onChange={(e) => setFormatosPurpose(e.target.value)}
+                  disabled={loading}
+                  rows={3}
+                  placeholder="¿Qué se pretende con el escrito? (p.ej. solicitar sustitución de medida, interponer recurso, etc.)"
+                  style={{
+                    width: '100%',
+                    padding: 'var(--space-md)',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-primary)',
+                    fontFamily: 'inherit',
+                    fontSize: '1rem',
+                    resize: 'vertical',
+                  }}
+                />
+              </div>
+              <div style={{ gridColumn: '1 / -1' }}>
+                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                  Pruebas disponibles (si aplica)
+                </label>
+                <textarea
+                  value={formatosEvidence}
+                  onChange={(e) => setFormatosEvidence(e.target.value)}
+                  disabled={loading}
+                  rows={3}
+                  placeholder="Enumere brevemente los medios de prueba relevantes (opcional)."
+                  style={{
+                    width: '100%',
+                    padding: 'var(--space-md)',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-primary)',
+                    fontFamily: 'inherit',
+                    fontSize: '1rem',
+                    resize: 'vertical',
+                  }}
+                />
+              </div>
+              <div style={{ gridColumn: '1 / -1' }}>
+                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                  Identificación de las partes
+                </label>
+                <textarea
+                  value={formatosParties}
+                  onChange={(e) => setFormatosParties(e.target.value)}
+                  disabled={loading}
+                  rows={3}
+                  placeholder="Tribunal, partes, representación, víctimas, etc."
+                  style={{
+                    width: '100%',
+                    padding: 'var(--space-md)',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-primary)',
+                    fontFamily: 'inherit',
+                    fontSize: '1rem',
+                    resize: 'vertical',
+                  }}
+                />
+              </div>
+            </div>
+          ) : (
+            <textarea
+              id="consulta-input"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder={modeConfig.placeholder}
+              rows={4}
+              disabled={loading}
+              style={{
+                width: '100%',
+                padding: 'var(--space-md)',
+                background: 'var(--bg-surface)',
+                border: '1px solid var(--border)',
+                borderRadius: 'var(--radius-md)',
+                color: 'var(--text-primary)',
+                fontFamily: 'inherit',
+                fontSize: '1rem',
+                resize: 'vertical',
+                minHeight: '120px',
+              }}
+            />
+          )}
           <div
             style={{
               marginTop: 'var(--space-md)',
