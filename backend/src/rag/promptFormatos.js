@@ -42,5 +42,7 @@ Contexto normativo recuperado del corpus (usa solo este material; no inventes fu
 ${chunksContext}
 
 ---
+Your answer must be grounded in the excerpts above. In each section, cite or paraphrase specific norms, doctrine, or jurisprudence from the context. Do not rely on general knowledge; if the context does not support a point, say so.
+
 A partir de este contexto, genera el documento completo en las 6 secciones indicadas (heading, identification, facts, legalBasis, petition, dateSignature). Integra las normas en el fundamento jurídico.`;
 }

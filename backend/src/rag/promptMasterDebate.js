@@ -76,5 +76,7 @@ Legal context retrieved from the corpus (use only this normative material; do no
 ${chunksContext}
 
 ---
+Your answer must be grounded in the excerpts above. In each section, cite or paraphrase specific norms, doctrine, or jurisprudence from the context. Do not rely on general knowledge; if the context does not support a point, say so.
+
 Produce the 9-section JSON response. First identify and decompose the opposing thesis, then refute and provide vulnerability and counterattack strategy. Use only the legal context provided.`;
 }

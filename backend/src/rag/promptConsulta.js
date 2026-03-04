@@ -57,6 +57,12 @@ Contexto normativo recuperado del corpus (usa solo este material normativo; no i
 ${chunksContext}
 
 ---
+Your answer must be grounded in the excerpts above. In each section, cite or paraphrase specific norms, doctrine, or jurisprudence from the context. Do not rely on general knowledge; if the context does not support a point, say so.
+
+Follow the normative hierarchy (Constitution → COPP → Penal Code → doctrine → jurisprudence). When citing jurisprudence, use a clear reference (e.g. Sentencia, Sala, number) when the context provides it.
+
+The section "strategicWeakness" must never be left empty or generic; identify concrete legal or procedural weaknesses based on the context.
+
 Sobre la base de este contexto, produce la respuesta estructurada en las 6 secciones indicadas. Integra las normas dentro del análisis, no te limites a citarlas.`;
 }
 
