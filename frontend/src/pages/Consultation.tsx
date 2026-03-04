@@ -398,8 +398,8 @@ export function Consultation() {
                   marginBottom: 'var(--space-lg)',
                   padding: 'var(--space-md)',
                   borderRadius: 'var(--radius-md)',
-                  border: '1px solid var(--gold-muted, rgba(212, 163, 115, 0.5))',
-                  background: 'rgba(212, 163, 115, 0.08)',
+                  border: '1px solid var(--border-gold)',
+                  background: 'var(--gold-message-bg)',
                   fontSize: '0.9rem',
                   color: 'var(--text-secondary)',
                 }}
@@ -413,11 +413,11 @@ export function Consultation() {
                   marginBottom: 'var(--space-xl)',
                   padding: 'var(--space-lg)',
                   borderRadius: 'var(--radius-md)',
-                  border: '1px solid var(--border-gold, rgba(212, 163, 115, 0.4))',
-                  background: 'rgba(212, 163, 115, 0.06)',
+                  border: '1px solid var(--border-gold)',
+                  background: 'var(--gold-card-bg)',
                 }}
               >
-                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-lg)', borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))', paddingBottom: 'var(--space-sm)' }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-lg)', borderBottom: '1px solid var(--border-gold)', paddingBottom: 'var(--space-sm)' }}>
                   <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.125rem', color: 'var(--gold-primary)', margin: 0 }}>
                     Análisis de consulta jurídica
                   </h3>
@@ -466,11 +466,11 @@ export function Consultation() {
                   marginBottom: 'var(--space-xl)',
                   padding: 'var(--space-lg)',
                   borderRadius: 'var(--radius-md)',
-                  border: '1px solid var(--border-gold, rgba(212, 163, 115, 0.4))',
-                  background: 'rgba(212, 163, 115, 0.06)',
+                  border: '1px solid var(--border-gold)',
+                  background: 'var(--gold-card-bg)',
                 }}
               >
-                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-lg)', borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))', paddingBottom: 'var(--space-sm)' }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-lg)', borderBottom: '1px solid var(--border-gold)', paddingBottom: 'var(--space-sm)' }}>
                   <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.125rem', color: 'var(--gold-primary)', margin: 0 }}>
                     Respuesta táctica (Audiencia)
                   </h3>
@@ -536,11 +536,11 @@ export function Consultation() {
                   marginBottom: 'var(--space-xl)',
                   padding: 'var(--space-lg)',
                   borderRadius: 'var(--radius-md)',
-                  border: '1px solid var(--border-gold, rgba(212, 163, 115, 0.4))',
-                  background: 'rgba(212, 163, 115, 0.06)',
+                  border: '1px solid var(--border-gold)',
+                  background: 'var(--gold-card-bg)',
                 }}
               >
-                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-lg)', borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))', paddingBottom: 'var(--space-sm)' }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-lg)', borderBottom: '1px solid var(--border-gold)', paddingBottom: 'var(--space-sm)' }}>
                   <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.125rem', color: 'var(--gold-primary)', margin: 0 }}>
                     Refutación técnica (Debate)
                   </h3>
@@ -618,8 +618,8 @@ export function Consultation() {
                   marginBottom: 'var(--space-xl)',
                   padding: 'var(--space-lg)',
                   borderRadius: 'var(--radius-md)',
-                  border: '1px solid var(--border-gold, rgba(212, 163, 115, 0.4))',
-                  background: 'rgba(212, 163, 115, 0.06)',
+                  border: '1px solid var(--border-gold)',
+                  background: 'var(--gold-card-bg)',
                 }}
               >
                 <h3
@@ -628,7 +628,7 @@ export function Consultation() {
                     fontSize: '1.125rem',
                     color: 'var(--gold-primary)',
                     marginBottom: 'var(--space-lg)',
-                    borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))',
+                    borderBottom: '1px solid var(--border-gold)',
                     paddingBottom: 'var(--space-sm)',
                   }}
                 >

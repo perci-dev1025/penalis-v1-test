@@ -69,8 +69,8 @@ export function Header() {
 
   return (
     <header style={headerStyle}>
-      <Link to={user ? '/app' : '/'} style={{ display: 'flex' }} aria-label="PENALIS inicio">
-        <Logo size={36} showText />
+      <Link to={user ? '/app' : '/'} style={{ display: 'flex', alignItems: 'center' }} aria-label="PENALIS inicio">
+        <Logo size={40} showText />
       </Link>
 
       <nav style={navStyle}>

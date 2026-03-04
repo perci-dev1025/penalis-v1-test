@@ -31,7 +31,7 @@ export function Login() {
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', color: 'var(--gold-primary)', marginBottom: 'var(--space-sm)', textAlign: 'center' }}>Iniciar sesión</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.9375rem', textAlign: 'center', marginBottom: 'var(--space-xl)' }}>Acceda a su cuenta PENALIS.</p>
         <form onSubmit={handleSubmit}>
-          {error && <div style={{ padding: 'var(--space-md)', background: 'rgba(200, 80, 80, 0.15)', border: '1px solid rgba(200, 80, 80, 0.4)', borderRadius: 'var(--radius-md)', color: '#e88', fontSize: '0.875rem', marginBottom: 'var(--space-md)' }}>{error}</div>}
+          {error && <div style={{ padding: 'var(--space-md)', background: 'var(--error-bg)', border: '1px solid var(--error-border)', borderRadius: 'var(--radius-md)', color: 'var(--error-text)', fontSize: '0.875rem', marginBottom: 'var(--space-md)' }}>{error}</div>}
           <label htmlFor="login-email" style={{ display: 'block', marginBottom: 'var(--space-xs)', color: 'var(--text-secondary)', fontSize: '0.875rem' }}>Correo electrónico</label>
           <input id="login-email" type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} required disabled={loading} style={{ width: '100%', padding: 'var(--space-md)', marginBottom: 'var(--space-md)', background: 'var(--bg-surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', color: 'var(--text-primary)', fontSize: '1rem' }} />
           <label htmlFor="login-password" style={{ display: 'block', marginBottom: 'var(--space-xs)', color: 'var(--text-secondary)', fontSize: '0.875rem' }}>Contraseña</label>

@@ -2,11 +2,31 @@ interface LogoProps {
   size?: number;
   showText?: boolean;
   className?: string;
+  /** Optional client logo image (e.g. /logo.svg). When set, shown instead of SVG icon; text still uses showText. */
+  logoSrc?: string;
 }
 
-export function Logo({ size = 40, showText = true, className = '' }: LogoProps) {
+export function Logo({ size = 40, showText = true, className = '', logoSrc }: LogoProps) {
+  const gap = size >= 36 ? 12 : 8;
   return (
-    <div className={className} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+    <div
+      className={className}
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: `${gap}px`,
+        minHeight: size,
+      }}
+    >
+      {logoSrc ? (
+        <img
+          src={logoSrc}
+          alt=""
+          width={size}
+          height={size}
+          style={{ objectFit: 'contain', flexShrink: 0 }}
+        />
+      ) : (
       <svg
         width={size}
         height={size}
@@ -34,6 +54,7 @@ export function Logo({ size = 40, showText = true, className = '' }: LogoProps) 
         />
         <circle cx="24" cy="18" r="1.5" fill="currentColor" style={{ color: 'var(--gold-primary)' }} />
       </svg>
+      )}
       {showText && (
         <span
           style={{
