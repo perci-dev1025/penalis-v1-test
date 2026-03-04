@@ -3,6 +3,7 @@ import { prisma } from '../db.js';
 import { requireAuth } from '../middleware/auth.js';
 import { getEmbedding } from '../rag/embeddingProvider.js';
 import { getMaestroResponse, getDebateMasterResponse, getConsultaResponse, getFormatosDocument } from '../rag/llmProvider.js';
+import { buildDocxBuffer, buildPdfBuffer } from '../rag/exportFormatos.js';
 
 const router = Router();
 
@@ -542,6 +543,10 @@ router.post('/query', requireAuth, async (req, res, next) => {
       id: createdQuery.id,
       abstained,
       threshold,
+      ...(abstained && {
+        message:
+          'No se encontró normativa suficiente por encima del umbral. Se sugiere ampliar la consulta o revisar el corpus.',
+      }),
       ...(brief && { brief }),
       results: scored.map((entry, index) => ({
         id: entry.chunk.id,
@@ -568,6 +573,40 @@ router.post('/query', requireAuth, async (req, res, next) => {
   } catch (err) {
     console.error('RAG /query error:', err?.message || err);
     if (err?.stack) console.error(err.stack);
+    next(err);
+  }
+});
+
+/** POST /api/rag/export/formatos/docx — body: { formatosDocument: { heading?, identification?, facts?, legalBasis?, petition?, dateSignature? } } */
+router.post('/export/formatos/docx', requireAuth, async (req, res, next) => {
+  try {
+    const doc = req.body?.formatosDocument;
+    if (!doc || typeof doc !== 'object') {
+      return res.status(400).json({ error: 'Se requiere formatosDocument en el body.' });
+    }
+    const buffer = await buildDocxBuffer(doc);
+    res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+    res.setHeader('Content-Disposition', 'attachment; filename="documento-penal.docx"');
+    res.send(buffer);
+  } catch (err) {
+    console.error('Export formatos docx error:', err?.message || err);
+    next(err);
+  }
+});
+
+/** POST /api/rag/export/formatos/pdf — body: { formatosDocument: { heading?, identification?, facts?, legalBasis?, petition?, dateSignature? } } */
+router.post('/export/formatos/pdf', requireAuth, async (req, res, next) => {
+  try {
+    const doc = req.body?.formatosDocument;
+    if (!doc || typeof doc !== 'object') {
+      return res.status(400).json({ error: 'Se requiere formatosDocument en el body.' });
+    }
+    const buffer = await buildPdfBuffer(doc);
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', 'attachment; filename="documento-penal.pdf"');
+    res.send(buffer);
+  } catch (err) {
+    console.error('Export formatos pdf error:', err?.message || err);
     next(err);
   }
 });

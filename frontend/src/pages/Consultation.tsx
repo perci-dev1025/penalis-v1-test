@@ -109,36 +109,57 @@ export function Consultation() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [rag, setRag] = useState<RagResponse | null>(null);
+  const [showCitations, setShowCitations] = useState(false);
   const formatosPrintRef = useRef<HTMLDivElement>(null);
 
-  function exportFormatosWord(doc: RagBrief['formatosDocument']) {
+  async function exportFormatosWord(doc: RagBrief['formatosDocument']) {
     if (!doc) return;
-    const parts = [
-      doc.heading && `<p><strong>Encabezado</strong></p><p>${escapeHtml(doc.heading)}</p>`,
-      doc.identification && `<p><strong>Identificación</strong></p><p>${escapeHtml(doc.identification)}</p>`,
-      doc.facts && `<p><strong>Hechos</strong></p><p>${escapeHtml(doc.facts)}</p>`,
-      doc.legalBasis && `<p><strong>Fundamento jurídico</strong></p><p>${escapeHtml(doc.legalBasis)}</p>`,
-      doc.petition && `<p><strong>Petitorio</strong></p><p>${escapeHtml(doc.petition)}</p>`,
-      doc.dateSignature && `<p><strong>Lugar y fecha</strong></p><p>${escapeHtml(doc.dateSignature)}</p>`,
-    ].filter(Boolean);
-    const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Documento PENALIS</title></head><body style="font-family: 'Times New Roman', serif; max-width: 21cm; margin: 2cm; line-height: 1.5;">${parts.join('<br/>')}</body></html>`;
-    const blob = new Blob(['\ufeff' + html], { type: 'application/msword' });
+    const token = sessionStorage.getItem('penalis_auth_token');
+    const res = await fetch(
+      `${import.meta.env.VITE_BACKEND_URL ?? ''}/api/rag/export/formatos/docx`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
+        credentials: 'include',
+        body: JSON.stringify({ formatosDocument: doc }),
+      },
+    );
+    if (!res.ok) return;
+    const blob = await res.blob();
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'documento-penal.doc';
+    a.download = 'documento-penal.docx';
     a.click();
     URL.revokeObjectURL(url);
   }
 
-  function exportFormatosPdf() {
-    window.print();
-  }
-
-  function escapeHtml(text: string): string {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML.replace(/\n/g, '<br/>');
+  async function exportFormatosPdf(doc: RagBrief['formatosDocument']) {
+    if (!doc) return;
+    const token = sessionStorage.getItem('penalis_auth_token');
+    const res = await fetch(
+      `${import.meta.env.VITE_BACKEND_URL ?? ''}/api/rag/export/formatos/pdf`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
+        credentials: 'include',
+        body: JSON.stringify({ formatosDocument: doc }),
+      },
+    );
+    if (!res.ok) return;
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'documento-penal.pdf';
+    a.click();
+    URL.revokeObjectURL(url);
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -310,6 +331,21 @@ export function Consultation() {
               padding: 'var(--space-xl)',
             }}
           >
+            {rag.message && (
+              <div
+                style={{
+                  marginBottom: 'var(--space-lg)',
+                  padding: 'var(--space-md)',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--gold-muted, rgba(212, 163, 115, 0.5))',
+                  background: 'rgba(212, 163, 115, 0.08)',
+                  fontSize: '0.9rem',
+                  color: 'var(--text-secondary)',
+                }}
+              >
+                {rag.message}
+              </div>
+            )}
             {mode === 'consulta' && rag.brief?.consulta && (
               <div
                 style={{
@@ -565,7 +601,7 @@ export function Consultation() {
                       <Button type="button" variant="secondary" onClick={() => exportFormatosWord(rag.brief?.formatosDocument)}>
                         Exportar a Word
                       </Button>
-                      <Button type="button" variant="secondary" onClick={exportFormatosPdf}>
+                      <Button type="button" variant="secondary" onClick={() => exportFormatosPdf(rag.brief?.formatosDocument)}>
                         Exportar a PDF
                       </Button>
                     </div>
@@ -589,6 +625,65 @@ export function Consultation() {
                       <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Petitorio</span>
                       <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
                     </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {rag.results && rag.results.length > 0 && (
+              <div style={{ marginTop: 'var(--space-xl)' }}>
+                <button
+                  type="button"
+                  onClick={() => setShowCitations((v) => !v)}
+                  style={{
+                    background: 'none',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-sm)',
+                    padding: 'var(--space-xs) var(--space-md)',
+                    fontSize: '0.875rem',
+                    color: 'var(--text-secondary)',
+                    cursor: 'pointer',
+                  }}
+                >
+                  {showCitations ? 'Ocultar citas' : 'Ver citas'}
+                </button>
+                {showCitations && (
+                  <div
+                    style={{
+                      marginTop: 'var(--space-md)',
+                      padding: 'var(--space-md)',
+                      border: '1px solid var(--border)',
+                      borderRadius: 'var(--radius-md)',
+                      background: 'var(--bg-elevated)',
+                      maxHeight: '40vh',
+                      overflowY: 'auto',
+                    }}
+                  >
+                    <h4 style={{ fontSize: '0.875rem', marginBottom: 'var(--space-sm)', color: 'var(--text-secondary)' }}>
+                      Fragmentos recuperados del corpus
+                    </h4>
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+                      {rag.results.map((r, i) => (
+                        <li
+                          key={r.id}
+                          className={r.passedThreshold ? 'block-cita block-articulo' : 'block-cita block-numeral'}
+                          style={{
+                            padding: 'var(--space-sm)',
+                            fontSize: '0.85rem',
+                            lineHeight: 1.4,
+                          }}
+                        >
+                          <strong>
+                            [{i + 1}] {r.document?.name || r.document?.path || '—'}
+                            {r.article ? ` — Art. ${r.article}` : ''}
+                          </strong>
+                          {r.passedThreshold && (
+                            <span style={{ marginLeft: 'var(--space-xs)', fontSize: '0.75rem', color: 'var(--gold-primary)' }}> (umbral)</span>
+                          )}
+                          <p style={{ margin: 'var(--space-xs) 0 0', whiteSpace: 'pre-wrap' }}>{r.text?.slice(0, 400)}{(r.text?.length ?? 0) > 400 ? '…' : ''}</p>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 )}
               </div>

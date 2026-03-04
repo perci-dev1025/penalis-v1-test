@@ -25,7 +25,7 @@ DOCUMENT STRUCTURE (output as JSON, Spanish, all values strings):
 5. "petition": Clear and concrete petition (what is being requested from the tribunal).
 6. "dateSignature": Placeholder for date and signature (e.g. "Lugar y fecha. Atentamente, [nombre del abogado], [CI], [contacto].").
 
-RULE OF INTELLIGENT ABSTENTION: If the retrieved context is clearly insufficient for the type of document requested, set "legalBasis" to a short paragraph explaining the insufficiency and leave the other sections with minimal placeholder text. Do not invent norms.
+RULE OF INTELLIGENT ABSTENTION: If the retrieved context is clearly insufficient for the type of document requested, set "legalBasis" to a short paragraph explaining the insufficiency and leave the other sections with minimal placeholder text. Do not invent norms. Cite only norms and articles that appear in the retrieved context.
 
 Respond only with the JSON object. Use exactly these keys: heading, identification, facts, legalBasis, petition, dateSignature.`;
 
