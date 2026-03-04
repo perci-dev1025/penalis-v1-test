@@ -75,21 +75,6 @@ type RagResponse = {
   brief?: RagBrief;
 };
 
-/** Map document name/path to clean legal citation label (no technical system data). */
-function formatLegalCitationLabel(name: string | null | undefined, path: string | null | undefined, article: string | null | undefined): string {
-  const raw = `${name || ''} ${path || ''}`.toLowerCase();
-  if (/constitucion|crbv|constitución|1999/.test(raw)) return article ? `Art. ${article} CRBV` : 'CRBV';
-  if (/codigo-organico-procesal|código orgánico procesal|copp|procesal penal/.test(raw)) return article ? `Art. ${article} COPP` : 'COPP';
-  if (/codigo penal|código penal|penal_code|penal code/.test(raw)) return article ? `Art. ${article} Código Penal` : 'Código Penal';
-  if (/sentencia|jurisprudencia|tsj|sala constitucional|sala penal/.test(raw)) return article ? `Sentencia — ${article}` : 'Jurisprudencia';
-  if (/ley|organic/.test(raw)) {
-    const short = (name || path || '').replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ').trim();
-    if (short.length > 0 && short.length < 50) return article ? `Art. ${article} ${short}` : short;
-  }
-  const fallback = (name || path || 'Norma').replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ').trim().slice(0, 40);
-  return article ? `Art. ${article} ${fallback || 'Norma'}` : (fallback || 'Norma');
-}
-
 const MODE_LABELS: Record<string, { label: string; placeholder: string; button: string }> = {
   audiencia: {
     label: 'Situación o tema para audiencia',
@@ -124,7 +109,6 @@ export function Consultation() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [rag, setRag] = useState<RagResponse | null>(null);
-  const [showCitations, setShowCitations] = useState(false);
   const [ttsSpeaking, setTtsSpeaking] = useState(false);
   const formatosPrintRef = useRef<HTMLDivElement>(null);
 
@@ -716,61 +700,6 @@ export function Consultation() {
                       <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Petitorio</span>
                       <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
                     </div>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {rag.results && rag.results.length > 0 && mode !== 'audiencia' && mode !== 'debate' && (
-              <div style={{ marginTop: 'var(--space-xl)' }}>
-                <button
-                  type="button"
-                  onClick={() => setShowCitations((v) => !v)}
-                  style={{
-                    background: 'none',
-                    border: '1px solid var(--border)',
-                    borderRadius: 'var(--radius-sm)',
-                    padding: 'var(--space-xs) var(--space-md)',
-                    fontSize: '0.875rem',
-                    color: 'var(--text-secondary)',
-                    cursor: 'pointer',
-                  }}
-                >
-                  {showCitations ? 'Ocultar citas' : 'Ver citas'}
-                </button>
-                {showCitations && (
-                  <div
-                    style={{
-                      marginTop: 'var(--space-md)',
-                      padding: 'var(--space-md)',
-                      border: '1px solid var(--border)',
-                      borderRadius: 'var(--radius-md)',
-                      background: 'var(--bg-elevated)',
-                      maxHeight: '40vh',
-                      overflowY: 'auto',
-                    }}
-                  >
-                    <h4 style={{ fontSize: '0.875rem', marginBottom: 'var(--space-sm)', color: 'var(--text-secondary)' }}>
-                      Referencias
-                    </h4>
-                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
-                      {rag.results.map((r, i) => (
-                        <li
-                          key={r.id}
-                          className="block-cita block-articulo"
-                          style={{
-                            padding: 'var(--space-sm)',
-                            fontSize: '0.85rem',
-                            lineHeight: 1.4,
-                          }}
-                        >
-                          <strong>
-                            [{i + 1}] {formatLegalCitationLabel(r.document?.name, r.document?.path, r.article)}
-                          </strong>
-                          <p style={{ margin: 'var(--space-xs) 0 0', whiteSpace: 'pre-wrap' }}>{r.text?.slice(0, 400)}{(r.text?.length ?? 0) > 400 ? '…' : ''}</p>
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                 )}
               </div>
