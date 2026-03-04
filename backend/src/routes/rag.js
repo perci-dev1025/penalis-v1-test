@@ -112,6 +112,8 @@ function isCOPPDocument(path, name) {
 
 /** Number of top chunks sent to PROMPT MAESTRO and PROMPT MASTER SUPERIOR for stronger integrated legal basis. */
 const MAESTRO_DEBATE_TOP_CHUNKS = Number(process.env.RAG_MAESTRO_TOP_CHUNKS) || 15;
+/** Per-chunk character limit so doctrine/jurisprudence are less often cut off. */
+const RAG_CHUNK_CHAR_LIMIT = Number(process.env.RAG_CHUNK_CHAR_LIMIT) || 1200;
 
 const PROCEDURAL_BOOST = 0.15;
 const SUBSTANTIVE_PENAL_PENALTY = 0.12;
@@ -446,12 +448,12 @@ router.post('/query', requireAuth, async (req, res, next) => {
       !abstained &&
       scored.length > 0
     ) {
-      const topChunks = scored.slice(0, 10).map((entry, i) => {
+      const topChunks = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS).map((entry, i) => {
         const d = entry.chunk.document;
         const name = d?.name || d?.path || 'norma';
         const art = entry.chunk.article;
         const ref = art ? `Art. ${art} ${name}` : name;
-        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, 800) ?? ''}`;
+        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, RAG_CHUNK_CHAR_LIMIT) ?? ''}`;
       });
       const chunksContext = topChunks.join('\n\n---\n\n');
       const consulta = await getConsultaResponse(question, chunksContext);
@@ -480,7 +482,7 @@ router.post('/query', requireAuth, async (req, res, next) => {
         const name = d?.name || d?.path || 'norma';
         const art = entry.chunk.article;
         const ref = art ? `Art. ${art} ${name}` : name;
-        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, 800) ?? ''}`;
+        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, RAG_CHUNK_CHAR_LIMIT) ?? ''}`;
       });
       const chunksContext = topChunks.join('\n\n---\n\n');
       const maestroRole =
@@ -505,7 +507,7 @@ router.post('/query', requireAuth, async (req, res, next) => {
         const name = d?.name || d?.path || 'norma';
         const art = entry.chunk.article;
         const ref = art ? `Art. ${art} ${name}` : name;
-        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, 800) ?? ''}`;
+        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, RAG_CHUNK_CHAR_LIMIT) ?? ''}`;
       });
       const chunksContext = topChunks.join('\n\n---\n\n');
       const debateRole =
@@ -528,12 +530,12 @@ router.post('/query', requireAuth, async (req, res, next) => {
       brief &&
       scored.length > 0
     ) {
-      const topChunks = scored.slice(0, 10).map((entry, i) => {
+      const topChunks = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS).map((entry, i) => {
         const d = entry.chunk.document;
         const name = d?.name || d?.path || 'norma';
         const art = entry.chunk.article;
         const ref = art ? `Art. ${art} ${name}` : name;
-        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, 800) ?? ''}`;
+        return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, RAG_CHUNK_CHAR_LIMIT) ?? ''}`;
       });
       const chunksContext = topChunks.join('\n\n---\n\n');
       const formatosDoc = await getFormatosDocument(question, chunksContext);
