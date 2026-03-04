@@ -193,6 +193,22 @@ function getThresholdForMode(mode) {
   return base;
 }
 
+/** Set RAG_DEBUG=1 or RAG_DEBUG=true to log retrieval context per request. Disable in production. */
+const RAG_DEBUG = process.env.RAG_DEBUG === '1' || process.env.RAG_DEBUG === 'true';
+
+function logRagContext(mode, topChunks, chunksContext, entries) {
+  if (!RAG_DEBUG || !entries || !Array.isArray(entries)) return;
+  const sourceTypes = entries.map((e) => e.chunk?.sourceType || e.chunk?.document?.sourceType).filter(Boolean);
+  const docNames = entries.map((e) => e.chunk?.document?.name || e.chunk?.document?.path || '').filter(Boolean);
+  console.log('[RAG]', {
+    mode,
+    numChunks: topChunks?.length ?? 0,
+    chunksContextLength: chunksContext?.length ?? 0,
+    sourceTypes: [...new Set(sourceTypes)],
+    documentLabels: docNames.slice(0, 5),
+  });
+}
+
 router.post('/query', requireAuth, async (req, res, next) => {
   try {
     const { question, mode, limit, role } = req.body || {};
@@ -444,7 +460,8 @@ router.post('/query', requireAuth, async (req, res, next) => {
 
     // PROMPT CONSULTA: run whenever there are scored chunks; prompt handles insufficient normative support (abstention paragraph).
     if (modeLower === 'consulta' && scored.length > 0) {
-      const topChunks = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS).map((entry, i) => {
+      const consultaEntries = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS);
+      const topChunks = consultaEntries.map((entry, i) => {
         const d = entry.chunk.document;
         const name = d?.name || d?.path || 'norma';
         const art = entry.chunk.article;
@@ -452,6 +469,7 @@ router.post('/query', requireAuth, async (req, res, next) => {
         return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, RAG_CHUNK_CHAR_LIMIT) ?? ''}`;
       });
       const chunksContext = topChunks.join('\n\n---\n\n');
+      logRagContext('consulta', topChunks, chunksContext, consultaEntries);
       const consulta = await getConsultaResponse(question, chunksContext);
       if (consulta) {
         // Ensure brief exists so we can attach consulta analysis, even if action/article are not used in this mode.
@@ -473,7 +491,8 @@ router.post('/query', requireAuth, async (req, res, next) => {
       !abstained &&
       scored.length > 0
     ) {
-      const topChunks = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS).map((entry, i) => {
+      const audienciaEntries = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS);
+      const topChunks = audienciaEntries.map((entry, i) => {
         const d = entry.chunk.document;
         const name = d?.name || d?.path || 'norma';
         const art = entry.chunk.article;
@@ -481,6 +500,7 @@ router.post('/query', requireAuth, async (req, res, next) => {
         return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, RAG_CHUNK_CHAR_LIMIT) ?? ''}`;
       });
       const chunksContext = topChunks.join('\n\n---\n\n');
+      logRagContext('audiencia', topChunks, chunksContext, audienciaEntries);
       const maestroRole =
         req.body?.role != null
           ? String(req.body.role).toLowerCase()
@@ -498,7 +518,8 @@ router.post('/query', requireAuth, async (req, res, next) => {
       !abstained &&
       scored.length > 0
     ) {
-      const topChunks = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS).map((entry, i) => {
+      const debateEntries = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS);
+      const topChunks = debateEntries.map((entry, i) => {
         const d = entry.chunk.document;
         const name = d?.name || d?.path || 'norma';
         const art = entry.chunk.article;
@@ -506,6 +527,7 @@ router.post('/query', requireAuth, async (req, res, next) => {
         return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, RAG_CHUNK_CHAR_LIMIT) ?? ''}`;
       });
       const chunksContext = topChunks.join('\n\n---\n\n');
+      logRagContext('debate', topChunks, chunksContext, debateEntries);
       const debateRole =
         req.body?.role != null
           ? String(req.body.role).toLowerCase()
@@ -526,7 +548,8 @@ router.post('/query', requireAuth, async (req, res, next) => {
       brief &&
       scored.length > 0
     ) {
-      const topChunks = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS).map((entry, i) => {
+      const formatosEntries = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS);
+      const topChunks = formatosEntries.map((entry, i) => {
         const d = entry.chunk.document;
         const name = d?.name || d?.path || 'norma';
         const art = entry.chunk.article;
@@ -534,6 +557,7 @@ router.post('/query', requireAuth, async (req, res, next) => {
         return `[${i + 1}] ${ref}\n${entry.chunk.text?.trim().slice(0, RAG_CHUNK_CHAR_LIMIT) ?? ''}`;
       });
       const chunksContext = topChunks.join('\n\n---\n\n');
+      logRagContext('formatos', topChunks, chunksContext, formatosEntries);
       const formatosDoc = await getFormatosDocument(question, chunksContext);
       if (formatosDoc) {
         brief.formatosDocument = formatosDoc;
