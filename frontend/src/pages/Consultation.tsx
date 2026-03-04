@@ -324,6 +324,7 @@ export function Consultation() {
 
         {rag && (
           <div
+            className="penalis-result-document"
             style={{
               background: 'var(--bg-card)',
               border: '1px solid var(--border)',
@@ -359,38 +360,40 @@ export function Consultation() {
                 <h3
                   style={{
                     fontFamily: 'var(--font-display)',
-                    fontSize: '1rem',
+                    fontSize: '1.125rem',
                     color: 'var(--gold-primary)',
-                    marginBottom: 'var(--space-md)',
+                    marginBottom: 'var(--space-lg)',
+                    borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))',
+                    paddingBottom: 'var(--space-sm)',
                   }}
                 >
-                  Análisis de consulta jurídica — PENALIS
+                  Análisis de consulta jurídica
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>1) Marco constitucional aplicable</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.constitutionalFramework || '—'}</p>
-                  </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>2) Marco legal relevante</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.legalFramework || '—'}</p>
-                  </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>3) Análisis doctrinal / Teoría General del Delito</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.doctrinalAnalysis || '—'}</p>
-                  </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>4) Aplicación al caso concreto</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.applicationToCase || '—'}</p>
-                  </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>5) Conclusión jurídica</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4, fontWeight: 600 }}>{rag.brief.consulta.conclusion || '—'}</p>
-                  </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>6) Debilidad estratégica de la contraparte</span>
-                    <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.strategicWeakness || '—'}</p>
-                  </div>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Marco constitucional aplicable</h4>
+                    <p className="penalis-doc-body">{rag.brief.consulta.constitutionalFramework || '—'}</p>
+                  </section>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Marco legal relevante</h4>
+                    <p className="penalis-doc-body">{rag.brief.consulta.legalFramework || '—'}</p>
+                  </section>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Análisis doctrinal / Teoría General del Delito</h4>
+                    <p className="penalis-doc-body">{rag.brief.consulta.doctrinalAnalysis || '—'}</p>
+                  </section>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Aplicación al caso concreto</h4>
+                    <p className="penalis-doc-body">{rag.brief.consulta.applicationToCase || '—'}</p>
+                  </section>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Conclusión jurídica</h4>
+                    <p className="penalis-doc-body penalis-doc-conclusion">{rag.brief.consulta.conclusion || '—'}</p>
+                  </section>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Debilidad estratégica de la contraparte</h4>
+                    <p className="penalis-doc-body">{rag.brief.consulta.strategicWeakness || '—'}</p>
+                  </section>
                 </div>
               </div>
             )}
@@ -408,54 +411,56 @@ export function Consultation() {
                 <h3
                   style={{
                     fontFamily: 'var(--font-display)',
-                    fontSize: '1rem',
+                    fontSize: '1.125rem',
                     color: 'var(--gold-primary)',
-                    marginBottom: 'var(--space-md)',
+                    marginBottom: 'var(--space-lg)',
+                    borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))',
+                    paddingBottom: 'var(--space-sm)',
                   }}
                 >
-                  Respuesta táctica (Audiencia) — PROMPT MAESTRO
+                  Respuesta táctica (Audiencia)
                 </h3>
                 {rag.brief.maestro ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>1) Marco legal aplicable</span>
-                      <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.maestro.applicableLegalFramework || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>2) Análisis técnico procesal</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.maestro.proceduralTechnicalAnalysis || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>3) Estrategia de intervención oral</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.maestro.oralInterventionStrategy || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>4) Debilidad estratégica de la contraparte</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.maestro.strategicWeakness || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>5) Riesgos procesales</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.maestro.proceduralRisks || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>6) Recomendación táctica inmediata</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4, fontWeight: 600 }}>{rag.brief.maestro.immediateTacticalRecommendation || '—'}</p>
-                    </div>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Marco legal aplicable</h4>
+                      <p className="block-cita block-articulo penalis-doc-body">{rag.brief.maestro.applicableLegalFramework || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Análisis técnico procesal</h4>
+                      <p className="penalis-doc-body">{rag.brief.maestro.proceduralTechnicalAnalysis || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Estrategia de intervención oral</h4>
+                      <p className="penalis-doc-body">{rag.brief.maestro.oralInterventionStrategy || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Debilidad estratégica de la contraparte</h4>
+                      <p className="penalis-doc-body">{rag.brief.maestro.strategicWeakness || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Riesgos procesales</h4>
+                      <p className="penalis-doc-body">{rag.brief.maestro.proceduralRisks || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Recomendación táctica inmediata</h4>
+                      <p className="penalis-doc-body penalis-doc-conclusion">{rag.brief.maestro.immediateTacticalRecommendation || '—'}</p>
+                    </section>
                   </div>
                 ) : (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Acción sugerida</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Artículo</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Frase procesal</span>
-                      <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
-                    </div>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Acción sugerida</h4>
+                      <p className="penalis-doc-body">{rag.brief.action}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Artículo</h4>
+                      <p className="penalis-doc-body" style={{ fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Frase procesal</h4>
+                      <p className="block-cita block-articulo penalis-doc-body">{rag.brief.proceduralPhrase}</p>
+                    </section>
                   </div>
                 )}
               </div>
@@ -474,66 +479,68 @@ export function Consultation() {
                 <h3
                   style={{
                     fontFamily: 'var(--font-display)',
-                    fontSize: '1rem',
+                    fontSize: '1.125rem',
                     color: 'var(--gold-primary)',
-                    marginBottom: 'var(--space-md)',
+                    marginBottom: 'var(--space-lg)',
+                    borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))',
+                    paddingBottom: 'var(--space-sm)',
                   }}
                 >
-                  Refutación técnica (Debate) — PROMPT MASTER SUPERIOR
+                  Refutación técnica (Debate)
                 </h3>
                 {rag.brief.debateMaster ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>1) Identificación de la tesis contraria</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.identificationOfOpposingThesis || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>2) Marco legal aplicable</span>
-                      <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.applicableLegalFramework || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>3) Análisis probatorio</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.evidentiaryAnalysis || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>4) Refutación jurídica estructural</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.structuralLegalRefutation || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>5) Vulnerabilidad argumentativa de la contraparte</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.detectedVulnerability || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>6) Estrategia de contraataque</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.counterattackStrategy || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>7) Posible contraargumento de la contraparte</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.possibleCounterargumentOfOpposingParty || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>8) Respuesta preventiva recomendada</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.debateMaster.recommendedPreventiveResponse || '—'}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>9) Riesgos procesales</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4, fontWeight: 600 }}>{rag.brief.debateMaster.proceduralRisks || '—'}</p>
-                    </div>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Identificación de la tesis contraria</h4>
+                      <p className="penalis-doc-body">{rag.brief.debateMaster.identificationOfOpposingThesis || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Marco legal aplicable</h4>
+                      <p className="block-cita block-articulo penalis-doc-body">{rag.brief.debateMaster.applicableLegalFramework || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Análisis probatorio</h4>
+                      <p className="penalis-doc-body">{rag.brief.debateMaster.evidentiaryAnalysis || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Refutación jurídica estructural</h4>
+                      <p className="penalis-doc-body">{rag.brief.debateMaster.structuralLegalRefutation || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Vulnerabilidad argumentativa de la contraparte</h4>
+                      <p className="penalis-doc-body">{rag.brief.debateMaster.detectedVulnerability || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Estrategia de contraataque</h4>
+                      <p className="penalis-doc-body">{rag.brief.debateMaster.counterattackStrategy || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Posible contraargumento de la contraparte</h4>
+                      <p className="penalis-doc-body">{rag.brief.debateMaster.possibleCounterargumentOfOpposingParty || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Respuesta preventiva recomendada</h4>
+                      <p className="penalis-doc-body">{rag.brief.debateMaster.recommendedPreventiveResponse || '—'}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Riesgos procesales</h4>
+                      <p className="penalis-doc-body penalis-doc-conclusion">{rag.brief.debateMaster.proceduralRisks || '—'}</p>
+                    </section>
                   </div>
                 ) : (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Tesis</span>
-                      <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.proceduralPhrase}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Fundamento</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Solicitud</span>
-                      <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4 }}>{rag.brief.action}</p>
-                    </div>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Tesis</h4>
+                      <p className="block-cita block-articulo penalis-doc-body">{rag.brief.proceduralPhrase}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Fundamento</h4>
+                      <p className="penalis-doc-body" style={{ fontFamily: 'var(--font-display)', color: 'var(--gold-primary)' }}>{rag.brief.article}</p>
+                    </section>
+                    <section>
+                      <h4 className="penalis-doc-section-title">Solicitud</h4>
+                      <p className="penalis-doc-body">{rag.brief.action}</p>
+                    </section>
                   </div>
                 )}
               </div>
@@ -552,9 +559,11 @@ export function Consultation() {
                 <h3
                   style={{
                     fontFamily: 'var(--font-display)',
-                    fontSize: '1rem',
+                    fontSize: '1.125rem',
                     color: 'var(--gold-primary)',
-                    marginBottom: 'var(--space-md)',
+                    marginBottom: 'var(--space-lg)',
+                    borderBottom: '1px solid var(--border-gold, rgba(212, 163, 115, 0.3))',
+                    paddingBottom: 'var(--space-sm)',
                   }}
                 >
                   Documento generado (Formatos Penales)
@@ -567,34 +576,34 @@ export function Consultation() {
                       style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}
                     >
                       {rag.brief.formatosDocument.heading && (
-                        <div>
-                          <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Encabezado</span>
-                          <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.heading}</p>
-                        </div>
+                        <section>
+                          <h4 className="penalis-doc-section-title">Encabezado</h4>
+                          <p className="penalis-doc-body">{rag.brief.formatosDocument.heading}</p>
+                        </section>
                       )}
                       {rag.brief.formatosDocument.identification && (
-                        <div>
-                          <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Identificación</span>
-                          <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.identification}</p>
-                        </div>
+                        <section>
+                          <h4 className="penalis-doc-section-title">Identificación</h4>
+                          <p className="penalis-doc-body">{rag.brief.formatosDocument.identification}</p>
+                        </section>
                       )}
-                      <div>
-                        <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Hechos</span>
-                        <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.facts || '—'}</p>
-                      </div>
-                      <div>
-                        <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Fundamento jurídico</span>
-                        <p className="block-cita block-articulo" style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.legalBasis || '—'}</p>
-                      </div>
-                      <div>
-                        <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Petitorio</span>
-                        <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.95rem', lineHeight: 1.4, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.petition || '—'}</p>
-                      </div>
+                      <section>
+                        <h4 className="penalis-doc-section-title">Hechos</h4>
+                        <p className="penalis-doc-body">{rag.brief.formatosDocument.facts || '—'}</p>
+                      </section>
+                      <section>
+                        <h4 className="penalis-doc-section-title">Fundamento jurídico</h4>
+                        <p className="block-cita block-articulo penalis-doc-body">{rag.brief.formatosDocument.legalBasis || '—'}</p>
+                      </section>
+                      <section>
+                        <h4 className="penalis-doc-section-title">Petitorio</h4>
+                        <p className="penalis-doc-body">{rag.brief.formatosDocument.petition || '—'}</p>
+                      </section>
                       {rag.brief.formatosDocument.dateSignature && (
-                        <div>
-                          <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Lugar y fecha / Firma</span>
-                          <p style={{ margin: 'var(--space-xs) 0 0', fontSize: '0.9rem', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{rag.brief.formatosDocument.dateSignature}</p>
-                        </div>
+                        <section>
+                          <h4 className="penalis-doc-section-title">Lugar y fecha / Firma</h4>
+                          <p className="penalis-doc-body">{rag.brief.formatosDocument.dateSignature}</p>
+                        </section>
                       )}
                     </div>
                     <div style={{ display: 'flex', gap: 'var(--space-md)', marginTop: 'var(--space-lg)', flexWrap: 'wrap' }}>
@@ -660,7 +669,7 @@ export function Consultation() {
                     }}
                   >
                     <h4 style={{ fontSize: '0.875rem', marginBottom: 'var(--space-sm)', color: 'var(--text-secondary)' }}>
-                      Fragmentos recuperados del corpus
+                      Referencias
                     </h4>
                     <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
                       {rag.results.map((r, i) => (
@@ -677,9 +686,6 @@ export function Consultation() {
                             [{i + 1}] {r.document?.name || r.document?.path || '—'}
                             {r.article ? ` — Art. ${r.article}` : ''}
                           </strong>
-                          {r.passedThreshold && (
-                            <span style={{ marginLeft: 'var(--space-xs)', fontSize: '0.75rem', color: 'var(--gold-primary)' }}> (umbral)</span>
-                          )}
                           <p style={{ margin: 'var(--space-xs) 0 0', whiteSpace: 'pre-wrap' }}>{r.text?.slice(0, 400)}{(r.text?.length ?? 0) > 400 ? '…' : ''}</p>
                         </li>
                       ))}

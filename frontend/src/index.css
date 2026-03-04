@@ -69,6 +69,44 @@ button {
 .block-numeral { border-left-color: var(--gold-muted); }
 .block-jurisprudencia { border-left-color: var(--gold-bright); }
 
+/* Document-style result (Phase 7: institutional hierarchy) */
+.penalis-doc-section-title {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--space-xs);
+}
+.penalis-doc-body {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+.penalis-doc-conclusion {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+/* Print: result document (all modes) */
+@media print {
+  .penalis-result-document {
+    background: white !important;
+    color: #111 !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+  }
+  .penalis-result-document .penalis-doc-section-title {
+    color: #333 !important;
+  }
+  .penalis-result-document h3 {
+    color: #222 !important;
+    border-bottom-color: #ccc !important;
+  }
+}
+
 /* Print: only show Formatos document for PDF export */
 @media print {
   body * {
