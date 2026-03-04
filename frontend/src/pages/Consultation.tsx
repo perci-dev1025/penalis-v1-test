@@ -75,6 +75,21 @@ type RagResponse = {
   brief?: RagBrief;
 };
 
+/** Map document name/path to clean legal citation label (no technical system data). */
+function formatLegalCitationLabel(name: string | null | undefined, path: string | null | undefined, article: string | null | undefined): string {
+  const raw = `${name || ''} ${path || ''}`.toLowerCase();
+  if (/constitucion|crbv|constitución|1999/.test(raw)) return article ? `Art. ${article} CRBV` : 'CRBV';
+  if (/codigo-organico-procesal|código orgánico procesal|copp|procesal penal/.test(raw)) return article ? `Art. ${article} COPP` : 'COPP';
+  if (/codigo penal|código penal|penal_code|penal code/.test(raw)) return article ? `Art. ${article} Código Penal` : 'Código Penal';
+  if (/sentencia|jurisprudencia|tsj|sala constitucional|sala penal/.test(raw)) return article ? `Sentencia — ${article}` : 'Jurisprudencia';
+  if (/ley|organic/.test(raw)) {
+    const short = (name || path || '').replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ').trim();
+    if (short.length > 0 && short.length < 50) return article ? `Art. ${article} ${short}` : short;
+  }
+  const fallback = (name || path || 'Norma').replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ').trim().slice(0, 40);
+  return article ? `Art. ${article} ${fallback || 'Norma'}` : (fallback || 'Norma');
+}
+
 const MODE_LABELS: Record<string, { label: string; placeholder: string; button: string }> = {
   audiencia: {
     label: 'Situación o tema para audiencia',
@@ -742,7 +757,7 @@ export function Consultation() {
                       {rag.results.map((r, i) => (
                         <li
                           key={r.id}
-                          className={r.passedThreshold ? 'block-cita block-articulo' : 'block-cita block-numeral'}
+                          className="block-cita block-articulo"
                           style={{
                             padding: 'var(--space-sm)',
                             fontSize: '0.85rem',
@@ -750,8 +765,7 @@ export function Consultation() {
                           }}
                         >
                           <strong>
-                            [{i + 1}] {r.document?.name || r.document?.path || '—'}
-                            {r.article ? ` — Art. ${r.article}` : ''}
+                            [{i + 1}] {formatLegalCitationLabel(r.document?.name, r.document?.path, r.article)}
                           </strong>
                           <p style={{ margin: 'var(--space-xs) 0 0', whiteSpace: 'pre-wrap' }}>{r.text?.slice(0, 400)}{(r.text?.length ?? 0) > 400 ? '…' : ''}</p>
                         </li>
