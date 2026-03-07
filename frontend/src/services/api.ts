@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_BACKEND_URL ?? '';
+export const API_BASE = import.meta.env.VITE_BACKEND_URL ?? '';
 
 const AUTH_TOKEN_KEY = 'penalis_auth_token';
 

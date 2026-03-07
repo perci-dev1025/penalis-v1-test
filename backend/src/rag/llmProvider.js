@@ -14,6 +14,10 @@ import {
   PROMPT_FORMATOS_SYSTEM,
   buildFormatosUserMessage,
 } from './promptFormatos.js';
+import {
+  PROMPT_ANALISIS_DOCUMENTO_SYSTEM,
+  buildAnalisisDocumentoUserMessage,
+} from './promptAnalisisDocumento.js';
 
 const openaiApiKey = process.env.OPENAI_API_KEY;
 const model = process.env.RAG_MAESTRO_MODEL || 'gpt-4o-mini';
@@ -183,7 +187,7 @@ export async function getDebateMasterResponse(role, question, chunksContext) {
   }
 }
 
-/** 8-section Consulta response keys (new format). */
+/** 9-section Consulta response keys (new format, includes suggestedNextSteps). */
 const CONSULTA_KEYS = [
   'thesis',
   'constitutionalFramework',
@@ -193,6 +197,7 @@ const CONSULTA_KEYS = [
   'conclusion',
   'proceduralStrategy',
   'strategicWeakness',
+  'suggestedNextSteps',
 ];
 
 /**
@@ -327,6 +332,72 @@ export async function getFormatosDocument(question, chunksContext) {
     return result;
   } catch (e) {
     console.error('PROMPT FORMATOS: failed to parse JSON', e.message);
+    return null;
+  }
+}
+
+const ANALISIS_DOCUMENTO_KEYS = [
+  'legalProblem',
+  'normativeFramework',
+  'legalWeaknesses',
+  'evidentiaryWeaknesses',
+  'proceduralDefects',
+  'possibleNullities',
+  'suggestedStrategies',
+  'conclusion',
+  'suggestedNextSteps',
+];
+
+/**
+ * Call OpenAI for Document Analysis mode; returns parsed analysis object with suggestedNextSteps.
+ */
+export async function getAnalisisDocumentoResponse(documentText, question, chunksContext) {
+  if (!openaiApiKey) {
+    if (!warnedNoApiKey) {
+      console.error('OPENAI_API_KEY is not set; Document Analysis will not run.');
+      warnedNoApiKey = true;
+    }
+    return null;
+  }
+  const userMessage = buildAnalisisDocumentoUserMessage(documentText, question, chunksContext);
+  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${openaiApiKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      model,
+      messages: [
+        { role: 'system', content: PROMPT_ANALISIS_DOCUMENTO_SYSTEM },
+        { role: 'user', content: userMessage },
+      ],
+      response_format: { type: 'json_object' },
+      temperature: 0.3,
+    }),
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    console.error('PROMPT ANÁLISIS DOCUMENTO LLM error:', res.status, text);
+    return null;
+  }
+  const json = await res.json();
+  const content = json?.choices?.[0]?.message?.content;
+  if (!content || typeof content !== 'string') {
+    console.error('PROMPT ANÁLISIS DOCUMENTO: empty or invalid response');
+    return null;
+  }
+  const jsonMatch = content.match(/\{[\s\S]*\}/);
+  const jsonStr = jsonMatch ? jsonMatch[0] : content;
+  try {
+    const parsed = JSON.parse(jsonStr);
+    const result = {};
+    for (const k of ANALISIS_DOCUMENTO_KEYS) {
+      result[k] = getString(parsed, k);
+    }
+    return result;
+  } catch (e) {
+    console.error('PROMPT ANÁLISIS DOCUMENTO: failed to parse JSON', e.message);
     return null;
   }
 }

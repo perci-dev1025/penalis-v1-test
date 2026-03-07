@@ -69,10 +69,11 @@ RESPONSE STRUCTURE (JSON, Spanish, values must be strings). Output exactly these
 6. "conclusion" (Conclusión jurídica): Clear conclusion stating the general rule and, when applicable, the exception (e.g. "Como regla general... No obstante, de manera excepcional...").
 7. "proceduralStrategy" (Estrategia de intervención procesal): Practical strategy for the party (e.g. how to request exceptional admission, what to argue, how to base the request on constitution and COPP).
 8. "strategicWeakness" (Debilidad estratégica de la contraparte): Risks or weaknesses for the opposing position; never leave empty or generic.
+9. "suggestedNextSteps" (Sugerencias de próximos pasos): At the end, suggest 2 to 4 concrete actions or questions the user could ask next (e.g. "Analizar estrategia de defensa", "Generar escrito de nulidad", "Profundizar en jurisprudencia sobre X", "Preparar argumentos para audiencia"). Write as short actionable items in Spanish, separated by semicolons or newlines.
 
 RULE OF INTELLIGENT ABSTENTION:
 - If the retrieved legal support is clearly insufficient, the similarity threshold is not adequate, or the consultation is vague or puramente hipotética sin base jurídica clara, do NOT improvise rules, do NOT invent facts, and do NOT fabricate norms.
-- In that case, you must abstain and return a JSON object where "conclusion" contains: "Con base en el corpus jurídico disponible, no existe soporte suficiente para emitir una respuesta técnica responsable en este escenario." and all other fields are set to "" (empty string).
+- In that case, you must abstain and return a JSON object where "conclusion" contains: "Con base en el corpus jurídico disponible, no existe soporte suficiente para emitir una respuesta técnica responsable en este escenario." and all other fields (including "suggestedNextSteps") are set to "" (empty string).
 
 Respond only with the JSON object.`;
 
@@ -94,5 +95,5 @@ Follow the normative hierarchy (Constitution → COPP → Penal Code → doctrin
 
 For conclusions that have a general rule and an exception (e.g. incorporation of proof at trial), state both clearly. In "applicationToCase" use bullet points (✔ or •) when listing scenarios or conditions.
 
-Produce the 8-section JSON response: thesis, constitutionalFramework, legalFramework, jurisprudentialCriterion, applicationToCase, conclusion, proceduralStrategy, strategicWeakness.`;
+Produce the 9-section JSON response: thesis, constitutionalFramework, legalFramework, jurisprudentialCriterion, applicationToCase, conclusion, proceduralStrategy, strategicWeakness, suggestedNextSteps.`;
 }

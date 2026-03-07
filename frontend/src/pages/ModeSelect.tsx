@@ -5,6 +5,7 @@ const MODES = [
   { id: 'debate', title: 'Modo Debate Oral', short: 'Debate Oral', description: 'Argumentación estructurada: Tesis → Fundamento → Solicitud.' },
   { id: 'consulta', title: 'Modo Consulta Jurídica', short: 'Consulta Jurídica', description: 'Análisis doctrinal con citación verificable.' },
   { id: 'formatos', title: 'Modo Formatos Penales', short: 'Formatos Penales', description: 'Generación estructurada de escritos: Encabezado → Hechos → Derecho → Petitorio.' },
+  { id: 'analisis-documento', title: 'Análisis de documentos', short: 'Análisis de documentos', description: 'Analice acusaciones, sentencias, autos o escritos. Detecte debilidades jurídicas, probatorias y procesales.' },
 ];
 
 export function ModeSelect() {

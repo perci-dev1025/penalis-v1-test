@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Button } from '../components/Button';
-import { apiFetch } from '../services/api';
+import { apiFetch, API_BASE, getStoredToken } from '../services/api';
 
 type RagResult = {
   id: string;
@@ -57,8 +57,20 @@ type RagBrief = {
     conclusion: string;
     proceduralStrategy: string;
     strategicWeakness: string;
+    suggestedNextSteps?: string;
     /** @deprecated Legacy 6-section; use thesis + jurisprudentialCriterion + proceduralStrategy */
     doctrinalAnalysis?: string;
+  };
+  analisisDocumento?: {
+    legalProblem: string;
+    normativeFramework: string;
+    legalWeaknesses: string;
+    evidentiaryWeaknesses: string;
+    proceduralDefects: string;
+    possibleNullities: string;
+    suggestedStrategies: string;
+    conclusion: string;
+    suggestedNextSteps: string;
   };
   formatosDocument?: {
     heading: string;
@@ -100,6 +112,11 @@ const MODE_LABELS: Record<string, { label: string; placeholder: string; button: 
     placeholder: 'Describa los hechos y el tipo de escrito (solicitud, recurso, etc.)...',
     button: 'Generar estructura del escrito',
   },
+  'analisis-documento': {
+    label: 'Documento a analizar',
+    placeholder: 'Opcional: indique el enfoque del análisis (ej. debilidades probatorias, nulidades)...',
+    button: 'Analizar documento',
+  },
 };
 
 export function Consultation() {
@@ -125,6 +142,7 @@ export function Consultation() {
   const [error, setError] = useState<string | null>(null);
   const [rag, setRag] = useState<RagResponse | null>(null);
   const [lastSubmittedQuestion, setLastSubmittedQuestion] = useState('');
+  const [documentFile, setDocumentFile] = useState<File | null>(null);
   const [ttsSpeaking, setTtsSpeaking] = useState(false);
   const formatosPrintRef = useRef<HTMLDivElement>(null);
 
@@ -161,6 +179,17 @@ export function Consultation() {
       parts.push('Posible contraargumento de la contraparte.', d.possibleCounterargumentOfOpposingParty || '');
       parts.push('Respuesta preventiva recomendada.', d.recommendedPreventiveResponse || '');
       parts.push('Riesgos procesales y conclusión estratégica.', d.proceduralRisks || '');
+    } else if (m === 'analisis-documento' && brief.analisisDocumento) {
+      const a = brief.analisisDocumento;
+      parts.push('Problema jurídico.', a.legalProblem || '');
+      parts.push('Marco normativo.', a.normativeFramework || '');
+      parts.push('Debilidades jurídicas.', a.legalWeaknesses || '');
+      parts.push('Debilidades probatorias.', a.evidentiaryWeaknesses || '');
+      parts.push('Defectos procesales.', a.proceduralDefects || '');
+      parts.push('Posibles nulidades.', a.possibleNullities || '');
+      parts.push('Estrategias sugeridas.', a.suggestedStrategies || '');
+      parts.push('Conclusión.', a.conclusion || '');
+      if (a.suggestedNextSteps) parts.push('Sugerencias de próximos pasos.', a.suggestedNextSteps);
     }
     return parts.filter(Boolean).join(' ');
   }
@@ -251,6 +280,11 @@ export function Consultation() {
         setError('Complete al menos: tipo de escrito, etapa procesal, tribunal competente, hechos relevantes, finalidad del escrito e identificación de las partes.');
         return;
       }
+    } else if (mode === 'analisis-documento') {
+      if (!documentFile) {
+        setError('Seleccione un documento (PDF o TXT) para analizar.');
+        return;
+      }
     } else if (!query.trim()) {
       return;
     }
@@ -261,6 +295,44 @@ export function Consultation() {
     setLoading(true);
     setError(null);
     setRag(null);
+
+    if (mode === 'analisis-documento' && documentFile) {
+      const form = new FormData();
+      form.append('document', documentFile);
+      if (query.trim()) form.append('question', query.trim());
+      const token = getStoredToken();
+      const headers: HeadersInit = {};
+      if (token) (headers as Record<string, string>)['Authorization'] = `Bearer ${token}`;
+      try {
+        const res = await fetch(`${API_BASE}/api/rag/analisis-documento`, {
+          method: 'POST',
+          credentials: 'include',
+          headers,
+          body: form,
+        });
+        const text = await res.text();
+        let data: RagResponse | null = null;
+        if (text) {
+          try {
+            data = JSON.parse(text) as RagResponse;
+          } catch {
+            setError(text || 'Error al procesar la respuesta.');
+          }
+        }
+        if (!res.ok) {
+          const err = data && typeof (data as { error?: string }).error === 'string' ? (data as { error: string }).error : `Error ${res.status}`;
+          setError(err);
+        } else if (data) {
+          setRag(data);
+          setLastSubmittedQuestion(documentFile.name + (query.trim() ? ': ' + query.trim() : ''));
+        }
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Error de conexión.');
+      }
+      setLoading(false);
+      return;
+    }
+
     let questionPayload = query;
     if (mode === 'formatos') {
       const roleLabel =
@@ -389,6 +461,59 @@ export function Consultation() {
                 />
                 Fiscal
               </label>
+            </div>
+          )}
+          {mode === 'analisis-documento' && (
+            <div style={{ marginBottom: 'var(--space-md)' }}>
+              <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                Adjuntar documento (PDF o TXT)
+              </label>
+              <input
+                type="file"
+                accept=".pdf,.txt,application/pdf,text/plain"
+                onChange={(e) => {
+                  const f = e.target.files?.[0];
+                  setDocumentFile(f || null);
+                  setError(null);
+                }}
+                disabled={loading}
+                style={{
+                  width: '100%',
+                  padding: 'var(--space-sm)',
+                  background: 'var(--bg-surface)',
+                  border: '1px solid var(--border)',
+                  borderRadius: 'var(--radius-md)',
+                  color: 'var(--text-primary)',
+                  fontSize: '0.9375rem',
+                }}
+              />
+              {documentFile && (
+                <p style={{ marginTop: 'var(--space-xs)', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                  {documentFile.name} ({(documentFile.size / 1024).toFixed(1)} KB)
+                </p>
+              )}
+              <label style={{ display: 'block', marginTop: 'var(--space-md)', marginBottom: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                Pregunta o enfoque (opcional)
+              </label>
+              <textarea
+                id="consulta-input"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder={modeConfig.placeholder}
+                disabled={loading}
+                rows={3}
+                style={{
+                  width: '100%',
+                  padding: 'var(--space-md)',
+                  background: 'var(--bg-surface)',
+                  border: '1px solid var(--border)',
+                  borderRadius: 'var(--radius-md)',
+                  color: 'var(--text-primary)',
+                  fontSize: '0.9375rem',
+                  resize: 'vertical',
+                  minHeight: '80px',
+                }}
+              />
             </div>
           )}
           {mode === 'formatos' ? (
@@ -623,12 +748,12 @@ export function Consultation() {
                 />
               </div>
             </div>
-          ) : (
+          ) : mode !== 'analisis-documento' ? (
           <textarea
             id="consulta-input"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-              placeholder={modeConfig.placeholder}
+            placeholder={modeConfig.placeholder}
             rows={4}
             disabled={loading}
               style={{
@@ -644,7 +769,7 @@ export function Consultation() {
                 minHeight: '120px',
               }}
             />
-          )}
+          ) : null}
           <div
             style={{
               marginTop: 'var(--space-md)',
@@ -654,7 +779,7 @@ export function Consultation() {
             }}
           >
             <Button type="submit" variant="primary" disabled={loading}>
-              {loading ? (mode === 'audiencia' ? 'Buscando fuentes y generando análisis…' : mode === 'debate' ? 'Buscando fuentes y generando refutación…' : 'Buscando fuentes…') : modeConfig.button}
+              {loading ? (mode === 'audiencia' ? 'Buscando fuentes y generando análisis…' : mode === 'debate' ? 'Buscando fuentes y generando refutación…' : mode === 'analisis-documento' ? 'Analizando documento…' : 'Buscando fuentes…') : modeConfig.button}
             </Button>
           </div>
         </form>
@@ -771,6 +896,92 @@ export function Consultation() {
                     <h4 className="penalis-doc-section-title">8. Debilidad estratégica de la contraparte</h4>
                     <p className="penalis-doc-body">{rag.brief.consulta.strategicWeakness || '—'}</p>
                   </section>
+                  {rag.brief.consulta.suggestedNextSteps && (
+                    <>
+                      <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                      <section>
+                        <h4 className="penalis-doc-section-title">Sugerencias de próximos pasos</h4>
+                        <p className="penalis-doc-body" style={{ whiteSpace: 'pre-wrap' }}>{rag.brief.consulta.suggestedNextSteps}</p>
+                      </section>
+                    </>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {mode === 'analisis-documento' && rag.brief?.analisisDocumento && (
+              <div
+                style={{
+                  marginBottom: 'var(--space-xl)',
+                  padding: 'var(--space-lg)',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--border-gold)',
+                  background: 'var(--gold-card-bg)',
+                }}
+              >
+                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-md)', borderBottom: '1px solid var(--border-gold)', paddingBottom: 'var(--space-sm)' }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.125rem', color: 'var(--gold-primary)', margin: 0 }}>
+                    Análisis de documento
+                  </h3>
+                  {ttsSpeaking ? (
+                    <Button type="button" variant="secondary" onClick={handleStopTTS} aria-label="Detener reproducción">
+                      Detener
+                    </Button>
+                  ) : (
+                    <Button type="button" variant="secondary" onClick={handlePlayTTS} aria-label="Escuchar análisis">
+                      Escuchar análisis
+                    </Button>
+                  )}
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)', fontSize: '0.9375rem', lineHeight: 1.55 }}>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Problema jurídico</h4>
+                    <p className="penalis-doc-body">{rag.brief.analisisDocumento.legalProblem || '—'}</p>
+                  </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Marco normativo</h4>
+                    <p className="penalis-doc-body">{rag.brief.analisisDocumento.normativeFramework || '—'}</p>
+                  </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Debilidades jurídicas</h4>
+                    <p className="penalis-doc-body">{rag.brief.analisisDocumento.legalWeaknesses || '—'}</p>
+                  </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Debilidades probatorias</h4>
+                    <p className="penalis-doc-body">{rag.brief.analisisDocumento.evidentiaryWeaknesses || '—'}</p>
+                  </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Defectos procesales</h4>
+                    <p className="penalis-doc-body">{rag.brief.analisisDocumento.proceduralDefects || '—'}</p>
+                  </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Posibles nulidades</h4>
+                    <p className="penalis-doc-body">{rag.brief.analisisDocumento.possibleNullities || '—'}</p>
+                  </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Estrategias sugeridas</h4>
+                    <p className="penalis-doc-body">{rag.brief.analisisDocumento.suggestedStrategies || '—'}</p>
+                  </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                  <section>
+                    <h4 className="penalis-doc-section-title">Conclusión</h4>
+                    <p className="penalis-doc-body penalis-doc-conclusion">{rag.brief.analisisDocumento.conclusion || '—'}</p>
+                  </section>
+                  {rag.brief.analisisDocumento.suggestedNextSteps && (
+                    <>
+                      <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                      <section>
+                        <h4 className="penalis-doc-section-title">Sugerencias de próximos pasos</h4>
+                        <p className="penalis-doc-body" style={{ whiteSpace: 'pre-wrap' }}>{rag.brief.analisisDocumento.suggestedNextSteps}</p>
+                      </section>
+                    </>
+                  )}
                 </div>
               </div>
             )}

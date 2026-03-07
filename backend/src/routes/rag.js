@@ -1,11 +1,24 @@
 import { Router } from 'express';
+import multer from 'multer';
 import { prisma } from '../db.js';
 import { requireAuth } from '../middleware/auth.js';
 import { getEmbedding } from '../rag/embeddingProvider.js';
-import { getMaestroResponse, getDebateMasterResponse, getConsultaResponse, getFormatosDocument } from '../rag/llmProvider.js';
+import { getMaestroResponse, getDebateMasterResponse, getConsultaResponse, getFormatosDocument, getAnalisisDocumentoResponse } from '../rag/llmProvider.js';
 import { buildDocxBuffer, buildPdfBuffer } from '../rag/exportFormatos.js';
+import { extractDocumentText } from '../rag/extractDocumentText.js';
 
 const router = Router();
+
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: { fileSize: 10 * 1024 * 1024 },
+  fileFilter: (_req, file, cb) => {
+    const name = (file.originalname || '').toLowerCase();
+    const ok = name.endsWith('.pdf') || name.endsWith('.txt') || file.mimetype === 'application/pdf' || file.mimetype === 'text/plain';
+    if (ok) cb(null, true);
+    else cb(new Error('Solo se permiten archivos PDF o TXT.'), false);
+  },
+});
 
 const NORMATIVE_SOURCE_TYPES = new Set([
   'fundamental_norm',
@@ -758,6 +771,130 @@ router.post('/query', requireAuth, async (req, res, next) => {
     });
   } catch (err) {
     console.error('RAG /query error:', err?.message || err);
+    if (err?.stack) console.error(err.stack);
+    next(err);
+  }
+});
+
+/** POST /api/rag/analisis-documento — multipart: document (file PDF/TXT), question (optional). Analyzes document and returns legal/evidentiary/procedural weaknesses. */
+router.post('/analisis-documento', requireAuth, upload.single('document'), async (req, res, next) => {
+  try {
+    if (!req.file || !req.file.buffer) {
+      return res.status(400).json({ error: 'Se requiere adjuntar un documento (PDF o TXT).' });
+    }
+    let documentText;
+    try {
+      documentText = await extractDocumentText(req.file.buffer, req.file.originalname);
+    } catch (extractErr) {
+      return res.status(400).json({ error: extractErr.message || 'Error al extraer texto del documento.' });
+    }
+    const question = (req.body && req.body.question) ? String(req.body.question).trim() : '';
+    const ragQuery = question || 'Debilidades jurídicas, probatorias y procesales en documento penal. COPP y jurisprudencia.';
+
+    let candidates = await prisma.legalChunk.findMany({ take: 500, include: { document: true } });
+    const candidateIds = new Set(candidates.map((c) => c.id));
+    const coppChunks = await prisma.legalChunk.findMany({
+      where: {
+        document: {
+          OR: [
+            { path: { contains: 'codigo-organico-procesal-penal', mode: 'insensitive' } },
+            { name: { contains: 'codigo-organico-procesal-penal', mode: 'insensitive' } },
+          ],
+        },
+      },
+      take: 300,
+      include: { document: true },
+    });
+    for (const chunk of coppChunks) {
+      if (!candidateIds.has(chunk.id)) {
+        candidates.push(chunk);
+        candidateIds.add(chunk.id);
+      }
+    }
+    const jurisChunks = await prisma.legalChunk.findMany({
+      where: { sourceType: { in: ['jurisprudence', 'format'] } },
+      take: 400,
+      include: { document: true },
+    });
+    for (const chunk of jurisChunks) {
+      if (!candidateIds.has(chunk.id)) {
+        candidates.push(chunk);
+        candidateIds.add(chunk.id);
+      }
+    }
+
+    const queryEmbedding = await getEmbedding(ragQuery);
+    const canUseEmbeddings = queryEmbedding && candidates.some((c) => c.embedding && c.embedding.length > 0);
+    let scored;
+    if (canUseEmbeddings) {
+      scored = candidates
+        .filter((c) => c.embedding && c.embedding.length > 0)
+        .map((chunk) => ({
+          chunk,
+          score: cosineSimilarity(queryEmbedding, bufferToFloat32Array(chunk.embedding)),
+        }))
+        .filter((e) => e.score > 0);
+    } else {
+      const queryTokens = tokenize(ragQuery);
+      scored = candidates
+        .map((chunk) => ({ chunk, score: jaccardSimilarity(queryTokens, tokenize(chunk.text)) }))
+        .filter((e) => e.score > 0);
+    }
+    scored.sort((a, b) => {
+      const aNorm = NORMATIVE_SOURCE_TYPES.has(a.chunk.sourceType);
+      const bNorm = NORMATIVE_SOURCE_TYPES.has(b.chunk.sourceType);
+      if (aNorm !== bNorm) return aNorm ? -1 : 1;
+      return b.score - a.score;
+    });
+    const topEntries = scored.slice(0, MAESTRO_DEBATE_TOP_CHUNKS);
+    const chunksContext = topEntries
+      .map((entry, i) => {
+        const d = entry.chunk.document;
+        const name = d?.name || d?.path || 'norma';
+        const art = entry.chunk.article;
+        const ref = art ? `Art. ${art} ${name}` : name;
+        return `[${i + 1}] ${ref}\n${(entry.chunk.text || '').trim().slice(0, RAG_CHUNK_CHAR_LIMIT)}`;
+      })
+      .join('\n\n---\n\n');
+
+    const analisisDocumento = await getAnalisisDocumentoResponse(documentText, question, chunksContext);
+    if (!analisisDocumento) {
+      return res.status(500).json({ error: 'No se pudo generar el análisis. Verifique OPENAI_API_KEY.' });
+    }
+    return res.json({
+      id: null,
+      abstained: false,
+      threshold: 0.1,
+      brief: { analisisDocumento },
+      results: topEntries.map((entry, index) => ({
+        id: entry.chunk.id,
+        documentId: entry.chunk.documentId,
+        article: entry.chunk.article,
+        section: entry.chunk.section,
+        text: entry.chunk.text,
+        similarity: entry.score,
+        rank: index + 1,
+        sourceType: entry.chunk.sourceType,
+        hierarchyRank: entry.chunk.hierarchyRank,
+        passedThreshold: true,
+        document: entry.chunk.document
+          ? {
+              id: entry.chunk.document.id,
+              name: entry.chunk.document.name,
+              path: entry.chunk.document.path,
+              sourceType: entry.chunk.document.sourceType,
+              hierarchyRank: entry.chunk.document.hierarchyRank,
+              system: entry.chunk.document.system,
+              organ: entry.chunk.document.organ,
+            }
+          : {},
+      })),
+    });
+  } catch (err) {
+    if (err.code === 'LIMIT_FILE_SIZE') {
+      return res.status(400).json({ error: 'El archivo es demasiado grande (máx. 10 MB).' });
+    }
+    console.error('RAG /analisis-documento error:', err?.message || err);
     if (err?.stack) console.error(err.stack);
     next(err);
   }
