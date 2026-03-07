@@ -1,0 +1,2019 @@
+1
+2
+3
+DERECHO PENAL
+CONSTITUCIONAL
+ Una aproximación a los aspectos 
+modernos de su práctica
+Dr. Manuel Martínez
+DERECHO PENAL CONSTITUCIONAL
+ Una aproximación a los aspectos modernos de su práctica 
+© Dr. Manuel Martínez
+Primera Edición, noviembre 2025
+ISBN: 
+Depósito Legal: 
+Revisión: Damaris Perdomo
+Corrección Richard Sabogal
+www.editorialnegrosobreblanco.com
+www.richardsabogaleditor.com
+Diseño y diagramación: Ediciones Ekake
+Todos los derechos reservados.
+Queda prohibido reproducir parte alguna de esta publicación,
+cualquiera sea el medio empleado, sin el permiso previo del 
+4
+5
+DERECHO PENAL
+CONSTITUCIONAL
+ Una aproximación a los aspectos 
+modernos de su práctica
+6
+Dedicatoria
+En primer lugar, como no puede ser de otra manera, 
+este libro se lo dedico a la Santísima Virgen María, en 
+su advocación del Carmen y de Santa María de Guía, 
+por darme la luz para culminar un proyecto que tenía 
+guardado en mi corazón.
+A mi hijo, para que sirva como legado en su vida y para 
+que sepa que el trabajo, el estudio y el esfuerzo honesto 
+nunca están de más, y siempre recompensa más que el 
+camino fácil pero oscuro de lo no honrado.
+A mis compañeros de trabajo y alumnos, que en 
+muchas ocasiones se fusionaron en ambas categorías 
+en diferentes charlas y tertulias que teníamos, y por el 
+requerimiento de muchos de ellos para que escribiera 
+y dejara plasmado en un libro lo que les explicaba: mi 
+punto de vista del derecho penal constitucional. 
+A toda mi familia, porque sin ellos la vida no sería 
+lo que es, con sus altibajos, pero nunca dejándote caer, 
+esposa, hermanos y primos, todos son parte de este 
+proyecto.
+7
+8
+9
+PLAN DEL LIBRO
+• Definición y objeto del derecho penal constitucio￾nal: Una presentación clara y concisa de lo que en￾tendemos por derecho penal constitucional y su re￾levancia en el ordenamiento jurídico.
+• Evolución histórica: Un breve recorrido histórico de 
+la relación entre el derecho penal y la constitución, 
+destacando los hitos más importantes.
+• Justificación del estudio: Explicar por qué es impor￾tante estudiar el derecho penal desde una perspec￾tiva constitucional y cuáles son los desafíos actuales 
+en este campo.
+Parte I: Fundamentos Teóricos
+• Capítulo 1: Principios constitucionales 
+fundamentales:
+o Presunción de inocencia
+o Legalidad
+o Culpabilidad
+o Proporcionalidad
+o Otros principios relevantes (igualdad, no 
+discriminación, etc.)
+• Capítulo 2: Derechos fundamentales y derecho 
+penal: 
+10
+o Relación entre los derechos fundamentales y el 
+derecho penal.
+o Análisis de derechos específicos (vida, libertad, 
+seguridad jurídica, etc.) en el contexto penal.
+• Capítulo 3: El papel de la constitución en el derecho 
+penal: 
+o Función de la constitución como límite y garantía 
+del derecho penal.
+o Control de constitucionalidad de las normas 
+penales.
+Parte II: Aplicaciones Prácticas
+• Capítulo 4: Delitos contra los derechos 
+fundamentales:
+o Análisis de delitos como la tortura, la desaparición 
+forzada, los delitos de odio, etc.
+• Capítulo 5: Responsabilidad penal de los poderes 
+públicos: 
+o Imputabilidad de los funcionarios públicos y de las 
+personas jurídicas.
+o Responsabilidad internacional de los Estados por 
+violaciones al derecho penal Internacional.
+• Capítulo 6: Garantías procesales en el derecho 
+penal: 
+11
+o Derecho a un juicio justo, derecho a la defensa, etc.
+o El papel del juez constitucional en el proceso penal.
+• Capítulo 7: La pena y su ejecución desde una 
+perspectiva constitucional: 
+o Principio de humanidad de la pena.
+o Prohibiciones constitucionales en materia de penas.
+o Ejecución de la pena y derechos de los reclusos.
+Parte III: Desafíos contemporáneos y perspectivas fu￾turas
+• Capítulo 8: Desafíos actuales del derecho penal 
+constitucional: 
+o Delitos informáticos, terrorismo, crimen organizado, 
+etc.
+o Protección de datos personales y privacidad.
+• Capítulo 9: Tendencias y perspectivas futuras:
+o La influencia de la globalización y los derechos 
+humanos en el 
+ derecho penal.
+o El papel de la inteligencia artificial en el sistema 
+penal.
+12
+Conclusiones
+• Síntesis de las ideas principales.
+• Reflexiones finales y propuestas.
+13
+«El desarrollo del derecho penal constitucional no es estático. Ante 
+los retos actuales, como el uso de tecnologías avanzadas, los delitos 
+transnacionales y las tensiones entre seguridad y derechos huma￾nos, esta disciplina se ha consolidado como un pilar fundamental en 
+la construcción de sistemas jurídicos más justos. La progresividad 
+de los derechos fundamentales garantiza que ningún logro en este 
+campo sea revertido, reafirmando el compromiso de las democracias 
+modernas con una justicia inclusiva y respetuosa de los derechos ad￾quiridos»
+ Dr. Manuel Martínez.
+14
+15
+INTRODUCCIÓN
+El derecho penal constitucional constituye una 
+disciplina esencial que explora la intersección entre 
+las normas penales y las garantías constitucionales. 
+Su propósito principal radica en proteger los derechos 
+fundamentales de las personas frente al poder punitivo 
+del Estado. Esta rama del derecho no solo asegura el 
+respeto a principios básicos como la dignidad humana y 
+el debido proceso, sino que también actúa como un freno 
+ante posibles excesos o arbitrariedades por parte de las 
+instituciones estatales.
+En un contexto global donde la protección de los 
+derechos humanos es una prioridad, los sistemas 
+jurídicos de Estados democráticos, como Venezuela y 
+España, destacan por incorporar en sus constituciones 
+un compromiso claro con la justicia y el respeto a los 
+derechos fundamentales. Por ejemplo, el artículo 1 de la 
+Constitución de la República Bolivariana de Venezuela, y 
+también la Constitución Española definen a estos países 
+como Estados democráticos, sociales y de derecho, 
+cimentados en valores como la igualdad, la libertad y el 
+respeto a la dignidad humana.1
+La relevancia del derecho penal constitucional radica 
+en su capacidad para establecer un equilibrio justo en￾tre la aplicación de sanciones penales y la protección de 
+los derechos humanos. Los principios constitucionales, 
+como la presunción de inocencia, el principio de legali-
+1 Art. 1 de la Constitución de la República Bolivariana de Venezuela.
+ Art. 1 de la Constitución de España.
+dad y la prohibición de penas inhumanas o degradantes, 
+constituyen las piedras angulares de un sistema que ga￾rantiza justicia para todos los ciudadanos.
+En este marco, la Sala Constitucional del Tribunal Su￾premo de Justicia de Venezuela ha enfatizado que el ejer￾cicio del ius puniendi del Estado está condicionado por las 
+garantías inherentes al Estado de derecho, destacando la 
+importancia del debido proceso, la seguridad jurídica y 
+los derechos fundamentales. Este enfoque, reflejado en la 
+jurisprudencia, no solo busca limitar los abusos estatales, 
+sino también reforzar el compromiso con los derechos 
+progresivos de la ciudadanía, tal como se recoge en el 
+artículo 19 de la Constitución venezolana.
+El desarrollo del derecho penal constitucional no es es￾tático. Ante los retos actuales, como el uso de tecnologías 
+avanzadas, los delitos transnacionales y las tensiones en￾tre seguridad y derechos humanos, esta disciplina se ha 
+consolidado como un pilar fundamental en la construc￾ción de sistemas jurídicos más justos. La progresividad 
+de los derechos fundamentales garantiza que ningún 
+logro en este campo sea revertido, reafirmando el com￾promiso de las democracias modernas con una justicia 
+inclusiva y respetuosa de los derechos adquiridos.
+La evolución del derecho constitucional como discipli￾na autónoma, tal como lo analiza García Pelayo, se desa￾rrolla en Europa durante el siglo XIX, especialmente en 
+su último tercio, cuando los regímenes constitucionales 
+se habían asentado, generando una etapa de gran estabi￾lidad jurídica. Este contexto histórico es crucial, pues la 
+consolidación del Estado de derecho impulsó el desarro-
+16
+llo del derecho constitucional, enmarcado en un proceso 
+de positivización que, aunque criticado por su limitación 
+metodológica, sentó las bases para la construcción de 
+sistemas normativos más estructurados. Así, el derecho 
+Constitucional evolucionó hacia un enfoque garantista 
+que se refleja hoy en día en la relación con el derecho 
+penal.
+En este marco, constituciones modernas, como la ve￾nezolana y la española, establecen a sus Estados como 
+entes democráticos, sociales y de derecho. Tal reconoci￾miento implica que las leyes penales deben respetar los 
+principios constitucionales, para asegurar derechos fun￾damentales como el debido proceso, la irretroactividad 
+de la ley penal y la presunción de inocencia. 
+En este sentido, el derecho penal constitucional se eri￾ge como un instrumento fundamental para asegurar que 
+el ejercicio de la justicia penal sea compatible con los va￾lores democráticos y los principios de un Estado de de￾recho.
+Las constituciones referidas dejan claro que la justicia 
+y el derecho están regulados y garantizados por la consti￾tución, y por ende, por el derecho constitucional, de esta 
+manera el derecho penal no podrá ir más allá del marco 
+de garantías constitucionales que se establecen en las car￾tas magnas in comento, siendo entonces que los Estados 
+deben adecuar sus leyes penales a estos principios funda￾mentales, que buscan garantizar a todos los ciudadanos 
+el ejercicio de sus derechos básicos, tales como el dere￾cho a la defensa indispensable e inalienable, ya que este 
+derecho se entrelaza con otros derechos fundamentales 
+17
+18
+como el debido proceso, el principio de legalidad y de 
+irretroactividad de la ley que deben ser resguardados en 
+favor del ciudadano, en aras de garantizar los derechos 
+fundamentales ante el ius puniendi del Estado en el ejer￾cicio de sus funciones, en este sentido la Sala Constitu￾cional del Tribunal Supremo de Justicia de Venezuela ha 
+dicho:
+«…si bien en la República Bolivariana de Ve￾nezuela se asume que el ejercicio del ius punien￾di -y particularmente en el desarrollo de la activi￾dad legislativa-, debe asegurar las garantías pro￾pias del Estado de Derecho, como las vinculadas 
+a los principios de legalidad, irretroactividad de 
+la ley, debido proceso y derecho a la defensa en￾tre otros derechos fundamentales reconocidos en 
+nuestro ordenamiento jurídico, también se sos￾tiene con igual grado de protección e incidencia, 
+que el legislador penal -y los órganos vinculados 
+con su implementación- debe alcanzar una pro￾tección suficiente a los derechos fundamentales y 
+demás bienes constitucionales».2
+El debido proceso, el conocer quién le juzga, es otro de 
+los derechos fundamentales que se garantizan a través 
+de la constitución, es ese muro que contiene la tentación 
+del Estado de abusar de su poder, la garantía constitucio￾nal de saber que existe un debido proceso que se deberá 
+2 Tribunal Supremo de Justicia de Venezuela
+Sala Constitucional
+Nº 1567, Fecha: 04/12/2012
+Pág. 39. derecho penal Jurisprudencial Parte general
+19
+cumplir en todas sus fases sin que medie ningún tipo de 
+ardid que omita alguna formalidad esencial que ponga 
+en peligro los derechos de los ciudadanos, y por ende, de 
+la libertad, ya que hablamos del derecho penal, el ser juz￾gado por sus jueces naturales, el saber y conocer quién es 
+el que te juzga, evitará así la justicia sin rostro, anónima. 
+El conocimiento de quién es el juez y de la publicidad 
+del proceso constituye en sí mismo un control social a la 
+labor y funciones jurisdiccionales.
+El Tribunal Supremo de Justicia de Venezuela en su 
+Sala Constitucional ha dicho entre otras cosas lo siguien￾te: 
+«… juez penal, por lo que se entienden normas 
+contrarias al deber de tipificación suficiente y a la ga￾rantía del debido proceso, establecido en el artículo 49 
+de la Constitución de la República Bolivariana de Ve￾nezuela, contentivo, a su vez, del principio de legali￾dad y del derecho a ser juzgado por los jueces natura￾les en las jurisdicciones ordinarias o especiales, -49.6 
+y 49.4 de la Constitución de la República Bolivariana 
+de Venezuela-, aunado a la necesidad de generar segu￾ridad jurídica en la interpretación del ordenamiento 
+jurídico…»3
+En tal sentido, los derechos fundamentales tienden a 
+avanzar en el tiempo, siendo conquistados y en algunas 
+ocasiones reconquistados por el hombre, ya que la ten￾dencia universal es que los Estados vulneren estos de-
+3 Tribunal Supremo de Justicia de Venezuela
+Sala Constitucional (Sentencia Vinculante)
+Nº 1881, Fecha: 08/12/11
+rechos ganados a pulso por generaciones de hombres y 
+mujeres que sin descanso han dejado hasta la vida para 
+conquistarlos, pero ante el temor del Estado de perder 
+privilegios prefiere omitir dichos derechos y eliminarlos 
+de su ordenamiento jurídico, lo que vulnera los princi￾pios fundamentales de derechos humanos recogidos en 
+la constitución.
+La adecuación de las leyes penales a la constitución se 
+manifiesta en la necesidad de que los tipos penales, las 
+penas y las medidas de seguridad estén diseñados de tal 
+manera que respeten derechos fundamentales, como el 
+derecho a la vida, la libertad, la igualdad, la seguridad 
+jurídica, el debido proceso y la presunción de inocencia. 
+Estos derechos, consagrados en la constitución, actúan 
+como límites materiales y formales al poder punitivo, lo 
+que impide que se legisle y se aplique el derecho penal de 
+manera arbitraria o discriminatoria.
+Como señala la Sala Constitucional del Tribunal Su￾premo de Justicia de Venezuela, si bien el Estado debe 
+asegurar la protección de los bienes jurídicos, también es 
+necesario garantizar los derechos fundamentales recono￾cidos en nuestro ordenamiento jurídico. En este sentido, 
+el legislador penal tiene la obligación de alcanzar una 
+protección suficiente a los derechos fundamentales y de￾más bienes constitucionales.
+Es así como llegamos al principio de progresividad, 
+que nos garantiza que todo derecho conquistado por el 
+hombre y reconocido por la vía constitucional y legal, no 
+va hacer luego menoscabado por el Estado al imponer su 
+ius imperium ante la ciudadanía, alegando artilugios so-
+20
+ciopolíticos para evitar cumplir con los derechos huma￾nos ya establecidos y fijados en la constitución, ejemplo 
+de ello tenemos la imposibilidad de establecer por vía le￾gal el juicio en ausencia ya que atenta contra el principio 
+de progresividad habida cuenta que es un derecho hu￾mano ganado por la sociedad el que se le haga un juicio 
+en presencia con todas las garantías fundamentales del 
+debido proceso. Así las cosas, podemos ver en la opinión 
+de la Sala Constitucional del Tribunal Supremo de Justi￾cia de Venezuela, cuando dice:
+«… la protección de los derechos humanos no 
+se agota en la acción del Estado. Su polivalen￾cia en este mundo tan complejo y globalizante, 
+exige un análisis pluridisciplinario, que incluye 
+elementos políticos, sociales, jurídicos, científi￾cos, tecnológicos, económicos y culturales que no 
+pueden mineralizarse por omisiones nacionales 
+e internacionales, lo cual se encuentra en corres￾pondencia con el deber del Estado de garantizar 
+a toda persona conforme al principio de progre￾sividad consagrado en el artículo 19 de la Consti￾tución de la República Bolivariana de Venezuela, 
+y sin discriminación alguna, el goce y ejercicio 
+irrenunciable, indivisible e interdependiente de 
+dichos derechos, disposición constitucional que 
+debe ser interpretada en forma sistemática con 
+los artículos 22 y 23 de dicho texto constitucio￾nal –tal como se explicará infra-; siendo en cierta 
+forma trastocado el principio de legalidad penal, 
+ello atribuible a estos particulares casos de deli￾tos letales contra el género humano, situación en 
+21
+22
+la cual debe tener predominancia la progresivi￾dad en la protección de los derechos humanos, 
+claro está, respetando en todo caso el conjunto de 
+garantías y exigencias esenciales que constituyen 
+el contenido de tal principio del Derecho penal».4
+El principio de progresividad de los derechos humanos 
+establece que los derechos una vez conquistados 
+y reconocidos constitucionalmente no pueden ser 
+retrocedidos. Esta garantía fundamental busca asegurar 
+que los avances en materia de derechos humanos sean 
+irreversibles y que las generaciones futuras disfruten 
+de un nivel de protección al menos igual al de las 
+generaciones anteriores.
+Sin embargo, a lo largo de la historia, hemos sido 
+testigos de cómo algunos Estados, ante el temor de perder 
+privilegios o ante intereses particulares, han intentado 
+vulnerar derechos humanos ya consagrados. Esta 
+tendencia a retroceder en materia de derechos humanos 
+contradice el espíritu de la constitución y pone en riesgo 
+la convivencia democrática.
+La Sala Constitucional del Tribunal Supremo de 
+Justicia de Venezuela ha señalado acertadamente que 
+la protección de los derechos humanos es un proceso 
+dinámico y complejo que requiere una perspectiva 
+multidisciplinaria. En este sentido, la progresividad de 
+los derechos humanos no solo implica la ampliación de 
+4 TSJ Sala Constitucional Venezuela
+ N° de Sentencia: 1.437 
+Fecha de publicación: 22 de octubre de 2014 
+N° de expediente: 14-0998 
+Caso: Hjalmar José Ferreira Infante
+23
+los derechos existentes, sino también la adaptación de 
+los mecanismos de protección a las nuevas realidades 
+sociales, económicas y tecnológicas.
+Es entonces que la constitución, a través de principios 
+como los referidos, sirven de camisa de fuerza para 
+evitar que el Estado en el uso del ius imperium arremeta 
+contra las garantías y derechos fundamentales de los 
+ciudadanos violando sus derechos, es ahí donde la Sala 
+Constitucional del Tribunal Supremo de Justicia o los 
+Tribunales Constitucionales, como máximos intérpretes 
+de las leyes y la constitución, deben poner orden por 
+medio de sentencias, y restablecer la legalidad en caso 
+de que ésta haya sido alterada por contravención a los 
+principios antes señalados, de ahí la importancia de estas 
+cortes.
+Las figuras jurídicas tales como el control difuso5
+y el control concentrado6
+ de la norma no debe ser una 
+mera entelequia constitucional, sino que debe ser usada 
+por aquellos jueces constitucionales para evitar que 
+se subviertan los objetivos y principios filosóficos del 
+constituyente, y por ende los derechos fundamentales 
+establecidos en la constitución. 
+El principio de progresividad, consagrado en el artí-
+culo 19 de la Constitución de la República Bolivariana 
+de Venezuela, impone al Estado el deber de garantizar a 
+toda persona el goce y ejercicio de los derechos humanos 
+de manera continua y progresiva. Sin embargo, la apli-
+5 Artículo 334 primer aparte de la Constitución de la República Bolivariana 
+de Venezuela.
+6 Artículo 334 segundo aparte de la Constitución de la República Bolivaria￾na de Venezuela.
+cación de este principio en casos excepcionales como los 
+delitos de lesa humanidad plantea desafíos particulares.
+En estos casos, la protección de los derechos humanos 
+debe ser predominante para erigir la protección de los 
+derechos humanos, por encima de una interpretación es￾trictamente formal del principio de legalidad. Esto signi￾fica que, en ciertas circunstancias, puede justificarse una 
+interpretación evolutiva de las normas penales, siempre 
+y cuando se respete el conjunto de garantías y exigencias 
+esenciales que constituyen el contenido de tal principio 
+del derecho penal.
+Es importante destacar que esta interpretación progre￾siva no implica una derogación del principio de legali￾dad, sino más bien una adaptación de este principio a 
+las nuevas realidades y a la necesidad de garantizar una 
+protección efectiva de los derechos humanos. Sin embar￾go, es fundamental establecer límites claros a esta inter￾pretación, a fin de evitar abusos y garantizar la seguridad 
+jurídica.
+Este libro tiene como objetivo ofrecer una aproxima￾ción integral al derecho penal constitucional, combinan￾do fundamentos teóricos, aplicaciones prácticas y análi￾sis de desafíos contemporáneos. Está dirigido tanto a es￾tudiantes que buscan comprender los cimientos de esta 
+disciplina como a profesionales que enfrentan a diario los 
+retos de aplicar el derecho penal en el marco de los valo￾res constitucionales.
+24
+25
+1. Definición y objeto del derecho penal constitucional
+1.1. Definición
+El derecho penal constitucional es una disciplina que 
+se sitúa en la intersección entre el derecho penal y el de￾recho constitucional.
+En términos simples, se refiere a la protección de los 
+derechos fundamentales de los individuos frente al ejer￾cicio del poder punitivo del Estado (ius puniendi), garan￾tizando que las normas penales y su aplicación respeten 
+los principios y garantías fundamentales consagradas en 
+la constitución.
+El derecho penal constitucional aborda cuestiones 
+como la prohibición de la pena de muerte, la tortura y los 
+tratos crueles e inhumanos. 
+«…Todos tienen derecho a la vida y a la in￾tegridad física y moral, sin que, en ningún caso, 
+puedan ser sometidos a tortura ni a penas o tra￾tos inhumanos o degradantes. Queda abolida la 
+pena de muerte, salvo lo que puedan disponer 
+las leyes penales militares para tiempos de gue￾rra…»7
+El derecho a un juicio justo, la presunción de inocen￾cia, la legalidad en el ámbito penal (nullum crimen, nulla 
+poena sine lege) son principios que han quedado recono￾cidos expresamente mediante sentencia de la Sala Consti￾tucional del Tribunal Supremo de Justicia de Venezuela.
+7 Artículo 15. Constitución Española
+«…Respecto a los alcances del principio de le￾galidad, esta Sala en sentencia n.° 885 del 8 de 
+mayo de 2002. Caso: Fiscal Segundo del Minis￾terio Público del Estado Portuguesa. Exp. n.° 01-
+1695, estableció lo siguiente:
+«… para el castigo penal de una conducta es 
+indispensable que la misma esté tipificada le￾galmente y que, asimismo, la ley le atribuya la 
+sanción correspondiente, todo ello conforme al 
+principio nullum crimen, nulla poena sine lege, 
+que acogió el artículo 49.6 de la Constitución Na￾cional».
+Igualmente, en sentencia n.° 1.747 del 10 de 
+agosto de 2007. Caso: Mónica Andrea Rodríguez 
+Flores. Exp. n.° 06-
+1656, esta Sala indicó:
+«El artículo 49.6 de la Constitución de la Re￾pública Bolivariana de Venezuela establece que 
+ninguna persona podrá ser sancionada por actos 
+u omisiones que no fueren previstos como deli￾tos, faltas o infracciones en leyes preexistentes.
+Esa disposición constitucional contempla el 
+principio de tipicidad penal, el cual es contenido 
+del principio de legalidad, que ha sido configura￾do por la doctrina de la siguiente manera: nullum 
+crimen, nulla poena, nulla mensura sine lege prae￾via, scripta, stricta et certa. Se trata de un princi￾pio que delimita el poder punitivo del Estado».
+26
+27
+Ahora bien, el principio de legalidad penal se 
+encuentra estrechamente vinculado al principio 
+de reserva legal, y
+en este sentido, en sentencia n.° 1.744 del 9 de 
+agosto de 2007. Caso: Germán Mundaraín. Exp. 
+n.° 04-2149, esta
+Sala señaló:
+«… la figura de la reserva legal viene dada por 
+la consagración a nivel constitucional de determi￾nadas materias que, debido a la importancia jurí-
+dica y política que tienen asignadas, sólo pueden 
+ser reguladas mediante ley, desde el punto de 
+vista formal, y ello excluye la posibilidad de que 
+tales materias sean desarrolladas mediante regla￾mentos o cualquier otro instrumento normativo 
+que no goce de dicho rango legal…»8
+Se desprende de dicha sentencia la prohibición de deten￾ciones arbitrarias, de imputar delitos que no estén previstos 
+en la ley como tales, y de ahí se deriva el principio de la re￾serva legal que le da la facultad de crear normas penales al 
+poder legislativo, teniendo entonces este poder del Estado la 
+facultad de crear delitos y sus penas, pero de no existir la ley 
+escrita, previa, cierta y estricta (que se entienda con claridad), 
+el Estado no podrá imponer una sanción penal si no existe 
+esta ley previa con todas las garantías antes mencionadas.
+8 N° de Sentencia: 2.300 
+Fecha de publicación: 1 de diciembre de 2002 
+N° de expediente: 01-2522 
+Caso: Jesús Gregorio Pacheco Montilla 
+Esto evita que las personas sean juzgadas por hechos 
+que no estén previsto en la ley, y por ende, evita la arbi￾trariedad del Estado por intermedio de otros poderes que 
+no sean el legislativo, de crear delitos o conductas repro￾chables de donde no las hay, apelando a que se favorece 
+a los intereses del Estado, esta es la función del principio 
+de legalidad. 
+1.2. Objeto del derecho penal constitucional
+El objeto de estudio del derecho penal constitucional 
+se centra en cómo las normas constitucionales limitan y 
+orientan la actuación del Estado en el ámbito penal. Se 
+enfoca en la protección de los derechos humanos y la 
+creación de un marco jurídico, que limite el poder puniti￾vo del Estado, para evitar abusos y arbitrariedades.
+El Estado concentra, en sí mismo, todo el poder a tra￾vés de sus instituciones, lo que deja al ciudadano como 
+el débil jurídico que, sin el amparo constitucional, queda￾ría muy expuesto ante el imperium de la ley, que pudiera 
+en algunas ocasiones ser arbitraria, por eso las garantías 
+fundamentales establecidas en el derecho constitucional 
+vienen a poner orden y a equiparar un poco las cargas, 
+tratando en lo posible de igualar al justiciable ante el Esta￾do, y limita a este último a cumplir con unos parámetros 
+que evitan su sed de venganza a través de la aplicación 
+del derecho penal. Por eso, en la medida en la que miden 
+o establecen los valores de una regla penal los principios 
+actúan como principios de legitimación o justificación de 
+esa regla. En la medida en que los principios demarcan 
+28
+29
+también un mínimo de valor que la regla ha de observar, 
+actúan como principios de limitación del ius puniendi 
+(esto es, de la facultad del Estado de penar; en definitiva, 
+del derecho penal): la falta de observancia del principio 
+determinará la exclusión, por inconstitucionalidad, de las 
+reglas penales.9
+Objetivos principales:
+- Protección de derechos fundamentales: Asegurar 
+que las personas no sean sometidas a castigos o procedi￾mientos penales que vulneren sus derechos.
+La confirmación del principio de legalidad nullum 
+crimen, nulla poena sine lege, nadie puede ser sometido a 
+un juicio en donde se le imputen hechos no previstos en 
+la Ley, so pretexto de alegar intereses de Estado ni de 
+ninguna otra índole, por consiguiente no podrá haber 
+sentencia ni pena por hechos no previstos en la ley, ni 
+se podrá detener preventivamente a nadie por hechos no 
+previsto en el derecho positivo, toda vez que estaríamos 
+ante una pena de banquillo10 que a sabiendas que no va 
+a tener un resultado de condena por ser absurda, se de￾tiene a una persona solo para privarlo de su libertad por 
+el tiempo que se resuelva su inmediata libertad, lo que 
+determina ese tiempo de privación de libertad como una 
+pena sin sentencia.
+9 Manual de Introducción al Derecho Penal, Pág. 49 Coordinador Juan An￾tonio Lascuraín Sánchez
+10 Zaffaroni Eugenio, En Busca de las Penas Perdidas y Criminología.
+30
+- Control de la actividad penal estatal: Establecer los 
+límites y controles sobre la intervención del Estado en la 
+vida de los individuos, principalmente en lo que respecta 
+a la imposición de penas.
+El poder punitivo del Estado debe tener su control en 
+el ejercicio del Estado de derecho, que es el sometimiento 
+que tenemos todos los individuos al imperio de la ley; en 
+cambio, el Estado policía es la subordinación de los indi￾viduos a los mandatos del poder. El Estado de derecho, 
+constantemente, intenta contener al poder punitivo ejer￾cido por el Estado policía, y serán las agencias judiciales, 
+las que, a través de sus decisiones racionales, tendrán la 
+ardua tarea de reducir al Estado policía. 11
+El control jurisdiccional a las actuaciones de las fuer￾zas y cuerpos de seguridad del Estado es la garantía de 
+la protección de los derechos fundamentales establecidos 
+en la constitución, por lo que se evitará el abuso de poder 
+punitivo del Estado.
+- Principios constitucionales en la materia penal: Ga￾rantizar que la aplicación del derecho penal se ajuste a 
+principios constitucionales, tales como la legalidad, la 
+proporcionalidad, la no retroactividad de la ley penal y 
+la igualdad ante la ley.12
+El sistema no es estático, sino que, debido a la dinámica 
+de la tensión dialéctica entre los dos modelos de Estado, 
+11 Zaffaroni Eugenio. En busca de las penas perdidas y criminología.
+12 Artículo 16;17 de la Constitución Española. 
+ Artículo 24; 49 de la Constitución de la República Bolivariana de Venezue￾la.
+31
+deberá ser desarrollado progresivamente para contener 
+cada vez más al ejercicio del poder punitivo, realizando 
+así los principios constitucionales e internacionales limi￾tadores.13
+Los principios fundamentales que se consagran en la 
+constitución que atraviesan transversalmente el derecho 
+penal están establecidos, tal y como se ha dicho, para con￾tener al Estado en el ejercicio de sus funciones policiales. 
+Estos principios marcan la hoja de ruta que debe seguir 
+el Estado para evitar el exceso, y por ende, la violación de 
+los derechos humanos, la proporcionalidad de la sanción 
+penal con respecto al hecho punible que se le atribuye al 
+imputado, evita que una persona por un delito de poca 
+monta cumpla una condena que sea desproporcionada al 
+hecho cometido, este principio debe ser garantizado por 
+el juez, que en modo alguno debe dejarse seducir por la 
+pretensiones fiscales de buscar la máxima condena, sino 
+por el contrario, el juez debe basar su veredicto en la pro￾porcionalidad del hecho cometido y que la pena cumpla 
+con un fin determinado, y no sea solo un castigo impues￾to a capricho del juzgador.
+1.1. Introducción a los principios constitucionales
+El derecho penal constitucional encuentra su funda￾mento en una serie de principios básicos que limitan el 
+ejercicio del poder punitivo del Estado. Estos principios 
+constituyen un conjunto de garantías dirigidas a prote-
+13 Comentario a Derecho Penal, Parte General de Eugenio Raúl ZAFFARO￾NI, Alejandro ALAGIA y Alejandro SLOKAR. Editorial Buenos Aires 2000. 
+Página 447.
+ger los derechos fundamentales frente a posibles abusos, 
+para garantizar que cualquier actuación penal se enmar￾que dentro de los límites establecidos por la constitución. 
+Desde la presunción de inocencia hasta la proporcionali￾dad en las penas, estas bases son esenciales para mante￾ner el equilibrio entre el ejercicio de la justicia y el respeto 
+a la dignidad humana.
+1.2. Desarrollo de los principios clave
+A. Presunción de inocencia
+El principio de presunción de inocencia se erige como 
+una de las piedras angulares del derecho penal constitu￾cional. Este principio implica que toda persona acusada 
+de un delito debe ser considerada inocente hasta que se 
+demuestre lo contrario en un juicio imparcial y con ga￾rantías procesales. La carga de la prueba recae sobre la 
+acusación, para proteger al individuo contra condenas 
+basadas en meras sospechas.
+Este principio no solo está recogido en tratados inter￾nacionales, como el Pacto Internacional de Derechos Ci￾viles y Políticos (Art. 14.2) y la Convención Americana 
+sobre Derechos Humanos (Art. 8.2), sino que también ha 
+sido ampliamente desarrollado por los tribunales consti￾tucionales, como en la jurisprudencia de la Sala Consti￾tucional del Tribunal Supremo de Justicia de Venezuela, 
+que lo describe como un «mecanismo de blindaje jurídico 
+frente al abuso del poder».
+32
+B. Principio de legalidad
+El principio de legalidad, resumido en la máxima «nu￾llum crimen, nulla poena sine lege», asegura que ninguna 
+conducta puede considerarse delictiva ni castigarse sin 
+una ley previa, escrita, cierta y estricta que la defina. Este 
+principio protege a los ciudadanos de la arbitrariedad del 
+poder estatal, otorgándoles previsibilidad y seguridad 
+jurídica.
+La Constitución venezolana (Art. 49.6) y la española 
+(Art. 25.1) establecen este principio, que se complemen￾ta con el concepto de reserva legal, atribuyendo al poder 
+legislativo la exclusiva facultad de crear delitos y penas.
+C. Principio de culpabilidad
+El principio de culpabilidad establece que solo podrá 
+ser sancionado penalmente aquel individuo que haya ac￾tuado con dolo o culpa. Este principio refuerza la nece￾sidad de que el Estado demuestre, mediante un debido 
+proceso, que el acusado comprendía el carácter ilícito de 
+su conducta y podía haber actuado de otra manera.
+Por ejemplo, el jurista Javier Figueroa, argumenta que 
+«el principio de culpabilidad protege a los individuos de 
+castigos impuestos sin justificación racional», lo que lo 
+convierte en un baluarte esencial del derecho penal cons￾titucional.
+El principio de culpabilidad es un fundamento esen￾cial en el derecho penal constitucional, ya que establece 
+33
+34
+que solo debe ser sancionado aquel que haya actuado con 
+dolo o culpa. Este principio asegura que la imposición 
+de sanciones penales esté basada en la responsabilidad 
+subjetiva del acusado, y garantiza que este comprenda el 
+carácter ilícito de su acción y actúe conforme a esa com￾prensión.
+En este contexto, la doctrina del error cobra especial 
+relevancia. Dicha doctrina diferencia entre dos tipos prin￾cipales de errores que pueden afectar la culpabilidad:
+1.2.C.1. Error de tipo
+El error de tipo se refiere a una situación en la que 
+el autor desconoce o interpreta erróneamente algún ele￾mento del tipo penal. Este error elimina el dolo y, depen￾diendo de si el error es vencible o invencible, también 
+podría excluir la culpabilidad:
+• Si el error de tipo es invencible, el acusado no pue￾de ser considerado culpable, ya que no actuó con la 
+intención (dolo) necesaria.
+• Si el error es vencible, el autor debió haber sido 
+capaz de evitar el error mediante el ejercicio de una 
+diligencia razonable. En este caso, puede haber lu￾gar a la imputación por culpa.
+Ejemplo práctico:
+Una persona caza un animal protegido pensando que 
+se trata de una especie común. Si el acusado no tenía for-
+35
+ma razonable de saber que el animal estaba protegido 
+(por ejemplo, por falta de señalización o conocimiento 
+accesible), el error podría considerarse invencible, elimi￾nando la culpabilidad. Sin embargo, si debía informarse 
+previamente sobre la legislación vigente, el error sería 
+vencible, y se le podría imputar culpa.
+1.2.C.2 Error de prohibición
+El error de prohibición ocurre cuando el autor 
+desconoce que su conducta está prohibida por el orde￾namiento jurídico. En este caso, el error afecta la culpa￾bilidad directamente, ya que el individuo no entiende la 
+ilicitud de su acción:
+• Si el error es invencible, se excluye la culpabilidad 
+porque el acusado no podía conocer razonablemen￾te la prohibición.
+• Si el error es vencible, la culpabilidad puede ser 
+atenuada dependiendo de las circunstancias.
+Ejemplo práctico:
+Un extranjero que ingresa a un país y porta un arma 
+sin saber que dicha portación está estrictamente prohibi￾da en esa jurisdicción. Si el extranjero no tuvo acceso ra￾zonable a dicha información (por ejemplo, desconocía el 
+idioma o no se informó adecuadamente), el error podría 
+considerarse invencible. Si, por el contrario, tuvo acceso 
+a los medios para informarse y no lo hizo, el error sería 
+vencible.
+36
+1.2.C.3. Conexión con el Principio de culpabilidad
+La doctrina del error, tanto en el error de tipo como 
+en el error de prohibición, refuerza el principio de culpa￾bilidad, dado que se centra en la capacidad del acusado 
+para comprender y orientar su conducta conforme a las 
+normas penales. Es un mecanismo esencial para garanti￾zar que el castigo penal respete los principios de justicia 
+y proporcionalidad.
+D. Principio de proporcionalidad
+El principio de proporcionalidad garantiza que las 
+sanciones penales sean adecuadas a la gravedad del de￾lito cometido, evitando penas excesivas o desmedidas. 
+Este principio tiene un alcance transversal, aplicándose 
+tanto al diseño de las normas penales como a su ejecu￾ción y aplicación judicial.
+La Corte Interamericana de Derechos Humanos 
+(CIDH) ha desarrollado este principio como una herra￾mienta para evaluar la legitimidad de las restricciones a 
+los derechos humanos, reforzando su papel en la protec￾ción frente a abusos del poder estatal.
+E. Otros principios relevantes
+• Igualdad ante la ley: Prohíbe la discriminación ar￾bitraria, garantizando que todas las personas sean 
+tratadas de forma equitativa en los procesos pena-
+37
+les.
+• No discriminación: Exige que las normas penales y 
+su aplicación sean neutrales y justas, sin favorecer 
+ni perjudicar injustificadamente a ningún grupo.
+1.3. Ejemplos prácticos y análisis de casos
+La aplicación de estos principios en la práctica se ha 
+visto reflejada en numerosos casos emblemáticos. Por 
+ejemplo:
+• Sala Constitucional del Tribunal Supremo de 
+Justicia de Venezuela: Declaraciones jurispruden￾ciales que han reafirmado la presunción de inocen￾cia como una garantía indispensable contra la de￾tención arbitraria y los juicios irregulares.
+• Corte Europea de Derechos Humanos: Sentencias 
+que han exigido la proporcionalidad en casos de 
+penas privativas de libertad, protegiendo derechos 
+básicos de los acusados.
+1.4. Conclusión
+En el marco del derecho penal constitucional, los prin￾cipios fundamentales no son meras abstracciones teó-
+ricas, sino herramientas vivas que regulan y limitan el 
+poder del Estado. Actúan como salvaguardas imprescin￾dibles para proteger los derechos fundamentales de las 
+personas, asegurando que la justicia se administre con 
+38
+equidad, racionalidad y respeto por la dignidad huma￾na. En los capítulos siguientes, estos principios seguirán 
+siendo la base sobre la cual se analizarán las relaciones 
+entre el derecho penal, los derechos fundamentales y el 
+papel de la constitución.
+En cuanto a la reserva legal que establece que solo el 
+poder legislativo puede crear delitos y penas, tal y como 
+lo ha expresado la Corte Constitucional de Colombia, 
+cuando estableció que:
+«El principio de reserva legal, implica en el Estado 
+democrático de derecho, que él único facultado para 
+producir normas de carácter penal es el legislador, 
+pues además de ser esa su función natural en desarrollo 
+del principio de división de poderes, en él se radica 
+la representación popular, la cual es esencial en la 
+elaboración de todas las leyes, pero muy especialmente 
+en las de carácter penal…»14
+En un estado democrático de derecho y de justicia, 
+se debe respetar el principio de la reserva legal, habida 
+cuenta de que la creación de normas de carácter penal 
+debe ser objeto de un amplio debate y de consenso entre 
+los legisladores. Teniendo en cuenta que el derecho penal 
+debe ser la ultima ratio no se le debería otorgar a ningún 
+otro poder del Estado la posibilidad de poder crear nor￾mas penales sin que se determine su utilidad y pertinen￾cia legal. 
+Dentro de este orden de ideas, tenemos que destacar la 
+prohibición que tienen los jueces de derogar una norma 
+14 Sentencia C-739/00 Corte Constitucional de Colombia.
+penal o modificarla a través de una sentencia, so pretex￾to de actuar como juez constitucional, creando un nuevo 
+tipo penal no existente en el derecho positivo nacional, 
+yendo entonces contracorriente del principio de la reser￾va legal.
+No se puede permitir que jueces de instancia, que tie￾nen funciones constitucionales como el control difuso de 
+la norma, desapliquen una norma penal solamente ad￾virtiendo que colide con un principio constitucional sin 
+entrar al análisis, y sin fundamentar en qué coliden esas 
+dos normas, la norma legal y la norma constitucional, ya 
+que causarían una inseguridad jurídica en el Estado de 
+derecho.
+De este modo, en los casos como España, en donde la 
+función de control constitucional la tiene únicamente el 
+Tribunal Constitucional, el juez de instancia, ante la po￾sible inconstitucionalidad de una norma, debe plantear 
+el conflicto ante el Tribunal Constitucional y no puede 
+el Tribunal de Instancia ir más allá de señalar la posible 
+colisión de las normas, la legal y la constitucional.
+Ahora bien, los dos sistemas antes vistos tienen sus 
+pros y sus contras, depende del Estado y de la manera 
+responsable de actuar de los jueces el que sea mejor o 
+peor. 
+Los tribunales constitucionales, como máximos intér￾pretes de la constitución, desempeñan un papel funda￾mental en la protección de los derechos fundamentales. 
+A través de los mecanismos de control de constitucionali￾dad, tanto difuso como concentrado, estos tribunales tie-
+39
+nen la facultad de declarar la inconstitucionalidad de las 
+leyes y actos administrativos que contravengan la cons￾titución.
+El control difuso, ejercido por todos los jueces, per￾mite a cualquier ciudadano invocar la constitución para 
+defender sus derechos. Por otro lado, el control concen￾trado, generalmente ejercido por un tribunal constitucio￾nal especializado, permite una revisión abstracta de las 
+normas con el fin de garantizar su conformidad con la 
+constitución.
+La función de los tribunales constitucionales no se 
+limita a declarar la inconstitucionalidad de las normas, 
+sino que implica también una labor interpretativa de la 
+constitución. Al interpretar, los tribunales deben tener en 
+cuenta los principios filosóficos del constituyente y ga￾rantizar la protección efectiva de los derechos fundamen￾tales. Sin embargo, esta labor interpretativa debe reali￾zarse siempre dentro de los límites establecidos por la 
+ley, respetando el principio de legalidad y la separación 
+de poderes.
+2. Evolución histórica del derecho penal constitucional
+2.1. Orígenes 
+La relación entre el derecho penal y la constitución tie￾ne sus raíces en los primeros movimientos constituciona￾listas, particularmente a partir de la Revolución francesa 
+(1789). Este proceso constituyente es un hito en la historia 
+porque, por primera vez, se buscó establecer un sistema 
+40
+de derechos fundamentales para los ciudadanos, lo que 
+permitió una limitación al poder punitivo del Estado.
+Con la Declaración de los Derechos del Hombre y 
+del Ciudadano (1789), se reconocieron varios principios 
+fundamentales que fueron incorporados en las primeras 
+constituciones modernas, como el derecho a un juicio 
+justo, la presunción de inocencia, y la prohibición de la 
+tortura y las penas crueles. Estos principios se integraron 
+progresivamente en el derecho penal para evitar el uso 
+arbitrario de la pena como un instrumento de opresión.
+2.2. El siglo XIX y la consolidación del derecho penal 
+constitucional
+Durante el siglo XIX, las constituciones nacionales y 
+las primeras cartas de derechos comenzaron a consolidar 
+las garantías fundamentales de los individuos. El princi￾pio de legalidad, que establece que no puede haber delito 
+ni pena sin ley previa, se introdujo en la mayoría de las 
+constituciones de la época, limitando la potestad del Es￾tado para imponer penas arbitrarias.
+En este período, el derecho penal comenzó a formular￾se no solo en términos de castigos y procedimientos, sino 
+también en relación con las garantías constitucionales de 
+los ciudadanos. En este contexto, el derecho penal consti￾tucional comenzó a emerger como un campo especializa￾do, que ponía énfasis en las limitaciones y controles sobre 
+la actuación penal del Estado.
+41
+2.3. El siglo XX: la consolidación del principio de 
+derechos humanos.
+En el siglo XX, la consolidación de los derechos huma￾nos a nivel internacional jugó un papel fundamental en 
+la evolución del derecho penal constitucional. Después 
+de las dos guerras mundiales, se fortaleció la idea de que 
+los derechos humanos deben prevalecer sobre cualquier 
+acción estatal, incluso en el ámbito penal.
+La Declaración Universal de los Derechos Humanos 
+(1948) y otros instrumentos internacionales como el Pac￾to Internacional sobre los Derechos Civiles y Políticos 
+(1966), influyeron decisivamente en la configuración del 
+derecho penal constitucional. Estos documentos estable￾cieron normas internacionales que los sistemas jurídicos 
+nacionales debían cumplir, para garantizar los derechos 
+fundamentales de las personas, incluidos aquellos suje￾tos a procesos penales.
+En esta época, la jurisprudencia de tribunales interna￾cionales como la Corte Europea de Derechos Humanos y 
+la Corte Interamericana de Derechos Humanos, jugaron 
+un rol fundamental en el desarrollo de principios consti￾tucionales en el ámbito penal, especialmente en el ámbito 
+de la protección frente a penas crueles e inhumanas, el 
+derecho a un juicio justo, y la no discriminación.
+42
+2.4. El derecho penal constitucional en la actualidad.
+En la actualidad, el derecho penal constitucional ha 
+madurado y se ha consolidado como una disciplina au￾tónoma, especialmente en los sistemas jurídicos de las 
+democracias modernas. En muchos países, las consti￾tuciones actuales incorporan explícitamente principios 
+relacionados con el derecho penal, garantizando que la 
+penalización de conductas se realice bajo el marco de los 
+derechos fundamentales.
+Los tribunales constitucionales, en su mayoría, super￾visan la compatibilidad entre las normas penales y las ga￾rantías constitucionales. Además, en muchos países, los 
+avances en materia de derechos humanos han llevado a 
+reformas que amplían la protección de los derechos de 
+los acusados, como la prohibición de penas despropor￾cionadas o la regulación más estricta de las detenciones 
+preventivas.
+En este sentido, podríamos establecer que en aquellos 
+países como Venezuela, en donde existen tribunales de 
+instancia que cubren varias fases del proceso, como con￾trol o garantías, juicio o ejecución, actúen como tribuna￾les constitucionales, toda vez que tienen encomendado el 
+control irrestricto del respeto a los derechos fundamenta￾les recogidos y garantizados en la constitución, y deben 
+hacer que las partes en el ejercicio de sus funciones no se 
+extralimiten y puedan caer en la violación de estos dere￾chos fundamentales.
+Además, en los sistemas acusatorios como el venezola￾no, los jueces de instancia conocen de la acción de ampa-
+43
+ro constitucional, y deben resolver conforme al derecho 
+constitucional que regula, por norma superior, al dere￾cho penal.
+En los sistemas penales mixtos en donde no existen 
+los jueces de control o de garantías, sino que existen los 
+jueces de instrucción, estos no tienen esa potestad de eri￾girse como jueces constitucionales, tienen que advertir la 
+controversia y remitir el asunto al tribunal constitucional.
+Son entonces los jueces constitucionales, independien￾temente del sistema en que nos encontremos, los llama￾dos a hacer valer los principios fundamentales de la cons￾titución, y evitar cualquier forma de subversión de estos 
+principios, ya que son la garantía del ciudadano frente al 
+Estado todopoderoso.
+Por consiguiente, los tribunales de primera instancia 
+y las cortes superiores (como en Venezuela), tienen la 
+obligación de hacer una análisis de las pretensiones de 
+las partes para que estén enmarcadas dentro del dere￾cho constitucional, sin permitirse el juez dejar de analizar 
+los fundamentos de hecho y de derecho alegados en el 
+proceso, sin que estas sean tamizados por los principios 
+fundamentales constitucionales, y en la medida en que 
+un tratado o convenio internacional reconozca un dere￾cho humano fundamental, y que por novísimo no esté 
+contemplado en la constitución independientemente, se 
+le deberá dar tratamiento constitucional a esa garantía re￾cogida en ese tratado o convenio constitucional, a la luz 
+del principio de progresividad que establece:
+44
+45
+«El Estado garantizará a toda persona, 
+conforme al principio de progresividad y 
+sin discriminación alguna, el goce y ejercicio 
+irrenunciable, indivisible e interdependiente 
+de los derechos humanos. Su respeto y 
+garantía son obligatorios para los órganos 
+del Poder Público de conformidad con 
+esta Constitución, con los tratados sobre 
+derechos humanos suscritos y ratificados 
+por la República y con las leyes que los 
+desarrollen.»15
+3. Relación entre el derecho penal y los derechos 
+fundamentales
+Para el jurista Pérez Luño, los derechos fundamentales 
+son aquellos derechos inherentes a la persona humana, 
+reconocidos y garantizados por el ordenamiento jurídico, 
+que tienen como finalidad la protección de la dignidad, la 
+libertad y la igualdad de todos los individuos.
+Aunque en la práctica se tiende a confundir los dere￾chos humanos con los derechos fundamentales dándole 
+características de igualdad, en realidad no son lo mismo.
+Los derechos fundamentales derivan directamente de 
+los derechos humanos, por eso tienden a confundirse y 
+usarse como sinónimos, sin embargo, son dos conceptos 
+diferentes, ya que los derechos humanos son universales, 
+mientras que los derechos fundamentales solo se aplican 
+dentro del territorio al cual pertenecen las leyes que los 
+15 Artículo 19. Constitución de la República Bolivariana de Venezuela.
+contemplan. Sin embargo, estas garantías pueden estar 
+ampliadas en leyes más específicas, según lo que cada Es￾tado considere necesario.
+Por lo que podemos dejar claro que los derechos fun￾damentales son todos los privilegios o garantías que son 
+inherentes a todas las personas y que están plasmados en 
+el ordenamiento jurídico de un país.
+Una tensión relevante en este contexto es el equilibrio 
+entre la necesidad de garantizar la seguridad pública y 
+la protección de los derechos individuales. Por ejemplo, 
+las detenciones preventivas, aunque necesarias en cier￾tos casos, deben estar estrictamente reguladas para evi￾tar violaciones arbitrarias de derechos fundamentales. 
+En este sentido, la jurisprudencia nacional e internacio￾nal han desarrollado salvaguardas que aseguran que las 
+detenciones se fundamentan en causas justificadas y que 
+respetan el debido proceso.
+Características esenciales de los derechos fundamen￾tales, según Pérez Luño:
+• Inherentes a la persona humana: No dependen 
+de ningún reconocimiento legal previo, sino que 
+son propios de la condición humana.
+• Positivizados: Han sido incorporados a los orde￾namientos jurídicos positivos; es decir, a las cons￾tituciones y a los tratados internacionales.
+• Limitados: No son absolutos, sino que pueden es￾tar sujetos a limitaciones, siempre que estas sean 
+proporcionadas y estén justificadas por un interés 
+46
+47
+general.
+• Interdependientes: Están estrechamente relacio￾nados entre sí y se refuerzan mutuamente.
+• Universales: Pertenecen a todos los seres huma￾nos, sin distinción alguna.
+ 3.1. Principios fundamentales
+El derecho penal constitucional se apoya en principios 
+fundamentales, que buscan equilibrar el poder del Es￾tado para castigar a los infractores, con la necesidad de 
+proteger los derechos humanos de los individuos. Algu￾nos de estos principios son:
+- Principio de legalidad (nullum crimen, nulla poena sine 
+lege): Ninguna conducta puede ser considerada delito ni cas￾tigada si no está previamente tipificada en una ley penal.
+«...El principio de legalidad penal es 
+una garantía inherente al Estado de Dere￾cho, que impone, por razones de seguridad 
+jurídica y de legitimidad democrática de la 
+intervención penal, la estricta sujeción de 
+Jueces y Tribunales al dictado de las leyes 
+que describen delitos e imponen penas y 
+exige la existencia de preceptos jurídicos 
+que permitan predecir con el suficiente gra￾do de certeza qué conductas se hallan pro￾hibidas y qué responsabilidad y, en su caso, 
+qué sanción comporta su realización...»16
+16 Sentencia del Tribunal Constitucional Español 156/1996, de 14 de octubre.
+48
+- Principio de no retroactividad: Las leyes penales no 
+pueden aplicarse de forma retroactiva a hechos ocurridos 
+antes de su promulgación. 
+- Proporcionalidad: Las penas deben ser proporciona￾les al delito cometido, evitando sanciones desmesuradas 
+o desproporcionadas.
+- Derecho a un juicio justo: El derecho de todo indivi￾duo a ser juzgado por un tribunal imparcial, con todas las 
+garantías del debido proceso.
+- Prohibición de penas crueles, inhumanas o degra￾dantes: Esto incluye la prohibición de torturas y tratos 
+crueles, así como la pena de muerte, en algunos países.
+«Artículo 15 Todos tienen derecho a la vida y 
+a la integridad física y moral, sin que, en ningún 
+caso, puedan ser sometidos a tortura ni a penas o 
+tratos inhumanos o degradantes. Queda abolida 
+la pena de muerte, salvo lo que puedan disponer 
+las leyes penales militares para tiempos de 
+guerra».17
+Análisis de derechos específicos en el contexto penal
+A. Derecho a la Vida
+El derecho a la vida es el más básico y fundamental 
+de todos los derechos humanos. En el ámbito penal, este 
+derecho es amenazado principalmente por la existencia 
+de sanciones como la pena de muerte, que ha sido abolida 
+en numerosos países en virtud de tratados internacionales 
+17 Artículo 15. Constitución Española.
+como el Pacto Internacional de Derechos Civiles y 
+Políticos. Dichos tratados han promovido un cambio en 
+la percepción de la justicia, que favorecen modelos de 
+rehabilitación sobre métodos punitivos extremos.
+B. Derecho a la libertad
+El derecho a la libertad es otro pilar esencial. En el 
+contexto penal, este derecho se relaciona directamente con 
+la regulación de las detenciones y el encarcelamiento. La 
+protección contra la detención arbitraria asegura que las 
+privaciones de libertad sean justificadas y supervisadas 
+por una autoridad judicial competente. Un ejemplo 
+práctico sería la necesidad de autorización judicial para 
+realizar allanamientos o detenciones, destacando el 
+control jurisdiccional como garantía indispensable.
+C. Derecho a la seguridad jurídica
+La seguridad jurídica, que incluye el principio de 
+legalidad penal, busca proteger a los ciudadanos de la 
+arbitrariedad estatal. Este principio asegura que las leyes 
+penales sean claras, precisas y previsibles, para evitar 
+situaciones en las que una persona pueda ser sancionada 
+por conductas que no estén debidamente tipificadas 
+como delitos.
+49
+- Rol del derecho penal constitucional en la Garantía de 
+estos Derechos
+El derecho penal constitucional proporciona las herra￾mientas normativas y procesales necesarias para proteger 
+y hacer efectivos los derechos mencionados. Por ejemplo:
+Presunción de inocencia: La presunción de inocencia 
+constituye uno de los pilares fundamentales del derecho 
+penal constitucional, en el cual se establece que toda per￾sona, desde su calidad inicial de imputado hasta la de 
+acusado, debe ser considerada inocente, mientras no se 
+demuestre su culpabilidad en un juicio justo. Este princi￾pio garantiza que ni el imputado ni el acusado sean tra￾tados como culpables antes de que exista una resolución 
+judicial definitiva basada en pruebas válidas, suficientes, 
+y más allá de toda duda razonable.
+El proceso penal exige que las pruebas presentadas 
+contra el imputado sean serias, lícitas y hayan sido de￾bidamente contrastadas durante el juicio. Estas prue￾bas, además, deben ser controladas en su incorporación
+al proceso por un tribunal que actúe como tribunal de 
+garantías constitucionales, (Tribunal de Control, caso 
+Venezuela), esto asegura que el debido proceso sea res￾petado en todas sus fases. Esta supervisión incluye la va￾lidación de la obtención, autenticidad y relevancia de las 
+pruebas, evitando cualquier vulneración de los derechos 
+fundamentales del imputado o acusado.
+50
+El estándar probatorio: más allá de la duda razonable
+El principio establece que no basta con demostrar una 
+probabilidad de culpabilidad, sino que se requiere alcan￾zar un grado de certeza que elimine cualquier duda ra￾zonable sobre la responsabilidad penal del acusado. Este 
+estándar, ampliamente reconocido en los sistemas jurí-
+dicos acusatorios y garantistas, protege contra condenas 
+arbitrarias y refuerza la legitimidad del proceso penal.
+El tribunal como garante constitucional
+Los tribunales de control, también llamados tribunales 
+de garantías constitucionales desempeñan un papel vital 
+en este proceso, actuando como custodios de los dere￾chos fundamentales del imputado y garantizando que las 
+pruebas no solo sean obtenidas de manera lícita, sino que 
+también se incorporen al juicio cumpliendo con las reglas 
+procesales. Estos tribunales previenen abusos del poder 
+punitivo, y aseguran que el juicio se desarrolle dentro del 
+marco constitucional.
+Teoría de la pena del banquillo
+El maestro Eugenio Raúl Zaffaroni, en su obra «En 
+busca de las penas perdidas», introduce el concepto de 
+la pena del banquillo, que se refiere al sufrimiento que 
+experimenta una persona simplemente por ser someti￾da a un proceso penal, independientemente de si al final 
+es absuelta o condenada. Este tipo de pena, que no está 
+51
+52
+formalmente establecida en las leyes, se produce como 
+consecuencia del desgaste emocional, físico y social que 
+implica estar sometido a un juicio. Según Zaffaroni, la 
+pena del banquillo es un reflejo de la naturaleza inqui￾sitiva del proceso penal y debe ser combatida mediante 
+la implementación estricta de garantías constitucionales 
+que protejan al imputado.
+En este contexto, el Estado, a través de sus jueces y tri￾bunales, debe prevenir que el proceso penal se convierta 
+en un castigo en sí mismo, asegurando que las actuacio￾nes procesales estén diseñadas para buscar justicia, no 
+para infligir sufrimiento adicional al procesado.
+• Proporcionalidad: Asegura que las penas sean 
+adecuadas y justas en relación con la gravedad del 
+delito.
+• No discriminación: Evita que factores como raza, 
+género o condición social influyan en la imposición 
+de sanciones.
+3.2. Derechos humanos y derecho penal constitucional
+El derecho penal constitucional se basa en la premisa 
+de que el poder punitivo del Estado no puede ser ejer￾cido de manera arbitraria, y debe respetar los derechos 
+fundamentales de los individuos. El fortalecimiento del 
+derecho penal constitucional ha permitido una mayor in￾tegración de los estándares internacionales de derechos 
+humanos en las legislaciones nacionales.
+Se entiende que los derechos humanos son aquellos 
+reconocidos por la comunidad internacional, y que son 
+recogidos a través de los tratados y convenios internacio￾nales, obligando a los Estados que suscriben dichos trata￾dos el cumplimiento de esos derechos humanos.
+Los mismos son inherentes a la persona humana y son 
+conquistas que se han venido ganando durante la historia 
+y se clasifican en generaciones, de esta manera tenemos 
+los derechos humanos de Primera generación que reco￾nocen los derechos civiles y políticos (individuales). Los 
+derechos humanos de Segunda generación, derechos so￾ciales, económicos y culturales y los derechos humanos 
+de Tercera generación que son los relacionados con los 
+derechos de solidaridad (paz, libre determinación de los 
+pueblos, desarrollo y ambientales).
+En cambio, los derechos fundamentales, tal y como ya 
+se ha visto, derivan de los derechos humanos, y son aque￾llos recogidos en la legislación interna de cada Estado.
+El lugar común, tanto de los derechos humanos como 
+de los derechos fundamentales, es que provienen de la 
+garantía de los derechos del hombre ganado a pulso a 
+través de la historia y que los protege del todopoderoso 
+Estado en el ejercicio del ius puniendi.
+Así las cosas, se ha mantenido por parte de algunos 
+doctrinarios que solo pueden violar los derechos huma￾nos los órganos del poder público, ya que los particulares 
+cuando cometen homicidios u otro delito contra la dig￾nidad humana están cometiendo delitos comunes y no 
+violan derechos humanos o fundamentales, esto genera 
+53
+una confusión, pero hay otra parte de la doctrina más 
+moderna que tiene otra percepción de este punto.
+Obviamente, existe la crítica que establece que la afir￾mación de que únicamente el Estado puede violar dere￾chos humanos, es una simplificación que ha sido objeto 
+de debate en la doctrina del derecho internacional de los 
+derechos humanos.
+Históricamente, esta idea se ha fundamentado en la 
+concepción del Estado como el principal garante de los 
+derechos humanos. Al ser el Estado el titular del poder 
+coercitivo y el encargado de crear las normas jurídicas, 
+se le atribuía la responsabilidad primaria de respetar y 
+garantizar los derechos de las personas.
+Sin embargo, esta visión ha evolucionado con el tiem￾po.
+Limitaciones de esta afirmación
+1. Acción u omisión estatal: Si bien es cierto que 
+el Estado tiene una responsabilidad primordial, 
+también es cierto que puede violar derechos hu￾manos tanto por acción (a través de leyes o polí-
+ticas discriminatorias, actuaciones desmedidas 
+de los funcionarios pertenecientes a los cuerpos y 
+fuerza de seguridad del Estado, a jueces y fiscales 
+que se exceden y violan derechos humanos en sus 
+actuaciones, por ejemplo), como por omisión (al 
+no prevenir, investigar o sancionar violaciones co￾metidas por terceros).
+54
+55
+2. Responsabilidad de terceros
+• Empresas: Las empresas, especialmente las multi￾nacionales, pueden tener un impacto significativo 
+en los derechos humanos, por ejemplo, a través de 
+operaciones que impacten negativamente con el 
+medio ambiente, causando un daño irreparable a 
+la humanidad, siendo que este derecho ya está ga￾rantizado en la tercera generación de los derechos 
+humanos.
+• Grupos armados no estatales: Estos grupos pueden 
+cometer graves violaciones de los derechos huma￾nos, como asesinatos, torturas y desplazamientos 
+forzados.
+• Individuos: Los individuos también pueden ser 
+responsables de violaciones de derechos humanos, 
+aunque su responsabilidad suele ser individual y 
+penal.
+• Medios de comunicación: al desinformar, violan el 
+principio constitucional al derecho a tener una in￾formación veraz y oportuna, al crear bulos o falsas 
+noticias contra particulares, que exponerlos al es￾carnio público sin prueba alguna, por ejemplo.
+La evolución del concepto de responsabilidad
+El derecho internacional de los derechos humanos ha 
+evolucionado hacia un enfoque más amplio de la respon￾sabilidad, reconociendo que:
+56
+• Los Estados tienen obligaciones de proteger a las 
+personas frente a las violaciones cometidas por 
+terceros.
+• Las empresas tienen obligaciones de respetar los 
+derechos humanos y remediar los daños que cau￾sen.
+• Los individuos pueden ser juzgados por críme￾nes internacionales, como genocidio, crímenes de 
+lesa humanidad y crímenes de guerra.
+La doctrina contemporánea del derecho internacional 
+de los derechos humanos ha desarrollado una serie de 
+principios y normas, para abordar la responsabilidad de 
+diferentes actores por las violaciones de derechos huma￾nos, entre ellos:
+• El deber de diligencia debida: Los Estados deben 
+adoptar medidas razonables para prevenir, investi￾gar y sancionar las violaciones de derechos huma￾nos, incluso las cometidas por terceros.
+• El principio de atribución: Establece las condicio￾nes bajo las cuales las acciones de particulares pue￾den ser atribuidas al Estado.
+• La responsabilidad de las empresas: Se reconoce 
+la responsabilidad de las empresas por los impac￾tos negativos que sus actividades puedan tener en 
+los derechos humanos.
+Podríamos decir que, si bien el Estado sigue siendo el 
+principal responsable de garantizar los derechos huma-
+nos, la doctrina moderna ha superado la visión simplis￾ta de que solo el Estado puede violar estos derechos. Se 
+reconoce que otros actores, como empresas y grupos ar￾mados no estatales, también pueden ser responsables de 
+violaciones de derechos humanos. 
+El punto de inflexión que hace que estemos frente a 
+la comisión de violación de derechos humanos o funda￾mentales, es la negligencia del Estado al no investigar y 
+castigar la participación de estos terceros en la comisión 
+de delitos, al ser cómplice de ellos por omisión de su 
+obligación (la del Estado), que trae como consecuencia la 
+sistemática y continuada conducta delictual de las orga￾nizaciones criminales, de los particulares o de empresas, 
+que violan los derechos humanos de los ciudadanos, por 
+lo que si bien es cierto al principio pudo haber sido un 
+delito común, pero al ser continuado y por haber causado 
+un daño sistemático a una población, el Estado se hace 
+cómplice de esos delitos por negligencia en sus funciones 
+constitucionales y legales, y por ende, terminan estos he￾chos cometidos por terceros en violaciones de derechos 
+fundamentales (derechos humanos), esta es la teoría que 
+acoge la complicidad estatal con terceros particulares or￾ganizados o no en la comisión de violación de derechos 
+fundamentales y humanos. 
+57
+4. Relevancia del derecho penal constitucional en el 
+ordenamiento jurídico
+El derecho penal constitucional es esencial para 
+garantizar un sistema penal que respete los derechos 
+fundamentales, sin que el poder punitivo del Estado se 
+convierta en un instrumento de abuso o arbitrariedad. 
+En el contexto global actual, donde la protección de 
+los derechos humanos es una prioridad, el derecho 
+penal constitucional juega un rol clave en el diseño 
+y la aplicación de las leyes penales, asegurando que 
+los procedimientos sean justos y que las penas sean 
+proporcionales y respetuosas de la dignidad humana.
+58
+«El derecho penal constitucional enfrenta desafíos 
+contemporáneos que requieren un equilibrio delicado entre 
+la protección de los derechos fundamentales y la lucha 
+contra nuevas formas de criminalidad. La globalización, 
+el avance de las tecnologías y la aparición de nuevas formas 
+de delitos, exigen una adaptación constante del marco jurídico, 
+para garantizar que las medidas adoptadas por el Estado sean 
+necesarias, proporcionales y respetuosas con los derechos 
+humanos».
+Dr. Manuel Martínez.
+59
+60
+Parte I: Fundamentos teóricos del derecho penal 
+constitucional
+Capítulo 1: Principios constitucionales fundamentales
+El derecho penal constitucional se fundamenta en una 
+serie de principios que aseguran el respeto de los dere￾chos humanos y las garantías procesales frente a la inter￾vención del poder punitivo del Estado. Estos principios 
+se encuentran estrechamente vinculados con los valores 
+constitucionales y los derechos fundamentales, que las 
+constituciones nacionales y los tratados internacionales 
+garantizan.
+El papel de la constitución en el derecho penal
+Función de la constitución como límite y garantía del 
+derecho penal
+La constitución, como norma suprema del ordena￾miento jurídico, actúa como una barrera que limita el 
+ejercicio del poder punitivo del Estado, y garantiza que 
+este se ejerza de manera justa y respetuosa con los de￾rechos fundamentales. En este sentido, la constitución 
+no solo establece los principios que orientan el derecho 
+penal, sino que también define los límites que el poder 
+estatal no puede traspasar.
+El principio de legalidad, consagrado en las consti￾tuciones modernas, asegura que ninguna persona pue￾da ser sancionada penalmente por acciones que no estén 
+61
+previstas como delitos en una ley preexistente. Del mis￾mo modo, la proporcionalidad garantiza que las penas 
+sean adecuadas a la gravedad del delito cometido, evi￾tando castigos excesivos y desmedidos.
+La constitución también refuerza derechos fundamen￾tales como el derecho al debido proceso, el derecho a 
+la defensa y la presunción de inocencia, que aseguran 
+que los ciudadanos no sean víctimas de arbitrariedades 
+en los procedimientos penales. Por ejemplo, en sistemas 
+judiciales como el venezolano y el español, las disposicio￾nes constitucionales limitan las detenciones arbitrarias y 
+aseguran el derecho de los acusados a conocer quién los 
+juzga y a contar con un proceso público y transparente.
+Control de constitucionalidad de las normas penales
+El control de constitucionalidad de las normas pena￾les tiene como propósito garantizar que las leyes pena￾les no contradigan los principios fundamentales estable￾cidos en la constitución. Este control puede ejercerse a 
+través de distintos modelos: el control difuso, donde los 
+jueces de cualquier instancia pueden declarar la inaplica￾bilidad de normas contrarias a la constitución; y el con￾trol concentrado, reservado a tribunales constitucionales 
+especializados.
+Los tribunales constitucionales, como la Sala Consti￾tucional del Tribunal Supremo de Justicia en Venezuela, 
+tienen un rol clave en este proceso. No solo protegen los 
+derechos fundamentales de los ciudadanos al revisar la 
+62
+constitucionalidad de las leyes penales, sino que también 
+establecen precedentes que refuerzan el equilibrio entre 
+el poder punitivo del Estado y la protección de los dere￾chos humanos.
+Un ejemplo emblemático de este rol se puede obser￾var en la jurisprudencia que prohíbe prácticas como la 
+intervención de comunicaciones sin autorización judicial. 
+Estas sentencias no solo garantizan el derecho a la priva￾cidad y la inviolabilidad del domicilio, sino que tam￾bién fortalecen la legitimidad del sistema penal al evitar 
+abusos por parte de las autoridades.
+La importancia del juez constitucional en este marco
+El juez constitucional, en sus funciones de protección 
+y control, asegura que las normas penales y sus aplicacio￾nes respeten los principios constitucionales. Este juez tie￾ne la facultad de declarar la inconstitucionalidad de leyes 
+o actos procesales que infrinjan derechos fundamentales, 
+actuando como garante del orden constitucional.
+La figura del juez de control de garantías en sistemas 
+acusatorios, como el venezolano, refuerza la supervisión 
+en etapas clave del proceso penal, asegurando que las ac￾tuaciones del Ministerio Público se ajusten a las disposi￾ciones constitucionales. Este control no solo previene la 
+violación de derechos fundamentales, sino que también 
+evita prácticas inadecuadas, como la obtención de prue￾bas ilícitas que podrían perjudicar al imputado.
+63
+64
+1.1. Presunción de inocencia
+La presunción de inocencia es uno de los principios 
+más relevantes en cualquier sistema penal y constituye 
+una piedra angular del derecho penal constitucional. Este 
+principio establece que toda persona acusada de un deli￾to debe ser considerada inocente hasta que se demuestre 
+su culpabilidad en un juicio justo y conforme a las garan￾tías procesales establecidas.
+La presunción de inocencia está recogida en diversas 
+normativas internacionales, como el Pacto Internacional 
+sobre Derechos Civiles y Políticos (Art. 14.2) y la Con￾vención Americana sobre Derechos Humanos (Art. 8.2). 
+Este principio asegura que la carga de la prueba recae 
+sobre la acusación y no sobre el acusado, protegiendo a 
+este último de condenas basadas en la simple sospecha o 
+en pruebas insuficientes.
+El maestro Mauro Cappelletti, en su obra El Proceso 
+Penal y los Derechos Humanos (1978), subraya la impor￾tancia de la presunción de inocencia en el derecho penal 
+moderno, destacando que «este principio es la columna 
+vertebral del debido proceso penal» (p. 231).18
+De igual forma, Mir Puig, en Derecho Penal. Parte 
+General (2009), señala que la presunción de inocencia 
+también tiene un carácter constitucional, ya que se tra￾ta de una garantía fundamental que debe prevalecer en 
+todo procedimiento penal (p. 112).19
+18 Mauro Cappelletti, El Proceso Penal y los Derechos Humanos (1978) pág. 
+231
+19 Mir Puig en Derecho Penal. Parte General (2009) Pág 112
+65
+66
+1.2. Principio de legalidad (nullum crimen, nulla poena 
+sine lege)
+El principio de legalidad establece que no puede ha￾ber delito ni pena sin una ley previa que los defina. Este 
+principio, consagrado en la mayoría de las constituciones 
+modernas, es fundamental para evitar la arbitrariedad del 
+poder punitivo del Estado. En otras palabras, ningún indi￾viduo puede ser condenado por un acto que no haya sido 
+previamente tipificado como delito en una norma jurídica.
+Este principio tiene sus características como lo son:
+• Nullum cimenen, nulla poena sine lege 
+• Nullum cimenen, nulla poena sine lege previa
+• Nullum cimenen, nulla poena sine lege scripta
+• Nullum cimenen, nulla poena sine lege certa
+• Nullum cimenen, nulla poena sine lege stricta
+La ley debe existir, que debe existir antes de la comi￾sión del delito, que debe ser una ley escrita apegado al 
+derecho positivo, que tiene que ser una ley cierta y por 
+último que la ley sea estricta que establezca el tipo penal 
+sin ambigüedades.
+Este principio asegura la previsibilidad de las conse￾cuencias jurídicas de las acciones y previene la creación 
+de delitos y penas por actos no legislados. Está recogido 
+en el artículo 9 de la Constitución Española y en el ar￾tículo 15 de la Declaración Universal de los Derechos 
+Humanos.
+67
+En otras palabras, la seguridad jurídica es fundamen￾tal para mantener el orden de un Estado, no se puede 
+cambiar las normas a capricho del intérprete de turno, 
+esa inestabilidad no permite el asentamiento de una 
+sociedad en un territorio, el no saber qué hacer porque 
+puede ser hoy un acto lícito o ilícito, a capricho de quien 
+tenga el poder, es lo que hace que el principio de lega￾lidad se encuentre en la mayoría de las constituciones 
+como derecho fundamental esencial, la legalidad penal 
+tiene una doble función: garantizar la libertad frente a la 
+arbitrariedad estatal y proporcionar seguridad jurídica a 
+los ciudadanos,20 la legalidad penal se encuentra entre 
+los principios más vitales para evitar la posibilidad de 
+que el poder público actúe de forma excesiva o despro￾porcionada21 .
+1.3. Culpabilidad
+El principio de culpabilidad es un fundamento esen￾cial en la teoría del derecho penal constitucional. Este 
+principio establece que solo debe ser sancionado aquel 
+que haya cometido un delito con una intención o negli￾gencia punible. La culpabilidad, en su sentido más am￾plio, refiere a la imputabilidad del acusado, es decir, si es 
+capaz de entender el carácter ilícito de su acto y de actuar 
+conforme a esa comprensión.
+La culpabilidad implica que el Estado debe demostrar 
+la responsabilidad del individuo por medio de pruebas, 
+20 Rodríguez Rivas César, Derecho Penal. Parte General, (2015) Pág. 139
+21 García Marín Luis, Los principios Constitucionales del derecho penal 
+(2002) Pág. 87
+68
+en un proceso en el que se respete su derecho a la defen￾sa. De este modo, se evita la imposición de una pena sin 
+fundamento o justificación.
+En cuanto a la obligación del Estado de demostrar la 
+responsabilidad penal del individuo, lo hace a través del 
+Ministerio Fiscal, quien en nombre del Estado ejerce la 
+acción penal, luego de una investigación seria exhaustiva 
+y sin violaciones del debido proceso, estando controla￾das sus actuaciones siempre por el órgano jurisdiccional, 
+quien velará en todo momento que las diligencias ten￾dentes al total esclarecimientos de los hechos se hagan 
+siempre apegadas al marco constitucional y a las leyes 
+vigentes.22
+Así las cosas, encontramos en la doctrina sobre este 
+tema la opinión del jurista Javier Figueroa, en La Culpa￾bilidad en derecho penal (2016), subraya que la culpa￾bilidad es el elemento que distingue al derecho penal de 
+otras ramas del derecho, pues la pena solo puede impo￾nerse cuando se ha probado la culpabilidad del acusado 
+(p. 45).23
+Rafael de la Rubia, en su obra Derecho penal y culpa￾bilidad (2007), destaca la importancia de la culpabilidad 
+en la protección de la libertad individual del acusado, 
+asegurando que no se le castigue sin prueba de su inten￾ción o negligencia (p. 152).24
+22 La actuación fiscal durante la fase de investigación está sujeta de forma 
+directa e inmediata al control de los tribunales de instancia… Sala de Ca￾sación Penal 08/11/2024 Nro, 587. Venezuela Tribunal Supremo de Justicia.
+23 Figueroa Javier. La culpabilidad en derecho penal (2016) Pág. 45
+24 De la Rubia Rafael. Derecho penal y culpabilidad (2007), Pág. 152
+1.4. Proporcionalidad
+El principio de proporcionalidad establece que la 
+pena debe ser adecuada y proporcionada al delito come￾tido, evitando la imposición de castigos excesivos. En el 
+contexto del derecho penal constitucional, la proporcio￾nalidad no solo se aplica a la gravedad del castigo, sino 
+también al proceso mismo, garantizando que las medidas 
+adoptadas sean necesarias y adecuadas para la protec￾ción de los bienes jurídicos. Este principio es fundamen￾tal para evitar la pena cruel, inhumana o degradante y 
+está recogido en el artículo 5 de la Convención Europea 
+de Derechos Humanos y en el artículo 10 de la Consti￾tución Española.
+Si bien es cierto que este principio no se encuentra 
+explícitamente previsto en artículos específicos, dentro 
+de los tratados hispanoamericanos ni en la Convención 
+Americana sobre los Derechos Humanos, este se deriva 
+de la interpretación de varias disposiciones de la Con￾vención.
+La Corte Interamericana de los Derechos Humanos 
+(CIDH) ha aplicado el principio de proporcionalidad, 
+como una herramienta para evaluar la legitimidad de las 
+restricciones a los derechos humanos. Este principio exi￾ge que cualquier limitación a un derecho humano debe 
+cumplir con los siguientes criterios:
+a. Idoneidad: la medida restrictiva debe ser adecuada 
+para alcanzar un objetivo.
+b. Necesidad: La medida debe ser la menos restrictiva 
+69
+70
+posible entre la afectación al derecho y el beneficio 
+que se obtiene con la medida.
+c. Proporcionalidad en sentido estricto: Debe existir 
+un equilibrio entre la afectación al derecho y el be￾neficio que se obtiene con la medida restrictiva.
+¿Dónde se manifiesta el principio de proporcionali￾dad en la Convención Americana y en la jurisprudencia 
+de la CIDH?
+Aunque no hay un artículo específico que lo mencione, 
+el principio de proporcionalidad se deriva de la interpre￾tación de artículos como:
+• Artículo 1.1 (Obligación de Respetar los Dere￾chos): Este artículo establece la obligación de los 
+Estados de respetar los derechos y libertades reco￾nocidos en la Convención, lo que implica que cual￾quier restricción a estos derechos debe ser excep￾cional y justificada.
+• Artículo 30 (Alcance de las Restricciones): Este 
+artículo establece que las restricciones a los dere￾chos reconocidos en la Convención solo pueden 
+aplicarse de acuerdo con las leyes promulgadas, 
+con el objeto de asegurar el reconocimiento y el 
+respeto de los derechos de los demás, o para satis￾facer las justas exigencias de la moral, del orden 
+público y del bienestar general, en una sociedad 
+democrática. La CIDH ha interpretado este artí-
+culo a la luz del principio de proporcionalidad, 
+exigiendo que las restricciones sean necesarias en 
+71
+una sociedad democrática y proporcionales al fin 
+que se persigue.
+Ahora bien, la proporcionalidad como principio cons￾titucional lo que busca es evitar la violación de los de￾rechos humanos de los ciudadanos, pero este principio 
+constitucional, aunque tiene mayor relevancia en la apli￾cación de las restricciones de derechos de las personas 
+sometidas a un proceso penal, también tiene una impli￾cación en la prevención de hechos delictivos y en la ac￾tuación de los organismos de seguridad del Estado. En 
+tal sentido, la Constitución de la República Bolivariana 
+de Venezuela, en su Artículo 55,25 establece la proporcio￾nalidad en cuanto a las actuaciones de los órganos de se￾guridad del Estado en el uso de la fuerza pública, siendo 
+replicada la misma norma en el Artículo 26.326 del Código 
+Orgánico Procesal Penal venezolano, buscando resguar￾dar siempre el respeto a los derechos humanos. 
+De tal manera, que el derecho constitucional en mate￾ria penal establece que el principio de proporcionalidad 
+es una garantía a la protección de los derechos humanos, 
+que atraviesa transversalmente toda la actuación de los 
+cuerpos de seguridad del Estado antes, durante y des￾pués de la comisión de un hecho punible, para garantizar 
+25 Artículo 55. Constitución de la República Bolivariana de Venezuela: 
+Toda persona tiene derecho a la protección por parte del Estado… Los cuer￾pos de seguridad del Estado respetarán la dignidad y los derechos humanos 
+de todas las personas… estará limitado por principios de necesidad, conve￾niencia, oportunidad y proporcionalidad. Conforme a la ley.
+26 Artículo 26. Código Orgánico Procesal Penal de Venezuela. Deberes de 
+las funcionarias y funcionarios. Además de los deberes que impongan las 
+leyes y los reglamentos, las funcionarias y funcionarios del servicio peniten￾ciario están obligadas y obligados a: (…) 3. Ejercer las funciones propias de 
+su cargo teniendo en cuenta los principios de ética, objetividad, propor￾cionalidad, eficiencia, transparencia, respeto y humanidad.
+72
+a todos los ciudadanos una actuación estatal ajustada a 
+los principios fundamentales previstos en la constitución.
+El maestro Enrique Bacigalupo, en Derecho penal y 
+constitucional (2002), sostiene que la proporcionalidad
+es un principio clave para que el sistema penal no se 
+convierta en un medio de venganza, sino en una herra￾mienta de justicia equilibrada (p. 118).27
+1.5. Otros principios relevantes
+- Igualdad ante la ley: Este principio, consagrado en 
+casi todas las constituciones modernas, establece que to￾das las personas deben ser tratadas de la misma manera 
+frente a la ley, sin discriminación por motivos de raza, 
+sexo, religión u origen social. En el ámbito penal, esto im￾plica que no debe existir arbitrariedad o trato desigual en 
+la aplicación de la ley.
+- No discriminación: Complementario al principio de 
+igualdad, la no discriminación en el derecho penal cons￾titucional se refiere a la obligación del Estado de no crear 
+normas que favorezcan o perjudiquen a determinados 
+grupos sin justificación razonable.
+27 Bacigalupo Enrique, derecho penal y Constitucional (2002), Pág. 118.
+73
+Capítulo 2: Derechos fundamentales y derecho penal
+2.1. Relación entre los derechos fundamentales y el 
+Derecho Penal
+El derecho penal constitucional tiene un papel cru￾cial en la protección de los derechos fundamentales de 
+los individuos frente al ejercicio del poder punitivo del 
+Estado. En este sentido, la relación entre los derechos 
+fundamentales y el derecho penal se caracteriza por la 
+necesidad de garantizar que las sanciones penales no vio￾len derechos esenciales, como la libertad personal, la dig￾nidad humana y el acceso a un juicio justo.
+En la intersección de ambos ámbitos, se encuentra la 
+necesidad de asegurar que las normas penales respeten 
+los principios de proporcionalidad, legalidad y la protec￾ción contra la arbitrariedad.
+Carlos León en su obra Derecho Penal y Derechos 
+Humanos, argumenta que los derechos fundamentales 
+limitan las capacidades del Estado para imponer sancio￾nes penales, garantizando que tales sanciones no sean ar￾bitrarias ni desproporcionadas.28
+2.2. Análisis de derechos específicos en el contexto 
+penal
+El derecho a la vida, la libertad y la seguridad jurí-
+dica son algunos de los derechos fundamentales más 
+vulnerables en el contexto penal. La interpretación y pro-
+28 León Carlos. derecho penal y Derechos Humanos (2004), Pág. 92
+74
+tección de estos derechos requieren un equilibrio entre 
+la imposición de sanciones penales y el respeto a los de￾rechos humanos. El derecho penal constitucional debe 
+proteger derechos tan básicos como el derecho a la vida 
+y la libertad frente a un uso excesivo del poder punitivo 
+del Estado.29
+Derecho a la Vida: La pena de muerte es un 
+ejemplo clásico de una sanción penal que pone en 
+riesgo este derecho. Muchos países han abolido esta 
+pena en virtud de tratados internacionales como el Pacto 
+Internacional de Derechos Civiles y Políticos.
+Derecho a la libertad: El derecho a no ser deteni￾do de forma arbitraria es fundamental para evitar el abu￾so del sistema penal. Las detenciones preventivas deben 
+estar justificadas por motivos claros y ser aprobadas por 
+un juez.
+29 Gargarella Roberto. Los Derechos Humanos y la Constitución (2003), 
+Pág. 140
+75
+Capítulo 3: El papel de la constitución en el derecho 
+penal
+3.1. Función de la constitución como límite y 
+garantía del derecho penal
+La constitución tiene un papel crucial como marco 
+normativo que establece los límites y las garantías del 
+ejercicio del poder punitivo del Estado. Funciona como 
+una barrera para evitar que el derecho penal sea utilizado 
+de manera arbitraria o abusiva. La constitución asegura 
+que los derechos fundamentales de los individuos sean 
+respetados en el proceso penal y en la imposición de san￾ciones ya que la constitución no solo es el fundamento de 
+la organización del Estado, sino también una garantía de 
+los derechos individuales frente al poder punitivo.30
+3.2. Control de constitucionalidad de las normas penales
+El control de constitucionalidad de las normas pena￾les tiene como objetivo garantizar que las leyes penales 
+no contravengan los principios constitucionales. Este 
+control puede ser ejercido por tribunales constituciona￾les o a través del control judicial de las leyes. Además, 
+se deben realizar interpretaciones constitucionales de las 
+normas penales para asegurar su adecuación a los dere￾chos humanos.
+30 Cancio Meliá Manuel. La Constitución y el derecho penal (2002), Pág. 27
+76
+Los tribunales de instancia tienen entre sus funciones 
+básicas y principales ser un filtro de constitucionalidad, 
+para evitar que las leyes penales vulneren derechos fun￾damentales31, los jueces de control o jueces de garantías 
+deben su nombre porque están para garantizar o contro￾lar la constitucionalidad del proceso y evitar en los casos 
+que el Ministerio Público tenga el monopolio de la acción 
+penal (como es el caso de Venezuela), que estos en el ejer￾cicio de sus funciones transgredan los principios cons￾titucionales que resguardan los derechos fundamentales 
+de los ciudadanos.
+Así las cosas, de ahí deviene el hecho de que el Mi￾nisterio Fiscal no puede, de motus proprio, practicar un 
+allanamiento sin que medie la orden jurisdiccional, o que 
+el Ministerio Público intervenga correos, llamadas tele￾fónicas sin que esté autorizado por el juez de garantías 
+constitucionales (juez de Control) porque eso sería tanto 
+como atentar contra el derecho fundamental a la inviola￾bilidad del hogar32 , de las comunicaciones33, derivando 
+tal imprudencia en la nulidad absoluta de las actuaciones 
+que se desprendan de esas actividad, produciéndose, por 
+ende, el efecto del fruto del árbol envenenado34.
+31 Díez Ripollés José Luis, El Control de Constitucionalidad (2010), Pág. 63
+32 Artículo 18.2 Constitución Española.
+ Artículo 47 Constitución de la República Bolivariana de Venezuela.
+33 Artículo 48 Constitución de la República Bolivariana de Venezuela.
+ Artículo 18.3 Constitución Española.
+34 noticias.juridicas.com 
+ Roxin Claus. Derecho Procesal Penal.
+77
+Parte II: Aplicaciones prácticas del derecho penal 
+constitucional
+Capítulo 4: Delitos contra los derechos fundamentales
+El derecho penal constitucional se extiende a la pro￾tección de los derechos fundamentales frente a los abu￾sos de poder, y la comisión de delitos que afectan direc￾tamente la dignidad humana. En este contexto, algunos 
+delitos son particularmente graves porque atentan contra 
+la integridad física, psicológica y moral de las personas, 
+además de que representan un ataque directo a los dere￾chos fundamentales reconocidos en las constituciones y 
+en los tratados internacionales.
+4.1. Tortura
+La tortura es uno de los delitos más graves que un 
+Estado puede cometer contra sus ciudadanos, y es una 
+violación manifiesta de la dignidad humana. La tortura 
+está expresamente prohibida por la Convención contra 
+la Tortura y Otros Tratos o Penas Crueles, Inhumanos 
+o Degradantes (ONU, 1984), y en la mayoría de las cons￾tituciones modernas, incluidos artículos específicos que 
+la proscriben. Las constituciones de muchos países esta￾blece que “ningún individuo será sometido a tortura, ni a 
+penas o tratos crueles, inhumanos o degradantes”35, para 
+Karel Vasak, la tortura representa una de las formas más 
+extremas de abuso de poder estatal y subraya que su pro￾hibición es absoluta e inderogable, incluso en situaciones 
+35 Artículo 5 Constitución Española.
+ Artículo 46.1 Constitución de la República Bolivariana de Venezuela.
+78
+de emergencia, tal como se establece en el artículo 15 de 
+la Convención Europea de Derechos Humanos.36
+La tortura debe entenderse como aquella practica in￾humana que es utilizada por el Estado (fuerzas y cuerpo 
+de seguridad u órganos de seguridad del Estado), con el 
+fin de obtener una confesión en un interrogatorio, el prin￾cipio de la tortura es causar un tratamiento inhumano a 
+una persona a los fines de que este confiese un hecho, o 
+en su defecto delate algún plan o hecho ocurrido que él 
+a priori tiene conocimiento, violándole así garantías del 
+debido proceso, tales como la asistencia de un abogado 
+defensor, estar en presencia de un juez, acogerse a no de￾clarar en su contra, entre otros, por eso hay que hacer una 
+distinción entre la tortura y el trato cruel, ya que este úl￾timo es el maltrato que proporcionan los funcionarios de 
+seguridad del Estado solo con el fin de provocar dolor o 
+trauma, sin que medie la necesidad de que el maltratado 
+declare o confiese nada, el trato cruel sólo tiene como fin 
+el causar daño al ser humano.
+4.2. Desaparición forzada
+La desaparición forzada es otro delito que, más allá 
+de ser una violación del derecho a la libertad y a la segu￾ridad personal, es una violación a la dignidad humana, 
+ya que implica la sustracción de la persona de su entorno 
+y su aislamiento completo, sin garantías procesales. Este 
+delito se encuentra tipificado en el derecho penal Inter￾nacional, específicamente en el Convenio Internacional 
+36 Vasak Karel, Derechos Humanos: Una Introducción a la Teoría y Práctica 
+(1982). Página 62
+79
+para la Protección de Todas las Personas contra las Des￾apariciones Forzadas de la ONU (2006).
+De igual forma el Estatuto de Roma define a la desapa￾rición forzada de personas: 
+«se entenderá la aprehensión, la detención o el se￾cuestro de personas por un Estado o una organización 
+política, o con su autorización, apoyo o aquiescencia, se￾guido de la negativa a admitir tal privación de libertad 
+o dar información sobre la suerte o el paradero de esas 
+personas, con la intención de dejarlas fuera del amparo 
+de la ley por un período prolongado.»37
+En este sentido, nos dice Juan E. Méndez, que la des￾aparición forzada de personas no solo es un delito penal 
+grave, sino una violación directa de la dignidad humana, 
+que debe ser tratada como un delito imprescriptible y su￾jeto a la jurisdicción internacional, tal como lo establece el
+Tribunal Penal Internacional38
+4.3. Delitos de odio
+Los delitos de odio incluyen aquellos actos delic￾tivos motivados por el prejuicio o la animosidad ha￾cia grupos específicos, ya sea por razones de raza, 
+religión, etnia, género, orientación sexual, etc. Estos 
+delitos son particularmente peligrosos porque bus￾can deshumanizar a individuos y grupos, socavando 
+37 Artículo 7.2.i. Crímenes de lesa humanidad, desaparición forzada de per￾sonas.
+38 Méndez, Juan E. Desapariciones Forzadas y Derechos Humanos (1997). Página 
+112
+80
+principios fundamentales como la igualdad y la no 
+discriminación.
+39
+En muchos países, los delitos de odio están tipifi￾cados de manera específica en sus códigos penales, y son 
+tratados con especial severidad por su impacto en la con￾vivencia social y el orden público. El Art. 14 de la Cons￾titución Española establece el principio de igualdad y 
+no discriminación, prohibiendo cualquier forma de trato 
+desigual.
+Eric A. Posner, discute cómo los delitos de odio 
+no solo deben ser tratados desde el punto de vista penal, 
+sino también bajo una perspectiva constitucional, pues 
+afectan directamente a la dignidad de las personas y a los 
+valores fundamentales de convivencia social.40
+Diferenciación entre tortura y otros tratos crueles
+Aunque ambos comportamientos son condenables, la 
+tortura se diferencia de los tratos crueles, inhumanos o 
+degradantes, debido a la intencionalidad y el propósito 
+que la caracterizan. La tortura busca obtener informa￾ción, castigar o intimidar, mientras que los tratos crueles
+no persiguen un objetivo concreto más allá de infligir su￾frimiento. Esta distinción resulta crucial en el análisis pe￾nal y en la aplicación de las sanciones correspondientes.
+Impacto de la tortura en la víctima y la sociedad
+39 Artículo 14 de la Constitución Española.
+ Artículo 21 de la Constitución de la República Bolivariana de Venezuela.
+40 Posner Eric A. The Law of Hate (2013). Página 86.
+La tortura no solo tiene efectos devastadores para las 
+víctimas directas, que causa daños físicos, psicológicos 
+y emocionales irreparables, sino que también socava la 
+confianza de la sociedad en el sistema de justicia y el Es￾tado de derecho. Según Karel Vasak, la prohibición abso￾luta de la tortura es un principio inderogable, fundamen￾tal para preservar los valores democráticos y la dignidad 
+humana.
+81
+Capítulo 5: Responsabilidad penal de los poderes públicos
+El Estado, a través de sus órganos y funcionarios, tiene 
+la responsabilidad de garantizar los derechos de los ciuda￾danos y, al mismo tiempo, es susceptible de incurrir en res￾ponsabilidad penal por actos que infrinjan esos derechos.
+Este es el pilar que ha sostenido por mucho tiempo la 
+teoría de que solo el Estado es susceptible de incurrir en la 
+violación de los derechos humanos. Ahora bien, en materia 
+de violación de derechos humanos, como ejemplo de la te￾sis dominante podemos señalar al maestro Zaffaroni, quien 
+sostiene que solo el Estado puede violar derechos humanos 
+a través de sus funcionarios públicos, básicamente los mili￾tares y policías. En este punto hay que aclarar, que esta teo￾ría establece la condición de que dichos funcionarios estén 
+en el ejercicio de sus funciones, y de no ser así, aunque los 
+mismos estén uniformados y cometan algún delito contra 
+las personas, al no actuar en nombre del Estado a través 
+de una orden explicita superior, sólo incurrirían en la co￾misión de un delito común y no en violación de derechos 
+humanos. 
+Entonces, en base a esta hipótesis doctrinaria, se afirma a 
+contrario sensu, que cualquier ciudadano que cometa un de￾lito en contra de la humanidad de cualquier otro, no podrá 
+ser procesado como violador de derechos humanos, siendo 
+este entonces un delito de sujeto activo determinado, que 
+será el funcionario público que actúa en nombre del Estado.
+ Como hemos visto anteriormente, esta teoría ha cam￾biado y ahora se acepta que ante la negligencia, inobser￾vancia e inoperatividad del Estado para actuar ante una 
+82
+83
+escalada incontrolable de delitos que atenten contra los 
+bienes jurídicos esenciales como la vida, la propiedad, la 
+paz ciudadana, cometido por ciudadanos comunes, ya 
+sean en grupos delictivos o individualmente, se entiende 
+que esta complicidad, explicita o no del Estado, también 
+constituye una violación a los derechos humanos.
+5.1. Imputabilidad de los funcionarios públicos y de las 
+personas jurídicas
+La imputabilidad de los funcionarios públicos se re￾fiere a la responsabilidad penal que estos pueden asumir 
+por acciones que vulneren la ley o los derechos funda￾mentales de los ciudadanos. Aunque los funcionarios pú-
+blicos actúan bajo el marco de la ley, pueden ser respon￾sables penalmente por abuso de autoridad, corrupción y
+violaciones de derechos humanos.
+En este sentido, los funcionarios públicos no pueden 
+alegar la obediencia debida a una orden superior41 como 
+excusa para librarse de la responsabilidad por la comi￾sión de violación de derechos humanos, ya que cada fun￾cionario debe ser consciente que una actuación contraria 
+a derecho por más orden superior que sea, no se puede ni 
+se debe obedecer y, por ende, no se puede cumplir.
+Michele Taruffo, establece que la imputabilidad de 
+los funcionarios debe ser evaluada en función de su grado 
+de responsabilidad y autoridad, y argumenta que la inten￾cionalidad y el daño causado son factores fundamentales 
+para determinar la gravedad de la responsabilidad penal 
+41 Artículo 25 de la Constitución de la República Bolivariana de Venezuela.
+84
+de estos actores42, so pretexto, como ya se ha explicado, de 
+la alegación de la obediencia debida a los superiores.
+Los funcionarios públicos, al actuar en nombre del Esta￾do, tienen una posición de poder que les confiere respon￾sabilidades especiales. La imputabilidad penal implica 
+que estos funcionarios pueden ser responsabilizados por 
+actos contrarios al derecho que vulneren las garantías fun￾damentales de los ciudadanos. Este punto incluye:
+• Abuso de poder: Casos en los que un funcionario 
+utiliza su posición para violar derechos humanos, 
+como detenciones arbitrarias, corrupción o tortura.
+• Excepción a la obediencia debida: La jurisprudencia 
+reconoce que los funcionarios no pueden justificar 
+actos ilegales bajo el pretexto de cumplir órdenes su￾periores, como lo establece el artículo 25 de la Cons￾titución de la República Bolivariana de Venezuela.
+Por otro lado, las personas jurídicas, es decir, las en￾tidades como empresas o instituciones también pueden 
+ser responsables penalmente en ciertos casos, especial￾mente cuando han actuado de manera deliberada en la 
+comisión de delitos, como la corrupción, blanqueo de 
+capitales, o la financiación ilegal.
+La comunicación de noticias (bulos) que se generan a 
+través de medios de comunicación, ya sean tradicionales 
+o digitales, que buscan desestabilizar la tranquilidad y 
+paz ciudadana, así como la incitación a cometer actos te￾rroristas que atenten contra los derechos humanos de la 
+42 Taruffo Michele. La responsabilidad penal de los funcionarios públicos 
+(2009). Página 114.
+85
+sociedad, también pudieran ser objeto de ser considera￾dos violadores de derechos humanos, ya que el derecho a 
+una información veraz y oportuna es un derechos funda￾mental, garantizados en la constitución. 
+5.2. Responsabilidad internacional de los Estados por 
+violaciones al derecho penal Internacional
+Los Estados también pueden ser considerados respon￾sables por violaciones graves al derecho penal Interna￾cional, como las violaciones de derechos humanos, ge￾nocidio, o crímenes de guerra. Esta responsabilidad es 
+evaluada por tribunales internacionales como el Tribu￾nal Penal Internacional (TPI) o la Corte Internacional 
+de Justicia (CIJ).
+A través del principio de responsabilidad estatal in￾ternacional, se establece que un Estado no solo debe res￾ponder ante sus ciudadanos por violaciones de derechos 
+humanos, sino también ante la comunidad internacional, 
+por actos que vulneren normas internacionales de dere￾chos humanos.
+En este sentido, nos señala Antonio Cassese, el dere￾cho penal internacional establece la responsabilidad de 
+los Estados frente a crímenes internacionales, y subraya 
+que la impunidad de los crímenes de Estado es inadmisi￾ble en un sistema jurídico internacional.43
+43 Cassese Antonio. International Criminal Law (2008). Página 276. 
+Capítulo 6: Garantías procesales en el derecho penal
+6.1. Derecho a un juicio justo, derecho a la defensa, etc.
+Las garantías procesales son fundamentales para 
+asegurar que el poder punitivo del Estado se ejecute de 
+manera justa y no arbitraria. El derecho a un juicio jus￾to (Art. 8 de la Convención Americana sobre Derechos 
+Humanos) implica una serie de garantías mínimas que 
+deben observarse en cualquier proceso penal, como el de￾recho a ser informado de los cargos, a tener acceso a un 
+abogado, y a ser juzgado por un tribunal imparcial.
+El derecho a la defensa es otro pilar esencial del de￾recho penal constitucional. Este derecho permite que la 
+persona acusada pueda presentar pruebas, cuestionar las 
+pruebas de la acusación y participar plenamente en su 
+defensa.
+Este derecho se debe apreciar bajo la perspectiva de 
+dos vertientes el derecho a la defensa técnica o letrada, 
+y la defensa material o autodefensa, el Estado debe ga￾rantizarle a sus ciudadanos que esta defensa aunque son 
+distintas son concurrentes, y no excluyentes entre sí, por 
+lo que los funcionarios públicos deben evitar a cualquier 
+costo conculcar el ejercicio pleno de esta defensa, ya que 
+es el mecanismo primario que tiene el ciudadano para 
+prevenir la posible comisión de una violación de los de￾rechos humanos. 
+El derecho a la asistencia letrada está reconocido 
+como un pilar fundamental del proceso penal, garanti-
+86
+zando que el imputado o acusado cuente con el aseso￾ramiento técnico necesario durante todas las fases del 
+procedimiento penal. En sistemas como el español, este 
+derecho se encuentra explícitamente protegido en el artí-
+culo 24.2 de la Constitución Española, que asegura que 
+ninguna persona sea despojada de su derecho a una de￾fensa adecuada.
+Importancia Constitucional y Jurisprudencial
+La jurisprudencia del Tribunal Supremo de España 
+ha subrayado, reiteradamente, la relevancia de este de￾recho. Por ejemplo, en la Sentencia 1766/2003, de 26 de 
+diciembre, se establece que la asistencia de un abogado 
+no solo es un derecho fundamental, sino también un re￾quisito indispensable para la validez de ciertos actos pro￾cesales. La sentencia señala:
+«El derecho a la defensa y a la asistencia de Letrado implica la 
+posibilidad del interesado de encomendar el asesoramiento técnico 
+en el proceso a un abogado que merezca su confianza, o en su defecto, 
+a otro que le sea designado de oficio».
+De esta manera, la asistencia letrada no solo es un de￾recho, sino también una garantía procesal que refuerza la 
+equidad del procedimiento penal.
+87
+88
+Ámbitos clave de la asistencia letrada
+El Tribunal Constitucional, por su parte, ha desta￾cado que la asistencia letrada tiene como «destinatarios 
+primigenios» a quienes se ven sometidos a un proceso 
+penal, especialmente en calidad de imputados o acusa￾dos. Su especial relevancia se manifiesta en momentos 
+cruciales como:
+• La declaración ante el juez de instrucción, don￾de el acusado tiene la posibilidad de contar con un 
+abogado que garantice que sus derechos no sean 
+vulnerados.
+• El juicio oral, donde el abogado defiende activa￾mente sus intereses y asegura que se cumplan las 
+garantías procesales.
+Relevancia en el Contexto Constitucional
+El derecho a la asistencia letrada no es un mero forma￾lismo, sino una herramienta fundamental que equilibra 
+la relación entre el poder punitivo del Estado y la protec￾ción de los derechos individuales. Además, su omisión o 
+vulneración puede generar nulidad procesal, dado que 
+afecta directamente la legitimidad del procedimiento.
+En resumen, la normativa constitucional, apoyada por 
+la jurisprudencia de los altos tribunales, establece que el 
+imputado o acusado debe estar asistido por un profesio￾nal del derecho durante las actuaciones judiciales. Este 
+derecho asegura una defensa efectiva, indispensable 
+para proteger principios como el debido proceso, la pre￾sunción de inocencia y el derecho a no autoincriminarse.
+Derecho a la defensa técnica: asistencia letrada y su 
+reconocimiento constitucional
+El derecho a la defensa técnica, reconocido como fun￾damental en sistemas jurídicos modernos, asegura que 
+toda persona sometida a un proceso penal cuente con la 
+asistencia letrada desde el inicio de las investigaciones y 
+durante todo el desarrollo del juicio. En Venezuela, este 
+derecho está consagrado en el artículo 49 de la Constitu￾ción de la República Bolivariana de Venezuela, mien￾tras que en España está protegido en el artículo 24.2 de 
+la Constitución Española. Ambos textos constitucionales 
+reconocen que la defensa técnica es indispensable para 
+garantizar un verdadero equilibrio jurídico durante el 
+proceso penal.
+Jurisprudencia que refuerza la asistencia letrada
+En la sentencia número 305 de la Sala de Casación 
+Penal del Tribunal Supremo de Justicia de Venezuela, 
+de fecha 4 de agosto de 2023, se subraya que el derecho 
+del imputado a ser oído y asistido desde el inicio de la 
+investigación, es fundamental. La decisión enfatiza que 
+cualquier omisión del Ministerio Público en garantizar 
+este derecho constituye una violación al debido proceso, 
+que afecta garantías esenciales como el derecho a ser oído 
+y a ejercer plenamente la defensa en todas las etapas del 
+proceso.
+89
+90
+Asimismo, en la sentencia número 2703 de la Sala Cons￾titucional, de fecha 8 de diciembre de 2023, se establece que 
+el derecho a la defensa consagrado en la Constitución, asegu￾ra que las partes puedan ser escuchadas, presentar pruebas y 
+ejercer plenamente su defensa bajo las condiciones previstas 
+en la ley. Estas decisiones son un recordatorio de la impor￾tancia de garantizar que todo imputado o acusado esté acom￾pañado por un profesional del derecho durante el proceso, 
+reforzando la legitimidad y equidad del sistema penal.
+Momentos clave en los que la asistencia letrada es 
+indispensable
+1. Desde el inicio de la investigación penal: La ju￾risprudencia venezolana destaca que la asistencia 
+letrada debe proporcionarse desde la primera ac￾tuación del proceso, incluyendo las declaraciones 
+iniciales ante el Ministerio Público.
+2. En las audiencias preliminares y el juicio oral: La 
+presencia de un abogado es esencial para garanti￾zar que se respeten los principios de igualdad pro￾cesal y debido proceso.
+3. Control de la prueba: El abogado técnico actúa 
+como garante de que las pruebas sean incorpora￾das y valoradas según los parámetros constitucio￾nales, evitando posibles violaciones de derechos 
+fundamentales.
+Asistencia letrada como requisito de validez procesal
+La Sentencia 1766/2003 del Tribunal Supremo de Es￾paña, al igual que las decisiones de la Sala Constitucional 
+91
+de Venezuela, refuerza que en determinados momentos 
+del proceso penal, la ausencia de un abogado invalida las 
+actuaciones procesales. Este criterio no solo protege al 
+imputado, sino que, además, preserva la integridad del 
+sistema judicial frente a posibles irregularidades.
+El maestro Claus Roxin, sostiene que la función de las 
+garantías procesales no es solo proteger al acusado, sino 
+también asegurar la legitimidad del proceso penal en su 
+conjunto, dado que la observancia de estas garantías for￾talece la confianza del público en el sistema judicial44.
+6.2. El papel del juez constitucional en el proceso penal
+El juez constitucional juega un papel crucial en la su￾pervisión de la aplicación de las normas penales, asegu￾rándose de que respeten los principios constitucionales. 
+Este juez tiene la facultad de declarar la inconstituciona￾lidad de leyes o actos procesales que infrinjan derechos 
+fundamentales. Su intervención es esencial para garan￾tizar que el derecho penal se aplique de acuerdo con las 
+normas constitucionales y los estándares internacionales.
+El juez constitucional no solo tiene la tarea de proteger 
+derechos fundamentales, sino también de garantizar la 
+coherencia y la integración entre el derecho penal y el de￾recho constitucional, tal y como lo señala Germán Bidart 
+Campos45.
+44 Roxin Claus. Derecho penal Parte General (2013). Página 68.
+45 Bidart Campos Germán. Derecho Constitucional (2015). Página 215.
+92
+Capítulo 7: La pena y su ejecución desde una perspectiva 
+constitucional
+7.1. Principio de humanidad de la pena
+El principio de humanidad de la pena establece que 
+las penas impuestas no deben ser crueles, inhumanas o 
+degradantes46. Este principio está en la base de la prohi￾bición de tortura y penas crueles, y es uno de los pilares 
+del derecho penal constitucional. La ejecución de la pena 
+debe respetar la dignidad humana, y las penas privativas 
+de libertad deben ser sometidas a ciertas condiciones que 
+protejan los derechos de los reclusos. 
+En todo caso el derecho penal no debe emplearse como 
+un instrumento de humillación, sino como un medio para 
+la reintegración social del condenado47, el derecho penal 
+no está para resolver conflictos de carácter privado y, 
+por ende, es de muy mala praxis jurídica utilizarlo como 
+arma de terrorismo judicial48, el «terrorismo judicial» alu￾de al uso abusivo del sistema penal con fines ajenos a la 
+justicia, como la persecución política, la intimidación o el 
+control social. En este contexto, el derecho penal se con￾vierte en una herramienta para ejercer un poder arbitra￾rio y opresivo, en lugar de un mecanismo para garantizar 
+la seguridad y el orden social.
+Es usado comúnmente por el Estado para intimidar a 
+la sociedad, siendo evidentemente violatorio de los de￾rechos fundamentales recogidos en la carta magna, en el 
+46 Artículo 46.1 de la Constitución de la República Bolivariana de Venezuela-
+ Artículo 15 de la Constitución Española.
+47 Duguit Léon. Tratado de derecho penal (1991). Página 139.
+48 TSJ Sentencia N° 557 de la Sala Constitucional de fecha 15/04/2025
+93
+ámbito anglosajón también es conocido como lawfare, 
+como lo menciona el politólogo alemán, Volker Perthes,
+en sus trabajos sobre resolución de conflictos y procesos 
+políticos, en donde ofrece algunas perspectivas sobre el 
+tema.
+7.2. Prohibiciones constitucionales en materia de penas
+Las constituciones de muchos países prohíben ciertas
+penas que se consideran incompatibles con la dignidad 
+humana, como la pena de muerte (en los países que la 
+han abolido), la tortura y las penas crueles, inhumanas 
+o degradantes. El sistema penal debe ser más justo y hu￾mano, se debe rechazar la tortura y la pena de muerte, 
+se deben aplicar penas proporcionales al delito y que la 
+prevención es más efectiva que la retribución.49
+Estas prohibiciones reflejan una visión moderna del 
+derecho penal, que se enfoca en la rehabilitación y rein￾tegración de los delincuentes en lugar de la venganza o 
+el castigo excesivo. Las prohibiciones constitucionales de 
+ciertas penas son esenciales para garantizar la humani￾dad de la pena, y evitar que el sistema penal sea utilizado 
+de manera punitiva y represiva.50
+7.3. Ejecución de la pena y derechos de los reclusos
+La ejecución de la pena debe ser conforme a los 
+derechos humanos y respetuosa de la dignidad de los 
+49 Beccaria Cesare. De los delitos y de las penas. (1764)
+50 Gargarella Roberto. La Tortura y el derecho penal (2002). Página 62.
+94
+reclusos. La privación de libertad no debe llevar consigo el 
+menoscabo de los derechos fundamentales, tales como el 
+derecho a la salud, a la educación, y a la protección frente 
+a tratos crueles, los derechos de los reclusos deben ser 
+garantizados, incluso dentro del sistema penitenciario, y 
+subraya la importancia de la supervisión judicial en la 
+ejecución de las penas.51
+51 Méndez Juan. Derechos Humanos y Prisión (2005). Página 210.
+Parte III: Desafíos contemporáneos y perspectivas 
+futuras en el derecho penal constitucional
+Capítulo 8: Desafíos actuales del derecho penal 
+constitucional
+El derecho penal constitucional enfrenta en la actuali￾dad una serie de desafíos derivados de la globalización, 
+los avances tecnológicos, las nuevas formas de crimina￾lidad y las tensiones entre la seguridad pública y la pro￾tección de los derechos fundamentales. A medida que el 
+contexto social y político cambia, los sistemas penales se 
+ven obligados a adaptarse para hacer frente a fenómenos 
+emergentes, sin perder de vista la protección de los dere￾chos humanos y las garantías procesales.
+8.1. Delitos Informáticos, terrorismo, crimen organizado, 
+etc.
+En las últimas décadas, han emergido una serie de de￾litos informáticos, terrorismo y crimen organizado, que 
+desafían los marcos normativos tradicionales del dere￾cho penal. Estos fenómenos requieren una respuesta que 
+armonice las políticas de seguridad con la protección de 
+los derechos fundamentales, en especial la privacidad, la 
+presunción de inocencia y la proporcionalidad en la im￾posición de penas.
+Delitos Informáticos
+Los delitos informáticos comprenden una amplia 
+gama de comportamientos ilícitos relacionados con el 
+95
+96
+uso indebido de sistemas tecnológicos y redes de comu￾nicación, como el fraude electrónico, el acceso no auto￾rizado a sistemas informáticos, el robo de datos, la di￾fusión de virus o el ciberacoso. Estos delitos son parti￾cularmente complejos, debido a la transnacionalidad de 
+la tecnología y la dificultad de atribuir responsabilidad 
+a los delincuentes, que a menudo operan desde diversas 
+jurisdicciones.
+El derecho penal constitucional debe garantizar que 
+las leyes penales informáticas no se utilicen de manera 
+abusiva para violar derechos como la libertad de expre￾sión, el derecho a la intimidad y el derecho a la infor￾mación. En este sentido, es necesario establecer límites 
+claros sobre la recopilación de datos y el acceso a la infor￾mación privada por parte de las autoridades.
+Refiriéndose a esto, el profesor alemán, Claus Roxin, 
+dice que el derecho penal debe adaptarse a los nuevos 
+desafíos planteados por los delitos informáticos, desta￾cando que debe garantizarse que las intervenciones tec￾nológicas respeten las garantías constitucionales, espe￾cialmente en lo que se refiere al derecho a la intimidad52
+Terrorismo y seguridad nacional
+El terrorismo es otro fenómeno que ha adquirido una 
+relevancia crucial en el derecho penal contemporáneo. 
+Los ataques terroristas suelen estar motivados por fines 
+ideológicos, políticos o religiosos, y pueden tener conse￾cuencias devastadoras para la sociedad y el Estado. En la 
+lucha contra el terrorismo, los Estados tienden a adoptar 
+medidas extraordinarias, como la vigilancia masiva, las 
+52 Roxin Claus. Derecho penal Parte General (2013). Página 256. 
+97
+detenciones preventivas sin cargos formales y la inter￾vención de las comunicaciones.
+Sin embargo, estas medidas deben ser compatibles con 
+los derechos fundamentales de los individuos, y su uso 
+debe estar estrictamente controlado para evitar abusos y 
+garantizar la proporcionalidad y el debido proceso. El 
+derecho penal constitucional establece que la lucha con￾tra el terrorismo no debe llevar a la adopción de leyes 
+que afecten desproporcionadamente a los derechos de 
+los ciudadanos, y que la presunción de inocencia y el 
+derecho a un juicio justo deben prevalecer, las medidas 
+antiterroristas deben ser objeto de un control judicial 
+estricto, a fin de evitar el abuso del poder por parte del 
+Estado, y garantizar que las restricciones a los derechos 
+fundamentales sean necesarias y proporcionales.53
+Crimen organizado
+El crimen organizado se refiere a las actividades ilíci￾tas perpetradas por grupos estructurados que operan a 
+nivel nacional e internacional, involucrándose en delitos 
+como el tráfico de drogas, la extorsión, el blanqueo de 
+capitales y la corrupción. La lucha contra el crimen or￾ganizado plantea un desafío significativo para el derecho 
+penal constitucional, pues a menudo exige la adopción 
+de medidas excepcionales que pueden contravenir las 
+garantías procesales, como la detención sin orden judi￾cial o el uso de pruebas obtenidas mediante métodos no 
+convencionales.
+53 Cryer Robert. International and European Criminal Law (2010). Página 
+192.
+98
+La regulación del crimen organizado requiere una 
+vigilancia rigurosa, para evitar que la aplicación de estas 
+medidas excepcionales se traduzcan en una erosión de 
+los derechos fundamentales, como la libertad personal
+y el derecho a un juicio justo.
+Las intervenciones extraordinarias contra el crimen 
+organizado deben ser balanceadas cuidadosamente 
+con las garantías constitucionales, con el fin de evitar 
+que el poder estatal se convierta en un instrumento de 
+represión,54 que sin control y medida ponga en riesgo la 
+seguridad y las garantías fundamentales de los derechos 
+ciudadanos.
+8.2. Protección de datos personales y privacidad
+La protección de datos personales es uno de los 
+derechos fundamentales más amenazados en la era 
+digital. La recopilación masiva de datos, el uso indebido 
+de la información personal por parte de empresas 
+y gobiernos, y las intervenciones electrónicas sin el 
+consentimiento de los individuos, plantean desafíos sin 
+precedentes para el derecho penal constitucional. La 
+capacidad de los Estados de interceptar comunicaciones
+y monitorizar actividades en línea a menudo entra en 
+conflicto con derechos fundamentales, como el derecho 
+a la intimidad, el derecho a la libertad de expresión y el 
+derecho a la protección de datos personales.
+La legislación debe establecer límites claros sobre 
+54 Cappelletti Mauro. El Proceso Penal y los Derechos Humanos (1978). 
+Página 231.
+99
+el acceso a los datos personales, y las circunstancias 
+bajo las cuales los poderes públicos pueden intervenir 
+en la vida privada de los ciudadanos. En este sentido, 
+la Reglamentación General de Protección de Datos 
+(GDPR) de la Unión Europea, ha sido un referente 
+clave para la protección de los derechos de privacidad 
+de los ciudadanos, el derecho penal constitucional debe 
+garantizar que las tecnologías de vigilancia y recopilación 
+de datos se utilicen de forma que respeten la privacidad 
+de las personas y que las intervenciones del Estado estén 
+sujetas a un control judicial riguroso.55
+55 Sartor Giovanni. Privacy and Data Protection (2012). Página 78.
+Capítulo 9: Tendencias y perspectivas futuras
+El derecho penal constitucional debe adaptarse 
+a las nuevas realidades y desafíos impuestos por la 
+globalización, la tecnología y los cambios sociopolíticos. 
+A medida que el mundo se conecta cada vez más, surgen 
+nuevas cuestiones sobre la jurisdicción, la protección de 
+derechos y la armonización de normas internacionales, 
+que plantean retos, tanto a nivel nacional como global.
+De acuerdo con esto, podemos entrar en el terreno del 
+derecho penal transnacional, que se entiende como la per￾secución de delitos más allá de las fronteras territoriales. 
+Los delitos que pueden perseguirse incluyen el tráfico de 
+drogas, el lavado de dinero, la corrupción, el terrorismo y 
+el crimen organizado. El procedimiento implica la coope￾ración entre países a través de tratados y acuerdos inter￾nacionales, como la extradición y el intercambio de infor￾mación y pruebas. Las autoridades judiciales y policiales 
+colaboran para investigar, detener, juzgar y sancionar a 
+los delincuentes en un marco legal internacional. 
+9.1. La influencia de la globalización y los derechos hu￾manos en el Derecho Penal
+La globalización ha provocado una interdependencia 
+creciente entre los países, lo que ha tenido un impacto sig￾nificativo en el derecho penal, particularmente en lo que 
+respecta a los derechos humanos. La cooperación interna￾cional en la lucha contra delitos transnacionales, como el 
+crimen organizado, el terrorismo y las violaciones de de￾rechos humanos, ha requerido un marco normativo global.
+100
+101
+Sin embargo, la armonización de las legislaciones 
+penales también puede plantear riesgos para los dere￾chos fundamentales, ya que algunos Estados adoptan 
+enfoques más laxos hacia los derechos humanos, lo que 
+puede llevar a un deterioro de las garantías procesales. 
+En este sentido, es esencial que el derecho penal interna￾cional y los tratados internacionales, como el Pacto Inter￾nacional de Derechos Civiles y Políticos (PIDCP), sigan 
+desempeñando un papel crucial en la protección de los 
+derechos humanos.
+Para Marta M. Ochoa, la globalización exige una inte￾gración más profunda entre el derecho penal nacional y 
+el derecho penal internacional, para que se respeten los 
+derechos humanos en todas las jurisdicciones y se evite 
+la impunidad.56
+La globalización del derecho penal siempre habrá que 
+mirarlo a través del prisma del respeto de los derechos 
+humanos universales, pero tiene la contención de que 
+muchos Estados no están ganados a que se intervenga su 
+derecho a la reserva legal del derecho penal y que se les 
+inste a practicar el respeto a los derechos humanos de los 
+ciudadanos, por el contrario, alegan el principio de no 
+intervención y de la libre determinación de los pueblos 
+para encubrir conductas contrarias al respeto universal 
+de los derechos humanos, por eso es tan complejo la glo￾balización del derecho penal, y por ahora si no media un 
+convenio o tratado internacional será cuesta arriba globa￾lizar el derecho penal.
+56 Ochoa Marta M. Derechos humanos y derecho penal Internacional 
+(2011). Página 134.
+102
+9.2. El papel de la inteligencia artificial en el sistema 
+penal
+Uno de los desarrollos más recientes y de mayor im￾pacto en el derecho penal constitucional es la inteligen￾cia artificial (IA). La IA tiene el potencial de revolucionar 
+la administración de justicia penal mediante el uso de 
+sistemas predictivos para identificar patrones criminales, 
+mejorar la eficiencia del proceso judicial y garantizar una 
+mayor objetividad en la aplicación de las leyes.
+Sin embargo, el uso de la IA en el ámbito penal tam￾bién plantea preocupaciones significativas en cuanto a la 
+discriminación algorítmica, el derecho a la privacidad, 
+y el debido proceso. La toma de decisiones automatiza￾das puede estar sujeta a sesgos inherentes, que afectan la 
+imparcialidad del sistema penal y, en última instancia, 
+los derechos fundamentales de los individuos. Es funda￾mental que el uso de IA en el sistema penal esté regulado, 
+de forma que se protejan los derechos constitucionales 
+de los acusados y se garantice la transparencia y la res￾ponsabilidad. La inteligencia artificial y otras tecnologías 
+emergentes pueden poner en peligro la autonomía y la 
+privacidad de los individuos, y el derecho penal consti￾tucional debe adaptarse para proteger estos derechos en 
+un contexto cada vez más automatizado.57
+57 Hildebrandt Mireille. Smart Technologies and the End of Privacy (2017). 
+Página 92.
+Conclusión
+El derecho penal constitucional enfrenta desafíos con￾temporáneos que requieren un equilibrio delicado entre 
+la protección de los derechos fundamentales y la lucha 
+contra nuevas formas de criminalidad. La globalización, 
+el avance de las tecnologías y la aparición de nuevas for￾mas de delitos, exigen una adaptación constante del mar￾co jurídico, para garantizar que las medidas adoptadas 
+por el Estado sean necesarias, proporcionales y respetuo￾sas con los derechos humanos. Al mismo tiempo, la inte￾ligencia artificial y otras tecnologías emergentes ofrecen 
+nuevas oportunidades para mejorar la administración de 
+justicia, pero también plantean riesgos significativos que 
+deben ser abordados con una regulación adecuada, para 
+preservar los principios constitucionales fundamentales.
+La aplicación del derecho penal constitucional es cru￾cial para garantizar que el poder punitivo del Estado se 
+ejerza de manera que respete la dignidad humana y los 
+derechos fundamentales de las personas. A través de la 
+prohibición de delitos graves como la tortura y la desapa￾rición forzada, la responsabilidad penal de los funciona￾rios públicos, las garantías procesales y el respeto por los 
+derechos de los reclusos, el derecho penal constitucional 
+juega un papel esencial en la protección del individuo 
+frente a abusos del poder del Estado.
+El derecho penal constitucional es una disciplina esen￾cial para garantizar que la imposición de penas no se rea￾lice de manera arbitraria, sino que se ajusten a los prin-
+103
+cipios constitucionales fundamentales que protegen los 
+derechos humanos. Este campo del derecho actúa como 
+un contrapeso entre la necesidad de sancionar el compor￾tamiento delictivo y la obligación de respetar las garan￾tías individuales de los ciudadanos.
+El derecho penal constitucional es un área fundamen￾tal del derecho, que asegura que el ejercicio del poder 
+punitivo estatal se mantenga dentro de los límites esta￾blecidos por la constitución y las normas internacionales 
+de derechos humanos. A lo largo de la historia, su desa￾rrollo ha sido crucial para garantizar que el derecho pe￾nal no sea una herramienta de opresión y que respete las 
+libertades y derechos de las personas. En la actualidad, 
+constituye un pilar esencial para cualquier sistema jurí-
+dico democrático que aspire a proteger los derechos fun￾damentales de los individuos frente al poder del Estado.
+104
+ÍNDICE
+Introducción
+Parte I: Fundamentos teóricos
+Parte II: Aplicaciones prácticas
+Parte III: Desafíos contemporáneos y perspectivas futuras
+Conclusión
+Introducción
+1. Definición y objeto del derecho penal constitucional
+1.2. Objeto del derecho penal constitucional
+2. Evolución histórica del derecho penal constitucional
+3. Relación entre el derecho penal y los derechos 
+fundamentales
+4. Relevancia del derecho penal constitucional 
+en el ordenamiento jurídico
+Parte I: Fundamentos Teóricos del derecho penal 
+constitucional
+Capítulo 1: Principios constitucionales fundamentales
+Capítulo 2: Derechos fundamentales y derecho penal
+Capítulo 3: El papel de la constitución en el derecho penal
+Parte II: Aplicaciones prácticas del derecho penal 
+105
+constitucional
+Capítulo 4: Delitos contra los derechos fundamentales
+Capítulo 5: Responsabilidad penal de los poderes públicos
+Capítulo 6: Garantías procesales en el derecho penal
+Capítulo 7: La pena y su ejecución desde una perspectiva
+ constitucional
+Parte III: Desafíos contemporáneos y perspectivas
+ futuras en el derecho penal constitucional
+Capítulo 8: Desafíos actuales del derecho penal 
+constitucional
+Delitos Informáticos
+Terrorismo y seguridad nacional
+Crimen organizado
+Capítulo 9: Tendencias y perspectivas futuras
+Conclusión
+106

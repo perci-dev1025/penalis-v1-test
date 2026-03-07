@@ -49,12 +49,16 @@ type RagBrief = {
     proceduralRisks: string;
   };
   consulta?: {
+    thesis: string;
     constitutionalFramework: string;
     legalFramework: string;
-    doctrinalAnalysis: string;
+    jurisprudentialCriterion: string;
     applicationToCase: string;
     conclusion: string;
+    proceduralStrategy: string;
     strategicWeakness: string;
+    /** @deprecated Legacy 6-section; use thesis + jurisprudentialCriterion + proceduralStrategy */
+    doctrinalAnalysis?: string;
   };
   formatosDocument?: {
     heading: string;
@@ -120,6 +124,7 @@ export function Consultation() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [rag, setRag] = useState<RagResponse | null>(null);
+  const [lastSubmittedQuestion, setLastSubmittedQuestion] = useState('');
   const [ttsSpeaking, setTtsSpeaking] = useState(false);
   const formatosPrintRef = useRef<HTMLDivElement>(null);
 
@@ -129,11 +134,13 @@ export function Consultation() {
     const parts: string[] = [];
     if (m === 'consulta' && brief.consulta) {
       const c = brief.consulta;
+      parts.push('Tesis jurídica.', c.thesis || '');
       parts.push('Marco constitucional aplicable.', c.constitutionalFramework || '');
       parts.push('Marco legal relevante.', c.legalFramework || '');
-      parts.push('Análisis doctrinal.', c.doctrinalAnalysis || '');
-      parts.push('Aplicación al caso concreto.', c.applicationToCase || '');
+      parts.push('Criterio jurisprudencial.', c.jurisprudentialCriterion || '');
+      parts.push('Aplicación al caso.', c.applicationToCase || '');
       parts.push('Conclusión jurídica.', c.conclusion || '');
+      parts.push('Estrategia de intervención procesal.', c.proceduralStrategy || '');
       parts.push('Debilidad estratégica de la contraparte.', c.strategicWeakness || '');
     } else if (m === 'audiencia' && brief.maestro) {
       const x = brief.maestro;
@@ -296,8 +303,9 @@ export function Consultation() {
       setError(apiError);
     } else if (data) {
       setRag(data);
+      if (mode === 'consulta') setLastSubmittedQuestion(questionPayload);
     }
-      setLoading(false);
+    setLoading(false);
   };
 
   return (
@@ -616,13 +624,13 @@ export function Consultation() {
               </div>
             </div>
           ) : (
-            <textarea
-              id="consulta-input"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
+          <textarea
+            id="consulta-input"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
               placeholder={modeConfig.placeholder}
-              rows={4}
-              disabled={loading}
+            rows={4}
+            disabled={loading}
               style={{
                 width: '100%',
                 padding: 'var(--space-md)',
@@ -704,7 +712,7 @@ export function Consultation() {
               >
                 <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)', marginBottom: 'var(--space-lg)', borderBottom: '1px solid var(--border-gold)', paddingBottom: 'var(--space-sm)' }}>
                   <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.125rem', color: 'var(--gold-primary)', margin: 0 }}>
-                    Análisis de consulta jurídica
+                    Consulta jurídica penal
                   </h3>
                   {ttsSpeaking ? (
                     <Button type="button" variant="secondary" onClick={handleStopTTS} aria-label="Detener reproducción">
@@ -716,29 +724,51 @@ export function Consultation() {
                     </Button>
                   )}
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)', fontSize: '0.9375rem', lineHeight: 1.55 }}>
+                  <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: 'var(--gold-primary)', marginBottom: 'var(--space-xs)' }}>PENALIS</div>
+                  <div style={{ color: 'var(--text-secondary)', marginBottom: 'var(--space-sm)' }}>Modo: Consulta Jurídica Penal</div>
+                  <div style={{ marginBottom: 'var(--space-md)' }}>
+                    <div style={{ color: 'var(--text-secondary)', marginBottom: 'var(--space-xs)', fontSize: '0.875rem' }}>Pregunta</div>
+                    <p className="penalis-doc-body" style={{ margin: 0, whiteSpace: 'pre-wrap' }}>{lastSubmittedQuestion || query || '—'}</p>
+                  </div>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)', marginTop: 'var(--space-sm)' }} aria-hidden>⸻</div>
                   <section>
-                    <h4 className="penalis-doc-section-title">Marco constitucional aplicable</h4>
+                    <h4 className="penalis-doc-section-title">1. Tesis jurídica</h4>
+                    <p className="penalis-doc-body">{rag.brief.consulta.thesis || '—'}</p>
+                  </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                  <section>
+                    <h4 className="penalis-doc-section-title">2. Marco constitucional aplicable</h4>
                     <p className="penalis-doc-body">{rag.brief.consulta.constitutionalFramework || '—'}</p>
                   </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
                   <section>
-                    <h4 className="penalis-doc-section-title">Marco legal relevante</h4>
+                    <h4 className="penalis-doc-section-title">3. Marco legal relevante (COPP)</h4>
                     <p className="penalis-doc-body">{rag.brief.consulta.legalFramework || '—'}</p>
                   </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
                   <section>
-                    <h4 className="penalis-doc-section-title">Análisis doctrinal / Teoría General del Delito</h4>
-                    <p className="penalis-doc-body">{rag.brief.consulta.doctrinalAnalysis || '—'}</p>
+                    <h4 className="penalis-doc-section-title">4. Criterio jurisprudencial de la Sala de Casación Penal</h4>
+                    <p className="penalis-doc-body">{rag.brief.consulta.jurisprudentialCriterion || '—'}</p>
                   </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
                   <section>
-                    <h4 className="penalis-doc-section-title">Aplicación al caso concreto</h4>
+                    <h4 className="penalis-doc-section-title">5. Aplicación al caso</h4>
                     <p className="penalis-doc-body">{rag.brief.consulta.applicationToCase || '—'}</p>
                   </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
                   <section>
-                    <h4 className="penalis-doc-section-title">Conclusión jurídica</h4>
+                    <h4 className="penalis-doc-section-title">6. Conclusión jurídica</h4>
                     <p className="penalis-doc-body penalis-doc-conclusion">{rag.brief.consulta.conclusion || '—'}</p>
                   </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
                   <section>
-                    <h4 className="penalis-doc-section-title">Debilidad estratégica de la contraparte</h4>
+                    <h4 className="penalis-doc-section-title">7. Estrategia de intervención procesal</h4>
+                    <p className="penalis-doc-body">{rag.brief.consulta.proceduralStrategy || '—'}</p>
+                  </section>
+                  <div style={{ borderTop: '1px solid var(--border-gold)', paddingTop: 'var(--space-md)' }} aria-hidden>⸻</div>
+                  <section>
+                    <h4 className="penalis-doc-section-title">8. Debilidad estratégica de la contraparte</h4>
                     <p className="penalis-doc-body">{rag.brief.consulta.strategicWeakness || '—'}</p>
                   </section>
                 </div>
@@ -987,6 +1017,69 @@ export function Consultation() {
                     </div>
                   </div>
                 )}
+              </div>
+            )}
+
+            {rag.results && rag.results.length > 0 && (
+              <div
+                style={{
+                  marginTop: 'var(--space-xl)',
+                  marginBottom: 'var(--space-xl)',
+                  padding: 'var(--space-lg)',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--border-gold)',
+                  background: 'var(--bg-deep)',
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: 'var(--font-display)',
+                    fontSize: '1.125rem',
+                    color: 'var(--gold-primary)',
+                    marginBottom: 'var(--space-md)',
+                    borderBottom: '1px solid var(--border-gold)',
+                    paddingBottom: 'var(--space-sm)',
+                  }}
+                >
+                  Fuentes utilizadas (documentos recuperados por el RAG)
+                </h3>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    color: 'var(--text-secondary)',
+                    marginBottom: 'var(--space-md)',
+                  }}
+                >
+                  Fragmentos del corpus enviados como contexto para generar la respuesta. Ordenados por relevancia.
+                </p>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+                  {rag.results.slice(0, 15).map((r, i) => (
+                    <li
+                      key={r.id}
+                      style={{
+                        padding: 'var(--space-sm) var(--space-md)',
+                        borderRadius: 'var(--radius-sm)',
+                        border: '1px solid var(--border-gold)',
+                        background: 'var(--gold-card-bg)',
+                        fontSize: '0.9rem',
+                      }}
+                    >
+                      <div style={{ fontFamily: 'var(--font-display)', color: 'var(--gold-primary)', marginBottom: 'var(--space-xs)' }}>
+                        {i + 1}. {r.document?.name || r.document?.path || 'Documento'}
+                        {r.article ? ` — Art. ${r.article}` : ''}
+                      </div>
+                      {r.document?.path && (
+                        <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: 'var(--space-xs)' }}>
+                          {r.document.path}
+                        </div>
+                      )}
+                      <div style={{ fontSize: '0.85rem', color: 'var(--text-primary)', lineHeight: 1.45 }}>
+                        {(r.text || '').trim().slice(0, 220)}
+                        {(r.text || '').length > 220 ? '…' : ''}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
             )}
 

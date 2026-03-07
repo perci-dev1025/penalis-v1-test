@@ -183,8 +183,20 @@ export async function getDebateMasterResponse(role, question, chunksContext) {
   }
 }
 
+/** 8-section Consulta response keys (new format). */
+const CONSULTA_KEYS = [
+  'thesis',
+  'constitutionalFramework',
+  'legalFramework',
+  'jurisprudentialCriterion',
+  'applicationToCase',
+  'conclusion',
+  'proceduralStrategy',
+  'strategicWeakness',
+];
+
 /**
- * Call OpenAI chat with PROMPT CONSULTA (Consultation Mode) and return parsed 6-section object.
+ * Call OpenAI chat with PROMPT CONSULTA (Consultation Mode) and return parsed 8-section object.
  */
 export async function getConsultaResponse(question, chunksContext) {
   if (!openaiApiKey) {
@@ -234,17 +246,13 @@ export async function getConsultaResponse(question, chunksContext) {
 
   try {
     const parsed = JSON.parse(jsonStr);
-    const keys = [
-      'constitutionalFramework',
-      'legalFramework',
-      'doctrinalAnalysis',
-      'applicationToCase',
-      'conclusion',
-      'strategicWeakness',
-    ];
     const result = {};
-    for (const k of keys) {
+    for (const k of CONSULTA_KEYS) {
       result[k] = getString(parsed, k);
+    }
+    // Backward compatibility: if LLM returns only legacy 6-section format, map doctrinalAnalysis -> thesis
+    if (!result.thesis && getString(parsed, 'doctrinalAnalysis')) {
+      result.thesis = getString(parsed, 'doctrinalAnalysis');
     }
     return result;
   } catch (e) {

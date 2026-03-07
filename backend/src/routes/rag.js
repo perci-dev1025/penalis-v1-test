@@ -110,6 +110,49 @@ function isCOPPDocument(path, name) {
   );
 }
 
+/** True when the question asks for jurisprudence (TSJ, Sala de Casación, sentencia, etc.). */
+function queryAsksForJurisprudence(question) {
+  const n = normalizeForMatch(question);
+  return (
+    n.includes('jurisprudencia') ||
+    n.includes('sala de casacion') ||
+    n.includes('sala de casación') ||
+    n.includes('tsj') ||
+    n.includes('sentencia') ||
+    n.includes('criterio del tribunal')
+  );
+}
+
+/** True when the question is about proof at trial (incorporation, new proof, sobrevenida). */
+function queryAboutProofAtTrial(question) {
+  const n = normalizeForMatch(question);
+  return (
+    n.includes('incorporacion') ||
+    n.includes('incorporación') ||
+    n.includes('prueba nueva') ||
+    n.includes('prueba sobrevenida') ||
+    n.includes('sobrevenida') ||
+    n.includes('prueba no promovida')
+  );
+}
+
+/** Boost when chunk is highly relevant to proof-at-trial / incorporación excepcional (so BIV_02 and COPP Art. 339 rank higher). */
+const PROOF_AT_TRIAL_CONTENT_BOOST = 0.25;
+
+function chunkRelevantToProofAtTrial(chunkText, path, name) {
+  const combined = `${(chunkText || '').toLowerCase()} ${(path || '').toLowerCase()} ${(name || '').toLowerCase()}`;
+  return (
+    /prueba\s+sobrevenida|incorporaci[oó]n\s+excepcional|incorporacion\s+excepcional/.test(combined) ||
+    /art\.?\s*339|art[ií]culo\s+339/.test(combined) ||
+    /art\.?\s*340|art[ií]culo\s+340/.test(combined) ||
+    /art\.?\s*16\b|art[ií]culo\s+16\b/.test(combined) ||
+    /art\.?\s*22\b|art[ií]culo\s+22\b/.test(combined) ||
+    /conformidad\s+en\s+la\s+incorporaci[oó]n/.test(combined) ||
+    /prueba_nueva_sobrevenida|biv_02|prueba nueva sobrevenida/i.test(combined) ||
+    /audiencia\s+preliminar|promoci[oó]n\s+de\s+pruebas|libertad\s+probatoria|verdad\s+material/.test(combined)
+  );
+}
+
 /** Number of top chunks sent to PROMPT MAESTRO and PROMPT MASTER SUPERIOR for stronger integrated legal basis. */
 const MAESTRO_DEBATE_TOP_CHUNKS = Number(process.env.RAG_MAESTRO_TOP_CHUNKS) || 15;
 /** Per-chunk character limit so doctrine/jurisprudence are less often cut off. */
@@ -300,6 +343,27 @@ router.post('/query', requireAuth, async (req, res, next) => {
       }
     }
 
+    // When the user asks for jurisprudence or about proof at trial, ensure jurisprudence and format chunks are in the pool (audiencia, debate, consulta).
+    const shouldFetchJurisprudence =
+      (modeLower === 'audiencia' || modeLower === 'debate' || modeLower === 'consulta') &&
+      (queryAsksForJurisprudence(question) || queryAboutProofAtTrial(question));
+    if (shouldFetchJurisprudence) {
+      const candidateIds = new Set(candidates.map((c) => c.id));
+      const jurisAndFormatChunks = await prisma.legalChunk.findMany({
+        where: {
+          sourceType: { in: ['jurisprudence', 'format'] },
+        },
+        take: 400,
+        include: { document: true },
+      });
+      for (const chunk of jurisAndFormatChunks) {
+        if (!candidateIds.has(chunk.id)) {
+          candidates.push(chunk);
+          candidateIds.add(chunk.id);
+        }
+      }
+    }
+
     if (candidates.length === 0) {
       return res.status(200).json({
         id: null,
@@ -337,6 +401,19 @@ router.post('/query', requireAuth, async (req, res, next) => {
           if (scoredChunkIds.has(chunk.id)) continue;
           const doc = chunk.document;
           if (!doc || !isCOPPDocument(doc.path, doc.name)) continue;
+          const score = jaccardSimilarity(queryTokens, tokenize(chunk.text));
+          if (score <= 0) continue;
+          scored.push({ chunk, score });
+          scoredChunkIds.add(chunk.id);
+        }
+      }
+      // When user asks for jurisprudence or proof at trial, add jurisprudence/format chunks that have no embedding (Jaccard).
+      if (shouldFetchJurisprudence) {
+        const scoredChunkIds = new Set(scored.map((e) => e.chunk.id));
+        const queryTokens = tokenize(question);
+        for (const chunk of candidates) {
+          if (scoredChunkIds.has(chunk.id)) continue;
+          if (chunk.sourceType !== 'jurisprudence' && chunk.sourceType !== 'format') continue;
           const score = jaccardSimilarity(queryTokens, tokenize(chunk.text));
           if (score <= 0) continue;
           scored.push({ chunk, score });
@@ -386,6 +463,10 @@ router.post('/query', requireAuth, async (req, res, next) => {
         ) {
           entry.score += COPP_PROCEDURAL_DEBATE_BOOST;
         }
+        // When user asks for jurisprudence or about proof at trial, boost jurisprudence and format so they appear in top context.
+        if (shouldFetchJurisprudence && (entry.chunk.sourceType === 'jurisprudence' || entry.chunk.sourceType === 'format')) {
+          entry.score += PROCEDURAL_BOOST;
+        }
       }
       scored.sort((a, b) => {
         const aNorm = NORMATIVE_SOURCE_TYPES.has(a.chunk.sourceType);
@@ -393,6 +474,22 @@ router.post('/query', requireAuth, async (req, res, next) => {
         if (aNorm !== bNorm) {
           return aNorm ? -1 : 1;
         }
+        return b.score - a.score;
+      });
+    }
+
+    // When question is about proof at trial, boost chunks with proof-at-trial content (BIV_02, Art. 339) even if procedural block did not run.
+    if (queryAboutProofAtTrial(question)) {
+      for (const entry of scored) {
+        const doc = entry.chunk.document;
+        if (chunkRelevantToProofAtTrial(entry.chunk.text, doc?.path, doc?.name)) {
+          entry.score += PROOF_AT_TRIAL_CONTENT_BOOST;
+        }
+      }
+      scored.sort((a, b) => {
+        const aNorm = NORMATIVE_SOURCE_TYPES.has(a.chunk.sourceType);
+        const bNorm = NORMATIVE_SOURCE_TYPES.has(b.chunk.sourceType);
+        if (aNorm !== bNorm) return aNorm ? -1 : 1;
         return b.score - a.score;
       });
     }
@@ -424,7 +521,44 @@ router.post('/query', requireAuth, async (req, res, next) => {
       }
     }
 
-    scored = scored.slice(0, maxResults);
+    // In audiencia or consulta mode when user asks for jurisprudence or about proof at trial, ensure jurisprudence/format appear in top context.
+    const minJurisFormatInTop = 2;
+    if (
+      (modeLower === 'audiencia' || modeLower === 'consulta') &&
+      shouldFetchJurisprudence &&
+      scored.length > minJurisFormatInTop
+    ) {
+      const jurisFormatEntries = scored.filter(
+        (e) => e.chunk.sourceType === 'jurisprudence' || e.chunk.sourceType === 'format',
+      );
+      const otherEntries = scored.filter(
+        (e) => e.chunk.sourceType !== 'jurisprudence' && e.chunk.sourceType !== 'format',
+      );
+      if (
+        jurisFormatEntries.length > 0 &&
+        jurisFormatEntries.length < minJurisFormatInTop &&
+        otherEntries.length > 0
+      ) {
+        const jurisTop = jurisFormatEntries.slice(0, minJurisFormatInTop);
+        const takeCount = Math.max(maxResults, MAESTRO_DEBATE_TOP_CHUNKS);
+        const rest = otherEntries.slice(0, takeCount - jurisTop.length);
+        const blended = [...jurisTop, ...rest];
+        blended.sort((a, b) => {
+          const aNorm = NORMATIVE_SOURCE_TYPES.has(a.chunk.sourceType);
+          const bNorm = NORMATIVE_SOURCE_TYPES.has(b.chunk.sourceType);
+          if (aNorm !== bNorm) return aNorm ? -1 : 1;
+          return b.score - a.score;
+        });
+        const blendedSet = new Set(blended);
+        scored = [...blended, ...scored.filter((e) => !blendedSet.has(e))];
+      }
+    }
+
+    const topK =
+      modeLower === 'audiencia' || modeLower === 'debate' || modeLower === 'consulta'
+        ? Math.max(maxResults, MAESTRO_DEBATE_TOP_CHUNKS)
+        : maxResults;
+    scored = scored.slice(0, topK);
 
     const passing = scored.filter((entry) => entry.score >= threshold);
     const normativePassing = passing.filter((entry) =>

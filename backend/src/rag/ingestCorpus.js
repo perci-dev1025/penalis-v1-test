@@ -6,6 +6,9 @@ import { getEmbedding } from './embeddingProvider.js';
 
 const corpusRoot = path.resolve(process.cwd(), 'data', 'corpus');
 
+/** Max chunk size in characters so embedding API stays under token limit (~8192). */
+const MAX_CHUNK_CHARS = 6000;
+
 function mapTopFolder(topFolder) {
   if (topFolder.startsWith('01_')) {
     return { sourceType: 'fundamental_norm', hierarchyRank: 1 };
@@ -78,7 +81,29 @@ function splitIntoChunks(raw) {
     });
   }
 
-  return chunks.filter((c) => c.text.length > 0);
+  const filtered = chunks.filter((c) => c.text.length > 0);
+  // Split any chunk exceeding MAX_CHUNK_CHARS so embedding API does not exceed token limit.
+  const result = [];
+  for (const c of filtered) {
+    if (c.text.length <= MAX_CHUNK_CHARS) {
+      result.push(c);
+      continue;
+    }
+    const parts = c.text.split(/\n\n+/);
+    let buffer = '';
+    let article = c.article;
+    for (let i = 0; i < parts.length; i++) {
+      const next = (buffer ? buffer + '\n\n' : '') + parts[i];
+      if (next.length >= MAX_CHUNK_CHARS && buffer) {
+        result.push({ article, text: buffer.trim() });
+        buffer = parts[i];
+      } else {
+        buffer = next;
+      }
+    }
+    if (buffer.trim()) result.push({ article, text: buffer.trim() });
+  }
+  return result;
 }
 
 async function ingestFile(filePath) {
@@ -145,10 +170,14 @@ async function ingestFile(filePath) {
     return;
   }
 
-  // Attach embeddings to each chunk, if possible.
+  // Attach embeddings to each chunk, if possible. Truncate to stay under API token limit.
   for (const chunk of created.chunks) {
     try {
-      const embeddingVec = await getEmbedding(chunk.text);
+      const textToEmbed =
+        chunk.text.length > MAX_CHUNK_CHARS
+          ? chunk.text.slice(0, MAX_CHUNK_CHARS)
+          : chunk.text;
+      const embeddingVec = await getEmbedding(textToEmbed);
       if (!embeddingVec) continue;
       const embeddingBuffer = Buffer.from(embeddingVec.buffer);
       await prisma.legalChunk.update({
