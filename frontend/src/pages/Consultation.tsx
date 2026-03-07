@@ -320,7 +320,8 @@ export function Consultation() {
           }
         }
         if (!res.ok) {
-          const err = data && typeof (data as { error?: string }).error === 'string' ? (data as { error: string }).error : `Error ${res.status}`;
+          const errPayload = data as unknown as { error?: string };
+          const err = data && typeof errPayload?.error === 'string' ? errPayload.error : `Error ${res.status}`;
           setError(err);
         } else if (data) {
           setRag(data);
